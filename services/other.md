@@ -7,7 +7,7 @@
 - Amazon EFS (Elastic File System)
 - Amazon EC2 (Elastic Compute Cloud) [Virtual servers in the cloud]
 - Amazon EBS (Elastic Block Store)
-- Amazon VPC )Virtual Private Cloud)
+- Amazon VPC (Virtual Private Cloud)
 
 
 networking
