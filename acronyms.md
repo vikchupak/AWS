@@ -1,0 +1,1 @@
+- AMI (Amazon Machine Image)
