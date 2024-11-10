@@ -1,1 +1,2 @@
-AWS management console - web-based UI interface 
+- AWS management console - web-based UI interface
+- AWS command line interface
