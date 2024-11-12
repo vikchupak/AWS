@@ -1,3 +1,5 @@
+See https://github.com/VIK2395/AWS/blob/main/cli/configure.md
+
 - **Add a password for a user to login to Management Console**
 ```bash
 aws iam create-login-profile \
