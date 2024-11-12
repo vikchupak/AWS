@@ -1,1 +1,2 @@
+- Arn (Amazon resource name)
 - AMI (Amazon Machine Image)
