@@ -36,3 +36,11 @@ aws iam attach-group-policy \
 aws iam list-attached-group-policies \
 --group-name <groupName>
 ```
+- **Add a password for a user to login to Management Console**
+```
+aws iam create-login-profile \
+--user-name <userName>
+--password <password>
+--password-reset-required
+```
+- **Add 
