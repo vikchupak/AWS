@@ -1,7 +1,7 @@
 ```bash
 # Create ec2 instance
 aws ec2 run-instances \
---image-id <osImageId> \
+--image-id <osImageId [AMI (Amazon Machine Image)]> \
 --count <instanceCount> \
 --instance-type <instanceType> \
 --key-name <sshKeyName> \
