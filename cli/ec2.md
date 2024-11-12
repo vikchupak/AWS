@@ -8,3 +8,8 @@ aws ec2 run-instances \
 --security-group-ids <securityGroupIds> \
 --subnet-id <subnetId>
 ```
+
+```bash
+# List ec2 instances
+aws ec2 describe-instances
+```
