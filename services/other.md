@@ -12,8 +12,3 @@
     
 - Amazon EBS (Elastic Block Store)
 - Amazon VPC (Virtual Private Cloud)
-
-
-networking
-- https://mxtoolbox.com/subnetcalculator.aspx
-- https://www.davidc.net/sites/default/subnets/subnets.html
