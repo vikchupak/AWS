@@ -1,0 +1,3 @@
+- `aws configure` will ask
+  - AWS Access Key ID (the key ID is assigned to a spesific user, so it is like a user login)
+  - AWS Secret Access Key (like the user password)
