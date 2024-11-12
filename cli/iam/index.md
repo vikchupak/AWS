@@ -25,7 +25,7 @@ aws iam attach-user-policy \
 --user-name <userName>
 --policy-arn <policy-AmanonResouceName>
 ```
-- Add a permission to a user
+- Add a permission to a group
 ```bash
 aws iam attach-group-policy \
 --group-name <groupName>
