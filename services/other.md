@@ -1,6 +1,3 @@
-- AWS management console - web-based UI interface
-- AWS command line interface
-
 - Amazon S3 (Simple Storage Service)
 - Amazon RDS (Relational Database Service)
 - Amazon DynamoDB
