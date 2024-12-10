@@ -2,7 +2,7 @@
 
 ---
 
-- **Elastic Container Service (ECS)** - container orchestration service, **AWS version/replacement of k8s**
+- **Elastic Container Service (ECS)** - container orchestration service. **AWS version/replacement of k8s**
   - Create ECS cluster containing all the services to manage the containers
   - Represents a Control Plane managing the containers, created automatically with the cluster 
   - Cntainers run on EC2 instances
@@ -13,7 +13,7 @@
     - **Container orchestration is managed by ECS**
     - **Hosting infrastacture are still managed by you**
   - Advantage: Full access and controll of your infrastracture
-- **Elastic Kubernetes Service (EKS)** - managed k8s service
+- **Elastic Kubernetes Service (EKS)** - managed k8s service. **Original k8s in AWS**
 
 ---
 
