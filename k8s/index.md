@@ -9,6 +9,7 @@
   - EC2 instances are managed by ECS via the Control Plane
   - EC2 instances have docker runtime installed to run containers and `ECS Agent` installed to be managed by ECS
   - BUT, we have to create EC2 instances yourself, join them to the cluster, check if you have enough EC2 instances and resources to run containers. We have to manage EC2 instances OS like updates. Install docker runtime (and `ECS Agent`?)
+  - So, we do not manage containers, but still have to manage servers(EC2 instances)
 - **Elastic Kubernetes Service (EKS)** - managed k8s service
 
 ---
