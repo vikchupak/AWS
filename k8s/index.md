@@ -1,4 +1,4 @@
-- Elastic Container Registry (ECR) - private docker repository for container images
+- Elastic Container Registry (ECR) - private docker repository for container images. Alternative to dockerhub, nexus
 
 ---
 
