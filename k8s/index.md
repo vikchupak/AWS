@@ -28,7 +28,7 @@
           - Then, EC2 instances are part of ECS cluster and the `Control Plane - k8s processes` mange containers on the instanses
           - Each EC2 instance has docker runtime installed to run containers and `k8s processes` to communicate with the Control Plane to manage containers
     - **EC2-Nodegroup-hosted worker nodes**
-      - Creates and deletes EC2 instances for you, but you need to configure it
+      - Creates and deletes EC2 instances for you, but you need to configure it. It is like bulk create.
       - No nodes autoscaling out-of-the-box. You need to configure it on both side k8s and AWS
     - **Fargate-hosted worker nodes**
       - The same as for ECS Fargate-hosted worker nodes
