@@ -1,6 +1,7 @@
 Identity and Access Management (IAM)
 
 IAM resources
+- IAM resources are Global
 - Users (Human users, Service users)
 - User Groups (Add users to groups to grant permission via policies)
 - Policies [like permissions]
