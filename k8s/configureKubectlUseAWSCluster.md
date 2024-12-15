@@ -20,3 +20,8 @@ Add new context
 ```bash
 kubectl config set-context <new-context-name> --cluster=<cluster-name> --user=<user-name>
 ```
+
+Info about cluster
+```bash
+kubectl cluster-info
+```
