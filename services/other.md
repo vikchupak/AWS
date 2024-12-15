@@ -9,3 +9,5 @@
     
 - Amazon EBS (Elastic Block Store)
 - Amazon VPC (Virtual Private Cloud)
+- AWS CloudFormation
+  - Allows you to model, provision, and manage AWS resources in a declarative, **infrastructure-as-code** approach. With CloudFormation, you define the infrastructure and configuration you need using a **template written in JSON or YAML**.
