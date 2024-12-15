@@ -9,6 +9,11 @@ will ask
   - Default region name (where all components are created by default)
   - Default output format (how to output data in terminal, `json` | `text` | `table`)
 
+List config details
+```bash
+aws configure list
+```
+
 ### Alternative Method: Specify Profile
 To configure multiple sets of credentials, you can specify a profile using the `--profile` option:
 
