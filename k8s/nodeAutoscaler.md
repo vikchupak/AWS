@@ -1,4 +1,4 @@
-In AWS there are **auto scaling groups** created with **node group** approach.
+In AWS there are **auto scaling groups** created under the hood with **node group** approach.
 
 - But AWS **doesn't automatically* autoscale** our resources. **However, the autoscaling group is just to group instances.**
 - To "enable" autoscaling, we need to confire cluster autoscaler.
