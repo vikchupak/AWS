@@ -1,4 +1,4 @@
-eksctl - command line tool for working wit aws k8s (Elastic Kubernetes Service) that automates many individual tasks.
+eksctl - command line tool for working with aws k8s (Elastic Kubernetes Service) that automates many individual tasks.
 
 - https://eksctl.io/
 
