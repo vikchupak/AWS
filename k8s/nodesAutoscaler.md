@@ -30,7 +30,7 @@ In AWS there are **auto scaling groups** created under the hood with **node grou
    - It will use `namespace or/and labels` to define pods to manage
 3. Deploy pods using deployment manifest with added `namespace or/and labels`
 
-- Fargate-provisioned nades/pods are created in private VPC. Not public. So we have to spesify these private subnets.
+- Fargate-provisioned nodes/pods are created in private VPC. Not public. So we have to spesify these private subnets.
 - Fargate nodes is not visible in AWS console UI as they are complitelly **managed by AWS account** like controle plane nodes as well.
 
 List fargate nodes/pods
