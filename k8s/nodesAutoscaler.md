@@ -6,10 +6,14 @@ In AWS there are **auto scaling groups** created under the hood with **node grou
     - autoscaler group tags are important/used for this. These tags are added to all EC2 instances inside **auto scaling group** and the autoscaler will scale nodes by matching these tags.
       - `k8s.io/cluster-autoscaler/<cluster-name>`
       - `k8s.io/cluster-autoscaler/enabled`
-  - Deploy cluster autoscaler resource/component to the cluster in `kube-system` namespace
+  - Deploy cluster autoscaler (as pod) to the cluster in `kube-system` namespace
     ```bash
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/autoscaler/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml
     ```
     ```bash
     kubectl get deployment -n kube-system cluster-autoscaler
+    ```
+     ```bash
+    kubectl get pod -n kube-system
+     # cluster-autoscaler will be in list
     ``` 
