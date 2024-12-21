@@ -10,7 +10,7 @@ eksctl create cluster \
 —region eu-central-1 \
 —nodegroup-name demo-nodes \
 —node-type t2.micro \
-—nodes 2 \
+—nodes 2 \ # real nodes count as nodes autoscaler is not created out-of-the-box
 —nodes-min 1 \
 —nodes-max 3
 ```
