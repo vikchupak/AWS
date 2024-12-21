@@ -38,3 +38,9 @@ List fargate nodes/pods
 kubectl get nodes -n fargate-namespace
 # fargate nodes is not visible in AWS console UI as they are complitelly managed by AWS account
 ```
+
+## Combination Node group and Fargate
+
+- We can use both at the same time
+  - Fargate for stateless apps
+  - Node groups(EC2) for stateful apps
