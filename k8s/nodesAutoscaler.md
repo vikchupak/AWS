@@ -1,3 +1,5 @@
+## Node group approach
+
 In AWS there are **auto scaling groups** created under the hood with **node group** approach.
 
 - But AWS **doesn't automatically autoscale** our resources. **The autoscaling group is just to group instances.**
@@ -17,3 +19,22 @@ In AWS there are **auto scaling groups** created under the hood with **node grou
     kubectl get pod -n kube-system
      # cluster-autoscaler will be in list
     ``` 
+
+## Fargate approach
+
+- **Fargate creates one pod per node**
+  - Which means fargate doesn't fit for stataful apps or DeamonSet
+
+1. Create IAM role for Fargate and attach needed policies to it.
+2. Create/configure fargate profile and apply/app the fargate IAM role to it.
+   - It will use `namespace or/and labels` to define pods to manage
+3. Deploy pods using deployment manifest with added `namespace or/and labels`
+
+- Fargate-provisioned nades/pods are created in private VPC. Not public. So we have to spesify these private subnets.
+- Fargate nodes is not visible in AWS console UI as they are complitelly **managed by AWS account**
+
+List fargate nodes/pods
+```bash
+kubectl get nodes -n fargate-namespace
+# fargate nodes is not visible in AWS console UI as they are complitelly managed by AWS account
+```
