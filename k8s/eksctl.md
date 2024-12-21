@@ -14,3 +14,7 @@ eksctl create cluster \
 —nodes-min 1 \
 —nodes-max 3
 ```
+
+It will create many things under the hood for us
+- Roles with policies
+- VPC with public and private subnets in each AZ
