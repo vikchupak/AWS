@@ -19,7 +19,7 @@ It will create many things under the hood for us
 - Roles with policies
 - VPC with public and private subnets in each AZ
 
-## eksctl uses aws cli under the hood
+## `eksctl` uses `aws cli` under the hood
 
 **`eksctl`** uses the AWS CLI under the hood to interact with Amazon EKS (Elastic Kubernetes Service) and AWS services. Specifically:
 
