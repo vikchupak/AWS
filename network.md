@@ -17,6 +17,7 @@
     - Target vs Destination as exaple of `ip route`(Linux)/`route print`(Windows)
       - Destination (Network destination in Linux/Windows). **Actual adress we want to reach - final point**.
       - Target (Gateway in Linux/Windows). **Closest/next hop to reach the destination - intermediate point**
+- NACL (Network Access Control List) is a security feature in AWS that **acts as a firewall** to control traffic (both inbound and outbound) at the subnet level.
      
 - https://github.com/VIK2395/Network/blob/main/NetmaskVsSubnetMask.md
 - https://github.com/VIK2395/DevOps/blob/main/Linux/Network/VPN/index.md
