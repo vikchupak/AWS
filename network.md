@@ -17,6 +17,9 @@
     - Target vs Destination as exaple of `ip route`(Linux)/`route print`(Windows)
       - Destination (Network destination in Linux/Windows). **Actual adress we want to reach - final point**.
       - Target (Gateway in Linux/Windows). **Closest hop to reach the destination - intermediate point**
+     
+- https://github.com/VIK2395/Network/blob/main/NetmaskVsSubnetMask.md
+- https://github.com/VIK2395/DevOps/blob/main/Linux/Network/VPN/index.md
 
 ### **Internet Gateway (IGW) vs NAT Gateway (NGW)**
 
