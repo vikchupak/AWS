@@ -4,8 +4,8 @@
 - AZs
 - NAT(Network Address Translation) Gateway. Is **deployed in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing.
   -  You have resources in a **private subnet** that:
-    - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
-    - Should remain inaccessible from the internet.
+     - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
+     - Should remain inaccessible from the internet.
 - Internet Gateway.
   - You have resources in a **public subnet** that need direct access to and from the internet.
 - Route tables
