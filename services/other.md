@@ -10,6 +10,7 @@
 - Amazon EBS (Elastic Block Store)
   - A scalable, high-performance block storage service **designed for use with Amazon EC2 instances**.
   - Attached to EC2 via **EBS volumes**.
+  - Data on EBS volumes is persistent, even when the associated EC2 instance is stopped or terminated.
 - Amazon VPC (Virtual Private Cloud) [**Virtual network in the cloud**]
 - AWS CloudFormation
   - Allows you to model, provision, and manage AWS resources in a declarative, **infrastructure-as-code** approach. With CloudFormation, you define the infrastructure and configuration you need using a **template written in JSON or YAML**.
