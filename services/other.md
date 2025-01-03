@@ -15,7 +15,9 @@
     - Typically of the General Purpose SSD (gp3) type.
     - The root volume is automatically mounted to / (the root directory) of the EC2 instance, **meaning it holds the OS** and other essential files.
     - This EBS volume persists even if the EC2 instance is stopped or started again. **However, if the EC2 instance is terminated, the root volume is by default also deleted, unless specified otherwise.**
-    - If you create **snapshots** of this root volume, the snapshot can be used to restore or launch new EC2 instances from the same volume configuration.
+  - If you create **snapshots of this root volume**, the snapshot can be used to restore or launch new EC2 instances from the same volume configuration.
+  - If you create a **new EBS volume from a snapshot of a root volume** and attach it to the same instance, the system **DOES NOT** inherently recognize the new volume as a root volume. The new volume is treated as a secondary device.
+    - If your intention is to replace the root volume, detach the original root volume, attach the new volume as /dev/xvda, and ensure it has the correct boot loader and configuration.
 - Amazon VPC (Virtual Private Cloud) [**Virtual network in the cloud**]
 - AWS CloudFormation
   - Allows you to model, provision, and manage AWS resources in a declarative, **infrastructure-as-code** approach. With CloudFormation, you define the infrastructure and configuration you need using a **template written in JSON or YAML**.
