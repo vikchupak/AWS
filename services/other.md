@@ -1,4 +1,14 @@
 - Amazon S3 (Simple Storage Service)
+  -  Amazon S3 is more of an **object storage system** rather than a traditional key-value database like Redis or DynamoDB. It is designed to store large amounts of unstructured data, including files, backups, and multimedia.
+  - An **S3 bucket** is a container for storing objects (data files), where each object consists of a file and its metadata.
+  - Structure:
+    - **Buckets**: S3 uses "buckets" as containers for storing data. Each bucket has a unique name within the AWS global namespace.
+    - **Objects**: Each object in a bucket is stored with a unique identifier called a key, which is used to access the object.
+    - **Object Metadata**: Objects can also have metadata (key-value pairs) associated with them to provide additional information about the object.
+  - Structire example `s3://my-bucket/images/photo.jpg`
+    - [container] Globally unique bucket name: `my-bucket`
+    - [key] Object identifier (like a file name or path) `images/photo.jpg`
+    - [value] The actual data stored in the object, such as the file content, which could be an image, document, or any other data.
 - Amazon RDS (Relational Database Service)
 - Amazon DynamoDB
 - Amazon EFS (Elastic File System)
