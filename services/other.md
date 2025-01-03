@@ -18,7 +18,7 @@
     ![image](https://github.com/user-attachments/assets/e86ed1ee-1950-4091-b979-e1a9c2a3f6a8)
     
 - Amazon EBS (Elastic Block Store)
-  - A scalable, high-performance block storage service **designed for use with Amazon EC2 instances**.
+  - A scalable, high-performance block **storage** service **designed for use with Amazon EC2 instances**.
   - Attached to EC2 via **EBS volumes**.
   - Data on EBS volumes is persistent, even when the associated EC2 instance is stopped or terminated.
   - When an EC2 instance is created, **by default, an Amazon EBS volume is attached as the root volume** (this is the storage device where the operating system is installed).
