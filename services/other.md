@@ -6,9 +6,9 @@
     - **Objects**: Each object in a bucket is stored with a unique identifier called a key, which is used to access the object.
     - **Object Metadata**: Objects can also have metadata (key-value pairs) associated with them to provide additional information about the object.
   - Structure example `s3://my-bucket/images/photo.jpg`
-    - [container] Globally unique bucket name: `my-bucket`
-    - [key] Object identifier (like a file name or path) `images/photo.jpg`
-    - [value] The actual data stored in the object, such as the file content, which could be an image, document, or any other data.
+    - **[container]** Globally unique bucket name: `my-bucket`
+    - **[key]** Object identifier (like a file name or path) `images/photo.jpg`
+    - **[value]** The actual data stored in the object, such as the file content, which could be an image, document, or any other data.
 - Amazon RDS (Relational Database Service)
 - Amazon DynamoDB
 - Amazon EFS (Elastic File System)
