@@ -31,6 +31,8 @@ In AWS, there are two types of users:
 ✔ **Never Share Root User Credentials**  
 ✔ **Use IAM Roles for Temporary Access**  
 
+![image](https://github.com/user-attachments/assets/00b9f2a7-d637-413c-b680-4a7648b95308)
+
 # Does IAM user have an account ID?
 
 No, an **IAM user does not have a unique AWS account ID**, but it belongs to an AWS account that has an account ID (root user).  
