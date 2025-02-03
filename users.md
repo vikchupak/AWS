@@ -1,4 +1,4 @@
-# **Relation Between Root User and IAM User in AWS**  
+# **Relation Between `Root User` and `IAM User` in AWS**  
 
 In AWS, there are two types of users:  
 
@@ -30,7 +30,7 @@ In AWS, there are two types of users:
 ✔ **Never Share Root User Credentials**  
 ✔ **Use IAM Roles for Temporary Access**  
 
-# IAM user has account ID?
+# Does IAM user have an account ID?
 
 No, an **IAM user does not have a unique AWS account ID**, but it belongs to an AWS account that has an account ID (root user).  
 
