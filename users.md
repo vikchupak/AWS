@@ -8,7 +8,8 @@ In AWS, there are two types of users:
 - Cannot be restricted by IAM policies.  
 - AWS **strongly recommends** avoiding daily use of the root account and instead creating IAM users.  
 
-### **2. IAM User** (Created Users with Permissions)  
+### **2. IAM User** (Created Users with Permissions)
+- **An IAM user is an identity with long-term credentials that is used to interact with AWS in an account.**
 - An **IAM user** is a user created within AWS IAM (Identity and Access Management).  
 - IAM users **do not** have full permissions by default.  
 - **The root user can create IAM users and assign permissions through IAM policies**.** 
