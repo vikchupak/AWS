@@ -54,6 +54,6 @@ No, an **IAM user does not have a unique AWS account ID**, but it belongs to an 
 
 - Root user
 - IAM user
-- Service user
+- Service user (like jenkins)
 
 https://github.com/vikchupak/AWS/blob/main/services/iam/IAM.md
