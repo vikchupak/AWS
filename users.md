@@ -49,3 +49,9 @@ No, an **IAM user does not have a unique AWS account ID**, but it belongs to an 
      arn:aws:iam::123456789012:user/your-iam-username
      ```
    - IAM users do not have their own separate AWS account IDs, but they are linked to the account they belong to.  
+
+# There are 3 user types
+
+- Root user
+- IAM user
+- Service user
