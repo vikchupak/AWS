@@ -11,6 +11,7 @@
   - IAM Role provides permissions to AWS services
   - IAM Role **cannot login** like a IAM user but can be assumed by a service to provide access
   - **So, no actual (IAM) user is created/exists**
+  - Allows a service to act as a user
 
 https://github.com/vikchupak/AWS/blob/main/services/iam/IAM.md
 
