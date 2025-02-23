@@ -93,4 +93,4 @@ Here’s an example of a policy document that grants permissions to list objects
 
 ### Attaching the Policy
 
-Once the policy is created, you can attach it to a user, group, or role in IAM. This enables the principal (user, group, or role) to have the permissions defined by the policy.
+Once the policy is created, you can attach it to a **user, group, or role** in IAM. This enables the principal (user, group, or role) to have the permissions defined by the policy.
