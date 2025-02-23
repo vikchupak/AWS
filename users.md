@@ -1,3 +1,19 @@
+# There are 3* user types
+
+- Root user
+   - Can login using Username & Password / Access Key
+- IAM user
+  - Represents a person (e.g., a developer, admin, or employee)
+  - Can login using Username & Password / Access Key
+- Service account (**IAM Role**)
+  - **In AWS, a Service Account is not a direct term like in GCP or Azure, but it is often represented by an *IAM Role***
+  - Represents a machine or service or application (not a person)
+  - IAM Role provides permissions to AWS services
+  - IAM Role **cannot login** like a IAM user but can be assumed by a service to provide access
+  - **So, no actual (IAM) user is created/exists**
+
+https://github.com/vikchupak/AWS/blob/main/services/iam/IAM.md
+
 # **Relation Between `Root User` and `IAM User` in AWS**  
 
 In AWS, there are two types of users:  
@@ -12,7 +28,7 @@ In AWS, there are two types of users:
 - **An IAM user is an identity with long-term credentials that is used to interact with AWS in an account.**
 - An **IAM user** is a user created within AWS IAM (Identity and Access Management).  
 - IAM users **do not** have full permissions by default.  
-- **The root user can create IAM users and assign permissions through IAM policies**.** 
+- **The root user can create IAM users and assign permissions through IAM policies.**
 - IAM users can be given **specific access** (e.g., read-only access to S3, full access to EC2, etc.).  
 
 ### **Key Differences**  
@@ -48,12 +64,5 @@ No, an **IAM user does not have a unique AWS account ID**, but it belongs to an 
      ```
      arn:aws:iam::123456789012:user/your-iam-username
      ```
-   - IAM users do not have their own separate AWS account IDs, but they are linked to the account they belong to.  
-
-# There are 3 user types
-
-- Root user
-- IAM user
-- Service user (like jenkins)
-
-https://github.com/vikchupak/AWS/blob/main/services/iam/IAM.md
+   - IAM users do not have their own separate AWS account IDs, but they are linked to the account they belong to.
+   
