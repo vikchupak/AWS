@@ -26,7 +26,7 @@ You can then use this profile by adding `--profile myprofile` to your commands o
 **AWS CLI configs location**
 - `~/.aws`
   - `~/.aws/config`
-  - `~/.aws/credantials`
+  - `~/.aws/credentials`
 
 # Switch between cli users
 
