@@ -4,7 +4,7 @@ Identity and Access Management (IAM)
 
 IAM resources
 - IAM Users
-  - An IAM user CANNOT directly "have" an IAM role, but an IAM user can assume a role if granted permission
+  - An IAM role **CANNOT be directly assigned to an IAM user** in AWS. However, an IAM user can assume a role, which allows them to temporarily gain the permissions associated with that role
   - We CAN assign policies to the user **directly or via groups**
 - IAM User groups (Add users to groups to grant permission via policies)
   - Policies assigned to a group apply to all users in that group
