@@ -5,6 +5,7 @@ Identity and Access Management (IAM)
 IAM resources
 - IAM Users
   - An IAM user cannot directly "have" an IAM role, but an IAM user can assume a role if granted permission.
+  - We can assign policies to the user directly or via groups
 - IAM Groups (Add users to groups to grant permission via policies)
   - Policies assigned to a group apply to all users in that group
   - IAM Roles CANNOT be assigned to a group
