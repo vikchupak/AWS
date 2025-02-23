@@ -11,6 +11,7 @@ IAM resources
   - IAM Roles CANNOT be assigned to a group
 - IAM Policies [like permissions]
 - IAM Roles
-  - **We cannot assign policies[permissions] to ASW services directly as for common users. To grant persissions to a service, we assign a Role with policies to the service.**
+  - **We CANNOT assign policies[permissions] to ASW services directly as for common users. To grant persissions to a service, we assign a Role with policies to the service.**
+  - We can assign policies to roles
   - In general, we want a role for each service
 - IAM Identity providers
