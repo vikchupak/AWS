@@ -1,3 +1,5 @@
+### describe with --filter and --query
+
 ```bash
 # Syntax
 aws <command> describe-<entry> \
