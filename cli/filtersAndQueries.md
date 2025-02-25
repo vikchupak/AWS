@@ -11,5 +11,5 @@ aws ec2 describe-instances \
 --query "Reservations[].Instances[].InstanceId"
 ```
 
-- filter - filter command result
+- filter - filter command results
 - query - map results
