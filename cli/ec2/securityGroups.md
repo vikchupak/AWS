@@ -12,7 +12,7 @@ aws ec2 describe-vpcs
 # Create a security group
 aws ec2 create-security-group \
 --group-name <groupName> \
---desctiption <groupDescription> \
+--description <groupDescription> \
 --vpc-id <vpcId>
 ```
 ```bash
