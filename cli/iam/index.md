@@ -11,7 +11,7 @@ aws iam create-group \
 - Add a user to a group
 ```bash
 aws iam add-user-to-group \
---user-name <userName>
+--user-name <userName> \
 --group-name <groupName>
 ```
 - Show a group info
@@ -22,13 +22,13 @@ aws iam get-group \
 - Add a permission to a user
 ```bash
 aws iam attach-user-policy \
---user-name <userName>
+--user-name <userName> \
 --policy-arn <policy-AmanonResouceName>
 ```
 - Add a permission to a group
 ```bash
 aws iam attach-group-policy \
---group-name <groupName>
+--group-name <groupName> \
 --policy-arn <policy-AmanonResouceName>
 ```
 - List a group permissions
