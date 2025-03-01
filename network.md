@@ -48,7 +48,7 @@ Firewall
     - Create an Internet Gateway (IGW)
       - An Internet Gateway is created and attached to the VPC. This provides the actual link between your VPC and the internet.
     - Attach the Internet Gateway to the VPC
-      After creating the IGW, attach it to the VPC to allow internet communication
+      - After creating the IGW, attach it to the VPC to allow internet communication
     - Set Up Route Tables
       - In the VPC’s route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (IGW) (Target)
     - Configure Subnets
