@@ -16,6 +16,9 @@ A **resource** is a resource within AWS that you **create** and **manage**, but 
 - **Not fully managed**: You are responsible for the configuration and updates of the resource.
 
 ### **2. AWS Managed Service**
+
+- https://aws.amazon.com/managed-services/
+
 A **managed service** is a fully managed offering by AWS, where AWS takes responsibility for much of the operational overhead, including provisioning, scaling, patching, monitoring, and managing the lifecycle of the service. These services are designed to reduce the management burden on the user.
 
 #### **Examples of Managed Services**:
