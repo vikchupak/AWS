@@ -1,11 +1,11 @@
-# Managed resource vs managed service
+# AWS resource vs AWS managed service
 
-In AWS, the terms **"managed resource"** and **"managed service"** refer to different types of components, each with a distinct level of AWS involvement in its management. Here's a breakdown:
+In AWS, the terms **"resource"** and **"managed service"** refer to different types of components, each with a distinct level of AWS involvement in its management. Here's a breakdown:
 
-### **1. AWS Managed Resource**
-A **managed resource** is a resource within AWS that you **create** and **manage**, but AWS handles the underlying infrastructure for it. You still need to configure, monitor, and interact with the resource directly, but AWS ensures its availability, performance, and security at the infrastructure level.
+### **1. AWS Resource**
+A **resource** is a resource within AWS that you **create** and **manage**, but AWS handles the underlying infrastructure for it. You still need to configure, monitor, and interact with the resource directly, but AWS ensures its availability, performance, and security at the infrastructure level.
 
-#### **Examples of Managed Resources**:
+#### **Examples of Resources**:
 - **Internet Gateway (IGW)**: You create and attach an IGW to a VPC, but AWS handles the networking and routing infrastructure.
 - **Elastic IP (EIP)**: You allocate and associate Elastic IPs with resources, but AWS manages the underlying networking and ensures its availability.
 - **Security Groups**: You define the rules for your security group, but AWS ensures the security of the underlying infrastructure.
@@ -30,7 +30,7 @@ A **managed service** is a fully managed offering by AWS, where AWS takes respon
 - **Focus on usage and business logic**: The user focuses on interacting with the service and configuring it for their needs rather than managing the underlying infrastructure.
 
 ### **Key Differences**:
-| **Aspect**                | **Managed Resource**                                        | **Managed Service**                                            |
+| **Aspect**                | **Resource**                                        | **Managed Service**                                            |
 |---------------------------|-------------------------------------------------------------|---------------------------------------------------------------|
 | **Management Responsibility** | You manage and configure it directly                       | AWS manages most or all of the operational overhead            |
 | **User Configuration**     | You create, configure, and manage the resource (e.g., IGW)  | AWS automatically provisions, scales, and maintains the service (e.g., Lambda) |
@@ -40,5 +40,5 @@ A **managed service** is a fully managed offering by AWS, where AWS takes respon
 ---
 
 ### **Summary:**
-- **Managed Resources** are AWS components that you need to **create** and **manage**, but AWS handles the underlying infrastructure.
+- **Resources** are AWS components that you need to **create** and **manage**, but AWS handles the underlying infrastructure.
 - **Managed Services** are fully managed by AWS, meaning AWS takes care of most operational aspects like provisioning, scaling, patching, and maintenance, allowing you to focus on your application logic.
