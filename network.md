@@ -30,13 +30,25 @@
 
 -----
 
+Firewall
+
+- EC2 instance level via security group
+- Subnet level via NACL
+- VPC level. AWS does not have a dedicated firewall like NACLs or Security Groups, but you can implement security controls using
+  - Route Tables – Can be used to control traffic routing at the VPC level
+  - AWS Network Firewall – A managed firewall service that provides stateful inspection, intrusion prevention, and filtering at the VPC level
+
+-----
+
+- Internet Gateway.
+  - Connects VPC to internet
+  - Used for **outbound and inbound** internet access for resources in a **public subnet**.
+  - You have resources in a **public subnet** that need direct access to and from the internet.
 - NAT(Network Address Translation) Gateway. Is **deployed in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing.
+  - Used for **outbound** internet access for resources in a **private subnet**.
   -  You have resources in a **private subnet** that:
      - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
      - Should remain inaccessible from the internet.
-- Internet Gateway.
-  - Connects VPC to internet
-  - You have resources in a **public subnet** that need direct access to and from the internet.
 - Route tables
    - Main Route Table
    - Custom Route Table
