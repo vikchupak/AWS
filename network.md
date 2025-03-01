@@ -1,3 +1,6 @@
+- AWS Cloud (Amazon Web Services) is a comprehensive cloud computing platform
+  - AWS Cloud is the overall platform for hosting and managing your applications and data on Amazon's global infrastructure
+  - VPC is a virtual network within AWS Cloud, providing isolated environments for deploying resources securely and efficiently
 - Data centers
   - The physical facilities that house the hardware and network infrastructure. Server farms
 - Edge locations
