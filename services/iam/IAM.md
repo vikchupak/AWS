@@ -1,3 +1,5 @@
+***Assume a role => Взяти на себе роль***
+
 Identity and Access Management (IAM)
 
 - IAM resources are Global
