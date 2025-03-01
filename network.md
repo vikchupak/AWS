@@ -45,7 +45,7 @@ Firewall
 -----
 
 - Internet Gateway.
-  - An Internet Gateway (IGW) is a deployable component in AWS. It is a **resource**
+  - An Internet Gateway (IGW) is a **resource**
   - Connects VPC to internet
   - Used for **outbound and inbound** internet access for resources in a **public subnet**.
   - You have resources in a **public subnet** that need direct access to and from the internet.
@@ -66,8 +66,8 @@ Firewall
       - Network ACLs may need to be configured to allow inbound and outbound traffic from the internet as well
 
 - NAT Gateway (Network Address Translation)
-  - NAT Gateway is a deployable component in AWS. It is a managed **service**
-  - Is **deployed in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing
+  - NAT Gateway is a managed **service**
+  - Is **deployed/created in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing
   - Used for **outbound** internet access for resources in a **private subnet**
   -  You have resources in a **private subnet** that:
      - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs)
