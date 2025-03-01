@@ -68,15 +68,20 @@ Firewall
      - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
      - Should remain inaccessible from the internet.
 
-- Route tables
-   - Main Route Table
-   - Custom Route Table
-   - Subnet Association
-      - A route table can be associated with one or more subnets.
-      - A subnet cannot be associated with multiple route tables.
-    - Target vs Destination as exaple of `ip route`(Linux)/`route print`(Windows)
-      - Destination (Network destination in Linux/Windows). **Actual adress we want to reach - final point**.
-      - Target (Gateway in Linux/Windows). **Closest/next hop to reach the destination - intermediate point**
+- VPC Route tables
+  - Main Route Table
+    - Every VPC has a main route table that applies to all subnets by default
+  - Custom Route Table
+    - You can create custom route tables and associate them with specific subnets
+  - Routing rules in these(Main and Custom) tables define how traffic is directed between subnets, internet gateways, NAT gateways, VPNs, etc
+  - Subnet Association
+    - A subnet does not have its own routing table
+    - Instead, a subnet is associated with a specific route table
+    - A route table can be associated with one or more subnets.
+    - A subnet cannot be associated with multiple route tables.
+  - Target vs Destination as exaple of `ip route`(Linux)/`route print`(Windows)
+    - Destination (Network destination in Linux/Windows). **Actual adress we want to reach - final point**.
+    - Target (Gateway in Linux/Windows). **Closest/next hop to reach the destination - intermediate point**
     
 - **NACL (Network Access Control List)** is a security feature in AWS that **acts as a firewall** to control traffic (both inbound and outbound) at the **subnet level**
 
