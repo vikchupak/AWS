@@ -69,7 +69,7 @@ Firewall
   -  You have resources in a **private subnet** that:
      - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
      - Should remain inaccessible from the internet.
-  - Steps to create and configure NGW
+  - ***Steps to create and configure NGW***
     - Create and configure IGW using custom route table and public subnet
     - Create an Elastic IP (EIP) for the NAT Gateway (AWS NAT Gateways only support Elastic IPs)
     - Create the NAT Gateway
