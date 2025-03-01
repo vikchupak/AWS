@@ -44,8 +44,8 @@ Firewall
 
 -----
 
-- Internet Gateway.
-  - An Internet Gateway (IGW) is a **resource**
+- Internet Gateway (IGW).
+  - An Internet Gateway is a **resource**
   - Connects VPC to internet
   - Used for **outbound and inbound** internet access for resources in a **public subnet**.
   - You have resources in a **public subnet** that need direct access to and from the internet.
@@ -55,7 +55,7 @@ Firewall
     - Attach the Internet Gateway to the VPC
       - After creating the IGW, attach it to the VPC to allow internet communication
     - Set Up Route Tables
-      - In the VPC’s main route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (IGW) (Target)
+      - In the VPC’s main route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (Target)
           - Best practice: Instead of using the main route table, create a custom VPC route table and associate it with a specific public subnet.
           - The reason: Main Route Table should usually be used for private subnets (without internet access) to avoid unintentional exposure of private resources to the internet. This ensures that only the public subnet has internet access, while private subnets remain isolated
     - Configure Subnets
@@ -65,7 +65,7 @@ Firewall
       - Ensure that security groups allow inbound and outbound traffic as needed (e.g., allowing HTTP/HTTPS traffic for web servers)
       - Network ACLs may need to be configured to allow inbound and outbound traffic from the internet as well
 
-- NAT Gateway (Network Address Translation)
+- NAT Gateway (Network Address Translation Gateway or NGW)
   - NAT Gateway is a managed **service**
   - Is **deployed/created in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing
   - Used for **outbound** internet access for resources in a **private subnet**
