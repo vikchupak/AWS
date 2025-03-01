@@ -35,10 +35,10 @@
 
 Firewall
 
-- EC2 instance level via security group
-- Subnet level via NACL
+- EC2 instance level via **security group**
+- Subnet level via **NACL**
 - VPC level. AWS does not have a dedicated firewall like NACLs or Security Groups, but you can implement security controls using
-  - Route Tables – Can be used to control traffic routing at the VPC level
+  - **Route Tables** – Can be used to control traffic routing at the VPC level
   - AWS Network Firewall – A managed firewall service that provides stateful inspection, intrusion prevention, and filtering at the VPC level
 
 -----
