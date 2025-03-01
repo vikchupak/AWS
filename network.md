@@ -17,6 +17,7 @@
   - Cross-region communication requires special configurations like VPC Peering, AWS Transit Gateway, or AWS VPN/Direct Connect
   - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
 - VPC - virtual network. Because no real routers and switchers are used, like EC2 virtual servers
+  - You have a default VPC in each Region
   - VPC is always created within a single Region and cannot span multiple regions
   - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
 - AZs
