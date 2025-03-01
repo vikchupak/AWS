@@ -25,7 +25,7 @@
   - A single AZ can contain multiple VPCs from the same or different AWS accounts
   - A VPC can span multiple AZs
   - An AZ **can host multiple VPCs** from different accounts
-  - **EC2 instances can communicate within the same VPC, between AZs without additional setup using AWS backbone network built in functionality.**
+  - **EC2 instances can communicate within the same VPC, between different AZs without additional setup using (private IPs) AWS backbone network - built in functionality.**
 - Private/public subnets
   - Each subnet must belong to a single Availability Zone(it cannot span multiple AZs)
   - A subnet is always confined to a single AZ, but an AZ can contain multiple subnets
