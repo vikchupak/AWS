@@ -54,7 +54,9 @@ Firewall
     - Attach the Internet Gateway to the VPC
       - After creating the IGW, attach it to the VPC to allow internet communication
     - Set Up Route Tables
-      - In the VPC’s route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (IGW) (Target)
+      - In the VPC’s main route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (IGW) (Target)
+          - Best practice: Instead of using the main route table, create a custom VPC route table and associate it witha  specific public subnet.
+          - The reason: Main Route Table should usually be used for private subnets (without internet access) to avoid unintentional exposure of private resources to the internet. This ensures that only the public subnet has internet access, while private subnets remain isolated
     - Configure Subnets
       - Public Subnet: Place EC2 instances in a public subnet and assign them public IPs. These instances can communicate directly with the internet via the IGW
       - Private Subnet: Instances in private subnets can’t access the internet directly unless a NAT Gateway is used for outbound traffic
@@ -67,6 +69,17 @@ Firewall
   -  You have resources in a **private subnet** that:
      - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
      - Should remain inaccessible from the internet.
+  - Steps to create and configure NGW
+    - Create and configure IGW using custom route table and public subnet
+    - Create an Elastic IP (EIP) for the NAT Gateway (AWS NAT Gateways only support Elastic IPs)
+    - Create the NAT Gateway
+      - Choose public subnet
+      - Choose Elastic IP
+    - Set up private subnet’s Route Table
+      - Set `Destination`: `0.0.0.0/0`
+      - Set/choose `Target`: Select the NAT Gateway
+    - Launch an EC2 instance in the Private Subnet and test outbound access
+      - `curl -I https://www.google.com`
 
 - VPC Route tables
   - Main Route Table
