@@ -44,22 +44,20 @@ Firewall
   - Connects VPC to internet
   - Used for **outbound and inbound** internet access for resources in a **public subnet**.
   - You have resources in a **public subnet** that need direct access to and from the internet.
-  ```text
-    Steps to Connect a VPC to the Internet
-      - Create an Internet Gateway (IGW)
-        - An Internet Gateway is created and attached to the VPC. This provides the actual link between your VPC and the internet.
-      - Attach the Internet Gateway to the VPC
-        After creating the IGW, attach it to the VPC to allow internet communication
-      - Set Up Route Tables
-        - In the VPC’s route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (IGW) (Target)
-      - Configure Subnets
-        - Public Subnet: Place EC2 instances in a public subnet and assign them public IPs. These instances can communicate directly with the internet via the IGW
-        - Private Subnet: Instances in private subnets can’t access the internet directly unless a NAT Gateway is used for outbound traffic
-      - Security Groups and Network ACLs
-        - Ensure that security groups allow inbound and outbound traffic as needed (e.g., allowing HTTP/HTTPS traffic for web servers)
-        - Network ACLs may need to be configured to allow inbound and outbound traffic from the internet as well
-  ```
-    
+  - ***Steps to Connect a VPC to the Internet***
+    - Create an Internet Gateway (IGW)
+      - An Internet Gateway is created and attached to the VPC. This provides the actual link between your VPC and the internet.
+    - Attach the Internet Gateway to the VPC
+      After creating the IGW, attach it to the VPC to allow internet communication
+    - Set Up Route Tables
+      - In the VPC’s route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (IGW) (Target)
+    - Configure Subnets
+      - Public Subnet: Place EC2 instances in a public subnet and assign them public IPs. These instances can communicate directly with the internet via the IGW
+      - Private Subnet: Instances in private subnets can’t access the internet directly unless a NAT Gateway is used for outbound traffic
+    - Security Groups and Network ACLs
+      - Ensure that security groups allow inbound and outbound traffic as needed (e.g., allowing HTTP/HTTPS traffic for web servers)
+      - Network ACLs may need to be configured to allow inbound and outbound traffic from the internet as well
+
 - NAT(Network Address Translation) Gateway. Is **deployed in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing.
   - Used for **outbound** internet access for resources in a **private subnet**.
   -  You have resources in a **private subnet** that:
