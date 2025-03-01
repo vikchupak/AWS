@@ -111,3 +111,13 @@ Firewall
    - Contains backend resources like databases or internal servers.
    - Subnet is associated with a **route table** that directs `0.0.0.0/0` traffic to the **NAT Gateway**, which is deployed in a public subnet.
    - The NAT Gateway then uses the Internet Gateway for external communication.
+
+#  Internet Gateway (IGW) and  NAT Gateway (NGW) are managed aws services?
+
+- Internet Gateway (IGW) is not a managed AWS service in the same way as other AWS services like NAT Gateways or Elastic Load Balancers.
+  - Why Internet Gateway is Not a Managed Service:
+    - No Additional Charges: There are no additional charges for using an IGW, beyond the standard VPC charges. You are not billed for the actual IGW itself—only for the resources (like EC2 instances or data transfer) that use it.
+
+    - User-Managed: You are responsible for creating, attaching, and managing the IGW. Once attached to your VPC, the IGW enables communication between the VPC and the internet, but AWS does not handle the actual routing or operational management beyond basic infrastructure availability.
+
+- NAT Gateway - Managed Service. AWS handles scaling, high availability, and maintenance for these services, and you are billed based on usage (e.g., per-hour cost and data processing costs).
