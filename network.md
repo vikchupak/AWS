@@ -1,12 +1,41 @@
-- VPC - virtual network because no real routers and switchers are used, like EC2 virtual servers
-- Private/public subnets
+- Data centers
+  - The physical facilities that house the hardware and network infrastructure. Server farms
+- Edge locations
+  - A mini data center to ONLY cache your content (CDN - Content delivery network, Cloud Front)
+  - Edge locations > AZs & Regions
+- Geographic location
+  - Group of regions
 - Regions
+  - A geographical area
+  - Each region consists of multiple Availability Zones
+  - Each region is fully independent and isolated from other regions. It makes sense to deploy your app to multiple regions for availability
+  - Each region is resource and service spesific. Resources are not shared automatically between regions
+  - Regions operate independently, meaning AWS services in one region do not automatically communicate with services in another
+  - Cross-region communication requires special configurations like VPC Peering, AWS Transit Gateway, or AWS VPN/Direct Connect
+  - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
+- VPC - virtual network. Because no real routers and switchers are used, like EC2 virtual servers
+  - VPC is always created within a single Region and cannot span multiple regions
+  - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
 - AZs
+  - One or group of **physical data centers**
+  - Each AZ must belong to a single Region(it cannot span multiple Regions)
+  - A single AZ can contain multiple VPCs from the same or different AWS accounts
+  - A VPC can span multiple AZs
+  - An AZ **can host multiple VPCs** from different accounts
+- Private/public subnets
+  - Each subnet must belong to a single Availability Zone(it cannot span multiple AZs)
+  - A subnet is always confined to a single AZ, but an AZ can contain multiple subnets
+- EC2
+  - Every EC2 instance must be launched inside a subnet (which means it is inside a specific VPC and AZ)
+
+-----
+
 - NAT(Network Address Translation) Gateway. Is **deployed in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing.
   -  You have resources in a **private subnet** that:
      - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
      - Should remain inaccessible from the internet.
 - Internet Gateway.
+  - Connects VPC to internet
   - You have resources in a **public subnet** that need direct access to and from the internet.
 - Route tables
    - Main Route Table
@@ -17,7 +46,7 @@
     - Target vs Destination as exaple of `ip route`(Linux)/`route print`(Windows)
       - Destination (Network destination in Linux/Windows). **Actual adress we want to reach - final point**.
       - Target (Gateway in Linux/Windows). **Closest/next hop to reach the destination - intermediate point**
-- NACL (Network Access Control List) is a security feature in AWS that **acts as a firewall** to control traffic (both inbound and outbound) at the **subnet level**.
+- **NACL (Network Access Control List)** is a security feature in AWS that **acts as a firewall** to control traffic (both inbound and outbound) at the **subnet level**.
   - NACLs provide an additional layer of security to your VPC alongside **Security Groups**. While security groups are applied at the **instance level**, NACLs operate at the **subnet level**, offering a broad and general method to filter traffic coming into or leaving subnets in your VPC.
 
 ---
