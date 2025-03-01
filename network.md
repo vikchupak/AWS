@@ -45,7 +45,7 @@ Firewall
 -----
 
 - Internet Gateway.
-  - An Internet Gateway (IGW) is a deployable component in AWS. It is a managed **resource**
+  - An Internet Gateway (IGW) is a deployable component in AWS. It is a **resource**
   - Connects VPC to internet
   - Used for **outbound and inbound** internet access for resources in a **public subnet**.
   - You have resources in a **public subnet** that need direct access to and from the internet.
