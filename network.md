@@ -55,7 +55,7 @@ Firewall
       - After creating the IGW, attach it to the VPC to allow internet communication
     - Set Up Route Tables
       - In the VPC’s main route table, add a route that directs all traffic destined for the internet (0.0.0.0/0) (Destination) to the Internet Gateway (IGW) (Target)
-          - Best practice: Instead of using the main route table, create a custom VPC route table and associate it witha  specific public subnet.
+          - Best practice: Instead of using the main route table, create a custom VPC route table and associate it with a specific public subnet.
           - The reason: Main Route Table should usually be used for private subnets (without internet access) to avoid unintentional exposure of private resources to the internet. This ensures that only the public subnet has internet access, while private subnets remain isolated
     - Configure Subnets
       - Public Subnet: Place EC2 instances in a public subnet and assign them public IPs. These instances can communicate directly with the internet via the IGW
