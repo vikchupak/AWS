@@ -64,11 +64,12 @@ Firewall
       - Ensure that security groups allow inbound and outbound traffic as needed (e.g., allowing HTTP/HTTPS traffic for web servers)
       - Network ACLs may need to be configured to allow inbound and outbound traffic from the internet as well
 
-- NAT(Network Address Translation) Gateway. Is **deployed in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing.
-  - Used for **outbound** internet access for resources in a **private subnet**.
+- NAT Gateway (Network Address Translation)
+  - Is **deployed in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing
+  - Used for **outbound** internet access for resources in a **private subnet**
   -  You have resources in a **private subnet** that:
-     - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs).
-     - Should remain inaccessible from the internet.
+     - Need **only outbound** internet access (e.g., downloading software updates, accessing external APIs)
+     - Should remain inaccessible from the internet
   - ***Steps to create and configure NGW***
     - Create and configure IGW using custom route table and public subnet
     - Create an Elastic IP (EIP) for the NAT Gateway (AWS NAT Gateways only support Elastic IPs)
