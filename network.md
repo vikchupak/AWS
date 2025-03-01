@@ -85,7 +85,7 @@ Firewall
     
 - **NACL (Network Access Control List)** is a security feature in AWS that **acts as a firewall** to control traffic (both inbound and outbound) at the **subnet level**
 
-- Security group **acts as a firewall** at instance level
+- Security group **acts as a firewall** at EC2 instance level
 
 ---
      
