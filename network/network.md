@@ -20,6 +20,7 @@
   - You have a default VPC in each Region
   - VPC is always created within a single Region and cannot span multiple regions
   - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
+  - A VPC can span multiple AZs
 - AZs
   - One or group of **physical data centers**
   - Each AZ must belong to a single Region(it cannot span multiple Regions)
