@@ -65,6 +65,13 @@ Firewall
     - Security Groups and Network ACLs
       - Ensure that security groups allow inbound and outbound traffic as needed (e.g., allowing HTTP/HTTPS traffic for web servers)
       - Network ACLs may need to be configured to allow inbound and outbound traffic from the internet as well
+  - How EC2 instance with public IP receives traffic
+    - The request reaches the EC2 instance via its public IP, which is mapped internally to the instance’s private IP
+    - The mapping of the public IP to the private IP happens at the Internet Gateway (IGW) level by **AWS’s internal NAT (Network Address Translation) system**, which is part of the **Internet Gateway (IGW)**
+    - Key Takeaways
+      - IGW is responsible for mapping public IPs to private IPs
+      - AWS automatically performs this NAT (Network Address Translation)
+      - Unlike a NAT Gateway, which allows multiple private instances to share a single public IP, IGW does a one-to-one mapping
 
 - NAT Gateway (Network Address Translation Gateway or NGW)
   - NAT Gateway is a managed **service**
