@@ -1,14 +1,14 @@
-- AWS Cloud (Amazon Web Services) is a comprehensive cloud computing platform
+- **AWS Cloud** (Amazon Web Services) is a comprehensive cloud computing platform
   - AWS Cloud is the overall platform for hosting and managing your applications and data on Amazon's global infrastructure
   - VPC is a virtual network within AWS Cloud, providing isolated environments for deploying resources securely and efficiently
-- Data centers
+- **Data centers** (NOT creatable by users)
   - The physical facilities that house the hardware and network infrastructure. Server farms
-- Edge locations
+- **Edge locations** (NOT creatable by users)
   - A mini data center to ONLY cache your content (CDN - Content delivery network, Cloud Front)
   - Edge locations > AZs & Regions
-- Geographic location
+- **Geographic location** (NOT creatable by users)
   - Group of regions
-- Regions
+- **Regions** (NOT creatable by users)
   - A geographical area
   - Each region consists of multiple Availability Zones
   - Each region is fully independent and isolated from other regions. It makes sense to deploy your app to multiple regions for availability
@@ -16,22 +16,22 @@
   - Regions operate independently, meaning AWS services in one region do not automatically communicate with services in another
   - Cross-region communication requires special configurations like VPC Peering, AWS Transit Gateway, or AWS VPN/Direct Connect
   - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
-- VPC - virtual network. Because no real routers and switchers are used, like EC2 virtual servers
-  - You have a default VPC in each Region
-  - VPC is always created within a single Region and cannot span multiple regions
-  - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
-  - A VPC can span multiple AZs
-- AZs
+- **AZs** (Availability Zone) (NOT creatable by users)
   - One or group of **physical data centers**
   - Each AZ must belong to a single Region(it cannot span multiple Regions)
   - A single AZ can contain multiple VPCs from the same or different AWS accounts
   - A VPC can span multiple AZs
   - An AZ **can host multiple VPCs** from different accounts
-  - **EC2 instances can communicate within the same VPC, between different AZs without additional setup using (private IPs) AWS backbone network - built in functionality.**
-- Private/public subnets
+  - **EC2 instances can communicate within the same VPC, between different AZs without additional setup using (private IPs) AWS backbone network - built in functionality**
+- **VPC** - virtual network. Because no real routers and switchers are used, like EC2 virtual servers
+  - You have a default VPC in each Region
+  - VPC is always created within a single Region and cannot span multiple regions
+  - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
+  - A VPC can span multiple AZs
+- **Private/public subnets**
   - Each subnet must belong to a single Availability Zone(it cannot span multiple AZs)
   - A subnet is always confined to a single AZ, but an AZ can contain multiple subnets
-- EC2
+- **EC2**
   - Every EC2 instance must be launched inside a subnet (which means it is inside a specific VPC and AZ)
 
 -----
@@ -46,7 +46,7 @@ Firewall
 
 -----
 
-- Internet Gateway (IGW).
+- **Internet Gateway** (IGW)
   - An Internet Gateway is a **resource**
   - Connects VPC to internet
   - Used for **outbound and inbound** internet access for resources in a **public subnet**.
@@ -74,7 +74,7 @@ Firewall
       - AWS automatically performs this NAT (Network Address Translation)
       - Unlike a NAT Gateway, which allows multiple private instances to share a single public IP, IGW does a one-to-one mapping
 
-- NAT Gateway (Network Address Translation Gateway or NGW)
+- **NAT Gateway** (Network Address Translation Gateway or NGW)
   - NAT Gateway is a managed **service**
   - Is **deployed/created in a public subnet**, and it communicates with instances in private subnets through the public subnet's routing
   - Used for **outbound** internet access for resources in a **private subnet**
@@ -96,7 +96,7 @@ Firewall
     - Launch an EC2 instance in the Private Subnet and test outbound access
       - `curl -I https://www.google.com`
 
-- VPC Route tables
+- **VPC Route tables**
   - AWS route tables are a **custom abstraction** within the AWS cloud environment to manage how traffic flows between resources in a VPC. The routing mechanism in AWS doesn't rely on any Linux-based routing/networking tools directly (ip route command)
   - Main Route Table
     - Every VPC has a main route table that applies to all subnets by default
@@ -114,7 +114,7 @@ Firewall
     
 - **NACL (Network Access Control List)** is a security feature in AWS that **acts as a firewall** to control traffic (both inbound and outbound) at the **subnet level**
 
-- Security group **acts as a firewall** at EC2 instance level
+- **Security Groups** act as a firewall at EC2 instance level
 
 ---
      
