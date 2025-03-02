@@ -117,6 +117,17 @@ Firewall
 - **Security Groups** act as a firewall at EC2 instance level
 
 ---
+
+- Within a VPC, cross-AZs and cross-Subnets communication don't need additional configuration
+- Cross-VPCs and cross-Regions communication require special configuration
+- Amazon Elastic Kubernetes Service (EKS) spans multiple Availability Zones (AZs) within a given region(VPC) by default
+  - EKS allows you to specify which subnets in which AZs you want your worker nodes to reside
+- Is there auto-replication between AZs?
+  - AWS does not automatically replicate resources between Availability Zones (AZs) by default
+  - You need to explicitly configure replication depending on the service you are using
+  - But, most database services replicate data across multiple AZs automatically
+
+---
      
 - https://github.com/VIK2395/Network/blob/main/NetmaskVsSubnetMask.md
 - https://github.com/VIK2395/DevOps/blob/main/Linux/Network/VPN/index.md
