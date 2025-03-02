@@ -76,6 +76,9 @@ Firewall
   - ***Steps to create and configure NGW***
     - Create and configure IGW using custom route table and public subnet
     - Create an Elastic IP (EIP) for the NAT Gateway (AWS NAT Gateways only support Elastic IPs)
+      - Elastic IP (**Static**)
+        - A fixed public IP that you can associate with an instance
+        - Persists even after stopping and starting the instance
     - Create the NAT Gateway
       - Choose public subnet
       - Choose Elastic IP
