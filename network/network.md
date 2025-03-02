@@ -122,6 +122,7 @@ Firewall
 - Cross-VPCs and cross-Regions communication require special configuration
 - Amazon Elastic Kubernetes Service (EKS) spans multiple Availability Zones (AZs) within a given region(VPC) by default
   - EKS allows you to specify which subnets in which AZs you want your worker nodes to reside
+  - In fact, it is a common best practice to spread worker nodes across multiple AZs to ensure high availability and fault tolerance for your Kubernetes workloads
 - Is there auto-replication between AZs?
   - AWS does not automatically replicate resources between Availability Zones (AZs) by default
   - You need to explicitly configure replication depending on the service you are using
