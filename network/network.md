@@ -10,7 +10,7 @@
   - Group of regions
 - **Regions** (NOT creatable by users)
   - A geographical area
-  - Each region consists of multiple Availability Zones
+  - Each region consists of **two or more** Availability Zones
   - Each region is fully independent and isolated from other regions. It makes sense to deploy your app to multiple regions for availability
   - Each region is resource and service spesific. Resources are not shared automatically between regions
   - Regions operate independently, meaning AWS services in one region do not automatically communicate with services in another
