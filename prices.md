@@ -1,6 +1,6 @@
 # AWS pricing
 
-- https://aws.amazon.com/pricing/?aws-products-pricing.sort-by=item.additionalFields.productNameLowercase&aws-products-pricing.sort-order=asc&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all
+- https://aws.amazon.com/pricing
 
 # `on-demand` and `pay-as-you-go` pricing models
 
