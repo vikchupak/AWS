@@ -17,14 +17,13 @@
   - Cross-region communication requires special configurations like VPC Peering, AWS Transit Gateway, or AWS VPN/Direct Connect
   - Each region can have multiple VPCs, allowing for different environments (e.g., prod-vpc, dev-vpc)
 - **AZs** (Availability Zone) (NOT creatable by users)
-  - One or group of **physical data centers**
+  - Availability Zones consist of **one or more** physical data centers that are redundantly connected to each other and the internet
+    - https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/availability-zones.html
   - Each AZ must belong to a single Region(it cannot span multiple Regions)
   - A single AZ can contain multiple VPCs from the same or different AWS accounts
   - A VPC can span multiple AZs
   - An AZ **can host multiple VPCs** from different accounts
   - **EC2 instances can communicate within the same VPC, between different AZs without additional setup using (private IPs) AWS backbone network - built in functionality**
-  - Availability Zones consist of **one or more** physical data centers that are redundantly connected to each other and the internet
-    - https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/availability-zones.html
 - **VPC** - virtual network. Because no real routers and switchers are used, like EC2 virtual servers
   - You have a default VPC in each Region
   - VPC is always created within a single Region and cannot span multiple regions
