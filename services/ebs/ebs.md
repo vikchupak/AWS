@@ -4,8 +4,6 @@
 
 ## Application Load Balancer (ALB) vs Network Load Balancer (NLB)
 
-- https://aws.amazon.com/blogs/opensource/network-load-balancer-nginx-ingress-controller-eks/
-
 - ALB works at 7 OSI layer **(Host based routing)**
 - NLB works at 4 OSI layer **(IP based routing)**
 
