@@ -7,7 +7,7 @@
   - Represents a Control Plane managing the containers, created automatically with the cluster
     - **EC2-hosted worker nodes**
       - Containers run on EC2 instances
-      - We have to create EC2 instances yourself, **join them to the cluster**, check if you have enough EC2 instances and resources to run containers. We have to manage EC2 instances' OS, like updates. Install docker runtime (and `ECS Agent`?)
+      - We have to create EC2 instances yourself, **join them to the cluster**, check if you have enough EC2 instances and resources to run containers. We have to manage EC2 instances' OS, like updates. Install docker runtime and `ECS Agent`
           - Then, EC2 instances are part of ECS cluster and the `Control Plane - ECS Agents` mange containers on the instanses
           - Each EC2 instance has docker runtime installed to run containers and `ECS Agent` to communicate with the Control Plane to manage containers
       - So, we do not manage containers, but still have to manage servers(EC2 instances)
