@@ -13,6 +13,11 @@
       - So, we do not manage containers, but still have to manage servers(EC2 instances)
         - **Container orchestration is managed by ECS**
         - **Hosting infrastacture are still managed by you**
+          - Create EC2s
+          - Install Docker runtime and ECS Agent
+          - Manage OS
+          - Join to ECS cluster
+          - Check if enough resources
       - Advantage: Full access and controll of your infrastracture
     - **Fargate-hosted worker nodes**
       - Runs containers in **serverless** way(we do not create servers yourself, but servers are created and fully managed by AWS)
