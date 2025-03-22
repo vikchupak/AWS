@@ -10,7 +10,7 @@
 - NLB works at 4 OSI layer **(IP based routing)**
 
 ### **Comparison: ALB vs. NLB vs. CLB**
-| Feature               | ALB (Layer 7) | NLB (Layer 4) | CLB (Legacy) |
+| Feature               | ALB (Layer 7) | NLB (Layer 4) | CLB (Classic Load Balancer, Legacy) |
 |-----------------------|--------------|--------------|-------------|
 | Protocols            | HTTP, HTTPS  | TCP, TLS, UDP | HTTP, HTTPS, TCP |
 | Routing Type         | Path, Host, Headers | IP & Port-based | Basic |
