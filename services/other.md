@@ -33,3 +33,6 @@
   - Allows you to model, provision, and manage AWS resources in a declarative, **infrastructure-as-code** approach. With CloudFormation, you define the infrastructure and configuration you need using a **template written in JSON or YAML**.
   - VPC template
     - https://docs.aws.amazon.com/codebuild/latest/userguide/cloudformation-vpc-template.html
+- ELB (Elastic Load Balancing)
+  - Elastic Load Balancer (ELB) is a general term used by AWS to refer to their suite of load balancing services.
+  - https://aws.amazon.com/elasticloadbalancing/getting-started/?nc=sn&loc=4
