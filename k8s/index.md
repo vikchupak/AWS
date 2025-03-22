@@ -11,6 +11,7 @@
 
 - **Elastic Container Service (ECS)** - container orchestration service. **AWS version/replacement of k8s**
   - Create ECS cluster containing all the services to manage the containers
+  - Control plane is free
   - Represents a Control Plane managing the containers, created automatically with the cluster
     - **EC2-hosted worker nodes**
       - Containers run on EC2 instances
@@ -33,6 +34,7 @@
 - **Elastic Kubernetes Service (EKS)** - managed k8s service. **Original k8s in AWS**
   - Create EKS cluster containing all the services to manage the containers
   - EKS deploys and manages k8s Control Plane Nodes with all required services/processes
+  - Control plane is **NOT** free
   - Control Plane Nodes automatically replicated across multiple availability zones (AZ)
     - **EC2-hosted worker nodes (Compute Fleet)**
       - Create EC2 instanses and connect them to the cluster
