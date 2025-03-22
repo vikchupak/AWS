@@ -38,11 +38,16 @@
   - Control Plane Nodes automatically replicated across multiple availability zones (AZ)
     - **EC2-hosted worker nodes (Compute Fleet)**
       - Create EC2 instanses and connect them to the cluster
-      - We have to create EC2 instances yourself, **join them to the cluster**, check if you have enough EC2 instances and resources to run containers. We have to manage EC2 instances' OS, like updates. Install docker runtime and k8s processes
-          - Then, EC2 instances are part of ECS cluster and the `Control Plane - k8s processes` mange containers on the instanses
-          - Each EC2 instance has docker runtime installed to run containers and `k8s processes` to communicate with the Control Plane to manage containers
+      - We have to create EC2 instances yourself, **join them to the cluster**
+        - Install docker runtime to run containers and `k8s processes` to communicate with the Control Plane to manage containers
+        - Check if you have enough EC2 instances and resources to run containers.
+        - We have to manage EC2 instances' OS, like updates
+        - Install docker runtime and k8s processes
+      - When, EC2 instances are part of ECS cluster the `Control Plane - k8s processes` manage containers on the instanses
     - **EC2-Nodegroup-hosted worker nodes**
-      - Creates and deletes EC2 instances for you, but you need to configure it. It is like bulk create.
+      - Creates and deletes EC2 instances for you, but you need to configure this. It is like bulk create.
+      - Installs everything worker nodes need automatically, like k8s processes
+      - But managing OS is still your responsibility
       - No nodes autoscaling out-of-the-box. You need to configure it on both side k8s and AWS
     - **Fargate-hosted worker nodes**
       - The same as for ECS Fargate-hosted worker nodes
