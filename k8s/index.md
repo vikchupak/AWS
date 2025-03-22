@@ -4,7 +4,7 @@
   - **Key Features of AWS Fargate**
     - **No Server Management** – No need to provision, scale, or maintain EC2 instances.
     - **Automatic Scaling** – Fargate automatically scales based on the task or pod requirements.
-    - **Pay-as-You-Go** – You pay only for the CPU and memory your containers use.
+    - **Pay-as-You-Go** – You pay only for the CPU and memory your containers use, **NOT whole EC2 instance.**
     - **Security Isolation** – Each task or pod runs in its own isolated environment.
     - **Seamless Integration** – Works with ECS (Amazon’s container orchestration) and EKS (Kubernetes).
 ---
