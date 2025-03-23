@@ -1,17 +1,16 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="Page-1" id="J59PzGIV-IZARhgNcw3m">
-    <mxGraphModel dx="1588" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="882" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="nNxd906b-8G5X-YyZnIa-1" value="VPC" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc2;strokeColor=#8C4FFF;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="130" width="390" height="567" as="geometry" />
         </mxCell>
-        <mxCell id="nNxd906b-8G5X-YyZnIa-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="UBAS4pGQuPnV54A2ei4c-3" target="nNxd906b-8G5X-YyZnIa-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nNxd906b-8G5X-YyZnIa-14" value="Internet" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;" parent="1" vertex="1">
-          <mxGeometry x="315" y="30" width="50" height="31.5" as="geometry" />
+        <mxCell id="nNxd906b-8G5X-YyZnIa-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="UBAS4pGQuPnV54A2ei4c-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="61.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="nNxd906b-8G5X-YyZnIa-114" value="Internal EC2 communication" style="shape=table;startSize=20;container=1;collapsible=0;childLayout=tableLayout;strokeColor=default;fontSize=14;labelBackgroundColor=none;gradientColor=none;swimlaneFillColor=default;" parent="1" vertex="1">
           <mxGeometry x="450" y="250" width="250" height="60" as="geometry" />
@@ -195,6 +194,9 @@
               <mxPoint x="233" y="300" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="vzpLXu1XSNqRQezVzqwZ-12" value="internet&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_2;fillColor=#D2D3D3;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="313.25" y="30" width="53.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
