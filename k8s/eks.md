@@ -121,3 +121,6 @@ Here’s how the **IAM Role for Service Account (IRSA)** mechanism works in EKS:
 ### k8s
 
 https://github.com/vikchupak/Kubernetes/blob/main/AuthAndPermissions/index.md
+
+- In AWS, there is NO service accounts(roles instead), but IAM users.
+- In k8s, there is service accounts, but NO 'classic' users.
