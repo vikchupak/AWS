@@ -32,6 +32,7 @@
         - So we do not see fargate(instances) resources in our account
       - Servers are added based on the need to run containers
       - Pay only for what your system actually consuming
+      - **1 node per pod**
 - **Elastic Kubernetes Service (EKS)** - managed k8s service. **Original k8s in AWS**
   - Create EKS cluster containing all the services to manage the containers
   - EKS deploys and manages k8s Control Plane Nodes with all required services/processes
