@@ -29,7 +29,7 @@
       - Advantage: Full access and controll of your infrastracture
     - **Fargate-hosted worker nodes**
       - Runs containers in **serverless** way(we do not create servers yourself, but servers are created and **fully managed by AWS**)
-        - **So we do not see fargate instances resources in our account**
+        - **So we do not see fargate instances in our account (Console UI)**
       - Servers are added based on the need to run containers
       - Pay only for what your system actually consuming
       - **1 node per pod**
