@@ -1,3 +1,56 @@
+### AWS service account vs k8s service account
+
+AWS and Kubernetes both use the term **"Service Account"**, but they are completely different concepts. Let’s compare:  
+
+## **AWS Service Account vs. Kubernetes Service Account**
+
+| Feature            | **AWS Service Account** ⚡ (IAM User/Role) | **Kubernetes Service Account** 🐳 (K8s Object) |
+|------------------|----------------------------------|----------------------------------|
+| **Where it Exists?** | AWS IAM                         | Kubernetes Cluster |
+| **Purpose** | Provides credentials to access AWS services. | Assigns permissions to Pods inside a K8s cluster. |
+| **How it Works?** | Uses **IAM Users** (long-lived) or **IAM Roles** (temporary credentials). | A Kubernetes object that is **linked to Pods** for API access. |
+| **Authentication** | Uses **Access Keys** (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`) OR IAM Role via STS. | Uses **ServiceAccount Token** stored inside the Pod. |
+| **Used By?** | AWS services (EC2, Lambda, EKS worker nodes). | Kubernetes Pods. |
+| **Example Use Case** | EC2 instance needs to access S3. | A Pod needs to talk to Kubernetes API. |
+
+---
+
+### **Example of Each**
+#### ✅ **AWS IAM Role (AWS Service Account Equivalent)**
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject"],
+      "Resource": "arn:aws:s3:::my-bucket/*"
+    }
+  ]
+}
+```
+- This IAM Role allows access to **S3**.
+- It can be assumed by an **EC2 instance, Lambda, or EKS Pod** (via IRSA).
+
+---
+
+#### ✅ **Kubernetes Service Account**
+```yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: my-service-account
+  namespace: default
+```
+- This ServiceAccount is used **inside Kubernetes**.  
+- If assigned to a Pod, the Pod can **interact with the K8s API**.
+
+---
+
+## **How IRSA Bridges AWS & Kubernetes**
+- **IRSA (IAM Role for Service Account) allows a K8s Service Account to assume an AWS IAM Role**.
+- So, **a Kubernetes Pod** can get AWS permissions **securely, without static credentials**.
+
 # IAM Role for Service Account (IRSA) in EKS
 
 - IAM Role is AWS entity
@@ -16,8 +69,7 @@
 ✅ **Service Account** (Kubernetes) → Is used by Pods for authentication.  
 ✅ **IRSA** (IAM Role for Service Account) → Bridges them, so Pods can assume IAM roles **without static credentials**.
 
-
-### 2
+---
 
 Here’s how the **IAM Role for Service Account (IRSA)** mechanism works in EKS:  
 
@@ -66,6 +118,6 @@ Here’s how the **IAM Role for Service Account (IRSA)** mechanism works in EKS:
 
 🔥 **This is the best practice in EKS!** No static AWS keys required. 🚀  
 
-### 3
+### k8s
 
 https://github.com/vikchupak/Kubernetes/blob/main/AuthAndPermissions/index.md
