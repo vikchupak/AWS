@@ -65,5 +65,5 @@ Ways of running containers:
   - Fargate(fully-managed by AWS)
 - We can use `EKS` with:
   - EC2 (self-managed by you)
-  - Nodegroup, EC2-based (semi-managed by AWS)
+  - EC2-based Nodegroup (semi-managed by AWS)
   - Fargate (fully-managed by AWS)
