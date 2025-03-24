@@ -2,7 +2,7 @@ eksctl - command line tool for working with aws k8s (Elastic Kubernetes Service)
 
 - https://eksctl.io/
 
-Create cluster
+**Create cluster in terminal**
 ```bash
 eksctl create cluster \
 —name demo-cluster \
@@ -13,6 +13,11 @@ eksctl create cluster \
 —nodes 2 \ # real nodes count as nodes autoscaler is not created out-of-the-box
 —nodes-min 1 \
 —nodes-max 3
+```
+
+**Create cluster using file**
+```bash
+eksctl create cluster -f cluster.yaml
 ```
 
 It will create many things under the hood for us
