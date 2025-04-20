@@ -99,9 +99,9 @@ Firewall
 
 - **VPC Route tables**
   - AWS route tables are a **custom abstraction** within the AWS cloud environment to manage how traffic flows between resources in a VPC. The routing mechanism in AWS doesn't rely on any Linux-based routing/networking tools directly (ip route command)
-  - Main Route Table
+  - **Main Route Table**
     - Every VPC has a main route table that applies to all subnets by default
-  - Custom Route Table
+  - **Custom Route Table**
     - You can create custom route tables and associate them with specific subnets
   - Routing rules in these(Main and Custom) tables define how traffic is directed between subnets, internet gateways, NAT gateways, VPNs, etc
   - Subnet Association
