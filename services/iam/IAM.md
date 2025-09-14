@@ -3,7 +3,7 @@
 
 ---
 
-- **Assign** → Permanent, always applied (AWS policies on users/groups).
+- **Assign/attach** → Permanent, always applied (AWS policies on users/groups).
 - **Assume** → Temporary, requires an explicit action to take the role, expires, and is based on trust.
 ---
 - You can’t assign a role to a user.
