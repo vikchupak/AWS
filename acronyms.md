@@ -2,3 +2,4 @@
 - AMI (Amazon Machine Image)
 - IDC (IAM Identity Center)
 - OIDC (OpenID Connect)
+- Idp (identity provider)
