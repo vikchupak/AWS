@@ -1,2 +1,4 @@
 - Arn (Amazon resource name) - it is unique
 - AMI (Amazon Machine Image)
+- IDC (IAM Identity Center)
+- OIDC (OpenID Connect)
