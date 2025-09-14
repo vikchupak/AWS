@@ -21,7 +21,7 @@ IAM resources
 - IAM User groups (Add users to groups to grant permission via policies)
   - Policies assigned to a group apply to all users in that group
   - IAM Roles CANNOT be assigned to a group
-- IAM Policies [like permissions]
+- IAM Policies [like permissions set]
 - IAM Roles
   - **We CANNOT assign policies[permissions] to ASW services directly as for common users. To grant persissions to a service, we assign a Role with policies to the service.**
   - We CAN assign policies to roles
