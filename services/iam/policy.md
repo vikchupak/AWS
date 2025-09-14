@@ -3,7 +3,7 @@ In AWS, **IAM policies** are used to define permissions for users, groups, and r
 ---
 
 - **A policy is a set of permissions**
-- **There are also trust policies - they are attached to roles and define who can assume the roles**
+- **There are also trust policies - they are ONLY attached to roles and define who can assume the roles**
 
 ---
 
