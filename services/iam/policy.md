@@ -1,5 +1,11 @@
 In AWS, **IAM policies** are used to define permissions for users, groups, and roles. Policies are **JSON documents** that specify which actions are allowed or denied for specific AWS resources.
 
+---
+
+**A policy is a set of permissions**
+
+---
+
 ### Steps to Create a Policy in AWS
 
 #### 1. **Using the AWS Management Console**
