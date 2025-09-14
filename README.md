@@ -10,3 +10,4 @@ Interact with AWS via:
 - AWS CDK - cloud development kit
 - AWS HTTP API
 - Third-Party Tools using SDKs or APIs like Terraform, Ansible
+- AWS CloudShell - browser-based shell with pre-installed AWS CLI and SDKs
