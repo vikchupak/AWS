@@ -1,4 +1,4 @@
-### AWS service account vs k8s service account
+### "AWS service account" & k8s service account
 
 AWS and Kubernetes both use the term **"Service Account"**, but they are completely different concepts. Let’s compare:  
 
