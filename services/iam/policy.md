@@ -7,6 +7,11 @@ In AWS, **IAM policies** are used to define permissions for users, groups, and r
 
 ---
 
+- Permission policies → what the role can do after being assumed
+- Trust policy → who can assume the role
+
+---
+
 ### Steps to Create a Policy in AWS
 
 #### 1. **Using the AWS Management Console**
