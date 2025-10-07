@@ -8,7 +8,7 @@
 
 **In AWS**, a **Network Interface** = **Elastic Network Interface (ENI)**.
 
-It's basically a **virtual network card** (like a NIC on a physical machine).
+It's basically a **virtual network card** (like a NIC (Network Interface Card) on a physical machine).
 
 ✅ Every **EC2 instance**, **Load Balancer**, **NAT Gateway**, **ECS service**, etc. — when connected to a VPC — gets **at least one** network interface.
 
