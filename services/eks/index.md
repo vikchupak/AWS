@@ -1,3 +1,7 @@
+- [ECS on EC2 vs ECS on Fargate](https://www.youtube.com/watch?v=DVrGXjjkpig)
+
+---
+
 - Elastic Container Registry (ECR) - private docker repository for container images. Alternative to dockerhub, nexus
 - AWS Fargate - serverless compute engine for containers that lets you run applications without managing EC2 instances.
   - It works with both Amazon ECS (Elastic Container Service) and Amazon EKS (Elastic Kubernetes Service).
