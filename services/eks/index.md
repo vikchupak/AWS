@@ -1,4 +1,4 @@
-- [ECS on (self-managed) EC2 vs ECS on Fargate](https://www.youtube.com/watch?v=DVrGXjjkpig)
+- [ECS EC2 Launch Type (ECS on self-managed EC2) vs ECS Fargate](https://www.youtube.com/watch?v=DVrGXjjkpig)
 
 ---
 
