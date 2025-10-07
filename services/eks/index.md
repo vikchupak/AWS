@@ -1,7 +1,3 @@
-- [ECS EC2 Launch Type (ECS on self-managed EC2) vs ECS Fargate](https://www.youtube.com/watch?v=DVrGXjjkpig)
-
----
-
 - Elastic Container Registry (ECR) - private docker repository for container images. Alternative to dockerhub, nexus
 - AWS Fargate - serverless compute engine for containers that lets you run applications without managing EC2 instances.
   - It works with both Amazon ECS (Elastic Container Service) and Amazon EKS (Elastic Kubernetes Service).
@@ -75,3 +71,51 @@ Ways of running containers:
   - EC2 (self-managed by you)
   - EC2-based Nodegroup (semi-managed by AWS)
   - Fargate (fully-managed by AWS)
+
+---
+
+- [ECS EC2 Launch Type (ECS on self-managed EC2) vs ECS Fargate](https://www.youtube.com/watch?v=DVrGXjjkpig)
+
+***ECS EC2. Do I have to install docker and ECS agent to EC2s myself?***
+
+You **don’t have to manually install Docker or the ECS agent** if you use the **official Amazon ECS-optimized AMIs**. AWS has made this very smooth. Here’s how it works:
+
+## 1️⃣ **ECS-Optimized AMI**
+
+* Amazon provides **prebuilt AMIs** for ECS that come with:
+
+  * **Docker** installed
+  * **ECS agent** installed and configured
+  * Optimized OS settings for running containers
+
+* When you launch an EC2 instance with this AMI, it **automatically registers** with your ECS cluster.
+
+## 2️⃣ **Steps to launch EC2 for ECS**
+
+1. Go to **EC2 → Launch Instance**
+2. Choose **Amazon ECS-optimized AMI** (or ECS-optimized Amazon Linux 2)
+3. Select **instance type** (t3.medium, m5.large, etc.)
+4. Configure **VPC, subnets, security groups**
+5. Under **Advanced → ECS Cluster** → specify your **cluster name**
+6. Launch the instance
+
+> The instance will automatically start the **ECS agent** and register with the cluster.
+
+## 3️⃣ **Custom AMIs (optional)**
+
+If you want a custom OS or extra software:
+
+* Install Docker yourself (`yum install docker` or `apt install docker`)
+* Install ECS agent (`amazon-ecs-agent`)
+* Configure `/etc/ecs/ecs.config` with your cluster name
+* Start ECS agent (`sudo systemctl start ecs`)
+
+> This is rarely needed unless you want a special OS or setup.
+
+## 4️⃣ **Networking**
+
+* Use **awsvpc network mode** → each container gets its own **ENI + private IP**
+* EC2 instance must be able to reach:
+
+  * **ECS endpoints** (AWS public endpoints or via **VPC Endpoint**)
+  * **Optional: internet** (for Docker pulls, unless using ECR in private VPC)
