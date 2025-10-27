@@ -48,3 +48,85 @@ Because:
 | **IP type**      | Public IPv4 (auto-assigned, unless you use Elastic IPs via NLB) |
 | **Why multiple** | Redundancy and load balancing across AZs                        |
 | **Location**     | Always in the subnets you attach when creating ALB              |
+
+# What is ALB Node
+
+An **ALB node** (or **load balancer node**) is one of the **actual compute nodes** that AWS deploys *behind the scenes* to implement your **Application Load Balancer (ALB)**.
+
+When you create an ALB and associate it with multiple subnets (in different AZs), AWS automatically spins up **one load balancer node per subnet**.
+
+So, for example:
+
+| AZ           | Subnet            | ALB Node |
+| ------------ | ----------------- | -------- |
+| `us-east-1a` | `public-subnet-a` | Node A   |
+| `us-east-1b` | `public-subnet-b` | Node B   |
+
+Together, these nodes make up your ALB.
+
+---
+
+## 🧠 **How it works**
+
+### 🔹 Step-by-step:
+
+1. You create an ALB in VPC `vpc-123` with subnets in `1a` and `1b`.
+2. AWS deploys:
+
+   * **Node A** (ENI with private and public IPs) in subnet `1a`.
+   * **Node B** (ENI with private and public IPs) in subnet `1b`.
+3. The **DNS name** of the ALB (e.g. `my-alb-123456.us-east-1.elb.amazonaws.com`) will resolve to the **public IPs of both nodes** — typically in a round-robin fashion.
+4. Incoming traffic is distributed among these nodes, which then forward requests to registered **targets** in the same VPC.
+
+---
+
+## 🧩 **Key Properties of ALB Nodes**
+
+| Property                              | Description                                                  |
+| ------------------------------------- | ------------------------------------------------------------ |
+| **Created Automatically**             | You don’t manage them manually — AWS handles scaling and HA. |
+| **One per AZ**                        | Each AZ (subnet) you associate gets one node.                |
+| **Elastic Network Interfaces (ENIs)** | Each node has one or more ENIs in your subnet.               |
+| **DNS-based Load Balancing**          | The ALB DNS name resolves to the IPs of its nodes.           |
+| **Dynamic Scaling**                   | AWS can add/remove nodes for capacity or maintenance.        |
+
+---
+
+## 🌍 **Example Visualization**
+
+```
+Internet
+   │
+   ▼
+ ┌──────────────────────────────┐
+ │    DNS: my-alb-xxxx.elb.amazonaws.com
+ │     resolves to: 3.90.1.2, 54.160.2.3
+ └──────────────────────────────┘
+   │               │
+   ▼               ▼
+[ ALB Node A ]   [ ALB Node B ]
+us-east-1a       us-east-1b
+(public subnets)
+   │               │
+   ▼               ▼
+Private targets (EC2/ECS tasks)
+in private subnets
+```
+
+---
+
+## 🔐 **Important Notes**
+
+* You **cannot SSH** or directly interact with ALB nodes — they are **managed AWS infrastructure**.
+* They **do not appear as EC2 instances** — only as **ENIs** in your subnets (visible in the VPC console under *Network Interfaces*).
+* If you disable an AZ from your ALB, AWS removes the corresponding node.
+
+---
+
+## 🧱 **Analogy**
+
+Think of it like this:
+
+> The **ALB** you create is a *logical resource* (a DNS + configuration).
+>
+> The **ALB nodes** are the *physical instances* of that load balancer that actually do the routing and health checks inside each subnet.
