@@ -1,4 +1,4 @@
-# ALB DNS name resolves to `all ENIs and their public IPs` by AWS DNS servers
+# ALB DNS name resolves to `all ENIs and their public IPs` by `AWS DNS servers`
 
 ## 🧠 **Key point**
 
