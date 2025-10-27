@@ -1,4 +1,4 @@
-# TODO: Add to network description later
+# ENI - Elastic Network Interface
 
 *`The following subnets contain one or more network interfaces, and cannot be deleted until those network interfaces have been deleted.`*
 
