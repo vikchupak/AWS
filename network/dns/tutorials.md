@@ -1,5 +1,6 @@
-- https://www.youtube.com/watch?v=v-2vob8wBlc
-- https://www.youtube.com/watch?v=uf785CkJ4UE
+- https://www.youtube.com/watch?v=v-2vob8wBlc (Route 53 with ALB+ACM and Godaddy with changed nameservers)
+- https://www.youtube.com/watch?v=uf785CkJ4UE (Route 53 with ALB and Godaddy with changed nameservers)
+- https://www.youtube.com/watch?v=JRZiQFVWpi8 (Route 53)
 
 ---
 
