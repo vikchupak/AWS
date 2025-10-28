@@ -19,7 +19,7 @@
   - When creating a distribution and choosing an S3 bucket as the origin > select `access using an OAI`
     - Update Bucket policy with OAI
   - Add `domain records` and `custom SSL(ACM) certificate` to CloudFront distribution
-- Update your DNS provider (Route 53 or Godaddy) > add CNAME pointiong to CloudFront distribution
+- Update your DNS provider (Route 53 or Godaddy) > add CNAME pointing to CloudFront distribution
 
 ---
 
