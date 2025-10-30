@@ -122,3 +122,36 @@ const verifyCognitoToken = async (token) => {
   return jwt.verify(token, pem);
 };
 ```
+
+# Merging accounts by email
+
+- **Email/password strategy**. Cognito-managed identity.
+- **3rd-party (federated) `identity provider (IdP) strategy`**. Federated identity.
+
+---
+
+- By default, when signing-up with the both strategies using the same email, cognito creates 2 **separate** users
+- To make them the same user, use `Attribute-based matching + Federation Linking`
+  - When Google user logs in, Cognito sees same **verified** email. It links federated identity to the existing Cognito user. So then there is ONE user, with multiple login methods.
+
+---
+
+### Popular apps usually treat users with the same email as ONE account
+
+Most major apps/services will merge/link accounts created by:
+
+- Email + password
+- Google
+- Apple
+- Facebook
+- etc.
+
+| Service | Behavior                        |
+| ------- | ------------------------------- |
+| YouTube | Google only (IdP controlled)    |
+| Spotify | Merges if same email + verified |
+| Notion  | Merges                          |
+| Slack   | Merges                          |
+| Dropbox | Merges                          |
+| Airbnb  | Merges                          |
+| GitHub  | Can merge after verification    |
