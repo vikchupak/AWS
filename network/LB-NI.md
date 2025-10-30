@@ -3,7 +3,7 @@
 List all public IPs and what uses them
 ```bash
 aws ec2 describe-network-interfaces \
---query "NetworkInterfaces[?Association.PublicIp!=null].[NetworkInterfaceId,Association.PublicIp,Attachment.InstanceId,Description]" \
+--query "NetworkInterfaces[?Association.PublicIp!=null].[NetworkInterfaceId,Association.PublicIp,Attachment.InstanceId,SubnetId,Description]" \
 --output table
 ```
 
