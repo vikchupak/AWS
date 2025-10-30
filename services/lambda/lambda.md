@@ -59,6 +59,10 @@ Client gets temporary IAM creds → invoke Lambda via AWS SDK
 ⚠️ You must give IAM access to Lambda → less secure
 ✔️ API Gateway not required
 
+### ✅ Option C — Expose lambda url without auth check
+
+⚠️ Anyone can call your lambda
+
 So **technically** you can avoid API Gateway, but it’s **not recommended**.
 
 ---
