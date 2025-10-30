@@ -1,5 +1,9 @@
 # Host web static files
 
+https > dns system (Route 53 or Godaddy) > CloudFront(+ACM) > S3
+
+---
+
 - `Amazon S3` — to store your static website files
   - `bucket` - permissions:
     - Block (all) public access > **enable**
