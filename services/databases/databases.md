@@ -47,7 +47,7 @@ Serverless NoSQL key–value + document database.
 
 | AWS      | Parallel                                      |
 | -------- | --------------------------------------------- |
-| DynamoDB | MongoDB / Cassandra (in concepts), but unique |
+| DynamoDB | Cassandra (in concepts), but unique |
 
 > If you need massive scale + low latency → DynamoDB
 
