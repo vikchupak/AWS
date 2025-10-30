@@ -1,5 +1,7 @@
 # Cognito
 
+[About Cognito](https://www.youtube.com/watch?v=QEGo6ZoN-ao)
+
 `Amazon Cognito` is a user identity and authentication service.
 - allows your app’s users to sign up, sign in
 - allows access AWS resources securely
