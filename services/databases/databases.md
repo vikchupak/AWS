@@ -39,9 +39,9 @@ Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 
 ---
 
-## ✅ 4) **DynamoDB**
+## ✅ 3) **DynamoDB**
 
-Serverless NoSQL key–value + document database.
+**Serverless** NoSQL key–value database.
 
 ### Parallels
 
@@ -53,7 +53,7 @@ Serverless NoSQL key–value + document database.
 
 ---
 
-## ✅ 5) **Amazon ElastiCache**
+## ✅ 4) **Amazon ElastiCache**
 
 **In-memory** cache service.
 
@@ -70,7 +70,7 @@ Supports: Redis, Memcached
 
 ---
 
-## ✅ 6) **Amazon MemoryDB**
+## ✅ 5) **Amazon MemoryDB**
 
 Valkey/Redis-compatible **durable**, in-memory database.
 
@@ -86,7 +86,7 @@ Valkey/Redis-compatible **durable**, in-memory database.
 
 ---
 
-## ✅ 7) **Amazon Neptune**
+## ✅ 6) **Amazon Neptune**
 
 Fully managed **graph database**.
 
@@ -103,7 +103,7 @@ Fully managed **graph database**.
 
 ---
 
-## ✅ 8) **Amazon DocumentDB**
+## ✅ 7) **Amazon DocumentDB**
 
 MongoDB-compatible document DB.
 
@@ -123,7 +123,7 @@ Only API-compatible; underlying storage is Aurora-style.
 
 ---
 
-## ✅ 9) **Amazon Keyspaces**
+## ✅ 8) **Amazon Keyspaces**
 
 Managed **Apache Cassandra–compatible** database.
 
@@ -140,7 +140,7 @@ Managed **Apache Cassandra–compatible** database.
 
 ---
 
-## ✅ 10) **Amazon Timestream**
+## ✅ 9) **Amazon Timestream**
 
 Time-series database.
 
@@ -162,7 +162,7 @@ Use for:
 
 ---
 
-## ✅ 11) **Amazon Oracle Database@AWS**
+## ✅ 10) **Amazon Oracle Database@AWS**
 
 Fully managed Oracle database (on RDS or hosted Exadata-like environment).
 
