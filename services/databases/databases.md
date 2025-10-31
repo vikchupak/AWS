@@ -123,7 +123,7 @@ Only API-compatible; underlying storage is Aurora-style.
 
 ---
 
-## ✅ 8) **Amazon Keyspaces**
+## ✅ 8) **Amazon Keyspaces (managed Cassandra)**
 
 Managed **Apache Cassandra–compatible** database.
 
