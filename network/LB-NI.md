@@ -3,14 +3,14 @@
 List all public IPs and what uses them
 ```bash
 aws ec2 describe-network-interfaces \
---query "NetworkInterfaces[?Association.PublicIp!=null].[NetworkInterfaceId,Association.PublicIp,Attachment.InstanceId,SubnetId,Description]" \
+--query "NetworkInterfaces[?Association.PublicIp!=null].[NetworkInterfaceId,Association.PublicIp,PrivateIpAddress,join(',',PrivateIpAddresses[].PrivateIpAddress),SubnetId,Attachment.InstanceId,Description]" \
 --output table
 ```
 
 List all public and private IPs and what uses them
 ```bash
 aws ec2 describe-network-interfaces \
---query "NetworkInterfaces[].[NetworkInterfaceId,PrivateIpAddress,join(',',PrivateIpAddresses[].PrivateIpAddress),Association.PublicIp,SubnetId,Attachment.InstanceId,Description]" \
+--query "NetworkInterfaces[].[NetworkInterfaceId,Association.PublicIp,PrivateIpAddress,join(',',PrivateIpAddresses[].PrivateIpAddress),SubnetId,Attachment.InstanceId,Description]" \
 --output table
 ```
 
