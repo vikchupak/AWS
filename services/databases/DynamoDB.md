@@ -16,7 +16,13 @@
     - List > **JSON** array ?
     - Map > **JSON** object ?
     - Set > Set of type String, Number, Binary
-- **Table primary partition/sorting key and index partition/sorting key can be**
+- **Table primary partition/sorting key and index partition/sorting key must be `top-level attributes` and must be `type of`**
   - String
   - Number
   - Binary
+
+## JSON
+
+- Classic JSON to DynamoDB JSON
+  - https://dynobase.dev/dynamodb-json-converter-tool/
+- It is not possible to create index on nested data like Map or List, (Set?) for efficient search
