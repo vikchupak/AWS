@@ -36,7 +36,7 @@ Tables are schemaless - we don't have to define attributes(columns) on table lev
 - in pimary key, gsi, lsi, partition key doesn't have to be unique
 
 - `global secondary index = {non table partition key:any sorting key(optional)}`
-- `local secondary index` = `{table partition key}:{non table sorting key(optional)}`
+- `local secondary index` = `{table partition key}:{non table sorting key}`
 
 ## JSON
 
