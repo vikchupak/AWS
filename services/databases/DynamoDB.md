@@ -16,7 +16,7 @@
     - List > **JSON** array ?
     - Map > **JSON** object ?
     - Set > Set of type String, Number, Binary
-- Table primary partition/sorting key and index partition/sorting key can be
+- **Table primary partition/sorting key and index partition/sorting key can be**
   - String
   - Number
   - Binary
