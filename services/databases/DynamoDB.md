@@ -28,6 +28,15 @@ Tables are schemaless - we don't have to define attributes(columns) on table lev
 
 <img width="751" height="493" alt="image" src="https://github.com/user-attachments/assets/8242e991-06f0-4125-a400-a4ccf4d539fe" />
 
+---
+
+- Table has only one primary key that defines each row uniquely.
+
+`primary key = {partition key}:{sorting key(optional)}`
+
+- primary key has to must be unique
+- in pimary key and gsi, partition key doesn't have to be unique
+
 ## JSON
 
 - Classic JSON to DynamoDB JSON
