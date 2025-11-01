@@ -32,7 +32,7 @@ Tables are schemaless - we don't have to define attributes(columns) on table lev
 
 - Table has only one primary key that defines each row uniquely.
 - `primary key = {table partition key}:{table sorting key(optional)}`
-- primary key has to must be unique
+- primary key must be unique
 - in pimary key, gsi, lsi, partition key doesn't have to be unique
 
 - `global secondary index = {non table partition key:any sorting key(optional)}`
