@@ -14,6 +14,9 @@ aws ec2 describe-network-interfaces \
 --output table
 ```
 
+- `PrivateIpAddress` - primary private IP
+- `PrivateIpAddresses[].PrivateIpAddress` - primary + secondary private IPs
+
 ✅ Exactly!
 
 Let’s go step by step so you see *precisely* how AWS Load Balancers (like your **Application Load Balancer**) handle **ENIs** and **IPs** in **public subnets**:
