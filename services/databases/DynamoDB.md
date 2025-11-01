@@ -43,3 +43,5 @@ Tables are schemaless - we don't have to define attributes(columns) on table lev
 - Classic JSON to DynamoDB JSON
   - https://dynobase.dev/dynamodb-json-converter-tool/
 - It is not possible to create index on nested data like Map or List, (Set?) for efficient search
+- Map is not JSON-as-string
+  - Nested Access: You can use DynamoDB's document path syntax to access, update, or conditionally write on the individual nested keys and values within the map without reading or writing the entire map content. This is a significant advantage over storing it as a string.
