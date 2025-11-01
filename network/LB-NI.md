@@ -7,6 +7,13 @@ aws ec2 describe-network-interfaces \
 --output table
 ```
 
+List all public and private IPs and what uses them
+```bash
+aws ec2 describe-network-interfaces \
+--query "NetworkInterfaces[].[NetworkInterfaceId,PrivateIpAddress,join(',',PrivateIpAddresses[].PrivateIpAddress),Association.PublicIp,SubnetId,Attachment.InstanceId,Description]" \
+--output table
+```
+
 ✅ Exactly!
 
 Let’s go step by step so you see *precisely* how AWS Load Balancers (like your **Application Load Balancer**) handle **ENIs** and **IPs** in **public subnets**:
