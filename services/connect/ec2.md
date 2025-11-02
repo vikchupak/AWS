@@ -118,3 +118,8 @@ Only keep SSH as a fallback, and disable port 22 when not needed.
 <img width="1487" height="802" alt="image" src="https://github.com/user-attachments/assets/96ed92f7-7a9c-4d9f-97e4-b585c0fb1c4d" />
 
 <img width="1487" height="802" alt="image" src="https://github.com/user-attachments/assets/99501ebc-ab16-4388-84cc-fb56428e6664" />
+
+# CloudFormation Template. EC2 with Session Manager configured
+
+- [Template](https://github.com/vikchupak/AWS/blob/main/services/connect/ec2instabce.yml)
+
