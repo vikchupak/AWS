@@ -3,3 +3,7 @@
 - https://www.youtube.com/watch?v=Gd3kOCkn-K0&t=1s
 
 Record name MUST mutch with s3 bucket name for **this setup**!!!
+
+---
+
+Used such setup to check **Delegated Sub Zones** like [here](https://github.com/vikchupak/Network/blob/main/dns/DNS.md). It really works.
