@@ -153,7 +153,7 @@ That is the recommended AWS practice.
 
 ✅ **Yes. An IAM Role is an identity in AWS.**
 
-But it is a **special kind of identity**.
+But it is a **special kind of identity**. **Roles CANNOT be logged into**
 
 ### ✅ What makes a role an identity?
 
