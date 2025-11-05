@@ -64,7 +64,15 @@ A Lambda function assumes an IAM Role that allows it to read from S3.
 
 ---
 
-# 3) ✅ Lambda assumes the role
+# 3) ✅ Assign the role to lambda (ONLY ONE Role possible)
+
+```bash
+aws lambda create-function \
+  --function-name MyFunction \
+  --role arn:aws:iam::<account-id>:role/LambdaS3Reader
+```
+
+# 4) ✅ Lambda assumes the role
 
 When Lambda runs, AWS automatically performs:
 
