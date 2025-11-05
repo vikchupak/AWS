@@ -112,3 +112,10 @@ Once the policy is created, you can attach it to a **user, group, or role** in I
 - Explicit Deny
 - Explicit Allow
 - Default (implicit) Deny
+
+# Policy types
+
+- Inline policy
+- Managed policy
+  - AWS
+  - Custom
