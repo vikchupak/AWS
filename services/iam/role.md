@@ -155,9 +155,7 @@ That is the recommended AWS practice.
 
 But it is a **special kind of identity**.
 
----
-
-# ✅ What makes a role an identity?
+### ✅ What makes a role an identity?
 
 An **identity** is something that:
 - Can have permissions
@@ -174,7 +172,7 @@ arn:aws:sts::<account-id>:assumed-role/RoleName/SessionName
 
 AWS sees this as the acting principal → identity.
 
-# ✅ Identity types in AWS
+### ✅ Identity types in AWS
 
 | Identity type      | Persistent credentials? | Requires AssumeRole? |
 | ------------------ | ----------------------- | -------------------- |
@@ -187,9 +185,7 @@ IAM Role is an identity but:
 * It has **no long-term credentials**
 * It must be **assumed via STS** to act
 
----
-
-# ✅ Difference from IAM User
+### ✅ Difference from IAM User
 
 | Feature                   | IAM User | IAM Role |
 | ------------------------- | -------- | -------- |
