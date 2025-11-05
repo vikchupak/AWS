@@ -1,4 +1,4 @@
-# Host web static files
+# Host static files in s3 + CloudFront
 
 https > dns system (Route 53 or Godaddy) > CloudFront(+ACM) > S3
 
