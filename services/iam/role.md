@@ -136,9 +136,9 @@ The original user/role no longer matters.
 # ✅ If you need combined permissions
 
 You must:
-✅ Add the missing permissions to the assumed role
+- ✅ Add the missing permissions to the assumed role
 OR
-✅ Create a new role containing the union of all required permissions
+- ✅ Create a new role containing the union of all required permissions
 
 That is the recommended AWS practice.
 
