@@ -88,3 +88,63 @@ Lambda gets **temporary credentials**:
 * Expiration timestamp
 
 Lambda uses these credentials to call S3
+
+# Role overrides other permissions
+
+*If I have direct permissions and assume a role with its permissions, are all permissions merged?*
+
+✅ **No — they are *not* merged.**
+
+When you assume a role, your **original identity’s permissions disappear**.
+You get **ONLY the permissions of the assumed role** (plus optional session policies if applied).
+
+# ✅ Example
+
+You (IAM user) have:
+
+```
+Allow: s3:GetObject
+```
+
+AssumedRole has:
+
+```
+Allow: dynamodb:Query
+```
+
+➡️ After AssumeRole:
+
+✅ You can do `dynamodb:Query`
+❌ You CANNOT do `s3:GetObject` anymore
+
+Because your original permissions **do not carry over**.
+
+---
+
+# ✅ Why?
+
+Because `sts:AssumeRole` issues new temporary credentials belonging ONLY to the role.
+
+That identity becomes:
+
+```
+arn:aws:sts::<acct>:assumed-role/RoleB/SessionName
+```
+
+The original user/role no longer matters.
+
+# ✅ If you need combined permissions
+
+You must:
+✅ Add the missing permissions to the assumed role
+OR
+✅ Create a new role containing the union of all required permissions
+
+That is the recommended AWS practice.
+
+---
+
+# ✅ Final answer
+
+> **When you assume a role, ONLY that role’s permissions apply.**
+> Your original permissions do **not merge** with the assumed role.
