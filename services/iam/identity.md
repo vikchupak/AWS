@@ -53,7 +53,7 @@ Examples:
 * SAML 2.0, OIDC
 * Web identity federation (Cognito)
 
-They do **not** exist inside IAM as users; they assume roles when needed.
+**They do **not** exist inside IAM as users; they assume roles when needed.**
 
 # Is a role an idedntity?
 
