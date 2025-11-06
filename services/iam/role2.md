@@ -5,10 +5,10 @@
 ## ✅ **What is a Service-Linked Role?**
 
 A **service-linked role (SLR)** is a special IAM role that is:
-✅ Created **for an AWS service**
-✅ Managed **by the service itself**
-✅ Has a **predefined permissions policy + trust policy**
-✅ Used **only by that service**
+- ✅ Created **for an AWS service**
+- ✅ Managed **by the service itself**
+- ✅ Has a **predefined permissions policy + trust policy**
+- ✅ Used **only by that service**
 
 Example services that use SLRs:
 
@@ -72,14 +72,12 @@ Example trust policy (fixed):
 * An AWS service automatically needs to manage resources inside your account
 * You want correct AWS-managed permissions
 * Example:
-
   * ECS managing ENIs
   * Organizations managing accounts
 
 ### ✅ Use a Normal Role when:
 
 * You want to give permissions to
-
   * EC2
   * Lambda
   * Users
