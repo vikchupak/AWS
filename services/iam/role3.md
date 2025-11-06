@@ -1,4 +1,4 @@
-# `iam:PassRole` (ASSIGN) vs `sts:AssumeRole`
+# `iam:PassRole` ("ASSIGN" Role) vs `sts:AssumeRole`
 
 ### 1) S3WriteRole
 
