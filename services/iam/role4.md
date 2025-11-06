@@ -1,5 +1,6 @@
 - Only one role is **attached/assigned** to a **service**
 - Different roles are **assumed** by IAM **identities**, one at a time
+  - See what [identities](https://github.com/vikchupak/AWS/blob/main/services/iam/identity.md) are
 
 ---
 
