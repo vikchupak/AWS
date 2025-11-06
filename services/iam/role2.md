@@ -1,5 +1,7 @@
 # Service-linked role (SLR)
 
+- [Official doc](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html)
+
 ## ✅ **What is a Service-Linked Role?**
 
 A **service-linked role (SLR)** is a special IAM role that is:
