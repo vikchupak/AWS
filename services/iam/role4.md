@@ -1,5 +1,5 @@
 - Only one role is **attached/assigned** to a **service**
-- Different roles is **assumed** by IAM **user**
+- Different roles are **assumed** by IAM **identities**, one at a time
 
 ---
 
