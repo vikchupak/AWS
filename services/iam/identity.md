@@ -10,15 +10,12 @@ A *human-like* identity with:
 * Belongs to one AWS account
 
 Used for:
-
 * Legacy human access
 * Programmatic access (not recommended today)
 
-✅ Can be assigned to groups
-✅ Can have direct policies
-⚠️ Should be minimal; use roles/SSO instead
-
----
+- ✅ Can be assigned to groups
+- ✅ Can have direct policies
+- ⚠️ Should be minimal; use roles/SSO instead
 
 # ✅ **2) IAM Roles**
 
@@ -42,9 +39,8 @@ Types by usage:
 * **Cross-account roles**
 * **Federation roles**
 
-> Still all just “IAM Roles”
-
----
+Example of a cross-account assumed role as an identity
+<img width="1280" height="678" alt="image" src="https://github.com/user-attachments/assets/c319aeb8-6ff2-4174-8cbf-2fd5497c2b61" />
 
 # ✅ **3) Federated Identities**
 
