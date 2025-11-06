@@ -2,8 +2,6 @@ In AWS, **“identities”** are entities that can be **authenticated and author
 
 There are **three primary identity types** in IAM:
 
----
-
 # ✅ **1) IAM Users**
 
 A *human-like* identity with:
