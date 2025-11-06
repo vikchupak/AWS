@@ -70,7 +70,7 @@ An **identity** is something that:
 
 An IAM **role** satisfies all of these.
 
-When assumed, it becomes an identity like:
+**`When assumed, it becomes an identity` like:**
 
 ```
 arn:aws:sts::<account-id>:assumed-role/RoleName/SessionName
