@@ -91,7 +91,7 @@ Lambda uses these credentials to call S3
 
 # Role overrides other permissions
 
-*If I have direct permissions and assume a role with its permissions, are all permissions merged?*
+*If I have direct or group permissions and assume a role with its permissions, are all permissions merged?*
 
 ✅ **No — they are *not* merged.**
 
