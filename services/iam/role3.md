@@ -1,4 +1,4 @@
-# `iam:PassRole` ("ASSIGN" Role) vs `sts:AssumeRole`
+# `iam:PassRole` ("assign/attach" Role) vs `sts:AssumeRole`
 
 - Identity with `iam:PassRole` doesn't have the role's permissions, but it can assign the role to other services and they will get the role's permissions.
 
