@@ -54,3 +54,54 @@ Examples:
 * Web identity federation (Cognito)
 
 They do **not** exist inside IAM as users; they assume roles when needed.
+
+# Is a role an idedntity?
+
+✅ **Yes. An IAM Role is an identity in AWS.**
+
+But it is a **special kind of identity**. **Roles CANNOT be logged into**
+
+### ✅ What makes a role an identity?
+
+An **identity** is something that:
+- Can have permissions
+- Can make AWS API requests
+- Can be logged/audited in CloudTrail
+
+An IAM **role** satisfies all of these.
+
+When assumed, it becomes an identity like:
+
+```
+arn:aws:sts::<account-id>:assumed-role/RoleName/SessionName
+```
+
+AWS sees this as the acting principal → identity.
+
+### ✅ Identity types in AWS
+
+| Identity type      | Persistent credentials? | Requires AssumeRole? |
+| ------------------ | ----------------------- | -------------------- |
+| IAM User           | ✅                       | ❌                    |
+| IAM Role           | ❌                       | ✅                    |
+| Federated identity | ❌                       | ✅                    |
+
+IAM Role is an identity but:
+
+* It has **no long-term credentials**
+* It must be **assumed via STS** to act
+
+### ✅ Difference from IAM User
+
+| Feature                   | IAM User | IAM Role |
+| ------------------------- | -------- | -------- |
+| Long-term credentials     | ✅        | ❌        |
+| Meant for humans          | ✅        | ❌        |
+| Meant for apps/services   | ❌        | ✅        |
+| Needs STS AssumeRole      | ❌        | ✅        |
+| Trusted principals list   | ❌        | ✅        |
+| One principal per session | ✅        | ✅        |
+
+- Roles are **identity + permissions** without an owner.
+- Users are **identity + credentials** tied to a person/system.
+
