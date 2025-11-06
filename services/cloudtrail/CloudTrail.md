@@ -1,6 +1,6 @@
 # CloudTrail
 
-- CloudTrail logs actions that affect aws account
+- CloudTrail logs - actions that affect aws account
   - Management Events (Enabled by default)
   - Data Events
   - Insights Events
