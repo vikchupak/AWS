@@ -115,7 +115,9 @@ Once the policy is created, you can attach it to a **user, group, or role** in I
 
 # Policy types
 
+[Official doc](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)
+
 - Inline policy
 - Managed policy
   - AWS
-  - Custom
+  - Customer
