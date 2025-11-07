@@ -19,10 +19,38 @@
   - **Indentity-based** policy
     - Attached to identities
     - Set what this identity can access
+    - No **Principal** field → because the policy is already attached to the principal
+      ```json
+      {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::my-bucket/*"
+          }
+        ]
+      }
+      ```
   - **Resource-based** policy
     - Attached to resources
     - Set who can access this resource
-    - Contains **Principal** field
+    - Has **Principal** field
+      ```json
+      {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Principal": {
+              "AWS": "arn:aws:iam::123456789012:role/AppRole"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-bucket/*"
+          }
+        ]
+      }
+      ```
 
 ---
 
@@ -47,3 +75,6 @@ as the calling principal.
 
 Because the **role definition never calls anything**.
 Only **assumed-role session** calls services.
+
+---
+
