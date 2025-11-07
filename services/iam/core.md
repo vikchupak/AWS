@@ -32,6 +32,7 @@
         ]
       }
       ```
+      - **Can be attached to identities only in your account**
   - **Resource-based** policy
     - Attached to resources
     - Set who can access this resource
@@ -51,6 +52,9 @@
         ]
       }
       ```
+    - **Allow/deny access to/from different accounts**
+    - **Allow/deny access to/from `Anonymous` principals**
+      - Anonymous means not authenticated
 
 ---
 
