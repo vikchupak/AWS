@@ -1,5 +1,3 @@
-In AWS, **“identities”** are entities that can be **PRINCIPAL, authenticated and authorized to make AWS API calls**.
-
 There are **three primary identity types** in IAM:
 
 # ✅ **1) IAM Users**
