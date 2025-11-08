@@ -6,6 +6,10 @@ User/App -(encripted data)-> S3 -(encripted data)-> S3 Storage
 - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3
 - Client gets a object from S3. Extracts encrypted DEK from object metadata. Asks KMS to decrypt DEK. Client uses DEK to decrypt the object.
 
+---
+  
+- AWS KMS still stores the keys
+
 # S3 Server-Side Encription (SSE)
 
 User/App -(NOT-encripted data)-> S3 -(encripted data)-> S3 Storage
