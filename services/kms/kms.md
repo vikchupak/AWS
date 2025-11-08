@@ -16,7 +16,7 @@
 
 ---
 
-### Key Policy
+# Key Policies
 
 - Every EMS Key has `Key (resource-based) Policy`
   ```json
@@ -120,3 +120,24 @@ These services use the key via **their internal KMS principal**, not the identit
 So if RDS performs encryption/decryption, it’s not “you” calling KMS — it's **RDS calling KMS for you**.
 
 Thus: ✅ Key policy alone is sufficient.
+
+# Example ecnrypting and decrypting using IAM user with proper IAM (identity-based) policy via CLI
+
+```bash
+# Create file to encrypt
+echo "find all the doggos, distract them with the yumz" > battleplans.txt
+
+# Encrypt file
+aws kms encrypt \
+    --key-id alias/catrobot \
+    --plaintext fileb://battleplans.txt \
+    --output text \
+    --query CiphertextBlob \
+    | base64 --decode > not_battleplans.enc 
+
+# Decrypt file
+aws kms decrypt \
+    --ciphertext-blob fileb://not_battleplans.enc \
+    --output text \
+    --query Plaintext | base64 --decode > decryptedplans.txt
+```
