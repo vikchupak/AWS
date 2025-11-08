@@ -5,6 +5,10 @@
 
 ---
 
+- Data encription key (DEK)
+
+---
+
 - AWS owned keys
   - Collection of keys that are used and managed by AWS in multiple AWS accounts
 - **Customer owned keys**
