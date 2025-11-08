@@ -9,7 +9,7 @@
 ---
 
 - S3 Bucket Keys.
-  - KMS generates a time-limited Bucket Key to generate DEKs on **S3 side**
+  - KMS generates a time-limited Bucket Key used to generate DEKs on **S3 side**
   - This has to be enabled on a bucket
   - CloudTrail KMS events now show the bucket, not the object
   - Works with replication enabled
