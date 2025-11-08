@@ -8,7 +8,7 @@ User/App -(encripted data)-> S3 -(encripted data)-> S3 Storage
 
 ---
   
-- AWS KMS optionally generates keys, but they are stored on client side!!!
+- AWS KMS optionally generates keys for you, but they are stored on client side!!!
 
 # S3 Server-Side Encription (SSE)
 
