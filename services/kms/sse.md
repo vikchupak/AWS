@@ -14,14 +14,14 @@ User/App -(NOT-encripted data)-> S3 -(encripted data)-> S3 Storage
 
 ---
 
-- Server-Side Encription with Amazon S3-managed Keys (SSE-S3 | AES256 algorithm) - default
+- `Server-Side Encription with Amazon S3-managed Keys` (SSE-S3 | AES256 algorithm) - default
   - Use `AWS managed keys` stored in AWS KMS
   - S3(AWS) creates, manages, and uses encription keys
-- Server-Side Encription with KMS Keys stored in AWS KMS (SSE-KMS) - recommended
+- `Server-Side Encription with KMS Keys stored in AWS KMS` (SSE-KMS) - recommended
   - Use `Customer managed keys` stored in AWS KMS
   - You set policies to set granular permissions and manage the key
-- Server-Side Encription with Customer-provided Keys (SSE-C)
-  - Use own keys stored and managed on client side
+- `Server-Side Encription with Customer-provided Keys` (SSE-C)
+  - Use `own keys` stored and managed on client side
   - Client provides the encryption key with every request
   - AWS S3 uses this key to encrypt/decrypt data
   - AWS does not store the key — only uses it in memory
