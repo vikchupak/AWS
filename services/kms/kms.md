@@ -123,6 +123,8 @@ Thus: ✅ Key policy alone is sufficient.
 
 # Example ecnrypting and decrypting using IAM user with proper IAM (identity-based) policy via CLI
 
+Create a symetric customer managed key `catrobot` first
+
 ```bash
 # Create file to encrypt
 echo "find all the doggos, distract them with the yumz" > battleplans.txt
