@@ -30,5 +30,6 @@ User/App -(NOT-encripted data)-> S3 -(encripted data)-> S3 Storage
   - Client provides the encryption key with every request
   - AWS S3 uses this key to encrypt/decrypt data
   - AWS does not store the key — only uses it in memory
+  - No policies as keys are NOT in AWS
 
 <img width="1305" height="636" alt="image" src="https://github.com/user-attachments/assets/5f12e9e0-f04e-4af9-bc63-d40a7a9ab136" />
