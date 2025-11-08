@@ -8,7 +8,8 @@ User/App -(encripted data)-> S3 -(encripted data)-> S3 Storage
 
 ---
   
-- AWS KMS optionally generates keys for you, but they are stored on client side!!!
+- AWS KMS optionally generates CMK and DEK keys for you(only DEK is sent to client). CMK stored on AWS side.
+- We can generate CMKs youself locally(without KMS), then we have to store and manage CMK on client side.
 
 # S3 Server-Side Encription (SSE)
 
