@@ -1,4 +1,4 @@
-# S3 Client-Side Encription
+# S3 Client-Side Encription (CSE)
 
 User/App -(encripted data)-> S3 -(encripted data)-> S3 Storage
 
