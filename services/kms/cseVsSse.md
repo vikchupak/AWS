@@ -22,7 +22,7 @@ User/App -(NOT-encripted data)-> S3 -(encripted data)-> S3 Storage
   - Use `AWS managed keys` stored in AWS KMS
   - S3(AWS) creates, manages, and uses encription keys
   - Not possible to set policies on the keys. They are completely managed by AWS
-- `Server-Side Encription with KMS Keys stored in AWS KMS` (SSE-KMS) - recommended
+- `Server-Side Encription with KMS Keys stored in AWS KMS` (SSE-KMS) - recommended. Can be set as default
   - Use `Customer managed keys` stored in AWS KMS
   - You set policies to set granular permissions and manage the key
 - `Server-Side Encription with Customer-provided Keys` (SSE-C)
