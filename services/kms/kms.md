@@ -1,6 +1,7 @@
 # KMS
 
 - Manage cryptographic keys
+- [Official doc](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 
 ---
 
