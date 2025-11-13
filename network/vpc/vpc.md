@@ -11,6 +11,7 @@
       - target - intermediate point
       - Target:
         - local - destination inside VPC
+- Internet Gateway is HA
 
 ```
 Instance → Subnet → (Subnet’s Route Table) → VPC Router → Target (IGW, NAT, TGW, etc.)
