@@ -30,7 +30,7 @@ By making every connected network use a **unique slice** of private IP space, yo
 
 # How to connect 2 VPCs
 
-- VPC Peering Connection
+- [VPC Peering Connection](https://www.youtube.com/watch?v=3QPCQYdD_Ys&t=316s)
 - AWS Transit Gateway (TGW)
 
 You can easily create two custom VPCs and connect them for testing using **VPC Peering**. This establishes a private, point-to-point connection between them.
