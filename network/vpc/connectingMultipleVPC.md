@@ -132,3 +132,62 @@ If you launch an EC2 instance in each VPC's subnet, you still need to ensure the
 * Repeat the process for the Security Group in **VPC-B**, allowing traffic from the source **$10.10.0.0/16$** (VPC-A's CIDR).
 
 Once the security groups are configured, an instance in $10.10.1.0/24$ will be able to communicate directly with an instance in $10.20.1.0/24$ using their **private IP addresses**.
+
+```
++---------------------------------------------------------------------------------------+
+| AWS Region (e.g., us-east-1)                                                          |
+|                                                                                       |
+|  +-------------------------------------+      +-------------------------------------+ |
+|  |             VPC-A (Test)            |      |             VPC-B (Test)            | |
+|  |   CIDR: 10.10.0.0/16                |      |   CIDR: 10.20.0.0/16                | |
+|  |                                     |      |                                     | |
+|  |   +-----------------------------+   |      |   +-----------------------------+   | |
+|  |   |        Subnet-A-1           |   |      |   |        Subnet-B-1           |   | |
+|  |   |   CIDR: 10.10.1.0/24        |   |      |   |   CIDR: 10.20.1.0/24        |   | |
+|  |   |                             |   |      |   |                             |   | |
+|  |   |   +---------------------+   |   |      |   |   +---------------------+   |   | |
+|  |   |   |     EC2 Instance    |   |   |      |   |   |     EC2 Instance    |   |   | |
+|  |   |   |     (Server-A)      |   |   |      |   |   |     (Server-B)      |   |   | |
+|  |   |   |   Private IP:       |   |   |      |   |   |   Private IP:       |   |   | |
+|  |   |   |   10.10.1.50        |   |   |      |   |   |   10.20.1.50        |   |   | |
+|  |   |   +---------------------+   |   |      |   |   +---------------------+   |   | |
+|  |   +-----------------------------+   |      |   +-----------------------------+   | |
+|  |                                     |      |                                     | |
+|  |   +-----------------------------+   |      |   +-----------------------------+   | |
+|  |   |      Route Table VPC-A      |   |      |   |      Route Table VPC-B      |   | |
+|  |   |-----------------------------|   |      |   |-----------------------------|   | |
+|  |   | Destination      | Target   |   |      |   | Destination      | Target   |   | |
+|  |   |------------------|----------|   |      |   |------------------|----------|   | |
+|  |   | 10.10.0.0/16     | Local    |   |      |   | 10.20.0.0/16     | Local    |   | |
+|  |   |------------------|----------|   |      |   |------------------|----------|   | |
+|  |   | 10.20.0.0/16     | pcx-ID   |<-----+------>| 10.10.0.0/16     | pcx-ID   |   | |
+|  |   +-----------------------------+   |  ^   |   +-----------------------------+   | |
+|  +-------------------------------------+  |   +-------------------------------------+ |
+|                                           |                                           |
+|                                           |                                           |
+|                                     +---------------------------+                     |
+|                                     | VPC Peering Connection    |                     |
+|                                     |       (pcx-ID)            |                     |
+|                                     | Non-overlapping CIDRs     |                     |
+|                                     | is CRUCIAL for this link! |                     |
+|                                     +---------------------------+                     |
++---------------------------------------------------------------------------------------+
+```
+
+### Explanation of the Diagram:
+
+  * **AWS Region:** The entire setup resides within a single AWS region.
+  * **VPC-A (Test) & VPC-B (Test):** Two distinct Virtual Private Clouds.
+      * Notice their **CIDR blocks** are **$10.10.0.0/16$** and **$10.20.0.0/16$**. These are completely separate, which is essential for the peering connection.
+  * **Subnet-A-1 & Subnet-B-1:** A subnet within each VPC. For simplicity, we show one in each.
+      * The subnet CIDRs are slices of their respective VPCs ($10.10.1.0/24$ within $10.10.0.0/16$, and $10.20.1.0/24$ within $10.20.0.0/16$).
+  * **EC2 Instances (Server-A & Server-B):** An example server running in each subnet.
+      * They have private IP addresses from their respective subnets ($10.10.1.50$ and $10.20.1.50$).
+  * **VPC Peering Connection (pcx-ID):** This is the direct, private network link established between VPC-A and VPC-B. AWS's backbone handles the routing over this link.
+  * **Route Tables:** Each VPC has its own route table.
+      * **Local Route:** Each route table has a `Local` route for its *own* VPC's CIDR, meaning traffic destined for addresses within its VPC stays local.
+      * **Peering Route:** This is the critical part for cross-VPC communication.
+          * VPC-A's Route Table explicitly says: "To reach $10.20.0.0/16$ (VPC-B's network), send traffic via `pcx-ID`."
+          * VPC-B's Route Table explicitly says: "To reach $10.10.0.0/16$ (VPC-A's network), send traffic via `pcx-ID`."
+
+This setup allows Server-A (10.10.1.50) to communicate with Server-B (10.20.1.50) using their private IP addresses, leveraging the VPC Peering Connection for the private route.
