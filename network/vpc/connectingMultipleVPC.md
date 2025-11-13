@@ -27,3 +27,108 @@ To ensure successful connectivity and future scalability, you must implement a p
     * VPC for Production: $10.20.0.0/16$
 
 By making every connected network use a **unique slice** of private IP space, you ensure that the router always has one clear path for any destination IP address.
+
+# How to connect 2 VPCs
+
+You can easily create two custom VPCs and connect them for testing using **VPC Peering**. This establishes a private, point-to-point connection between them.
+
+The most critical requirement is that the two VPCs **must not have overlapping CIDR blocks**.
+
+Here is the step-by-step process.
+
+---
+
+## 1. Plan Non-Overlapping CIDR Blocks 📝
+
+For your test, let's use two distinct and safe CIDR blocks. We'll use a large **/16** block for each to ensure plenty of room for subnets and testing resources.
+
+| VPC Name | VPC CIDR | Purpose |
+| :--- | :--- | :--- |
+| **VPC-A** | **$10.10.0.0/16$** | The requester/initiator VPC. |
+| **VPC-B** | **$10.20.0.0/16$** | The acceptor/target VPC. |
+
+> **Note:** These two ranges are entirely separate ($10.10.x.x$ and $10.20.x.x$), guaranteeing no overlap.
+
+---
+
+## 2. Create the Custom VPCs and Subnets 🏗️
+
+You need to create both VPCs and at least one subnet in each.
+
+### A. Create VPC-A ($10.10.0.0/16$)
+
+1.  Go to the **AWS VPC** dashboard.
+2.  Click **Create VPC**.
+3.  Choose **VPC only**.
+4.  Set the **Name tag** to `VPC-A-Test`.
+5.  Set **IPv4 CIDR block** to **$10.10.0.0/16$**.
+6.  Click **Create VPC**.
+
+### B. Create VPC-B ($10.20.0.0/16$)
+
+1.  Repeat the process.
+2.  Set the **Name tag** to `VPC-B-Test`.
+3.  Set **IPv4 CIDR block** to **$10.20.0.0/16$**.
+4.  Click **Create VPC**.
+
+### C. Create Subnets (One in each VPC)
+
+1.  Go to **Subnets** in the VPC dashboard.
+2.  Click **Create Subnet**.
+3.  For VPC-A, choose `VPC-A-Test` and create a subnet with CIDR **$10.10.1.0/24$**.
+4.  For VPC-B, choose `VPC-B-Test` and create a subnet with CIDR **$10.20.1.0/24$**.
+
+---
+
+## 3. Create and Accept the VPC Peering Connection 🔗
+
+This establishes the network link between the two separate VPCs.
+
+1.  In the VPC dashboard, go to **Peering Connections**.
+2.  Click **Create Peering Connection**.
+3.  Set the **Name tag** to `PCX-A-to-B`.
+4.  For **VPC ID (Requester)**, select **VPC-A-Test** ($10.10.0.0/16$).
+5.  For **VPC ID (Accepter)**, select **VPC-B-Test** ($10.20.0.0/16$) (assuming both are in the same account and region).
+6.  Click **Create Peering Connection**.
+
+The connection status will show as **Pending Acceptance**.
+
+7.  Select the new peering connection.
+8.  Click **Actions** and then **Accept Request**.
+9.  The status will change to **Active** once accepted.
+
+---
+
+## 4. Update Route Tables (The Final Step) 🗺️
+
+Even though the connection is **Active**, traffic cannot flow until the route tables in both VPCs are updated to tell them about the *other* VPC's network range.
+
+### A. Update VPC-A's Route Table
+
+1.  Go to **Route Tables** in the VPC dashboard.
+2.  Select the main route table for **VPC-A-Test** (or the specific one associated with your subnet).
+3.  Go to the **Routes** tab and click **Edit routes**.
+4.  Click **Add route**.
+    * **Destination:** Enter **$10.20.0.0/16$** (VPC-B's CIDR).
+    * **Target:** Select **Peering Connection** and choose `PCX-A-to-B`.
+5.  Click **Save changes**.
+
+### B. Update VPC-B's Route Table
+
+1.  Select the main route table for **VPC-B-Test**.
+2.  Go to the **Routes** tab and click **Edit routes**.
+3.  Click **Add route**.
+    * **Destination:** Enter **$10.10.0.0/16$** (VPC-A's CIDR).
+    * **Target:** Select **Peering Connection** and choose `PCX-A-to-B`.
+4.  Click **Save changes**.
+
+---
+
+## 5. Testing Connectivity (Security Groups) 🛡️
+
+If you launch an EC2 instance in each VPC's subnet, you still need to ensure the **Security Groups** allow the traffic.
+
+* In the Security Group associated with your EC2 instance in **VPC-A**, add an **Inbound Rule** to allow the necessary protocol (e.g., **ICMP** for ping, **SSH/RDP**) from the source **$10.20.0.0/16$** (VPC-B's CIDR).
+* Repeat the process for the Security Group in **VPC-B**, allowing traffic from the source **$10.10.0.0/16$** (VPC-A's CIDR).
+
+Once the security groups are configured, an instance in $10.10.1.0/24$ will be able to communicate directly with an instance in $10.20.1.0/24$ using their **private IP addresses**.
