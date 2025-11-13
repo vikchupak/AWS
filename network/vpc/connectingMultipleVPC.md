@@ -1,4 +1,4 @@
-# Joined VPC private IPS should never overlap
+# Joined VPC private IPs should never overlap
 
 That is the **golden rule** of private networking in AWS: **The private IP CIDR blocks of any two networks (VPCs, on-premises data centers, etc.) that need to communicate must never overlap.**
 
