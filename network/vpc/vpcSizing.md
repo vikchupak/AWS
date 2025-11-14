@@ -8,3 +8,9 @@
   - `172.31.0.0/16` AWS Default VPC
   - `10.128.0.0/9` GCP default VPC
   - `10.0.0.0/16` Azure default Azure VPC
+
+---
+
+AWS VPC min/max range:
+  - min `/28` (16 IP)
+  - max `/16` (65536 IP)
