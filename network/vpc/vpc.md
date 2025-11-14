@@ -2,7 +2,7 @@
 
 - Every VPC has a (virtual) **VPC Router** (invisible)
   - Not user-visible. You can’t SSH or inspect the router — only define routes.
-  - It is Highly available, it runs in all of AZs of VPC uses
+  - It is Highly available, it runs in all VPC's AZs
   - The router has a network interface in every subnet in your VPC
   - By default it routes traffic between subnets
   - Controlled by "route tables". Each subnet has one route table
