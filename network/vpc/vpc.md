@@ -5,7 +5,7 @@
   - It is Highly available, it runs in all of AZs of VPC uses
   - The router has a network interface in every subnet in your VPC
   - By default it routes traffic between subnets
-  - Controlled by "route tables" each subnet has one
+  - Controlled by "route tables". Each subnet has one route table
   - "Interprets" your route table
   - VPC has Main route table - subnet default
     - Traffic is forwarded to its destination via target
