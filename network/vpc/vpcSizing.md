@@ -17,7 +17,7 @@ AWS VPC min/max range:
 
 ### Splitting VPC into subnets
 
-- A VPC size is `/16`
+- A VPC size is `10.16.0.0/16`
 - 16 subnets
 - A subnet size is `/20`
 
