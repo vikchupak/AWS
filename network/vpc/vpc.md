@@ -7,11 +7,14 @@
   - By default it routes traffic between subnets
   - Controlled by "route tables". Each subnet has one route table
   - "Interprets" your route table
-  - VPC has Main route table - subnet default
-    - Traffic is forwarded to its destination via target
-      - destination - final point
-      - target - intermediate point
-        - `local` - destination inside VPC
+ 
+  ---
+  
+- VPC has Main route table - subnet default
+  - Traffic is forwarded to its destination via target
+    - destination - final point
+    - target - intermediate point
+      - `local` - destination inside VPC
 - Internet Gateway is HA
 
 ```
