@@ -14,3 +14,11 @@
 AWS VPC min/max range:
   - min `/28` (16 IP)
   - max `/16` (65536 IP)
+
+### Splitting VPC into subnets
+
+- A VPC size is `/16`
+- 16 subnets
+- A subnet size is `/20`
+
+<img width="1369" height="652" alt="image" src="https://github.com/user-attachments/assets/01c6aae8-8a59-4f70-bc79-89cf46d305e0" />
