@@ -11,8 +11,7 @@
     - Traffic is forwarded to its destination via target
       - destination - final point
       - target - intermediate point
-      - Target:
-        - local - destination inside VPC
+        - `local` - destination inside VPC
 - Internet Gateway is HA
 
 ```
