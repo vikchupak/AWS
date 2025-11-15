@@ -1,6 +1,6 @@
 # NAT vs NAT Gateway. NAT table
 
-# ✅ **NAT vs NAT Gateway**
+## ✅ **NAT vs NAT Gateway**
 
 AWS offers **two ways** to allow **private subnets** to access the Internet **outbound** (updates, package installs, external APIs) *without exposing them publicly*:
 
@@ -9,7 +9,7 @@ AWS offers **two ways** to allow **private subnets** to access the Internet **ou
 
 ---
 
-# 🔶 **NAT Gateway (Managed AWS Service)**
+## 🔶 **NAT Gateway (Managed AWS Service)**
 
 ### **How it works**
 
@@ -66,7 +66,7 @@ AWS offers **two ways** to allow **private subnets** to access the Internet **ou
 * Budget-constrained setups.
 * When you need custom software on the NAT (e.g., squid proxy).
 
-# ❌ **Common Pitfalls**
+## ❌ **Common Pitfalls**
 
 ### **1. Placing NAT gateway in a private subnet**
 
