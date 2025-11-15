@@ -1,13 +1,15 @@
-- VPC endpoint. **Allows DIRECT access to public AWS services from private subnets.** SECURE because it is direct. **1 VPC endpoint - 1 service.**
-- NAT Gateway. **Allows access to public AWS services from private subnets via NAT Gateway.** unlimited access.
-- Internet Gateway. **Allows access to public from public subnets.**
-- AWS (VPC) Gateway Endpoint. A private connection between your VPC and specific AWS services — without sending traffic over the public internet.
-  - Currently, Gateway Endpoints support only two services:
-    - Amazon S3
-    - Amazon DynamoDB
+## VPC endpoints
+
+- VPC Interface Endpoint
+  - **Allows DIRECT access to `PUBLIC AWS services` from private subnets.** SECURE because it is direct. **1 VPC endpoint - 1 service.**
+- VPC Gateway Endpoint
+  - A private connection between your VPC and **`specific PUBLIC AWS services`** — **without sending traffic over the public internet**.
+    - Currently, Gateway Endpoints support only two services:
+      - Amazon S3 (public service)
+      - Amazon DynamoDB (public service)
 
 Example:
-- A lambda can be deployed in private subnet and need access to public resources. VPC or NAT Gateway can help.
+- A lambda can be deployed in private subnet and need access to public resources. VPC endpoints or NAT Gateway can help.
 - A lambda can be deployed in public subnet.
 
 ---
