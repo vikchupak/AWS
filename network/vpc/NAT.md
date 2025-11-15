@@ -40,7 +40,7 @@ AWS offers **two ways** to allow **private subnets** to access the Internet **ou
 
 ---
 
-# 🔷 **NAT Instance (EC2)**
+## 🔷 **NAT Instance (EC2)**
 
 ### **How it works**
 
