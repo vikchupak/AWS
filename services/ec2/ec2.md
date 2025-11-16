@@ -1,6 +1,7 @@
 - EC2 are VMs
 - EC2 Hosts - physical servers where EC2 run
   - EC2 Host AZ resilent
+  - EC2 instance is NOT AZ resilient
 - EC2 Storage
   - Instance (local) store (ephemeral)
     - Storage physically **attached to the host** where your EC2 instance runs
@@ -17,4 +18,4 @@
       - Instance → EBS traffic
       - Instance → S3 traffic
       - Instance → Instance traffic
-- **EC2 host and Remote Storage are AZ resilent and `non-cross-AZ shareable`**. EC2 instance is not AZ resilient.
+- **Remote Storage are AZ resilent and `non-cross-AZ shareable`**
