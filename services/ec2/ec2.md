@@ -1,0 +1,20 @@
+- EC2 are VMs
+- EC2 Hosts - physical servers where EC2 run
+  - EC2 Host AZ resilent
+- EC2 Storage
+  - Instance (local) store (ephemeral)
+    - Storage physically **attached to the host** where your EC2 instance runs
+    - Data is lost when:
+      - instance **stops or terminates**
+        - Stopping instnce frees space on host, so the next time we run istance it has to be run on another host
+      - host hardware fails
+  - (Remote) storage
+    - EBS
+    - S3
+    - EFS
+  - Data network
+    - This is not storage. It is the network for EC2 data transfer
+      - Instance → EBS traffic
+      - Instance → S3 traffic
+      - Instance → Instance traffic
+- **EC2 and Remote Storage are AZ resilent and `non-cross-AZ shareable`**
