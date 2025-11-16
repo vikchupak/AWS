@@ -17,4 +17,4 @@
       - Instance → EBS traffic
       - Instance → S3 traffic
       - Instance → Instance traffic
-- **EC2 and Remote Storage are AZ resilent and `non-cross-AZ shareable`**
+- **EC2 host and Remote Storage are AZ resilent and `non-cross-AZ shareable`**. EC2 instance is not AZ resilient.
