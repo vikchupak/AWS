@@ -1,9 +1,5 @@
 # EBS volume types
 
-Here are the **AWS EBS (Elastic Block Store) volume types** with clear, practical differences:
-
----
-
 IOPS - Input / Output Operations Per Second
 
 ---
