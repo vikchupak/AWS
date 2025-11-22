@@ -59,7 +59,7 @@
 
 # Instance Status Checks
 
-<img width="1244" height="460" alt="image" src="https://github.com/user-attachments/assets/efe7291d-2a68-46da-9fb8-68be3f37e833" />
+<img width="1241" height="627" alt="image" src="https://github.com/user-attachments/assets/c7a5ec34-6401-4b36-a62d-376d65737442" />
 
 - System status
 - Instance status
