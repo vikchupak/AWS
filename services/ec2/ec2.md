@@ -5,6 +5,7 @@
 - EC2 Storage
   - Instance (local) store (ephemeral)
     - **Block** storage devices
+    - **NOT all EC2 support it**
     - Storage physically **attached to the host** where your EC2 instance runs
     - Data is lost when:
       - instance **stops or terminates**
