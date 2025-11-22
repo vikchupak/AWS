@@ -71,3 +71,8 @@ The following accessible from inside any instance and provides all the instance 
 ```bash
 http://169.254.169.254/latest/meta-data
 ```
+
+# Instance Roles vs Instance Profile
+
+- An Instance Profile is a container for an IAM Role that can be attached to an EC2 instance
+- One EC2 instance → One profile → One role
