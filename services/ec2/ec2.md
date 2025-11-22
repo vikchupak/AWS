@@ -24,10 +24,10 @@
 
 # Purchase options
 
-- On-demand
-- Spot
-- Reserved ec2 resources
-  - Pay for a specific instance type
+- On-demand instances
+- Spot instances
+- Reserved instances
+  - Pay for a specific instance type and quantity
   - Commit on 1 or 3 years
   - 3 payment ways
     - No upfront. Pay reduces per/s fee (the most expensive of 3)
@@ -37,3 +37,13 @@
   - Pay for hosts
 - Dedicated Instances
   - Pay additional/extra fee for no other customers instances to use the same host as you. Pay for instances.
+
+---
+
+- Scheduled **reserved** Instances
+- **Reserved** compute capacity
+  - EC2 capacity is finite in each AZ
+    - Each Availability Zone has a limited number of physical servers for each instance type
+    - If an AZ is busy (e.g., high On-Demand usage), you may get: `InsufficientCapacityError`
+  - Reserve hardware capacity for your instances
+  - No 1 or 3 years commitment
