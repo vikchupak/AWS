@@ -12,7 +12,7 @@
         - Stopping instnce frees space on host, so the next time we run istance it has to be run on another host
       - host hardware fails
   - (Remote) storage
-    - EBS
+    - [EBS](https://github.com/vikchupak/AWS/blob/main/services/ebs/ebs.md)
     - S3
     - EFS
   - Data network
