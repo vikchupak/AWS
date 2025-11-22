@@ -21,3 +21,19 @@
       - Instance → S3 traffic
       - Instance → Instance traffic
 - **Remote Storage are AZ resilent and `non-cross-AZ shareable`**
+
+# Purchase options
+
+- On-demand
+- Spot
+- Reserved ec2 resources
+  - Pay for a specific instance type
+  - Commit on 1 or 3 years
+  - 3 payment ways
+    - No upfront. Pay reduces per/s fee (the most expensive of 3)
+    - All upfront. No per/s fee- (cheapest of 3)
+    - Partial upfront. Mix of No upfront & All upfront (middle of 3)
+- Dedicated Hosts
+  - Pay for hosts
+- Dedicated Instances
+  - Pay additional/extra fee for no other customers instances to use the same host as you. Pay for instances.
