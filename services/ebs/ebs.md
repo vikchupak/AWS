@@ -11,6 +11,7 @@ IOPS - Input / Output Operations Per Second
 ## `General Purpose`. SSD-backed volumes (for IOPS-intensive workloads)
 
 - IOPS depends on Size.
+- Provides a balance of price and performance. We recommend these volumes for most workloads.
 
 ### 🔹 gp3 – General Purpose SSD (recommended)
 
@@ -33,6 +34,7 @@ IOPS - Input / Output Operations Per Second
 ## `Provisioned IOPS SSD`. io1 / io2
 
 - IOPS independent of Size.
+- Provides high performance for mission-critical, low-latency, or high-throughput workloads.
 
 ---
 
