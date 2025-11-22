@@ -24,6 +24,10 @@
 
 # Purchase options
 
+[prices doc](https://aws.amazon.com/ec2/pricing/)
+
+---
+
 - On-demand instances
 - Spot instances
 - Reserved instances
