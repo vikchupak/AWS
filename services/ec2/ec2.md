@@ -4,6 +4,7 @@
   - EC2 instance is NOT AZ resilient
 - EC2 Storage
   - Instance (local) store (ephemeral)
+    - **Block** storage devices
     - Storage physically **attached to the host** where your EC2 instance runs
     - Data is lost when:
       - instance **stops or terminates**
