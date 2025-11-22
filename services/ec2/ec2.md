@@ -47,3 +47,8 @@
     - If an AZ is busy (e.g., high On-Demand usage), you may get: `InsufficientCapacityError`
   - Reserve hardware capacity for your instances
   - No 1 or 3 years commitment
+
+---
+
+- Compute Savings Plans
+- EC2 Instance Savings Plans
