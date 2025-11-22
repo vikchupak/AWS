@@ -84,7 +84,7 @@ IOPS - Input / Output Operations Per Second
 
 ## 🐢 `HDD-based` volumes (for throughput-heavy workloads)
 
-### 🔸 st1 – Throughput Optimized HDD
+### 🔸 st1 – Standard Throughput-optimized HDD
 
 * **A low-cost HDD designed for `frequently accessed`, throughput-intensive workloads**
 * Designed for large, sequential workloads
@@ -92,7 +92,7 @@ IOPS - Input / Output Operations Per Second
 * Not for boot volumes
   ✅ Ideal for big data, log processing, streaming
 
-### 🔸 sc1 – Cold HDD
+### 🔸 sc1 – Standard Cold HDD
 
 * **The lowest-cost HDD design for `less frequently accessed` workloads.**
 * Lowest cost
