@@ -63,3 +63,11 @@
 
 - System status
 - Instance status
+
+# Instance metadata
+
+The following accessible from inside any instance and provides all the instance metadata
+
+```bash
+http://169.254.169.254/latest/meta-data
+```
