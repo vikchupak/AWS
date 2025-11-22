@@ -8,7 +8,9 @@ IOPS - Input / Output Operations Per Second
 
 ---
 
-## 🚀 SSD-backed volumes (for IOPS-intensive workloads)
+## `General Purpose`. SSD-backed volumes (for IOPS-intensive workloads)
+
+- IOPS depends on Size.
 
 ### 🔹 gp3 – General Purpose SSD (recommended)
 
@@ -28,7 +30,11 @@ IOPS - Input / Output Operations Per Second
 * Being phased out in favor of gp3
   ⚠️ Use only if you must support older setups
 
-### 🔹 io1 / io2 – Provisioned IOPS SSD
+## `Provisioned IOPS SSD`. io1 / io2
+
+- IOPS independent of Size.
+
+---
 
 * For mission-critical, latency-sensitive workloads
 * Predictable high IOPS
@@ -41,7 +47,40 @@ IOPS - Input / Output Operations Per Second
 
 ---
 
-## 🐢 HDD-backed volumes (for throughput-heavy workloads)
+## 🆚 io1 vs io2 – Provisioned IOPS SSD
+
+| Feature             | io1                  | io2                               |
+| ------------------- | -------------------- | --------------------------------- |
+| Status              | Older generation     | Newer generation ✅                |
+| Max IOPS            | 64,000               | **256,000** ✅                     |
+| Max throughput      | 1,000 MB/s           | **4,000 MB/s** ✅                  |
+| Durability          | 99.8% (0.2% failure) | **99.999%** ✅                     |
+| IOPS per GB ratio   | 50:1                 | **1,000:1** ✅                     |
+| Multi-Attach        | Yes                  | Yes                               |
+| Latency consistency | Good                 | **Better & more stable** ✅        |
+| Price per IOPS      | Higher               | **Lower** ✅                       |
+| Recommended         | Legacy setups        | **Production high-performance** ✅ |
+
+---
+
+## Key differences explained
+
+### 🔹 io2 is superior in every technical way
+
+* Much higher IOPS scalability
+* Consistent performance under load
+* 5x better durability
+* Cheaper per IOPS
+
+### 🔹 io1 is only used when:
+
+* You run legacy systems
+* Existing environments haven't migrated
+* Cost controls already locked
+
+---
+
+## 🐢 `HDD-based` volumes (for throughput-heavy workloads)
 
 ### 🔸 st1 – Throughput Optimized HDD
 
