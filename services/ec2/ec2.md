@@ -158,3 +158,7 @@ Used by:
 | Cluster   | 🚀 Very High | ❌ Low           | HPC, ML, Big Data        |
 | Spread    | ⚡ Normal     | ✅ Very High     | Critical standalone apps |
 | Partition | ⚡ High       | ✅ High          | Distributed storage      |
+
+# Enhanced networking
+
+- Uses Single Root I/O Virtualization (**SR-IOV**)
