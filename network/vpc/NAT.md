@@ -1,6 +1,6 @@
-# NAT vs NAT Gateway. NAT table
+# NAT Instance vs NAT Gateway. NAT table
 
-## ✅ **NAT vs NAT Gateway**
+## ✅ **NAT Instance vs NAT Gateway**
 
 AWS offers **two ways** to allow **private subnets** to access the Internet **outbound** (updates, package installs, external APIs) *without exposing them publicly*:
 
