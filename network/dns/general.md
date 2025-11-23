@@ -1,0 +1,1 @@
+- [General dns info](https://github.com/vikchupak/Network/tree/main/dns)
