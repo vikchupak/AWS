@@ -69,8 +69,7 @@ Instance compute capacity
 
 ---
 
-- Compute Savings Plans
-- EC2 Instance Savings Plans
+- (EC2 Instance) Savings Plans
 
 # Instance Status Checks
 
