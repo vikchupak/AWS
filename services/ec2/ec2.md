@@ -159,10 +159,11 @@ Used by:
 | Spread    | ⚡ Normal     | ✅ Very High     | Critical standalone apps |
 | Partition | ⚡ High       | ✅ High          | Distributed storage      |
 
-# Enhanced networking
+# Enhanced EC2 networking
 
 - Single Root I/O Virtualization (**SR-IOV**) enables **Enhanced Networking** on EC2 instances
-- SR-IOV is a hardware virtualization technology that allows a single physical network interface card (NIC) to present itself as multiple virtual network interfaces directly to virtual machines.
+- SR-IOV is a hardware virtualization technology that allows a single physical network interface card (NIC) to present itself as multiple virtual network interfaces directly to virtual machines
+- Enabled by default in most instance types
 
 ---
 
@@ -174,3 +175,14 @@ Instead of routing traffic through the hypervisor’s virtual network stack, SR-
 * Improve **throughput and consistency**
 
 <img width="514" height="278" alt="image" src="https://github.com/user-attachments/assets/14312250-8ee6-4344-9158-d55986e8182a" />
+
+# EBS-Optimized EC2
+
+- **EBS-optimized** means your EC2 instance has **dedicated network bandwidth for Amazon EBS traffic**, separate from normal internet/VPC traffic.
+- Enabled by default in most instance types
+
+This prevents disk I/O from competing with your app’s network traffic → resulting in:
+
+* ✅ More consistent disk performance
+* ✅ Higher IOPS & throughput
+* ✅ Lower latency spikes
