@@ -76,3 +76,82 @@ http://169.254.169.254/latest/meta-data
 
 - An Instance Profile is a container for an IAM Role that can be attached to an EC2 instance
 - One EC2 instance → One profile → One role
+
+# EC2 Placement Groups
+
+### EC2 Placement Groups — simple explanation
+
+**Placement groups** control *how* EC2 instances are physically placed on AWS hardware to influence performance, latency, and fault tolerance.
+
+### 1. Cluster Placement Group
+
+📌 **Goal:** Maximum performance
+
+* Instances are placed close together in the same rack / hardware cluster
+* Extremely low latency, high bandwidth (up to 100 Gbps)
+* Best for HPC, big data, ML jobs
+
+✅ Pros:
+
+* Fastest network communication
+  ❌ Cons:
+* If the rack fails → all instances fail (low fault tolerance)
+* Usually only one Availability Zone
+
+**Use when:** performance > availability
+
+<img width="1233" height="611" alt="image" src="https://github.com/user-attachments/assets/ea8c77c9-62f3-425d-96b9-5815ec202ecd" />
+
+### 2. Spread Placement Group
+
+📌 **Goal:** Maximum fault tolerance
+
+* Instances are spread across distinct hardware
+* Each instance placed on separate racks
+* Reduces correlated failures
+
+Limits:
+
+* Up to **7 instances per AZ** per spread group
+
+✅ Pros:
+
+* Highest availability
+  ❌ Cons:
+* Not optimized for speed
+
+**Use when:** critical instances must not fail together
+
+<img width="1212" height="602" alt="image" src="https://github.com/user-attachments/assets/ea97b6bf-b74b-41df-bd78-067fd32fbe78" />
+
+### 3. Partition Placement Group
+
+📌 **Goal:** Balance performance & resilience
+
+* Instances divided into partitions
+* Each partition has its own rack set
+* Failure affects only one partition
+
+Used by:
+
+* Hadoop, Kafka, HDFS, Cassandra
+
+✅ Pros:
+
+* Controlled blast radius
+  ❌ Cons:
+* Slightly more complex
+
+**Use when:** large distributed systems
+
+<img width="1246" height="643" alt="image" src="https://github.com/user-attachments/assets/a01f6406-8a22-43ea-9f5e-8e02752f8aa3" />
+
+---
+
+## Quick Comparison
+
+| Type      | Performance  | Fault Tolerance | Typical Use              |
+| --------- | ------------ | --------------- | ------------------------ |
+| Cluster   | 🚀 Very High | ❌ Low           | HPC, ML, Big Data        |
+| Spread    | ⚡ Normal     | ✅ Very High     | Critical standalone apps |
+| Partition | ⚡ High       | ✅ High          | Distributed storage      |
