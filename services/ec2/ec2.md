@@ -151,8 +151,6 @@ Used by:
 
 <img width="1246" height="643" alt="image" src="https://github.com/user-attachments/assets/a01f6406-8a22-43ea-9f5e-8e02752f8aa3" />
 
----
-
 ## Quick Comparison
 
 | Type      | Performance  | Fault Tolerance | Typical Use              |
