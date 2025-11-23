@@ -37,9 +37,9 @@ Instance compute capacity
 ---
 
 - On-demand instances
-  - Pay a fixed price by hour(seconds precision) of an instance running
+  - Pay a fixed price by hour(seconds precision) for an instance running
 - Spot instances
-  - Pay the same as On-demand instances, but hourly price is significantly less then On-demand
+  - Pay the same as On-demand instances, but hourly price is significantly less than On-demand
 - Reserved instances
   - Pay for a specific instance type and quantity
   - Commit on 1 or 3 years
