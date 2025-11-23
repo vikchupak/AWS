@@ -80,8 +80,6 @@ http://169.254.169.254/latest/meta-data
 
 # EC2 Placement Groups
 
-### EC2 Placement Groups — simple explanation
-
 **Placement groups** control *how* EC2 instances are physically placed on AWS hardware to influence performance, latency, and fault tolerance.
 
 ### 1. Cluster Placement Group
