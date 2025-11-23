@@ -161,12 +161,10 @@ Used by:
 
 # Enhanced networking
 
-- Uses Single Root I/O Virtualization (**SR-IOV**)
+- Single Root I/O Virtualization (**SR-IOV**) enables **Enhanced Networking** on EC2 instances
 - SR-IOV is a hardware virtualization technology that allows a single physical network interface card (NIC) to present itself as multiple virtual network interfaces directly to virtual machines.
 
 ---
-
-SR-IOV enables **Enhanced Networking** on EC2 instances.
 
 Instead of routing traffic through the hypervisor’s virtual network stack, SR-IOV allows the instance to:
 
@@ -176,4 +174,3 @@ Instead of routing traffic through the hypervisor’s virtual network stack, SR-
 * Improve **throughput and consistency**
 
 <img width="514" height="278" alt="image" src="https://github.com/user-attachments/assets/14312250-8ee6-4344-9158-d55986e8182a" />
-
