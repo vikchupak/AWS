@@ -5,7 +5,7 @@
 
 # Public hosted zone
 
-- A Public Hosted Zone is for domains that must be reachable from the public internet
+- A Public Hosted Zone is for domains that must be reachable from the public internet & VPCs
 
 ```
 mycompany.com
