@@ -33,7 +33,7 @@ internal.mycompany.local
 | Resolvable inside VPC    | ✅ Yes                      | ✅ Yes               |
 | Needs domain registrar   | ✅ Yes (if external domain) | ❌ No                |
 | Typical use              | Websites, public APIs      | Internal services   |
-| Associated with VPC      | ❌ No                       | ✅ Required          |
+| **Associated with VPC**      | ❌ No                       | ✅ Required          |
 | Cost                     | Same pricing               | Same pricing        |
 
 # Split-view Hosted Zone
