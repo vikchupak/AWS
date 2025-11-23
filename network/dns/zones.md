@@ -38,7 +38,7 @@ internal.mycompany.local
 
 # Split-view Hosted Zone
 
-- The same domain in both public and private zones
+- **The same domain in both public and private zones**
 
 You can have:
 
