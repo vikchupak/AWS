@@ -4,7 +4,7 @@ IOPS - Input / Output Operations Per Second
 
 ---
 
-## `General Purpose`. SSD-backed volumes (for IOPS-intensive workloads)
+## `General Purpose`. SSD-backed volumes
 
 - IOPS depends on Size
 - Provides a balance of price and performance. We recommend these volumes for most workloads
