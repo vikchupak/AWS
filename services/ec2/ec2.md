@@ -165,8 +165,6 @@ Used by:
 - SR-IOV is a hardware virtualization technology that allows a single physical network interface card (NIC) to present itself as multiple virtual network interfaces directly to virtual machines
 - Enabled by default in most instance types
 
----
-
 Instead of routing traffic through the hypervisor’s virtual network stack, SR-IOV allows the instance to:
 
 * Access the NIC more directly
