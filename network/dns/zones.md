@@ -13,6 +13,8 @@ mycompany.com
   ├── api.mycompany.com  -> Public ALB
 ```
 
+<img width="1456" height="696" alt="image" src="https://github.com/user-attachments/assets/6accb6c2-694f-4424-9287-bd5ff8017a92" />
+
 # Private hosted zone
 
 - A Private Hosted Zone is only resolvable inside your VPC(s).
