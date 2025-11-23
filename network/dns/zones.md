@@ -17,7 +17,7 @@ mycompany.com
 
 # Private hosted zone
 
-- A Private Hosted Zone is only resolvable inside your VPC(s).
+- A Private Hosted Zone is only resolvable inside your associated VPC(s).
 
 ```
 internal.mycompany.local
