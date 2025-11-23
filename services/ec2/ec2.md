@@ -93,7 +93,9 @@ http://169.254.169.254/latest/meta-data
 ✅ Pros:
 
 * Fastest network communication
-  ❌ Cons:
+
+❌ Cons:
+
 * If the rack fails → all instances fail (low fault tolerance)
 * Usually only one Availability Zone
 
@@ -116,7 +118,9 @@ Limits:
 ✅ Pros:
 
 * Highest availability
-  ❌ Cons:
+
+❌ Cons:
+
 * Not optimized for speed
 
 **Use when:** critical instances must not fail together
@@ -138,7 +142,9 @@ Used by:
 ✅ Pros:
 
 * Controlled blast radius
-  ❌ Cons:
+
+❌ Cons:
+
 * Slightly more complex
 
 **Use when:** large distributed systems
