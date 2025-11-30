@@ -25,7 +25,7 @@ Supports **PostgreSQL, MySQL, MariaDB, Oracle, SQL Server** engines
 
 ## ✅ 2) **Amazon Aurora**
 
-AWS-built relational database, **MySQL/Postgres/DSQL-compatible**, faster & more scalable.
+Aurora is a **custom AWS-BUILT database engine under the hood**, but it exposes **MySQL/Postgres/DSQL-compatible** on the surface. Faster & more scalable.
 
 ### Parallels
 
