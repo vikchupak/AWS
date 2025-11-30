@@ -70,5 +70,11 @@
   - Scales automatically
   - No need in managing instances by customer
   - Uses Aurora Capacity Units (ACU)
+  - Uses (all cluster type use these)
+    - Cluster endpoint - points to primary ACU instance
+    - Reader endpoint - points to ACU replicas
+    - Instance endpoints - points to specific ACU
+      - Usually you don’t need it because the cluster and reader endpoints abstract scaling
+      - Aurora Serverless v2 can automatically scale ACUs up/down, so instance endpoints may change dynamically
 - **RDS proxy - Proxy for RDS connection pool**
   - Works with provisioned RDS and Aurora instances
