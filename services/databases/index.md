@@ -29,9 +29,17 @@
   - For Read Scalability
   - Uses
     - Instance endpoint - points to specific replicas
+    - No Reader endpoint
+    - No Writer endpoint. Primary instance has an instance endpoint
   - Asynchronous replication
   - MANUAL FALOVER
   - Exists for both - Classic RDS and Aurora
+  - Possible 2
+    - Classic RDS - RR
+      - 1 primary + async replicas
+      - No Standby
+    - Multi-AZ RDS + Read Replicas
+      - 1 primary + **1 Standby** + async replicas
 - **RDS - Custom**
   - Designed for workloads that need full OS-level and database-level customization
   - Supported only Oracle, MS SQL Server
