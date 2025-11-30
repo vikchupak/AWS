@@ -14,11 +14,11 @@
 - **RDS - Multi-AZ Cluster**
   - Uses 1 primary + 2 replicas only
   - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
-  - AUTOMATIC Failover is faster than in **RDS - Multi AZ**
+  - Shared storage
+  - AUTOMATIC Failover is faster than in **RDS - Multi AZ** because of shared storage
   - Each instance in different AZ
   - Supported MySQL, PostgreSQL only
   - Synchronous replication
-  - Shared storage
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
 - **RDS - Read Replicas(RR)**
   - Adds up to 5 replicas for primary instance
