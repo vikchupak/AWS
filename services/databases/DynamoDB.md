@@ -7,8 +7,21 @@
 
 ---
 
+- Item attribute names are always strings
+  ```json
+  {
+    "customerId": ...,
+    "orderId": ...,
+    "amount": ...
+  }
+  ```
+- Primary/index partition key value and sorting key value must be `top-level attributes` and a scalar type:
+  - String
+  - Number
+  - Binary
+- 
 - It is **key-value** database
-  - Types
+  - All value types:
     - String
     - Number
     - Binary
@@ -17,10 +30,6 @@
     - List > **JSON** array **(can be considered as a document)**
     - Map > **JSON** object **(can be considered as a document)**
     - Set > Set of type String, Number, Binary
-- **Table primary partition/sorting key and index partition/sorting key must be `top-level attributes` and must be `type of`**
-  - String
-  - Number
-  - Binary
  
 ---
 
