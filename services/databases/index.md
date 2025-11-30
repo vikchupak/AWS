@@ -34,6 +34,7 @@
   - Uses cluster
   - 1 single-primary instance + (up to 15) replica instances
   - Uses shared cluster volume
+  - Almost like synchronous replication, but the mechanism is different
 - **Aurora Global Database**
   - Provisioned
   - Add read replicas between (up to 5) regions
