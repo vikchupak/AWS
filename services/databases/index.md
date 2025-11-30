@@ -47,6 +47,10 @@
 - **Aurora (Provisioned)**. Or another name Aurora (Provisioned) Cluster
   - Default
   - **Any Aurora DB is always a cluster**
+  - Uses (all cluster type use these)
+    - Cluster endpoint - points to primary instance
+    - Reader endpoint - points to replicas
+    - Instance endpoints - points to instances
   - 1 single-primary instance + (up to 15) replica instances
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
