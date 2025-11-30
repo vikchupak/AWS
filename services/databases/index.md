@@ -10,6 +10,7 @@
 - **RDS - Multi AZ**
   - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
+  - Synchronous replication
 - **RDS - Multi-AZ Cluster**
   - Uses 1 primary + 2 replicas only
   - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
