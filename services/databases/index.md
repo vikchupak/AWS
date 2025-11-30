@@ -37,6 +37,11 @@
   - Feels like synchronous replication, but the mechanism is different
 - **Aurora Global Database**
   - Provisioned
+  - Only one primary instance in Primary region
+  - Up to 5 Secondary regions
+    - Each region has up to 15 replicas
+  - Replication inside Primary region is the same as in Aurora (Provisioned)
+  - Replication between Primary and secondary regions is async
   - Add read replicas between (up to 5) regions
 - **Aurora Multi-master**
   - DEPRICATED
