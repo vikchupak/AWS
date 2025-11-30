@@ -6,7 +6,7 @@ Below is a **clear, structured overview of major Amazon database services**, the
 - Cassandra
 - etc.
 
-## ✅ 1) **Amazon RDS (Relational Database Service)**
+## ✅ 1) **Amazon RDS (Relational Database Service)** (SQL DB)
 
 Supports **PostgreSQL, MySQL, MariaDB, Oracle, SQL Server** engines
 
@@ -23,7 +23,7 @@ Supports **PostgreSQL, MySQL, MariaDB, Oracle, SQL Server** engines
 
 ---
 
-## ✅ 2) **Amazon Aurora**
+## ✅ 2) **Amazon Aurora** (SQL DB)
 
 Aurora is a **custom AWS-BUILT database engine under the hood**, but it exposes **MySQL/Postgres/DSQL-compatible** on the surface. Faster & more scalable.
 
