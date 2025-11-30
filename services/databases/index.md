@@ -1,0 +1,42 @@
+- Primary. Writes/reads
+- Standby. No reads instanse. Synchronous sync between Primary and Standby
+- Replica. Reads only. Async sync between Primary and Replica
+
+---
+
+- **RDS - Single AZ**
+  - Default
+  - One instanse
+- **RDS - Multi AZ**. 1 Standby instance in another AZ, but it is not reachable. For HA - stay available with minimal downtime in case of failover due to Automatic Failover
+- **RDS - Multi-AZ Cluster**. Uses 1 primary + 2 replicas only
+  - Each instance in different AZ. MySQL, PostgreSQL
+  - For High Availability (HA) due to **AUTOMATIC Failover**
+  - Synchronous replication
+  - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
+- **RDS - Read Replicas(RR)**
+  - Adds up to 5 replicas for primary instance
+  - For Read Scalability
+  - Asynchronous replication
+  - MANUAL FALOVER
+  - Exists for both - Classic RDS and Aurora
+- **RDS - Custom**
+  - Designed for workloads that need full OS-level and database-level customization
+  - Supported only Oracle, MS SQL Server
+- **Aurora (Provisioned)**
+  - Default
+  - Uses cluster
+  - 1 single-primary instance + replica instances
+  - Uses shared cluster volume
+- **Aurora Global Database**
+  - Provisioned
+  - Add read replicas between (up to 5) regions
+- **Aurora Multi-master**
+  - DEPRICATED
+  - Provisioned
+  - Add 2 primary(write) nodes
+- **Aurora serverless v2**
+  - Scales automatically
+  - No need in managing instances by customer
+  - Uses Aurora Capacity Units (ACU)
+- **RDS proxy - Proxy for RDS connection pool**
+  - Works only with provisioned RDS and Aurora instances
