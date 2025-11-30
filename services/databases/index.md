@@ -52,4 +52,4 @@
   - No need in managing instances by customer
   - Uses Aurora Capacity Units (ACU)
 - **RDS proxy - Proxy for RDS connection pool**
-  - Works only with provisioned RDS and Aurora instances
+  - Works with provisioned RDS and Aurora instances
