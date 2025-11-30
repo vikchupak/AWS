@@ -7,11 +7,17 @@
 - **RDS - Single AZ**
   - Default
   - One instanse
-- **RDS - Multi AZ**. 1 Standby instance in another AZ, but it is not reachable. For HA - stay available with minimal downtime in case of failover due to Automatic Failover
-- **RDS - Multi-AZ Cluster**. Uses 1 primary + 2 replicas only
-  - Each instance in different AZ. MySQL, PostgreSQL
-  - For High Availability (HA) due to **AUTOMATIC Failover**
+- **RDS - Multi AZ**
+  - 1 Standby instance in another AZ, but it is not reachable
+  - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
+- **RDS - Multi-AZ Cluster**
+  - Uses 1 primary + 2 replicas only
+  - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
+  - AUTOMATIC Failover is faster than in **RDS - Multi AZ**
+  - Each instance in different AZ
+  - Supported MySQL, PostgreSQL only
   - Synchronous replication
+  - Shared storage
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
 - **RDS - Read Replicas(RR)**
   - Adds up to 5 replicas for primary instance
