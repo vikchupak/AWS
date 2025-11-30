@@ -14,6 +14,10 @@
 - **RDS - Multi-AZ Cluster**
   - Uses 1 primary + 2 replicas only
   - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
+  - Uses
+    - Cluster endpoint - points to primary instance
+    - Reader endpoint - points to replicas
+    - Instance endpoints - points to instances
   - Shared storage
   - AUTOMATIC Failover is faster than in **RDS - Multi AZ** because of shared storage
   - Each instance in different AZ
@@ -23,15 +27,17 @@
 - **RDS - Read Replicas(RR)**
   - Adds up to 5 replicas for primary instance
   - For Read Scalability
+  - Uses
+    - Instance endpoint - points to specific replicas
   - Asynchronous replication
   - MANUAL FALOVER
   - Exists for both - Classic RDS and Aurora
 - **RDS - Custom**
   - Designed for workloads that need full OS-level and database-level customization
   - Supported only Oracle, MS SQL Server
-- **Aurora (Provisioned)**
+- **Aurora (Provisioned)**. Or another name Aurora (Provisioned) Cluster
   - Default
-  - Uses cluster
+  - **Any Aurora DB is always a cluster**
   - 1 single-primary instance + (up to 15) replica instances
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
