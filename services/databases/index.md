@@ -32,7 +32,7 @@
 - **Aurora (Provisioned)**
   - Default
   - Uses cluster
-  - 1 single-primary instance + replica instances
+  - 1 single-primary instance + (up to 15) replica instances
   - Uses shared cluster volume
 - **Aurora Global Database**
   - Provisioned
