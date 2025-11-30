@@ -8,6 +8,7 @@ Each mount target:
 - Gets one private IP address (automatically assigned unless you specify)
 - Acts as the entry point to EFS in that Availability Zone
 - Is managed fully by AWS (you cannot SSH into it, stop it, modify OS, etc.)
+- **Shared between many EC2s**
 
 ## How EC2 connects to EFS
 
