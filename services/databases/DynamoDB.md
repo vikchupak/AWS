@@ -38,7 +38,7 @@
  
 ---
 
-Tables are schemaless - we don't have to define attributes(columns) on table level. We can create items(rows) with any attributes.
+Tables are **schemaless - we don't have to define attributes(columns) on table level**. We can create items(rows) with any attributes.
 
 <img width="751" height="493" alt="image" src="https://github.com/user-attachments/assets/8242e991-06f0-4125-a400-a4ccf4d539fe" />
 
