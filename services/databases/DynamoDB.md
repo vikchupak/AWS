@@ -43,7 +43,8 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 <img width="751" height="493" alt="image" src="https://github.com/user-attachments/assets/8242e991-06f0-4125-a400-a4ccf4d539fe" />
 
 ---
-
+- `PK` stands for `partition key`
+- `SK` stands for `sorting key`
 - Table has only one primary key that defines each row uniquely.
 - `primary key = {table partition key}:{table sorting key(optional)}`
 - primary key must be unique
