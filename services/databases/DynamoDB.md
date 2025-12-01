@@ -44,10 +44,17 @@ Tables are schemaless - we don't have to define attributes(columns) on table lev
 - in pimary key, gsi, lsi, partition key doesn't have to be unique
 
 - `global secondary index = {non table partition key:any sorting key(optional)}`
+  - Can be created at any time
+  - DynamoDB limits you to 20 GSIs per table
+  - GSIs consume their own RCUs/WCUs
+  - We can set what attributes are projected(included) into index
+    - the base table’s primary key is always projected into the LSI, regardless of the projection type
 - `local secondary index` = `{table partition key}:{non table sorting key}`
   - Can't be added or removed after table creation
   - DynamoDB limits you to 5 LSIs per table
   - LSIs consume the same RCUs/WCUs as the base table
+  - We can set what attributes are projected(included) into index
+    - Base table primary key is NOT automatically included unless you explicitly add it to the projection
 
 ## JSON
 
