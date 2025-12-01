@@ -47,8 +47,7 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - `SK` stands for `sorting key`
 - Table has only one primary key that defines each row uniquely.
 - `primary key = {table partition key}:{table sorting key(optional)}`
-- primary key must be unique
-- in pimary key, gsi, lsi, partition key doesn't have to be unique
+- primary key must be unique and define each item(row) uniquely
 - `local secondary index` = `{table partition key}:{non table sorting key}`
   - Can't be added or removed after table creation
   - DynamoDB limits you to 5 LSIs per table
