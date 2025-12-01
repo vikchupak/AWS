@@ -58,6 +58,11 @@ Tables are schemaless - we don't have to define attributes(columns) on table lev
     - Base table primary key is NOT automatically included unless you explicitly add it to the projection
     - If an attribute is not projected, it can still be received, but it is inefficient
 
+---
+
+- Strongly consistent reads are only possible on the base table and LSIs
+- Reads from a GSI is eventually consistent reads
+
 ## JSON
 
 - Classic JSON to DynamoDB JSON
