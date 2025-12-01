@@ -7,6 +7,8 @@
 
 ---
 
+### on-demand vs provisioned capacity
+
 - [To include](https://chatgpt.com/share/692de937-9db4-8011-b632-ba604753e3a7)
 
 ---
