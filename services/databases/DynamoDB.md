@@ -45,6 +45,9 @@ Tables are schemaless - we don't have to define attributes(columns) on table lev
 
 - `global secondary index = {non table partition key:any sorting key(optional)}`
 - `local secondary index` = `{table partition key}:{non table sorting key}`
+  - Can't be added or removed after table creation
+  - DynamoDB limits you to 5 LSIs per table
+  - LSIs consume the same RCUs/WCUs as the base table
 
 ## JSON
 
