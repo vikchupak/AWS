@@ -15,9 +15,10 @@
 - Wide-Column Databases (Wide-Column Stores)
   - Apache Cassandra (No SQL)
   - BigQuery (SQL)
-
 - Document Store
   - MongoDB (No SQL)
+- Key-Value Store
+  - Redis
 
 ---
 
