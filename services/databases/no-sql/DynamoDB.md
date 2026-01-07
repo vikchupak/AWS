@@ -1,6 +1,7 @@
-# Dynamo DB
+# DynamoDB
 
 - Serverless
+- Operates within **a single AWS Region**
 
 ---
 
@@ -91,3 +92,16 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - It is not possible to create index on nested data like Map or List, (Set?) for efficient search
 - Map is not JSON-as-string
   - Nested Access: You can use DynamoDB's document path syntax to access, update, or conditionally write on the individual nested keys and values within the map without reading or writing the entire map content. This is a significant advantage over storing it as a string.
+
+## DynamoDB Global Tables
+
+- Operates within **a single AWS Region** ?
+- Cross-regional replication
+- Multi-master replication. Means all tables support reads and writes
+  - Reads and writes can occure in any region
+    - sub-second replication
+- **Last writer wins** for conflict resolution
+- Strongly consistent reads ONLY in the same region as writes
+- Global eventually consistent
+
+## 
