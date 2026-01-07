@@ -41,7 +41,7 @@ Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 
 ## ✅ 3) **DynamoDB**
 
-**Serverless** NoSQL key–value database.
+**Serverless** NoSQL key–value & document database.
 
 ### Parallels
 
