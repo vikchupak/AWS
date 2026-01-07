@@ -71,7 +71,13 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - Strongly consistent reads are only possible on the base table and LSIs
 - Reads from a GSI is eventually consistent reads
 
----
+## JSON
+
+- Classic JSON to DynamoDB JSON
+  - https://dynobase.dev/dynamodb-json-converter-tool/
+- It is not possible to create index on nested data like Map or List, (Set?) for efficient search
+- Map is not JSON-as-string
+  - Nested Access: You can use DynamoDB's document path syntax to access, update, or conditionally write on the individual nested keys and values within the map without reading or writing the entire map content. This is a significant advantage over storing it as a string.
 
 ### Streams
 
@@ -84,14 +90,6 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
   - `NEW_AND_OLD_IMAGES`
 - Item change can generate an event with data changed
   - The event can be sent to lambda, so creating **a trigger** using a DynamoDB stream and a lambda
-
-## JSON
-
-- Classic JSON to DynamoDB JSON
-  - https://dynobase.dev/dynamodb-json-converter-tool/
-- It is not possible to create index on nested data like Map or List, (Set?) for efficient search
-- Map is not JSON-as-string
-  - Nested Access: You can use DynamoDB's document path syntax to access, update, or conditionally write on the individual nested keys and values within the map without reading or writing the entire map content. This is a significant advantage over storing it as a string.
 
 ## DynamoDB Global Tables
 
@@ -114,3 +112,9 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - Scales automatically
 
 <img width="1270" height="714" alt="image" src="https://github.com/user-attachments/assets/517558e9-19dd-433b-b100-77616a046ab4" />
+
+## DynamoDB TTL
+
+- Enable on table
+- Select attribute where to store delete timestamp
+  - This attribute is scanned. The item is set to **EXPIRED** once match. Later another scan deletes expired items.
