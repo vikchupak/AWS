@@ -44,7 +44,7 @@
 - **RDS - Custom**
   - Designed for workloads that need full OS-level and database-level customization
   - Supported only Oracle, MS SQL Server
-- **Aurora (Provisioned)**. Or another name Aurora (Provisioned) Cluster
+- **Aurora (Provisioned)**. Or another name **Aurora (Provisioned) Cluster**
   - **Default**
   - **Any Aurora DB is always a cluster**
   - Operates within **a single AWS Region**, **(Standard/Regional)**
