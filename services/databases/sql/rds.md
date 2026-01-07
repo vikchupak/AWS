@@ -1,5 +1,5 @@
 - Primary. Writes/reads
-- Standby. No reads/write instance. Synchronous sync between Primary and Standby
+- Standby. **No reads and no write instance**. Synchronous sync between Primary and Standby. Automatic Failover.
 - Replica. Reads only. Async sync between Primary and Replica
 
 ---
