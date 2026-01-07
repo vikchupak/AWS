@@ -12,7 +12,7 @@
   Ages:     25, 31
   Cities:   London, Paris
   ```
-- Wide-Column Databases
+- Wide-Column Databases (Wide-Column Stores)
   - Apache Cassandra (No SQL)
   - BigQuery (SQL)
 
