@@ -1,3 +1,5 @@
+# BD categorized by physical Storage types
+
 - Row Store
   - Postgres (SQL)
 - Column Databases (Column Stores)
