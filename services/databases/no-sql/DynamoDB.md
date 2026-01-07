@@ -98,7 +98,7 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - **Multi-regional**
 - Cross-regional replication
 - Multi-master replication. Means all tables support reads and writes
-  - Reads and writes can occure in any region
+  - Reads and writes can occur in any region
     - sub-second replication
 - **Last writer wins** for conflict resolution
 - Strongly consistent reads ONLY in the same region as writes
