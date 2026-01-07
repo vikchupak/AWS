@@ -16,6 +16,9 @@
   - Apache Cassandra (No SQL)
   - BigQuery (SQL)
 
+- Document Store
+  - MongoDB
+
 ---
 
 DynamoDB is best described as:
