@@ -5,7 +5,7 @@
 ---
 
 - **RDS - Single AZ**
-  - Default
+  - **Default**
   - One instanse
 - **RDS - Multi AZ**
   - 1 Standby instance in another AZ, but it is not reachable
@@ -45,20 +45,21 @@
   - Designed for workloads that need full OS-level and database-level customization
   - Supported only Oracle, MS SQL Server
 - **Aurora (Provisioned)**. Or another name Aurora (Provisioned) Cluster
-  - Default
+  - **Default**
   - **Any Aurora DB is always a cluster**
+  - Operates within **a single AWS Region**, **(Standard/Regional)**
   - Uses (all cluster type use these)
     - Cluster endpoint - points to primary instance
     - Reader endpoint - points to replicas
     - Instance endpoints - points to instances
-  - 1 single-primary instance + (up to 15) replica instances
+  - 1 single-primary instance for writes + (up to 15) replica instances for reads
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
 - **Aurora Global Database**
   - Provisioned
-  - Only one primary instance in Primary region
-  - Up to 5 Secondary regions
-    - Each region has up to 15 replicas
+  - Only **one primary instance** in **a Primary Region** for **writes**
+  - Up to 5 **Secondary Regions**
+    - Each region has **up to 15 replicas for reads**
   - Replication inside Primary region is the same as in Aurora (Provisioned)
   - Replication between Primary and secondary regions is async
   - Add read replicas between (up to 5) regions
