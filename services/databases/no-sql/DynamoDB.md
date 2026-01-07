@@ -104,4 +104,13 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - Strongly consistent reads ONLY in the same region as writes
 - Global eventually consistent
 
-## 
+## DynamoDB Accelerator (DAX)
+
+- **In merory-cache** on AWS side. Layer between app and DynamoDB.
+- Uses DAX SDK on app side
+- DAX implements **Read-Through** & **Write-Through** Caching, so the app does't have to perform **Side-Cache** like with redis
+- DAX cluster has to be **deployed within** a vpc in multi AZs
+  - It has a Primary node for writes and Replicas nodes for reads
+- Scales automatically
+
+<img width="1270" height="714" alt="image" src="https://github.com/user-attachments/assets/517558e9-19dd-433b-b100-77616a046ab4" />
