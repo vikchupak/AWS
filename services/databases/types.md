@@ -17,7 +17,7 @@
   - BigQuery (SQL)
 
 - Document Store
-  - MongoDB
+  - MongoDB (No SQL)
 
 ---
 
