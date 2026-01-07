@@ -1,5 +1,9 @@
 # Dynamo DB
 
+- Serverless
+
+---
+
 - https://www.youtube.com/watch?v=2X2SO3Y-af8 (key concepts)
 - https://www.youtube.com/watch?v=FQrN5aJWa_U (practical example via console)
 - https://www.youtube.com/watch?v=QoLlM5ax568 (practical example vai cli)
