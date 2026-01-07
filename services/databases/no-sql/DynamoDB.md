@@ -66,6 +66,20 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - Strongly consistent reads are only possible on the base table and LSIs
 - Reads from a GSI is eventually consistent reads
 
+---
+
+### Streams
+
+- Time-ordered list of table item changes (inserts, updates, deletes) for 24 hours
+- Enabled per table basis
+- Stream has 4 view types
+  - `KEYS_ONLY`
+  - `NEW_IMAGE`
+  - `OLD_IMAGE`
+  - `NEW_AND_OLD_IMAGES`
+- Item change can generate an event with data changed
+  - The event can be sent to lambda, so creating **a trigger** using a DynamoDB stream and a lambda
+
 ## JSON
 
 - Classic JSON to DynamoDB JSON
