@@ -5,9 +5,7 @@
 - https://www.youtube.com/watch?v=QoLlM5ax568 (practical example vai cli)
 - https://www.youtube.com/watch?v=vl14y3sMkt4 (data modelling)
 
----
-
-### on-demand vs provisioned capacity
+## On-demand vs provisioned capacity
 
 - [To include](https://chatgpt.com/share/692de937-9db4-8011-b632-ba604753e3a7)
 
