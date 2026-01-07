@@ -95,7 +95,7 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 
 ## DynamoDB Global Tables
 
-- Operates within **a single AWS Region** ?
+- **Multi-regional**
 - Cross-regional replication
 - Multi-master replication. Means all tables support reads and writes
   - Reads and writes can occure in any region
