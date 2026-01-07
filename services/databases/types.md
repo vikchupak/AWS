@@ -13,7 +13,7 @@
   Cities:   London, Paris
   ```
 - Wide-Column Databases (Wide-Column Stores)
-  - Apache Cassandra (No SQL)
+  - Apache Cassandra | DynamoDB (No SQL)
   - BigQuery (SQL)
 - Document Store
   - MongoDB (No SQL)
