@@ -1,8 +1,8 @@
 - Row Store
-  - Postgres
+  - Postgres (SQL)
 - Column Databases (Column Stores)
-  - Redshift
-  - ClickHouse
+  - Redshift (SQL)
+  - ClickHouse (SQL)
   ```
   # Each column is stored contiguously
   IDs:      1, 2
@@ -11,8 +11,8 @@
   Cities:   London, Paris
   ```
 - Wide-Column Databases
-  - Apache Cassandra
-  - BigQuery
+  - Apache Cassandra (No SQL)
+  - BigQuery (SQL)
 
 ---
 
