@@ -1,4 +1,4 @@
-# Elasticache
+# Amazon ElastiCache
 
 - In-memory db
 - Engines
