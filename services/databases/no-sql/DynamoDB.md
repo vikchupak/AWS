@@ -1,6 +1,6 @@
 # DynamoDB
 
-- Public Database-as-a-service
+- **Public** Database-as-a-service
 - Key-value & document
 - Serverless
 - Operates within **a single AWS Region**
