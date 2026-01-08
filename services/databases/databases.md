@@ -53,7 +53,25 @@ Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 
 ---
 
-## ✅ 4) **Amazon ElastiCache**
+## ✅ 4) **Amazon Keyspaces (managed Apache Cassandra)**
+
+- Managed **Apache Cassandra–compatible** database.
+- While it feels like Cassandra to a developer, it is built on a different underlying architecture than a traditional Cassandra cluster.
+
+✔ Column-family
+✔ Horizontal scaling
+
+### Parallels
+
+| AWS       | Parallel  |
+| --------- | --------- |
+| Keyspaces | Cassandra |
+
+> If you used Cassandra and want managed version → Keyspaces.
+
+---
+
+## ✅ 5) **Amazon ElastiCache**
 
 **In-memory** cache service.
 
@@ -70,7 +88,7 @@ Supports: Redis, Memcached
 
 ---
 
-## ✅ 5) **Amazon MemoryDB**
+## ✅ 6) **Amazon MemoryDB**
 
 Valkey/Redis-compatible **durable**, in-memory database.
 
@@ -86,7 +104,7 @@ Valkey/Redis-compatible **durable**, in-memory database.
 
 ---
 
-## ✅ 6) **Amazon Neptune**
+## ✅ 7) **Amazon Neptune**
 
 Fully managed **graph database**.
 
@@ -103,7 +121,7 @@ Fully managed **graph database**.
 
 ---
 
-## ✅ 7) **Amazon DocumentDB**
+## ✅ 8) **Amazon DocumentDB**
 
 MongoDB-compatible document DB.
 
@@ -120,24 +138,6 @@ Only API-compatible; underlying storage is Aurora-style.
 | DocumentDB | MongoDB  |
 
 > For Mongo-like workloads, but without MongoDB engine.
-
----
-
-## ✅ 8) **Amazon Keyspaces (managed Apache Cassandra)**
-
-- Managed **Apache Cassandra–compatible** database.
-- While it feels like Cassandra to a developer, it is built on a different underlying architecture than a traditional Cassandra cluster.
-
-✔ Column-family
-✔ Horizontal scaling
-
-### Parallels
-
-| AWS       | Parallel  |
-| --------- | --------- |
-| Keyspaces | Cassandra |
-
-> If you used Cassandra and want managed version → Keyspaces.
 
 ---
 
