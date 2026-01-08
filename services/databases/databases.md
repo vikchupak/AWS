@@ -116,13 +116,13 @@ Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 ## ✅ 7) **Amazon MemoryDB**
 
 - **Provisioned**
-- Valkey/Redis-compatible **durable**, in-memory database.
+- Key-Value/Redis-compatible **durable/persistent**, in-memory database.
 
 ### Parallels
 
 | AWS      | Parallel                     |
 | -------- | ---------------------------- |
-| MemoryDB | Redis / Valkey (**but durable**) |
+| MemoryDB | Redis / Key-Value (**but durable/persistent**) |
 
 > Compared to ElastiCache:
 > ElastiCache → cache
