@@ -46,8 +46,8 @@ Here’s a clear comparison of **Amazon DynamoDB vs. Amazon Keyspaces (for Apach
 
 ## **DynamoDB**
 
-* Key–value store with document support
-* No schema enforcement
+* Key–value store **with document support**
+* Schemaless. Only Primary Key must be defined at table level
 * Each item can have different attributes
 * Nested JSON allowed
 
@@ -60,7 +60,7 @@ Here’s a clear comparison of **Amazon DynamoDB vs. Amazon Keyspaces (for Apach
 ## **Keyspaces (for Cassandra)**
 
 * Wide-column store
-* Uses CQL (SQL-like)
+* Uses Cassandra Query Language (CQL). SQL-like
 * Schema required (fixed columns)
 * No native JSON nesting (must serialize JSON manually)
 
