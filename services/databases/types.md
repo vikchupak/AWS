@@ -32,6 +32,19 @@
   - Amazon Redshift
   - Snowflake
 
+- Data Warehouse
+  - A Data Warehouse is a central repository that stores large amounts of data from many different sources within an organization. Think of it as a "digital library" where data is cleaned, organized, and archived
+ 
+### OLAP is Data Warehouse?
+
+Not exactly. While they are very closely related, they aren't the same thing.
+The best way to think about it is: The Data Warehouse is the "Library," and OLAP is the "Librarian."
+
+### The Key Distinction
+- Data Warehouse (The Container): This is the physical (or cloud) storage location where all your historical data from different sources is collected, cleaned, and organized.
+
+- OLAP (The Technology): This is the computational process or "engine" that sits on top of the warehouse. It allows you to actually query, slice, and analyze that data from different perspectives.
+
 ---
 
 DynamoDB is best described as:
