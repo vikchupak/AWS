@@ -22,12 +22,12 @@
 
 ---
 
-- OLTP (Online **Transaction** Processing)
+- OLTP (Online **Transaction** Processing). Row/transaction.
   - PostgreSQL
   - MySQL
   - Oracle DB
   
-- OLAP (Online **Analytical** Processing)
+- OLAP (Online **Analytical** Processing). Column based.
   - Google BigQuery
   - Amazon Redshift
   - Snowflake
