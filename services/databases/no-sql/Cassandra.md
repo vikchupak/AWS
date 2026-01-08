@@ -5,7 +5,7 @@
 ---
 
 - Wide-column data store/model
-- Schemaful. We define columns at table level
+- **Schemaful**. We define columns at table level
 - Doesn't support storing documents (nested JSONs) for efficient search
 
 <img width="763" height="575" alt="image" src="https://github.com/user-attachments/assets/b01eb742-d023-457f-9edc-0a112694205c" />
