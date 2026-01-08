@@ -1,20 +1,32 @@
 # BD categorized by physical Storage types
 
-- Row Store
-  - Postgres (SQL)
-- Column Databases (Column Stores)
-  - Redshift (SQL)
-  - ClickHouse (SQL)
+- Row-oriented (Databases) Stores
+  - Traditional databases store data record-by-record. If the database wants to read Row 1, it grabs the entire block containing all its attributes
+  - Databases
+    - Postgres (SQL)
+- Column (Databases) Stores
+  - Analytical databases store each column in its own separate file/block
+  - Databases
+    - Redshift (SQL)
+    - ClickHouse (SQL)
   ```
   # Each column is stored contiguously
-  IDs:      1, 2
-  Names:    John, Anna
-  Ages:     25, 31
-  Cities:   London, Paris
+  Column1 (ID):      1, 2
+  Column2 (Name):    John, Anna
+  Column3 (Age):     25, 31
+  Column4 (City):    London, Paris
   ```
-- Wide-Column Databases (Wide-Column Stores)
-  - Apache Cassandra | DynamoDB (No SQL)
-  - BigQuery (SQL)
+- Wide-Column (Databases) Stores
+  - Wide-column stores are "Row-oriented" but schemaless. Each row is like a mini-map where columns can exist or not
+  - Databases
+    - Apache Cassandra (No SQL)
+    - DynamoDB (No SQL)
+    - BigQuery (SQL)
+  ```
+  Row1: ID:1, Date:2024-01-01, Product:Laptop, Price:1200, Region:North
+  Row2: ID:2, Date:2024-01-01, Product:Mouse, Price:25 (Notice: Region column is missing entirely)
+  Row3: ID:3, Date:2024-01-02, Product:Laptop, Price:1200, Discount:5% (Notice: New "Discount" column added just for this row)
+  ```
 - Document Store
   - MongoDB (No SQL)
 - Key-Value Store
