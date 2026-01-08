@@ -39,7 +39,7 @@ Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 
 ---
 
-## ✅ 3) **DynamoDB**
+## ✅ 3) **Amazon DynamoDB**
 
 **Serverless** NoSQL key–value & document database.
 
