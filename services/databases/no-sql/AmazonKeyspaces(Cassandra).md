@@ -12,7 +12,7 @@
 
 <img width="590" height="481" alt="image" src="https://github.com/user-attachments/assets/49c62bbd-4b16-4935-a103-1b7251496e40" />
 
-# Amazon DynamoDB vs. Amazon Keyspaces (for Apache Cassandra)
+# Amazon Keyspaces (for Apache Cassandra) vs Amazon DynamoDB
 
 Here’s a clear comparison of **Amazon DynamoDB vs. Amazon Keyspaces (for Apache Cassandra)** — when to use which, strengths, limits, and costs.
 
