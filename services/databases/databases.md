@@ -8,7 +8,8 @@ Below is a **clear, structured overview of major Amazon database services**, the
 
 ## ✅ 1) **Amazon RDS (Relational Database Service)** (SQL DB)
 
-Supports **PostgreSQL, MySQL, MariaDB, Oracle, SQL Server** engines
+- **Provisioned**
+- Supports **PostgreSQL, MySQL, MariaDB, Oracle, SQL Server** engines
 
 ### Parallels
 
@@ -23,9 +24,10 @@ Supports **PostgreSQL, MySQL, MariaDB, Oracle, SQL Server** engines
 
 ---
 
-## ✅ 2) **Amazon Aurora** (SQL DB)
+## ✅ 2) **Amazon Aurora** (SQL DB). Part of the Amazon RDS family
 
-Aurora is a **custom AWS-BUILT database engine under the hood**, but it exposes **MySQL/Postgres/DSQL-compatible** on the surface. Faster & more scalable.
+- Has **both provisioned and serverless solutions**
+- Aurora is a **custom AWS-BUILT database engine under the hood**, but it exposes **MySQL/Postgres/DSQL-compatible** on the surface. Faster & more scalable.
 
 ### Parallels
 
@@ -34,14 +36,36 @@ Aurora is a **custom AWS-BUILT database engine under the hood**, but it exposes 
 | Aurora MySQL      | MySQL-compatible      |
 | Aurora PostgreSQL | PostgreSQL-compatible |
 | Aurora DSQL       | Google Spanner / CockroachDB |
+| Aurora serverless v2 | MySQL & PostgreSQL-compatible |
 
 Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 
 ---
 
-## ✅ 3) **Amazon DynamoDB**
+## ✅ 3) **Amazon DocumentDB**
 
-**Serverless** NoSQL key–value & document database.
+- Has **both provisioned and serverless solutions**
+- MongoDB-compatible document DB
+- **BUT NOT MongoDB!**
+  - Only API-compatible; underlying storage is Aurora-style
+
+✔ JSON docs
+✔ Mongo-style driver support
+
+### Parallels
+
+| AWS        | Parallel |
+| ---------- | -------- |
+| DocumentDB | MongoDB  |
+
+> For Mongo-like workloads, but without MongoDB engine.
+
+---
+
+## ✅ 4) **Amazon DynamoDB**
+
+- **Serverless**
+- NoSQL key–value & document database
 
 ### Parallels
 
@@ -53,8 +77,9 @@ Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 
 ---
 
-## ✅ 4) **Amazon Keyspaces (managed Apache Cassandra)**
+## ✅ 5) **Amazon Keyspaces (managed Apache Cassandra)**
 
+- **Serverless**
 - Managed **Apache Cassandra–compatible** database.
 - While it feels like Cassandra to a developer, it is built on a different underlying architecture than a traditional Cassandra cluster.
 
@@ -71,11 +96,11 @@ Think: **PostgreSQL/MySQL → redesigned for cloud performance**
 
 ---
 
-## ✅ 5) **Amazon ElastiCache**
+## ✅ 6) **Amazon ElastiCache**
 
-**In-memory** cache service.
-
-Supports: Redis, Memcached
+- Has **both provisioned and serverless solutions**
+- **In-memory** cache service.
+- Supports Redis, Memcached engines
 
 ### Parallels
 
@@ -88,9 +113,10 @@ Supports: Redis, Memcached
 
 ---
 
-## ✅ 6) **Amazon MemoryDB**
+## ✅ 7) **Amazon MemoryDB**
 
-Valkey/Redis-compatible **durable**, in-memory database.
+- **Provisioned**
+- Valkey/Redis-compatible **durable**, in-memory database.
 
 ### Parallels
 
@@ -104,7 +130,7 @@ Valkey/Redis-compatible **durable**, in-memory database.
 
 ---
 
-## ✅ 7) **Amazon Neptune**
+## ✅ 8) **Amazon Neptune**
 
 Fully managed **graph database**.
 
@@ -118,26 +144,6 @@ Fully managed **graph database**.
 | Neptune | Neo4j / Amazon RDF triple stores |
 
 > Use for social graphs, knowledge graphs, fraud detection.
-
----
-
-## ✅ 8) **Amazon DocumentDB**
-
-MongoDB-compatible document DB.
-
-**BUT NOT MongoDB!**
-Only API-compatible; underlying storage is Aurora-style.
-
-✔ JSON docs
-✔ Mongo-style driver support
-
-### Parallels
-
-| AWS        | Parallel |
-| ---------- | -------- |
-| DocumentDB | MongoDB  |
-
-> For Mongo-like workloads, but without MongoDB engine.
 
 ---
 
