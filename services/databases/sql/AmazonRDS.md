@@ -1,17 +1,19 @@
+# Amazon RDS
+
 - Primary. Writes/reads
 - Standby. **No reads and no write instance**. Synchronous sync between Primary and Standby. Automatic Failover.
 - Replica. Reads only. Async sync between Primary and Replica
 
 ---
 
-- **RDS - Single AZ**
+- **Amazon RDS - Single AZ**
   - **Default**
   - One instanse
-- **RDS - Multi AZ**
+- **Amazon RDS - Multi AZ**
   - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
   - Synchronous replication
-- **RDS - Multi-AZ Cluster**
+- **Amazon RDS - Multi-AZ Cluster**
   - Uses 1 primary + 2 replicas only
   - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
   - Uses
@@ -24,7 +26,7 @@
   - Supported MySQL, PostgreSQL only
   - Synchronous replication
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
-- **RDS - Read Replicas(RR)**
+- **Amazon RDS - Read Replicas(RR)**
   - Adds up to 5 replicas for primary instance
   - For Read Scalability
   - Uses
@@ -41,10 +43,10 @@
     - Multi-AZ RDS + Read Replicas
       - 1 primary + **1 Standby** + async replicas
     - Multi-AZ Cluster RDS + Read Replicas
-- **RDS - Custom**
+- **Amazon RDS - Custom**
   - Designed for workloads that need full OS-level and database-level customization
   - Supported only Oracle, MS SQL Server
-- **Aurora (Provisioned)**. Or another name **Aurora (Provisioned) Cluster**
+- **Amazon Aurora (Provisioned)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
   - **Any Aurora DB is always a cluster**
   - Operates within **a single AWS Region**, **(Standard/Regional)**
@@ -55,7 +57,7 @@
   - 1 single-primary instance for writes + (up to 15) replica instances for reads
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
-- **Aurora Global Database**
+- **Amazon Aurora Global Database**
   - Provisioned
   - Only **one primary instance** in **a Primary Region** for **writes**
   - Up to 5 **Secondary Regions**
@@ -63,11 +65,11 @@
   - Replication inside Primary region is the same as in Aurora (Provisioned)
   - Replication between Primary and secondary regions is async
   - Add read replicas between (up to 5) regions
-- **Aurora Multi-master**
+- **Amazon Aurora Multi-master**
   - DEPRICATED
   - Provisioned
   - Add 2 primary(write) nodes
-- **Aurora serverless v2**
+- **Amazon Aurora serverless v2**
   - Scales automatically
   - No need in managing instances by customer
   - Uses Aurora Capacity Units (ACU)
@@ -77,5 +79,5 @@
     - Instance endpoints - points to specific ACU
       - Usually you don’t need it because the cluster and reader endpoints abstract scaling
       - Aurora Serverless v2 can automatically scale ACUs up/down, so instance endpoints may change dynamically
-- **RDS proxy - Proxy for RDS connection pool**
+- **Amazon RDS proxy - Proxy for RDS connection pool**
   - Works with RDS and Aurora
