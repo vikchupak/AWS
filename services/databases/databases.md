@@ -125,7 +125,8 @@ Only API-compatible; underlying storage is Aurora-style.
 
 ## ✅ 8) **Amazon Keyspaces (managed Cassandra)**
 
-Managed **Apache Cassandra–compatible** database.
+- Managed **Apache Cassandra–compatible** database.
+- While it feels like Cassandra to a developer, it is built on a different underlying architecture than a traditional Cassandra cluster.
 
 ✔ Column-family
 ✔ Horizontal scaling
