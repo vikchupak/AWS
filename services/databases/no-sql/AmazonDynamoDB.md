@@ -1,4 +1,4 @@
-# DynamoDB
+# Amazon DynamoDB
 
 - **Public** Database-as-a-service
 - Key-value & document
