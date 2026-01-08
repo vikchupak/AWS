@@ -22,6 +22,18 @@
 
 ---
 
+- OLTP (Online **Transaction** Processing)
+  - PostgreSQL
+  - MySQL
+  - Oracle DB
+  
+- OLAP (Online **Analytical** Processing)
+  - Google BigQuery
+  - Amazon Redshift
+  - Snowflake
+
+---
+
 DynamoDB is best described as:
 
 * ✅ Key-Value database
