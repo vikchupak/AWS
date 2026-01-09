@@ -25,14 +25,11 @@ aws elbv2 describe-load-balancers
 
 ## Target group
 
-**Target Group** can span multiple subnets, both **public** and **private**, but **there are some important considerations** to keep in mind:
+- A **Target Group** is a collection of targets (such as EC2 instances, IP addresses, or Lambda functions) that the load balancer routes traffic to.
+- **Target Group** can **span multiple subnets, both `public` and `private`**, but these subnets must be within the **same VPC**.
+- **Target group** can **span multiple AZs.**
 
-### **Key Points to Understand:**
+## Cross-Zone Load Balancing
 
-1. **Target Group Definition:**
-   - A **Target Group** is a collection of targets (such as EC2 instances, IP addresses, or Lambda functions) that the load balancer routes traffic to.
-   - Targets within a target group can reside in **different subnets**, but these subnets must be within the **same VPC**.
-
-2. **Public and Private Subnets:**
-   - You can register targets (e.g., EC2 instances) that are in both **public** and **private** subnets within the **same VPC**.
-   - The load balancer can route traffic to targets in both public and private subnets as long as they are within the same **VPC** and registered with the same **target group**.
+- By default, ELB routes trafic to TG targets in its AZ, which can cause uneven trafic distribution between targes.
+- With Cross-Zone ENABLED, ELB can route trafic to TG targets in other AZs for even trafic distribution between targes.
