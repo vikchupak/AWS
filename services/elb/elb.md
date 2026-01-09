@@ -2,6 +2,7 @@
   - Elastic Load Balancer (ELB) is a general term used by AWS to refer to their suite of load balancing services
   - **ELB is created within VPC and spans multiple AZs/subnets**
   - https://aws.amazon.com/elasticloadbalancing/getting-started/?nc=sn&loc=4
+  - **Require `8+` free per subnet, and `/27` subnet to allow scaling**
 
 List LBs
 ```bash
