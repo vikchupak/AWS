@@ -3,7 +3,7 @@
   - **ELB is created within VPC and spans multiple AZs/subnets**
   - https://aws.amazon.com/elasticloadbalancing/getting-started/?nc=sn&loc=4
   - **Require `8+` free IPs per subnet, and `/27` subnet to allow scaling**
-  - ALB. Client-LB connection & LB-target instance connection. They are separate, not the same
+  - ALB. Client-LB connection & LB-target instance connection are separate, not the same
     - LB-target instance connection is NOT HTTPS encripted. So client-instance encription is broken
     - If we need unbroken clien-instance encription, then only NLB must be used
 
