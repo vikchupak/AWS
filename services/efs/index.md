@@ -1,8 +1,10 @@
 # EFS
 
 - **Remote (backend)** File System
+  - Has a dns name & IP
+  - EC2 mounts(connects) to it using the dns name
+  - Needs installing additional packages/utils on EC2 to connect to EFS
 - Independent from EC2 instance lifecycle
-- EC2 mounts(connects) to it
 
 # EFS mount target
 
