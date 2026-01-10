@@ -45,7 +45,3 @@ This is a common point of confusion. Here is the breakdown:
 * **Use Paths:** Always use a naming convention like `/{environment}/{app_name}/{variable}`. This makes it easy to set IAM policies that give a developer access to `/dev/*` but not `/prod/*`.
 * **Standard vs. Advanced:** "Standard" allows up to 10,000 parameters (4KB size). "Advanced" allows up to 100,000 parameters (8KB size) but carries a monthly cost.
 * **Tagging:** Tag your parameters to track costs or ownership across different teams.
-
-
-
-**Would you like me to show you how to integrate Parameter Store with a specific tool, like a Lambda function or a GitHub Actions workflow?**
