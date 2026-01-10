@@ -1,6 +1,8 @@
 # EFS
 
-- **Remote** File System
+- **Remote (backend)** File System
+- Independent from EC2 instance lifecycle
+- EC2 mounts(connects) to it
 
 # EFS mount target
 
@@ -29,4 +31,3 @@ EC2 instance → mount target ENI → EFS backend
 ```
 
 <img width="1196" height="573" alt="image" src="https://github.com/user-attachments/assets/4c1a3770-c65a-4cf4-bc53-01544cc2b81b" />
-
