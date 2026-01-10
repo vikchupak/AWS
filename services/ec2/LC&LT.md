@@ -11,6 +11,10 @@
 
 ---
 
+- ASG manages instances using TL. It is like entry point to provisioning EC2s
+
+---
+
 ### ASG refs to TL
 
 CloudFormation file
