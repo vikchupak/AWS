@@ -113,3 +113,6 @@ NAT / IGW
   v
 Internet
 ```
+
+<img width="1260" height="708" alt="image" src="https://github.com/user-attachments/assets/53ebabdf-4e1a-4cac-9963-fff13c04f167" />
+
