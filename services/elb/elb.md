@@ -69,6 +69,7 @@ Think of it as “A load balancer for firewalls”.
 - Works on Layer 3/4 (IP level)
 - Stands in front of ALB/NLB
 - GWLB is "transparent". ALB/NLB are unaware of GWLB
+- Uses GENEVE protocol
 
 Ingress
 ```yml
