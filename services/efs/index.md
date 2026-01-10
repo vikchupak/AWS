@@ -1,3 +1,7 @@
+# EFS
+
+- **Remote** File System
+
 # EFS mount target
 
 An EFS mount target is essentially an Elastic Network Interface (ENI) that Amazon creates in each subnet you enable for EFS
