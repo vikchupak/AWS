@@ -1,5 +1,9 @@
 # Auto Scaling Group (ASG)
 
+- [Related](https://github.com/vikchupak/AWS/blob/main/services/ec2/LC%26LT.md)
+
+---
+
 - Target Group acts as the bridge between your Load Balancer and your EC2 instances
 - ASG takes over the responsibility of adding and removing instances from that Target Group automatically
   - Manages EC2 lifecycle
