@@ -76,3 +76,9 @@ The Cooldown - the ASG stops everything and waits for a specific amount of time 
 # ASG Lifecycle hooks
 
 - Define actions to take on instances during ASG actions (like add/remove instances, changing instance state)
+
+# ASG HealthCheck
+
+- Status checks. Identify hardware and software issues that may impair an instance
+- Health checks provided by Elastic Load Balancing (ELB). These health checks are disabled by default but can be enabled
+- Your custom health checks
