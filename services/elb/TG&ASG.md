@@ -5,7 +5,7 @@
   - Manages EC2 lifecycle
   - Registers and deregisters instances in the Target Group
   - Uses TG health status to replace unhealthy instances
-  - Uses 
+  - Uses **Launch Template**
 - ELB does NOT know about ASG directly
 - **ASG defines WHEN & WHERE. LT defines WHAT**
 
@@ -28,9 +28,11 @@
            ▲
            |
            | ASG adds/removes instanses to TG based on EC2 `Health checks` or `ASG Scaling Policies`
+           | and **Launch Template**
            ▼
 +-----------------------------------------------------------+
 |               Auto Scaling Group (ASG)                    |
+|                 (LT + ASG Policies)                       |
 +-----------------------------------------------------------+
 ```
 
