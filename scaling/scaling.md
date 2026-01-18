@@ -1,2 +1,4 @@
 - [Launch Templates](https://github.com/vikchupak/AWS/blob/main/services/ec2/LC%26LT.md)
 - [Target Groups & Auto Scaling Groups](https://github.com/vikchupak/AWS/blob/main/services/elb/TG&ASG.md)
+
+### ASG vs ECS
