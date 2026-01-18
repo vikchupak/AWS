@@ -4,7 +4,8 @@
 ### ASG vs ECS
 
 - ECS scales containers
-  - [ECS](https://github.com/vikchupak/AWS/blob/main/services/eks/index.md)
+  - [ECS(1)](https://github.com/vikchupak/AWS/blob/main/services/eks/index.md)
+  - [EC2(2)](https://github.com/vikchupak/AWS/blob/main/services/ecs/ecs.md)
   - 2 modes
     - **EC2 mode**
       - 2 Ways
