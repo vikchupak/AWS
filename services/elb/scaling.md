@@ -75,4 +75,4 @@
 
 The Cooldown - the ASG stops everything and waits for a specific amount of time (the "cooldown period") before it is allowed to look at the alarm again.
 
-# Lifecycle hooks
+# ASG Lifecycle hooks
