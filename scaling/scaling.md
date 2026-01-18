@@ -8,7 +8,7 @@
   - 2 modes
     - **EC2 mode**
       - 2 Ways
-        - **Manual**. Launch EC2as and add/remove them to ECS Cluster
+        - **Manual**. Launch EC2s and add/remove them to ECS Cluster
         - **Automatic**. Create ASG to add/remove EC2s to ECS Cluster automatically.
           - You create `ECS Cluster + ASG` to manage provisioning EC2s and their horizontal scaling for containers
           - **Capacity Providers**. Modern ECS uses Capacity Providers. This links your ECS cluster directly to the ASG. If you try to run a container and there’s no room, ECS will tell the ASG, "Hey, spin up another server for me," and the ASG handles it automatically
