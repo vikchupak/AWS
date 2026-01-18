@@ -1,1 +1,2 @@
-
+- [Launch Templates](https://github.com/vikchupak/AWS/blob/main/services/ec2/LC%26LT.md)
+- 
