@@ -74,3 +74,5 @@
 The Cooldown - the ASG stops everything and waits for a specific amount of time (the "cooldown period") before it is allowed to look at the alarm again.
 
 # ASG Lifecycle hooks
+
+- Define actions to take on instances during ASG actions (like add/remove instances, changing instance state)
