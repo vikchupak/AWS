@@ -1,6 +1,6 @@
 # EC2 IPs
 
-EC2 have
+EC2 has
   - Public IP (optional)
     - Temp/dynamic **automatic Public IP**
     - Permanent/static **Elastic IP**
