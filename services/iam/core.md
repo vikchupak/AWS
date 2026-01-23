@@ -55,7 +55,8 @@
     - **Allow/deny access to/from different accounts**
     - **Allow/deny access to/from `Anonymous` principals**
       - Anonymous means not authenticated
-
+    - **Trust policies** are subtype of Resource-based policies
+        - They are **ONLY** attached to **ROLES** and define who can assume the roles
 ---
 
 - arn:aws:**iam**::123456789012:**role**/AppRole - IAM role ARN - a role definition
