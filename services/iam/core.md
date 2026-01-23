@@ -62,6 +62,11 @@
 - arn:aws:**iam**::123456789012:**role**/AppRole - IAM role ARN - a role definition
 - arn:aws:**sts**::123456789012:**assumed-role**/AppRole/Session - An STS role session ARN - an actual identity that makes API calls
 
+---
+
+- Policies are attached
+- Roles are assumed
+
 ### ✅ CloudTrail Difference
 
 Example event:
