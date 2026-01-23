@@ -2,6 +2,8 @@
 
 - [AWS Step Functions](https://aws.amazon.com/step-functions/) - workflow orchestration
 - Standard Step Functions can run for up to one year
+- Allows to create "State Machines" - Long-running serverles workflows
+  - "States" are decision points
 - Lambda is the "worker" that does the job, while Step Functions is the "manager" that organizes the workers.
 - It doesn't "run code" itself; instead, it coordinates multiple Lambdas (and other AWS services) into a sequence.
 - It is "stateful," meaning it remembers the output of Step 1 and passes it as the input to Step 2.
