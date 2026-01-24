@@ -8,7 +8,9 @@
   - A message is delivered `exactly-once`
 - Pay for requests to SQS, not messages sent/pulled
 - Amazon SQS is a public service, but your queues are private by default
-  
+
+<img width="1271" height="721" alt="image" src="https://github.com/user-attachments/assets/2eae5023-7673-430c-85a4-c43f67bc95b8" />
+
 ---
 
 - Visibility Timeout
