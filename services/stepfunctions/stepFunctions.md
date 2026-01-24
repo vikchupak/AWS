@@ -25,3 +25,38 @@
 - The name Step Functions comes from the mathematical and computer science concept of a "State Machine," not from "Functions" as in "Lines of Code."
 - In mathematics, a Step Function is a function that increases or decreases abruptly from one constant value to another (like a staircase).
 - In AWS, the service is based on State Machines. Each "Step" in your workflow is technically a State. The "Function" part of the name refers to the logic that moves you from State A to State B.
+
+# Step Function definition
+
+- AWS Step Functions uses a specialized, JSON-based language called **Amazon States Language (ASL)**
+  - Even though it is called a "language," it is declarative rather than imperative
+
+ASL example
+ ```json
+{
+  "Comment": "Pet Cuddle-o-Tron - using Lambda for email.",
+  "StartAt": "Timer",
+  "States": {
+    "Timer": {
+      "Type": "Wait",
+      "SecondsPath": "$.waitSeconds",
+      "Next": "Email"
+    },
+    "Email": {
+      "Type" : "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "EMAIL_LAMBDA_ARN",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "Next": "NextState"
+    },
+    "NextState": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}
+```
