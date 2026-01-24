@@ -2,10 +2,10 @@
 
 - SQS Standard
   - Oprimazed for speed and scale, so **order is NOT guaranteed**
-  - A message is `deleverd at-least-once`
+  - A message is deleverd `at-least-once`
 - SQS FIFO
   - Garanties order
-  - A message is `exactly-once`
+  - A message is deleverd `exactly-once`
 - Pay for requests to SQS, not messages sent/pulled
 - Amazon SQS is a public service, but your queues are private by default
   
