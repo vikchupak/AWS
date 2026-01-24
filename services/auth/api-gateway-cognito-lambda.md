@@ -8,5 +8,5 @@ API Gateway > Cognito > Lambda > Postgres
 
 ---
 
-- API Gateway Stages are effectively used to represent different environments like dev, test, and prod
+- API Gateway **Stages** are effectively used to represent different environments like dev, test, and prod
   - You deploy API Gateway changes to different Stages(Envs)
