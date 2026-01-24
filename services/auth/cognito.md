@@ -1,5 +1,7 @@
 # Cognito
 
+<img width="1270" height="718" alt="image" src="https://github.com/user-attachments/assets/a05db2c7-0aa5-4b81-b853-d72b3a8476e1" />
+
 [About Cognito](https://www.youtube.com/watch?v=QEGo6ZoN-ao)
 
 `Amazon Cognito` is a user identity and authentication service.
