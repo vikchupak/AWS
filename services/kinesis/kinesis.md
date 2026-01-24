@@ -6,7 +6,6 @@
   - Consumers consume data from the stream (2MB/s)
   - Data is stored in Kinesis Data Records (1MB)
 - **Producers** send data to kinesis stream
-  - The stream ingests data (1MB/s)
 - Streams store 24-hour moving window of data
   - Can be extended to 365 days
 - **Multiple consumers** access/read the data from that moving window
