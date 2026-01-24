@@ -14,7 +14,7 @@
 ---
 
 - Visibility Timeout
-  - Time the message is "hidden" while being processed by consumer
+  - Time the message is "hidden" from the other consumers while being processed by a consumer
   - Default is 30 seconds
   - Consumer has to delete message from queue explicitly
 - ASG can scale based on Queue Length
