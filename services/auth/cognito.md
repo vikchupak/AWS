@@ -26,7 +26,7 @@ A **User Pool** is basically a **user directory** (a managed database of users) 
 It returns a **JWT token (ID, access, refresh)** when a user logs in.
 
 - **User Pool Federation**
-  - When you add **federation** to a User Pool, you are allowing users to sign in using an external provider (like Google, Facebook, or a corporate SAML/OIDC provider)
+  - When you add **federation** to a User Pool, you are allowing users to sign in using an **external identity provider** (like Google, Facebook, or a corporate SAML/OIDC provider)
   - Cognito automatically creates a profile for that user in your User Pool directory. Users are still "managed" in your User Pool directory
 
 ---
@@ -35,7 +35,7 @@ It returns a **JWT token (ID, access, refresh)** when a user logs in.
 
 - Federated Identity is the legacy name for Identity Pools
 - An **Identity Pool** provides **temporary AWS credentials** (via IAM roles) to authenticated users so they can access AWS services directly.
-- Amazon Cognito identity pools (federated identities) enable you to create unique identities for your users and federate them with identity providers. With an identity pool, you can obtain temporary, limited-privilege AWS credentials to access other AWS services.
+- Amazon Cognito identity pools (federated identities) enable you to create unique identities for your users and federate them with identity providers **(including `User Pool users` or `External Identity Providers like Google directly`)**. With an identity pool, you can obtain temporary, limited-privilege AWS credentials to access other AWS services.
 
 ---
 
