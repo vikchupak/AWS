@@ -5,3 +5,8 @@
 - SQS FIFO
   - Garanties order
   
+---
+
+- Visibility Timeout
+  - Time the message is "hidden" while being processed by consumer
+- ASG can scale based on Queue Length
