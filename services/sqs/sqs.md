@@ -6,6 +6,7 @@
 - SQS FIFO
   - Garanties order
   - A message is `exactly-once`
+- Pay for requests to SQS, not messages sent/pulled
   
 ---
 
