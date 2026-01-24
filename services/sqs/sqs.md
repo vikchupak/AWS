@@ -2,8 +2,10 @@
 
 - SQS Standard
   - Oprimazed for speed and scale, so **order is NOT guaranteed**
+  - A message is `deleverd at-least-once`
 - SQS FIFO
   - Garanties order
+  - A message is `exactly-once`
   
 ---
 
