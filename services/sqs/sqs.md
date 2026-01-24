@@ -28,5 +28,5 @@
 
 - Short Polling
   - WaitTimeSeconds = 0 (Immediate)
-- Ling Polling (recommended)
+- Long Polling (recommended)
   - WaitTimeSeconds > 0 (up to 20s)
