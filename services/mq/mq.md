@@ -1,4 +1,4 @@
-# Amazon MQ
+# Amazon Message Queuing (Amazon MQ)
 
 - [Doc](https://aws.amazon.com/amazon-mq/)
 - Managed Open-Source Message Broker
