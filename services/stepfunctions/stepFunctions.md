@@ -26,12 +26,12 @@
 - In mathematics, a Step Function is a function that increases or decreases abruptly from one constant value to another (like a staircase).
 - In AWS, the service is based on State Machines. Each "Step" in your workflow is technically a State. The "Function" part of the name refers to the logic that moves you from State A to State B.
 
-# Step Function definition
+# Step Function Definition
 
 - AWS Step Functions uses a specialized, JSON-based language called **Amazon States Language (ASL)**
   - Even though it is called a "language," it is declarative rather than imperative
 
-ASL example
+ASL Example
  ```json
 {
   "Comment": "Pet Cuddle-o-Tron - using Lambda for email.",
@@ -59,4 +59,46 @@ ASL example
     }
   }
 }
+```
+
+# Step Function Call
+
+- One `Step Function` has one `State Machine Definition` (SM "blueprint")
+- We can run multiple **simultaneous** `Step Function` executions/instances with different parameters
+  - You can think of your State Machine definition as a Class in programming, and each start_execution call as creating a new Object (instance) of that class. You can have as many as you need, all running in parallel with their own unique data
+
+Step Function Call Example
+```py
+import boto3, json, os, decimal
+
+SM_ARN = 'YOUR_STATEMACHINE_ARN'
+
+sm = boto3.client('stepfunctions')
+
+def lambda_handler(event, context):
+    print("Received event: " + json.dumps(event))
+
+    data = json.loads(event['body'])
+    data['waitSeconds'] = int(data['waitSeconds'])
+    
+    checks = []
+    checks.append('waitSeconds' in data)
+    checks.append(type(data['waitSeconds']) == int)
+    checks.append('message' in data)
+
+    if False in checks:
+        response = {
+            "statusCode": 400,
+            "headers": {"Access-Control-Allow-Origin":"*"},
+            "body": json.dumps( { "Status": "Fail", "Reason": "Input failed validation" }, cls=DecimalEncoder )
+        }
+    else:
+        # Start the state machine execution
+        sm.start_execution( stateMachineArn=SM_ARN, input=json.dumps(data, cls=DecimalEncoder) )
+        response = {
+            "statusCode": 200,
+            "headers": {"Access-Control-Allow-Origin":"*"},
+            "body": json.dumps( {"Status": "Success"}, cls=DecimalEncoder )
+        }
+    return response
 ```
