@@ -29,3 +29,5 @@ https > dns system (Route 53 or Godaddy) > CloudFront(+ACM) > S3
 
 - Origin Access Identity(OAI) - Virtual IAM user, alike Service Account - **Legacy** - specific to CloudFront only
 - Origin Access Control (OAC) - **Modern - Recommended**
+  - CloudFront signs requests to S3 using `AWS Signature Version 4 (SigV4) protocol`
+  - S3 has a policy that says only requests from that CloudFront disribution are allowed. S3 verifies the req signature.
