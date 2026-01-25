@@ -13,7 +13,7 @@
 **What it contains:**
 
 * Origin (S3, ALB, EC2, API Gateway, custom origin)
-* Cache behaviors (paths, TTLs, headers, cookies, query strings)
+* Cache **behaviors** (paths, TTLs, headers, cookies, query strings)
 * Viewer protocol policy (HTTP/HTTPS)
 * Security (WAF, geo restriction, signed URLs/cookies)
 * Logging, compression, HTTP/3, IPv6, etc.
