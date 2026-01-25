@@ -23,3 +23,37 @@ When a user requests a file (like an image or video), CloudFront follows this lo
 Before RECs were introduced, every "Cache Miss" at a local edge went straight to your origin server. This could cause massive "thundering herd" traffic spikes to your origin if a piece of content became semi-popular.
 
 **Regional Edge Caches** act as a buffer. They "collapse" multiple requests from different local edge locations into a single request to your origin, saving you money on data transfer and reducing server stress.
+
+## CloudFront Distribution
+
+- A Distribution is a **logical configuration file/resource** you create in the AWS Console. It tells AWS, "If someone visits cdn.example.com, use these Origins and apply these Behaviors (how to cache them)
+  - Distributions contain configurations deployed to edge locations
+
+**Purpose:**
+
+* Defines **how** CloudFront behaves for your content
+* Connects your content to CloudFront’s global network
+
+**What it contains:**
+
+* Origin (S3, ALB, EC2, API Gateway, custom origin)
+* Cache behaviors (paths, TTLs, headers, cookies, query strings)
+* Viewer protocol policy (HTTP/HTTPS)
+* Security (WAF, geo restriction, signed URLs/cookies)
+* Logging, compression, HTTP/3, IPv6, etc.
+
+**Key point:** A distribution is **not a server** and **not a location**. It’s a **logical configuration**
+
+```
+You create:
+CloudFront Distribution
+        ↓
+User requests:
+https://d123.cloudfront.net
+        ↓
+DNS routes user to nearest Edge Location
+        ↓
+Edge Location uses your Distribution rules
+        ↓
+Content served from cache or fetched from origin
+```
