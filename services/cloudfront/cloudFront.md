@@ -62,3 +62,73 @@ Before RECs were introduced, every "Cache Miss" at a local edge went straight to
 
 - Cache `behaviors` map request paths to origins and define how CloudFront handles those requests
 - Cache behaviors = routing + rules that connect origins & distributions
+
+## Flow
+
+- Distribution → Configuration
+- Origins → Content sources
+- Cache Behaviors → Path-based routing + rules
+- Edge Locations → Closest delivery points
+- Regional Edge Cache → Regional shared cache layer
+
+```txt
+                    YOU (AWS ACCOUNT)
+                           │
+                           │ create & configure
+                           ▼
+┌────────────────────────────────────────────────────┐
+│                CloudFront Distribution             │
+│  (logical configuration – NOT a location)          │
+│                                                    │
+│  ┌──────────────────────────────────────────────┐  │
+│  │ Origins                                      │  │
+│  │                                              │  │
+│  │  ┌──────────────┐   ┌────────────────────┐   │  │
+│  │  │ S3 Bucket    │   │ ALB / EC2 / API    │   │  │
+│  │  │ (static)     │   │ (dynamic / API)    │   │  │
+│  │  └──────────────┘   └────────────────────┘   │  │
+│  └──────────────────────────────────────────────┘  │
+│                                                    │
+│  ┌──────────────────────────────────────────────┐  │
+│  │ Cache Behaviors (routing + rules)            │  │
+│  │                                              │  │
+│  │  * (default)  ─────────────▶ S3 Bucket      │  │
+│  │  /api/*       ─────────────▶ ALB / API      │  │
+│  │  /images/*    ─────────────▶ S3 Bucket      │  │
+│  │                                              │  │
+│  │  (TTL, headers, cookies, methods, HTTPS…)    │  │
+│  └──────────────────────────────────────────────┘  │
+└────────────────────────────────────────────────────┘
+                           │
+                           │ distribution rules applied everywhere
+                           ▼
+════════════════════════════════════════════════════════
+              AWS CLOUD FRONT GLOBAL NETWORK
+════════════════════════════════════════════════════════
+
+            ┌────────────────────────────────┐
+            │        Edge Location (City)    │
+User ────▶ │  - closest to user             │
+            │  - small cache                 │
+            │  - executes behaviors          │
+            └────────────────────────────────┘
+                          │
+               cache miss │
+                          ▼
+            ┌────────────────────────────────┐
+            │     Regional Edge Cache        │
+            │  - larger cache                │
+            │  - shared by many edges        │
+            │  - protects origin             │
+            └────────────────────────────────┘
+                          │
+               cache miss │
+                          ▼
+            ┌────────────────────────────────┐
+            │            Origin              │
+            │   (S3 / ALB / EC2 / API)       │
+            └────────────────────────────────┘
+                          │
+                          ▼
+            Response travels back up the chain
+```
