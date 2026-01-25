@@ -1,6 +1,6 @@
 # Cloud Front
 
-### Edge location vs Regional edge cache
+## Edge location vs Regional edge cache
 
 | Feature | Edge Location (POP) | Regional Edge Cache (REC) |
 | --- | --- | --- |
