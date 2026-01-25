@@ -57,3 +57,8 @@ When a user requests a file (like an image or video), CloudFront follows this lo
 Before RECs were introduced, every "Cache Miss" at a local edge went straight to your origin server. This could cause massive "thundering herd" traffic spikes to your origin if a piece of content became semi-popular.
 
 **Regional Edge Caches** act as a buffer. They "collapse" multiple requests from different local edge locations into a single request to your origin, saving you money on data transfer and reducing server stress.
+
+## Behaviors "link" between origins and distributions
+
+- Cache `behaviors` map request paths to origins and define how CloudFront handles those requests
+- Cache behaviors = routing + rules that connect origins & distributions
