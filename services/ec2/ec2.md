@@ -48,7 +48,7 @@ Instance compute capacity
     - All upfront. No per/s fee- (cheapest of 3)
     - Partial upfront. Mix of No upfront & All upfront (middle of 3)
 - Dedicated Hosts
-  - Pay for hosts
+  - Pay for hosts, not instances
   - On-demand or reserved
 - Dedicated Instances
   - Pay additional/extra fee for no other customers instances to use the same host as you. Pay for instances.
