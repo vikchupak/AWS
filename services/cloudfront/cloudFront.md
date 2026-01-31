@@ -3,7 +3,7 @@
 ## CloudFront Distribution
 
 - A Distribution is a **logical configuration file/resource** you create in the AWS Console. It tells AWS, "If someone visits cdn.example.com, use these Origins and apply these Behaviors (how to cache them)
-  - Distributions contain configurations deployed to edge locations
+- Distributions contain configurations deployed to edge locations
 
 **Purpose:**
 
