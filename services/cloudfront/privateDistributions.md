@@ -1,7 +1,6 @@
 # Private distributions/behaviours
 
-- Secure "viewer - CF" protocol
-- Privite "distributions/behaviours" means to access "private" data behind a distribution, you must be authorized
+- Configure only authorized users can access "protected/private" data via CF
   - Athority is checked by request signature (url or cookies)
     - Ways to sign requersts
       - "Trusted key group" - Modern (recommended)
