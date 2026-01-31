@@ -12,5 +12,5 @@
 - CloudFront
   - Works at 7 OSI layer
 - S3 Transfer Acceleration
-  - uses **CloudFront edge locations** and CloudFront Edge Network to send data faster
+  - Uses **CloudFront edge locations** and CloudFront Edge Network to send data faster
   - HTTP/HTTPS only as uses CloudFront
