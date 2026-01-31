@@ -1,6 +1,6 @@
 # Private distributions/behaviours
 
-- Configure only authorized users can access "protected/private" m via CF
+- Configure only authorized users can access "protected/private" content via CF
   - Athority is checked by request signature (url or cookies)
     - Ways to sign requersts
       - "Trusted key group" - Modern Recommended
