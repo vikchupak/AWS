@@ -1,4 +1,4 @@
-# Public and private distributions/behaviours
+# Private distributions/behaviours
 
 - Secure "viewer - CF" protocol
 - Privite "distributions/behaviours" means to access data behind distribution, you must be alowed/authorized
@@ -6,4 +6,4 @@
     - "Trusted key group" - Modern (recommended) method to sign requersts
     - "CloudFront key" with "Trusted Signer" account - Legacy method to sign requersts
     - CF distribution/behaviour validates the signature
-- Whole distribution or some behaviours can be private
+- Either whole distribution or only some behaviours can be private
