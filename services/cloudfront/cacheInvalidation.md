@@ -6,4 +6,4 @@
     - Request with `/index.html` and `/logo.png` counts as 2 path invalidations
     - Request with `/*` counts as 1 path invalidation
 - Using versioned file names
-  - App points to new file name like img_v1, img_v2
+  - App points to new file name like img_v1.png, img_v2.png
