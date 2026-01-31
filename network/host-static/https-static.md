@@ -25,7 +25,7 @@ https > dns system (Route 53 or Godaddy) > CloudFront(+ACM) > S3
   - Add `domain records` and `custom SSL(ACM) certificate` to CloudFront distribution
 - Update your DNS provider (Route 53 or Godaddy) > add CNAME pointing to CloudFront distribution
 
----
+## OAI and OAC
 
 - Origin Access Identity(OAI) - Virtual IAM user, alike Service Account - **Legacy** - specific to CloudFront only
 - Origin Access Control (OAC) - **Modern - Recommended**
