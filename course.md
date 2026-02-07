@@ -43,7 +43,7 @@
 18. ADVANCED VPC
 19. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
-    - Direct Connect (DX)
+    - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
