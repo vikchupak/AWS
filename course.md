@@ -18,6 +18,7 @@
     - Launch Templates (LT)
     - Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB)
+      - "Scalable Firewall"
 16. SERVERLESS AND APPLICATION SERVICES
     - Lambda
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
