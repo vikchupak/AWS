@@ -36,6 +36,7 @@
   - A physical connection
   - 1, 10 or 100 Gbps
   - Not encrypted
+  - Access AWS Private & Public services, but **no public internet** unless additionally configured
   - Business Premises -> DX Location -> AWS Region
     - You pay for Port Allocation at a DX Location
     - It is your responsibility to "connect" your business premises to the DX Location Port using physical cables
