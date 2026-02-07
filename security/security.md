@@ -2,7 +2,7 @@
 
 - Border Gateway Protocol (BGP)
   - Standard internet protocol used worldwide. **Not specific to AWS.**
-  - Routing protocol that decides how data travels across the internet or large networks
+  - Routing protocol that decides the best path for data to travel between networks
   - **Used inside the IPsec tunnel (VPN) or on Direct Connect for dynamic routing**
 - AWS site-2-site VPN
   - Connect a VPC with on-promises network over PUBLIC internet
