@@ -14,7 +14,11 @@
 12. NETWORK STORAGE & DATA LIFECYCLE
     - EFS & [AWS Backup](https://aws.amazon.com/backup/)
 14. HA & SCALING
-15. SERVERLESS AND APPLICATION SERVICES
+    - Elastic Load Balancers (ELB)
+    - Launch Templates (LT)
+    - Auto Scaling Groups (ASG)
+    - Gateway Load Balancer (GWLB)
+16. SERVERLESS AND APPLICATION SERVICES
     - Lambda
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - SNS
