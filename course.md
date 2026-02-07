@@ -47,5 +47,5 @@
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
-24. Machine Learning 101
+24. Machine Learning
 25. Other Services & Features
