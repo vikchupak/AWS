@@ -2,6 +2,9 @@
 
 - AWS site-2-site VPN
   - Connect a VPC with on-promises network over PUBLIC internet
+  - Uses IPsec protocol (not HTTPS)
+    - Works at Layer 3
+    - Secures all IP traffic (TCP, UDP, ICMP, anything)
   - Virtual Private Gateway (VGW)
     - Logical resource in AWS used as target in one or more route tables
   - Customer Gateway (CGW)
