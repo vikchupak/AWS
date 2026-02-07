@@ -41,4 +41,6 @@
     - You pay for Port Allocation at a DX Location
     - It is your responsibility to "connect" your business premises to the DX Location Port using physical cables
     - **Cross Connect** connects AWS Port to Customer/Partner Router Port
-  
+  - Resilience is "bad" if using only 1 DX Port
+    - It is a single point of failure
+    
