@@ -39,5 +39,5 @@
   - Business Premises -> DX Location -> AWS Region
     - You pay for Port Allocation at a DX Location
     - It is your responsibility to "connect" your business premises to the DX Location Port using physical cables
-    - **Cross Connect** connects AWS Port to Customer/Partner Port
+    - **Cross Connect** connects AWS Port to Customer/Partner Router Port
   
