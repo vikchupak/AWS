@@ -15,8 +15,7 @@
     - EFS & [AWS Backup](https://aws.amazon.com/backup/)
 14. HA & SCALING
     - Elastic Load Balancers (ELB)
-    - Launch Templates (LT)
-    - Auto Scaling Groups (ASG)
+    - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
 16. SERVERLESS AND APPLICATION SERVICES
     - Lambda
