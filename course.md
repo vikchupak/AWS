@@ -31,9 +31,11 @@
 17. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - CloudFront
       - Distributions
+      - Cache invalidation
       - ACM for custom domains
       - Private distributions & behaviours
       - Restrict access to origins
+      - Lambda@edge
 18. ADVANCED VPC
 19. HYBRID ENVIRONMENTS AND MIGRATION
 20. SECURITY, DEPLOYMENT & OPERATIONS
