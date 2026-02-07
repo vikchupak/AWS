@@ -16,10 +16,15 @@
 14. HA & SCALING
 15. SERVERLESS AND APPLICATION SERVICES
 16. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
-17. ADVANCED VPC
-18. HYBRID ENVIRONMENTS AND MIGRATION
-19. SECURITY, DEPLOYMENT & OPERATIONS
-20. Infrastructure as Code (CloudFormation)
-21. NOSQL Databases & DynamoDB
-22. Machine Learning 101
-23. Other Services & Features
+    - CloudFront
+      - Distributions
+      - ACM for custom domains
+      - Private vs public distributions
+      - Restrict access to origins
+18. ADVANCED VPC
+19. HYBRID ENVIRONMENTS AND MIGRATION
+20. SECURITY, DEPLOYMENT & OPERATIONS
+21. Infrastructure as Code (CloudFormation)
+22. NOSQL Databases & DynamoDB
+23. Machine Learning 101
+24. Other Services & Features
