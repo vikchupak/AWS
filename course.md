@@ -12,7 +12,7 @@
 10. Route 53 - Global DNS
 11. RDS
 12. NETWORK STORAGE & DATA LIFECYCLE
-    - EFS & [AWS Backup](https://aws.amazon.com/backup/)
+    - [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) & [AWS Backup](https://aws.amazon.com/backup/)
 14. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
