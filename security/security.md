@@ -36,7 +36,6 @@
   - A physical connection
   - 1, 10 or 100 Gbps
   - Not encrypted
-  - Access AWS Private & Public services, but **no public internet** unless additionally configured
   - Business Premises -> DX Location -> AWS Region
     - You pay for Port Allocation at a DX Location
     - It is your responsibility to "connect" your business premises to the DX Location Port using physical cables
@@ -45,3 +44,8 @@
     - It is a single point of failure
     - Below **HA Resilient** architecture for DX
     <img width="1486" height="790" alt="image" src="https://github.com/user-attachments/assets/128746b6-06c6-457a-ba0e-561afee4308b" />
+  - DX does **NOT** provide access to the **Public Internet**. Only to AWS public services and private VPC resources
+    - Virtual Interfaces (VIF) are used to provide DX access to AWS public services and private VPC resources
+    - **Public VIF** provides access to AWS Public services
+    - **Private VIF** provides access to AWS Private VPC resources
+  - To End-to-End encrypt DX (VPN), Public VIF + VGW/TGW public endpoints setup is used
