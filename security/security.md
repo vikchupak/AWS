@@ -24,4 +24,4 @@
       - Recommended setup for production
       - Uses BGP over the IPsec tunnel
 
-<img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/f399d8af-b446-4adb-8cc2-b6a8b8adc27a" />
+<img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/695b84c0-e5c7-4e00-8f28-253b60b4ec6d" />
