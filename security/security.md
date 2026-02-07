@@ -1,5 +1,7 @@
 # HYBRID ENVIRONMENTS AND MIGRATION
 
+## AWS Site-to-Site VPN
+
 - Border Gateway Protocol (BGP)
   - Standard internet protocol used worldwide. **Not specific to AWS.**
   - **Routing protocol** that decides **the best path for data to travel between networks**
@@ -27,3 +29,15 @@
     - If enabled on a VPC route table (RT), AWS automatically adds VGW to the VPC RT
 
 <img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/451cdf80-0639-4af1-b1bf-19ce60b8a08d" />
+
+## Dirrect Connect (DX)
+
+- Dirrect Connect (DX)
+  - A physical connection
+  - 1, 10 or 100 Gbps
+  - Not encrypted
+  - Business Premises -> DX Location -> AWS Region
+    - You pay for Port Allocation at a DX Location
+    - It is your responsibility to "connect" your business premises to the DX Location Port using physical cables
+    - **Cross Connect** connects AWS Port to Customer/Partner Port
+  
