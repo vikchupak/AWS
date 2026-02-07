@@ -42,7 +42,7 @@
       - Lambda@edge
 18. ADVANCED VPC
 19. HYBRID ENVIRONMENTS AND MIGRATION
-    - AWS Site-to-Site VPC
+    - AWS Site-to-Site VPN
     - Direct Connect (DX)
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
