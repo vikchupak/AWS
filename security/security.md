@@ -30,9 +30,9 @@
 
 <img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/451cdf80-0639-4af1-b1bf-19ce60b8a08d" />
 
-## Dirrect Connect (DX)
+## Direct Connect (DX)
 
-- Dirrect Connect (DX)
+- Direct Connect (DX)
   - A physical connection
   - 1, 10 or 100 Gbps
   - Not encrypted
