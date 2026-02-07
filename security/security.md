@@ -9,5 +9,6 @@
     - Physical on-promises router (which AWS VPN connects to)
   - VPN connection
     - Configuration that links VGW and CGW
+  - Speed limit is 1.25 Gbps
 
 <img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/51deae98-f213-4372-a8e6-3e0ba266f8a2" />
