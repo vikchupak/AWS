@@ -42,8 +42,10 @@
       - Lambda@edge
 18. ADVANCED VPC
 19. HYBRID ENVIRONMENTS AND MIGRATION
-20. SECURITY, DEPLOYMENT & OPERATIONS
-21. Infrastructure as Code (CloudFormation)
-22. NOSQL Databases & DynamoDB
-23. Machine Learning 101
-24. Other Services & Features
+    - AWS Site-to-Site VPC
+    - Direct Connect (DX)
+21. SECURITY, DEPLOYMENT & OPERATIONS
+22. Infrastructure as Code (CloudFormation)
+23. NOSQL Databases & DynamoDB
+24. Machine Learning 101
+25. Other Services & Features
