@@ -7,6 +7,9 @@
   - **Routing protocol** that decides **the best path for data to travel between networks**
     - It is not about data transfer speed or security
   - **Used by AWS inside the IPsec tunnel (VPN) or on Direct Connect for dynamic routing**
+ 
+<img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/25f5fab2-0bbc-470b-a6f5-253caf38963c" />
+
 - AWS site-2-site VPN
   - Connect a VPC with on-promises network **over PUBLIC internet**
   - **Uses IPsec protocol (not HTTPS)**
@@ -28,9 +31,9 @@
   - Route Propagation
     - If enabled on a VPC route table (RT), AWS automatically adds VGW to the VPC RT
 
-<img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/25f5fab2-0bbc-470b-a6f5-253caf38963c" />
-
 ## Direct Connect (DX)
+
+<img width="1486" height="790" alt="image" src="https://github.com/user-attachments/assets/429ec2d7-da35-49ee-b9a1-ad53e1476d2a" />
 
 - Direct Connect (DX)
   - A physical connection
