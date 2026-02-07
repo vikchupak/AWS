@@ -16,12 +16,12 @@
 14. HA & SCALING
 15. SERVERLESS AND APPLICATION SERVICES
     - Lambda
-    - [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - SNS
     - SQS
-    - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) & Amazon CloudWatch Events
     - [Amazon MQ](https://aws.amazon.com/amazon-mq/)
+    - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) & Amazon CloudWatch Events
+    - [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
     - [Amazon Cognito](https://aws.amazon.com/cognito/)
     - Kinesis
         - [Amazon Kinesis](https://aws.amazon.com/kinesis/)
