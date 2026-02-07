@@ -20,7 +20,7 @@
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - SNS
     - SQS
-    - [Amazon EventBridge](https://aws.amazon.com/eventbridge/)
+    - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) & Amazon CloudWatch Events
     - [Amazon MQ](https://aws.amazon.com/amazon-mq/)
     - [Amazon Cognito](https://aws.amazon.com/cognito/)
     - Kinesis
