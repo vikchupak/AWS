@@ -19,7 +19,7 @@
   - VPN connection
     - Configuration that links VGW and CGW
   - Static vs Dynamic routing
-    - Static routing doesn't use/require BGP
+    - Static routing doesn't use BGP
     - Dynamic routing require BGP
       - Recommended setup for production
       - Uses BGP over the IPsec tunnel
