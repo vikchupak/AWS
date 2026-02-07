@@ -32,7 +32,7 @@
     - CloudFront
       - Distributions
       - ACM for custom domains
-      - Private vs public distributions
+      - Private distributions & behaviours
       - Restrict access to origins
 18. ADVANCED VPC
 19. HYBRID ENVIRONMENTS AND MIGRATION
