@@ -28,7 +28,7 @@
   - Route Propagation
     - If enabled on a VPC route table (RT), AWS automatically adds VGW to the VPC RT
 
-<img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/451cdf80-0639-4af1-b1bf-19ce60b8a08d" />
+<img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/25f5fab2-0bbc-470b-a6f5-253caf38963c" />
 
 ## Direct Connect (DX)
 
