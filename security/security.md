@@ -6,7 +6,7 @@
   - **Used inside the IPsec tunnel (VPN) or on Direct Connect for dynamic routing**
 - AWS site-2-site VPN
   - Connect a VPC with on-promises network over PUBLIC internet
-  - Uses IPsec protocol (not HTTPS)
+  - **Uses IPsec protocol (not HTTPS)**
     - Works at Layer 3
     - Secures all IP traffic (TCP, UDP, ICMP, anything)
   - Speed limit is 1.25 Gbps
