@@ -43,4 +43,5 @@
     - **Cross Connect** connects AWS Port to Customer/Partner Router Port
   - Resilience is "bad" if using only 1 DX Port
     - It is a single point of failure
-    
+    - Below **HA Resilient** architecture for DX
+    <img width="1486" height="790" alt="image" src="https://github.com/user-attachments/assets/128746b6-06c6-457a-ba0e-561afee4308b" />
