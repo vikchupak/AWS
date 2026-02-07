@@ -18,10 +18,12 @@
     - Physical on-promises router (which AWS VPN connects to)
   - VPN connection
     - Configuration that links VGW and CGW
-  - Static vs Dynamic VPN (routing)
-    - Static VPN (routing) doesn't use/require BGP
-    - Dynamic VPN (routing) require BGP
+  - Static vs Dynamic routing
+    - Static routing doesn't use/require BGP
+    - Dynamic routing require BGP
       - Recommended setup for production
       - Uses BGP over the IPsec tunnel
+  - Route Propagation
+    - If enabled on a VPC route table (RT), AWS automatically adds VGW to the VPC RT
 
 <img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/451cdf80-0639-4af1-b1bf-19ce60b8a08d" />
