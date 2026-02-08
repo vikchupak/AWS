@@ -41,7 +41,12 @@
       - Restrict access to origins
       - Lambda@edge
 18. ADVANCED VPC
-19. HYBRID ENVIRONMENTS AND MIGRATION
+    - Egress-Only Internet Gateway (EIGW). For "IPv6" only
+    - VPC Endpoints
+      - Gateway
+      - Interface
+    - VPC Peering
+20. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
       - Connect VPC to On-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
