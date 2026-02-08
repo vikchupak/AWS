@@ -43,8 +43,12 @@
 18. ADVANCED VPC
 19. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
+      - Connect VPC to On-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
+      - Connect VPC to On-promises over Physical cables
     - [AWS Transit Gateway (TGW)](https://aws.amazon.com/transit-gateway/)
+      - Connect VPCs to VPCs
+      - Connect VPCs to On-promises using Site-to-Site VPN or DX (VPN Encryption can be added)
     - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/)
       - Volume Gateway
       - Tape Gateway
