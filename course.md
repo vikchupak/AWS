@@ -12,7 +12,8 @@
 10. Route 53 - Global DNS
 11. RDS
 12. NETWORK STORAGE & DATA LIFECYCLE
-    - [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) & [AWS Backup](https://aws.amazon.com/backup/)
+    - [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/)
+    - [AWS Backup](https://aws.amazon.com/backup/)
 14. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
@@ -43,6 +44,7 @@
 19. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
+    - [AWS Transit Gateway (TGW)](https://aws.amazon.com/transit-gateway/)
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
