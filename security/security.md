@@ -49,8 +49,8 @@
     <img width="1486" height="790" alt="image" src="https://github.com/user-attachments/assets/128746b6-06c6-457a-ba0e-561afee4308b" />
   - DX does **NOT** provide access to the **Public Internet**. Only to AWS public services and private VPC resources
     - Virtual Interfaces (VIF) are used to provide DX access to AWS public services and private VPC resources
-    - **Public VIF** provides access to AWS Public services
-    - **Private VIF** provides access to AWS Private VPC resources
+      - **Public VIF** provides access to AWS Public services
+      - **Private VIF** provides access to AWS Private VPC resources
   - VPN encryption. To End-to-End encrypt DX, Public VIF + VGW/TGW public endpoints with IPsec (VPN) setup is used
 
 ## Transit Gateway (TGW)
@@ -66,3 +66,14 @@
 | **Cost** | No hourly fee; pay for data transfer | **Hourly fee** + Data processing fee |
 | **Latency** | **Lowest** (Direct connection) | Slightly higher (Extra hop through TGW) |
 | **Complexity** | High at scale (Mesh network) | Low (Single connection per VPC) |
+
+
+| VPC Peering | Transit Gateway |
+|------------------------|------------------------|
+| <img width="1610" height="776" alt="image" src="https://github.com/user-attachments/assets/b708d74a-f367-4999-81d9-bdfe5ad93ffa" /> | <img width="1614" height="780" alt="image" src="https://github.com/user-attachments/assets/2a3b900a-0f4e-4189-a8e5-6ac505db3c49" /> |
+
+- Attachment types to other networks
+  - VPC
+  - Site-to-Site VPN
+  - Direct Connect (DX) Gateway
+- Peer cross regions/accounts
