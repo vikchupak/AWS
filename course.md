@@ -61,7 +61,8 @@
       - [Volume Gateway](https://aws.amazon.com/storagegateway/volume/)
         - Stored volumes
         - Cached volumes
-      - Tape Gateway
+      - Tape Gateway or Virtual Tape Library (VTL)
+        - Emulate a physical tape library on-premises so legacy backup software can store backups in AWS S3 and Glacier
       - [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
