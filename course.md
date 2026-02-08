@@ -43,8 +43,8 @@
 18. ADVANCED VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
-      - Gateway
-      - Interface
+      - Gateway Endpoints
+      - Interface Endpoints
     - VPC Peering
 20. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
