@@ -86,6 +86,7 @@
 - Integrates with S3, EBS, Glacier within AWS
 - Usually run as a VM on On-premises
   - Act as a bridge between local on-prem storage and AWS storage
+  - Connection. Storage Gateway VM (On-prem) -> Storage Gateway Endpoint (AWS) 
 - Represents storage using protocols
   - Internet Small Computer Systems Interface (iSCSI)
     - Block-level storage protocol
@@ -101,6 +102,20 @@
 ### Volume Gateway
 
 - Stored volumes
+  - Data is stored on Storage Gateway VM on-prem locally
+  - Data is automatically asynchronously copied to **S3** as EBS snapshots
+  - Pros & Corns
+    - Pros
+      - Main storage copy is on-prem local -> Low latency
+      - Full disk backups
+      - Create EBS volumes in AWS for Disaster Recovery
+    - Corns
+      - Main storage copy is on-prem local -> Need to have storage capacity local
+  - Limitations
+    - 32 Volumes per Gateway
+    - 16TB per volume
+    - 512TB per Gateway
+
 - Cached volumes
 
 ### Tape Gateway
