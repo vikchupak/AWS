@@ -12,7 +12,7 @@
 
 - AWS site-2-site VPN
   - Connect a VPC with on-promises network **over PUBLIC internet**
-  - **Uses IPsec protocol (not HTTPS)**
+  - **Uses IPsec protocol for encryption (not HTTPS)**
     - Works at Layer 3
     - Secures all IP traffic (TCP, UDP, ICMP, anything)
   - Speed limit is 1.25 Gbps
@@ -52,3 +52,17 @@
     - **Public VIF** provides access to AWS Public services
     - **Private VIF** provides access to AWS Private VPC resources
   - VPN encryption. To End-to-End encrypt DX, Public VIF + VGW/TGW public endpoints with IPsec (VPN) setup is used
+
+## Transit Gateway (TGW)
+
+- **Network Transit Hub** to connect `VPCs to VPCs` and `VPCs to On-promises networks`
+  - TGW vs VPC Peering. TGW supports `Transitive Routing` unlike `VPC Peering`
+
+| Feature | VPC Peering | Transit Gateway |
+| --- | --- | --- |
+| **Topology** | **Point-to-Point** (Full Mesh) | **Hub-and-Spoke** (Centralized) |
+| **Transitive Routing** | **No** (A to B, B to C ≠ A to C) | **Yes** (A to TGW to C works) |
+| **Scalability** | Hard to manage (Max 125 peers) | Easy to manage (Scales to thousands) |
+| **Cost** | No hourly fee; pay for data transfer | **Hourly fee** + Data processing fee |
+| **Latency** | **Lowest** (Direct connection) | Slightly higher (Extra hop through TGW) |
+| **Complexity** | High at scale (Mesh network) | Low (Single connection per VPC) |
