@@ -46,8 +46,9 @@
       - VPC Gateway Endpoints
         - Provide direct private access to public S3 and DynamoDB services from VPC (public and private) subnets. Free
       - VPC Interface Endpoints
-        - Provide direct private access to public AWS services from VPC (public and private) subnets. Cost
+        - Provide direct private access to public AWS services from VPC (public and private) subnets. Has price
     - VPC Peering
+      - Direct encrypted network link between two VPCs
 20. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
       - Connect VPC to On-promises over Public Internet
