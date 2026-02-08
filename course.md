@@ -59,6 +59,8 @@
       - Connect VPCs to On-promises using Site-to-Site VPN or DX (VPN Encryption can be configured)
     - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/)
       - [Volume Gateway](https://aws.amazon.com/storagegateway/volume/)
+        - Stored volumes
+        - Cached volumes
       - Tape Gateway
       - [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)
 21. SECURITY, DEPLOYMENT & OPERATIONS
