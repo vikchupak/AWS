@@ -13,9 +13,9 @@
         - Roles predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf
         - A role is linked directly to an AWS service
      - PassRole action
-       - A role is assigned(linked) to the service
+       - A role is linked(assigned) to the service
        - The service has to assume the role to get required access/permissions
-       - You has PassRole policy which says you allow the service to really assume the role when you calling the service
+       - You has a policy with PassRole action which says you authorized to pass the role to the service when calling it
        - Better mental model
          - IAM Role = a badge with permissions
          - Trust policy = who is allowed to wear that badge
