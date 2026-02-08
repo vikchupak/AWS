@@ -43,9 +43,10 @@
 18. ADVANCED VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
-      - Gateway Endpoints
-        - Provide access to public S3 and DynamoDB from private VPC subnets
-      - Interface Endpoints
+      - VPC Gateway Endpoints
+        - Provide direct private access to public S3 and DynamoDB services from VPC (public and private) subnets
+      - VPC Interface Endpoints
+        - Provide direct private access to public AWS services from VPC (public and private) subnets
     - VPC Peering
 20. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
