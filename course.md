@@ -2,19 +2,30 @@
 
 1. Introduction
 2. AWS Accounts
-3. AWS Fundamentals
-4. IAM, ACCOUNTS AND AWS ORGANISATIONS
-5. S3
-6. VPC BASICS
-7. EC2 BASICS
-8. CONTAINERS & ECS
-9. ADVANCED EC2
-10. Route 53 - Global DNS
-11. RDS
-12. NETWORK STORAGE & DATA LIFECYCLE
+   - Create (root user) accounts + enable MFA
+     - "General" account (email1@gmail.com)
+     - "Production" account (email2gmail.com) - Optional
+   - Create an IAM (admin) users + enable MFA
+   - IAM Access Keys & configure AWS CLI
+4. AWS Fundamentals
+5. IAM, ACCOUNTS AND AWS ORGANISATIONS
+   - AWS Organizations
+     - Create an organization using the "General" account
+       - This will "convert" the account to a management (master) account
+       - Invite "Production" account to the organization
+       - Configure `Switch Role` (uses assume role api under the hood). In the "Production" account, assign `OrganizationAccountAccessRole` to it
+         - This allows "General" account to switch to "Production" account
+7. S3
+8. VPC BASICS
+9. EC2 BASICS
+10. CONTAINERS & ECS
+11. ADVANCED EC2
+12. Route 53 - Global DNS
+13. RDS
+14. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
-14. HA & SCALING
+15. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
