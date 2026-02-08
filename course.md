@@ -44,6 +44,7 @@
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - Gateway Endpoints
+        - Provide access to public S3 and DynamoDB from private VPC subnets
       - Interface Endpoints
     - VPC Peering
 20. HYBRID ENVIRONMENTS AND MIGRATION
