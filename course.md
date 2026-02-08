@@ -9,8 +9,8 @@
 4. AWS Fundamentals
 5. IAM, ACCOUNTS AND AWS ORGANISATIONS
    - [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) & PassRole
-     - A service-linked role is linked directly to an AWS service
      - Service-linked roles are predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf
+     - A service-linked role is linked directly to an AWS service
      - PassRole
        - A role is assigned(linked) to the service
        - The service has to assume the role to get required access/permissions
