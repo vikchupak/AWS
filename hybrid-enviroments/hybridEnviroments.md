@@ -90,7 +90,7 @@
 - Represents storage using protocols
   - Internet Small Computer Systems Interface (iSCSI)
     - Block-level storage protocol
-    - Presents storage as a raw disk
+    - Presents `Raw Block Storage` (Raw disk)
     - Used by **Volume Gateway**
   - Network File System (NFS) (Linux/Unix)
     - File-level storage protocol
@@ -102,8 +102,8 @@
 ### Volume Gateway
 
 - Stored volumes
-  - Data is stored on Storage Gateway VM on-prem locally
-  - Data is automatically asynchronously copied to **S3** as EBS snapshots
+  - **Primary data is stored on Storage Gateway VM on-prem locally**
+  - Data is automatically asynchronously copied to **AWS S3** as EBS snapshots
   - Pros & Corns
     - Pros
       - Primary storage copy is on-prem local -> Low latency
@@ -117,6 +117,19 @@
     - 512TB per Gateway
 
 - Cached volumes
+  - The same as Stored volumes setup, but
+    - **Primary data is stored on `AWS S3` Storage**
+    - Frequently accessed data is cached on Storage Gateway VM on-prem locally
+    - Known as Data Center Extension architecture
+      - Storage appears on-promises, but it is actually in AWS
+    - Pros & Corns
+      - Pros
+        - Create EBS volumes in AWS for Disaster Recovery
+        - Save local storage capacity
+    - Limitations
+      - 32 Volumes per Gateway
+      - 32TB per volume
+      - 1PB per Gateway
 
 ### Tape Gateway
 
