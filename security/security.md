@@ -77,3 +77,32 @@
   - Site-to-Site VPN
   - Direct Connect (DX) Gateway
 - Peer cross regions/accounts
+
+## AWS Storage Gateway
+
+- AWS hybrid storage service
+- Connect On-premises with AWS cloud storage
+  - Keep applications on-prem, but use AWS for storage, backup, or archiving
+- Integrates with S3, EBS, Glacier within AWS
+- Usually run as a VM on On-premises
+  - Act as a bridge between local on-prem storage and AWS storage
+- Represents storage using protocols
+  - Internet Small Computer Systems Interface (iSCSI)
+    - Block-level storage protocol
+    - Presents storage as a raw disk
+    - Used by **Volume Gateway**
+  - Network File System (NFS) (Linux/Unix)
+    - File-level storage protocol
+    - Used by **File Gateway**
+  - Server Message Block (SMB) (Windows)
+    - File-level storage protocol
+    - Used by **File Gateway**
+
+### Volume Gateway
+
+- Stored volumes
+- Cached volumes
+
+### Tape Gateway
+
+### Amazon S3 File Gateway
