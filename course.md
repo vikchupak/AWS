@@ -9,12 +9,25 @@
    - IAM Access Keys & configure AWS CLI
 4. AWS Fundamentals
 5. IAM, ACCOUNTS AND AWS ORGANISATIONS
+   - [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) & PassRole
+     - A service-linked role is linked directly to an AWS service
+     - Service-linked roles are predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf
+     - PassRole
+       - A role is assigned to the service
+       - The service has to assume the role to get required access
+       - You has PassRole policy which says you allow the service to really assume the role when calling the service
+       - Better mental model
+         - IAM Role = a badge with permissions
+         - Trust policy = who is allowed to wear that badge
+         - AssumeRole = putting the badge on
+         - PassRole = pointing at a badge and saying “that service may wear this one”
    - AWS Organizations
      - Create an organization using the "General" account
        - This will "convert" the account to a management (master) account
        - Invite "Production" account to the organization
        - Configure `Switch Role` (uses assume role api under the hood). In the "Production" account, assign `OrganizationAccountAccessRole` to it
          - This allows "General" account to switch to "Production" account
+     - Service Control Policies (SCP)
 7. S3
 8. VPC BASICS
 9. EC2 BASICS
