@@ -84,7 +84,7 @@
 - Connect On-premises with AWS cloud storage
   - Keep applications on-prem, but use AWS for storage, backup, or archiving
 - Integrates with S3, EBS, Glacier within AWS
-- Usually run as a VM on On-premises
+- Usually run as a VM on-premises
   - Act as a bridge between local on-prem storage and AWS storage
   - Connection. Storage Gateway VM (On-prem) -> Storage Gateway Endpoint (AWS) 
 - Represents storage using protocols
