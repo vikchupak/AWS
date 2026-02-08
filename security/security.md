@@ -106,11 +106,11 @@
   - Data is automatically asynchronously copied to **S3** as EBS snapshots
   - Pros & Corns
     - Pros
-      - Main storage copy is on-prem local -> Low latency
+      - Primary storage copy is on-prem local -> Low latency
       - Full disk backups
       - Create EBS volumes in AWS for Disaster Recovery
     - Corns
-      - Main storage copy is on-prem local -> Need to have storage capacity local
+      - Primary storage copy is on-prem local -> Need to have storage capacity locally
   - Limitations
     - 32 Volumes per Gateway
     - 16TB per volume
