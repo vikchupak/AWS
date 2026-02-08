@@ -15,7 +15,7 @@
      - PassRole
        - A role is assigned to the service
        - The service has to assume the role to get required access
-       - You has PassRole policy which says you allow the service to really assume the role when calling the service
+       - You has PassRole policy which says you allow the service to really assume the role when you calling the service
        - Better mental model
          - IAM Role = a badge with permissions
          - Trust policy = who is allowed to wear that badge
