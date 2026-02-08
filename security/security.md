@@ -51,4 +51,4 @@
     - Virtual Interfaces (VIF) are used to provide DX access to AWS public services and private VPC resources
     - **Public VIF** provides access to AWS Public services
     - **Private VIF** provides access to AWS Private VPC resources
-  - To End-to-End encrypt DX (VPN), Public VIF + VGW/TGW public endpoints setup is used
+  - VPN encryption. To End-to-End encrypt DX, Public VIF + VGW/TGW public endpoints with IPsec setup is used
