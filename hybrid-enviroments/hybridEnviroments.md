@@ -133,4 +133,6 @@
 
 ### Tape Gateway
 
+- Virtual Tape Library (VTL)
+
 ### Amazon S3 File Gateway
