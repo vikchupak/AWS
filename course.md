@@ -3,10 +3,9 @@
 1. Introduction
 2. AWS Accounts
    - Create (root user) accounts + enable MFA
-     - "General" account (email.address.1)
-     - "Production" account (email.address.2) - Optional
-   - Create an IAM (admin) users + enable MFA
-   - IAM Access Keys & configure AWS CLI
+     - "General" and "Production" accounts (email.address.1 and email.address.2)
+   - Create an IAM (admin) user + enable MFA
+   - IAM Access Keys for IAM (admin) user & configure AWS CLI
 4. AWS Fundamentals
 5. IAM, ACCOUNTS AND AWS ORGANISATIONS
    - [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) & PassRole
@@ -22,11 +21,9 @@
          - AssumeRole = putting the badge on
          - PassRole = pointing at a badge and saying “that service may wear this one”
    - AWS Organizations
-     - Create an organization using the "General" account
-       - This will "convert" the account to a management (master) account
-       - Invite "Production" account to the organization
-       - Configure `Switch Role` (uses assume role api under the hood). In the "Production" account, assign `OrganizationAccountAccessRole` to it
-         - This allows "General" account to switch to "Production" account
+     - Create an organization
+     - Add accounts to the organization
+     - Configure switching between accounts (Switch Role) within the organization
      - Service Control Policies (SCP)
 7. S3
 8. VPC BASICS
