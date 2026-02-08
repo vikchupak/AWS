@@ -13,7 +13,7 @@
         - Roles predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf
         - A role is linked directly to an AWS service
      - PassRole action
-       - A role is linked(assigned) to the service
+       - A role is linked (assigned) to the service
        - The service has to assume the role to get required access/permissions
        - You has a policy with PassRole action which says you authorized to pass the role to the service when calling it
        - Better mental model
