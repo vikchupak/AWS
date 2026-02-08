@@ -48,7 +48,7 @@
       - Connect VPC to On-promises over Physical cables
     - [AWS Transit Gateway (TGW)](https://aws.amazon.com/transit-gateway/)
       - Connect VPCs to VPCs
-      - Connect VPCs to On-promises using Site-to-Site VPN or DX (VPN Encryption can be added)
+      - Connect VPCs to On-promises using Site-to-Site VPN or DX (VPN Encryption can be configured)
     - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/)
       - Volume Gateway
       - Tape Gateway
