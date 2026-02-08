@@ -44,9 +44,9 @@
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - VPC Gateway Endpoints
-        - Provide direct private access to public S3 and DynamoDB services from VPC (public and private) subnets
+        - Provide direct private access to public S3 and DynamoDB services from VPC (public and private) subnets. Free
       - VPC Interface Endpoints
-        - Provide direct private access to public AWS services from VPC (public and private) subnets
+        - Provide direct private access to public AWS services from VPC (public and private) subnets. Cost
     - VPC Peering
 20. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
