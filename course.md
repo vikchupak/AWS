@@ -45,6 +45,10 @@
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
     - [AWS Transit Gateway (TGW)](https://aws.amazon.com/transit-gateway/)
+    - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/)
+      - Volume Gateway
+      - Tape Gateway
+      - Amazon S3 File Gateway
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
