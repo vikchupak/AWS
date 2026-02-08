@@ -14,7 +14,7 @@
         - A role is linked directly to an AWS service
      - PassRole action
        - A role is linked (assigned) to a service
-       - The service has to assume the role to get required access/permissions
+       - The service has to assume the role to get required permissions
        - You has a policy with PassRole action which says you authorized to pass the role to the service when calling it
        - Better mental model
          - IAM Role = a badge with permissions
