@@ -101,6 +101,8 @@
 
 ### Volume Gateway
 
+Let on-premises applications use block storage (disk volumes) while the data is stored in Amazon S3
+
 - Stored volumes
   - **Primary data is stored on Storage Gateway VM on-prem locally**
   - Data is automatically asynchronously copied to **AWS S3** as EBS snapshots
@@ -133,6 +135,8 @@
 
 ### Tape Gateway or Virtual Tape Library (VTL)
 
+Let on-premises backup software store data on virtual tape library backed by Amazon S3
+
 - Emulates a physical tape library on-premises so legacy backup software can store backups in AWS S3 and Glacier without changing workflows
   - A software-based tape library that looks like a real tape library to your backup software
 - "Traditional" Tape Library consists of `Media Changer` + `Tape Drive` + `Tape Library`
@@ -144,7 +148,8 @@
 
 ### Amazon S3 File Gateway
 
-- Let on-premises applications use file storage while the files are stored in Amazon S3
+Let on-premises applications use file storage while the files are stored in Amazon S3
+
 - You deploy a Storage Gateway VM on-prem
   - It exposes shares
     - NFS (Linux/Unix)
