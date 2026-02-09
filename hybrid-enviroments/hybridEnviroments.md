@@ -134,7 +134,7 @@
 ### Tape Gateway or Virtual Tape Library (VTL)
 
 - Emulates a physical tape library on-premises so legacy backup software can store backups in AWS S3 and Glacier without changing workflows
-- A software-based tape library that looks like a real tape library to your backup software
+  - A software-based tape library that looks like a real tape library to your backup software
 - "Traditional" Tape Library consists of `Media Changer` + `Tape Drive` + `Tape Library`
 - Backup server connects to tape library via `iSCSI` protocol
 - On-prem runs a VM to emulate a tape library physical "interface" (Media Changer + Tape drive)
@@ -143,3 +143,23 @@
   - Connection. Backup server -> VM (On-prem) with emulated VTL "inteface" -> Storage Gateway Endpoint (AWS) -> VTL
 
 ### Amazon S3 File Gateway
+
+- Let on-premises applications use file storage while the files are stored in Amazon S3
+- You deploy a Storage Gateway VM on-prem
+  - It exposes shares
+    - NFS (Linux/Unix)
+    - SMB (Windows)
+- On-premises servers mount shares exposed by the Storage Gateway VM using standard NFS or SMB protocols
+- Storage Gateway (VM)
+  - Stores all files as objects in S3
+    - **Primary storage is Amazon S3**
+    - Traffic between the gateway and AWS uses HTTPS
+    - Each file becomes an S3 object
+  - Caches frequently accessed data locally
+  - Syncs metadata automatically
+- Files in S3 are visible in AWS
+- Bucket share = Link `AWS bucket <-> On-prem file share`
+
+```txt
+On-prem server -> NFS/SMB protocol -> Storage Gateway VM (with shares) -> AWS Storage Gateway Endpoint -> Amazon S3
+```
