@@ -159,7 +159,4 @@
   - Syncs metadata automatically
 - Files in S3 are visible in AWS
 - Bucket share = Link `AWS bucket <-> On-prem file share`
-
-```txt
-On-prem server -> NFS/SMB protocol -> Storage Gateway VM (with shares) -> AWS Storage Gateway Endpoint -> Amazon S3
-```
+- Connection. On-prem server -> NFS/SMB protocol -> Storage Gateway VM (with shares) -> AWS Storage Gateway Endpoint -> Amazon S3
