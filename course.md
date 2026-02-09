@@ -81,11 +81,17 @@
       - Connect VPCs to On-promises using Site-to-Site VPN or DX (VPN Encryption can be configured)
     - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/)
       - [Volume Gateway](https://aws.amazon.com/storagegateway/volume/)
-        - Stored volumes
-        - Cached volumes
+        - Let on-premises applications use block storage (disk volumes) while the data is stored in Amazon S3
+           - Stored volumes
+             - Primary data is stored on Storage Gateway VM on-prem locally
+           - Cached volumes
+             - Primary data is stored on AWS S3
       - Tape Gateway or Virtual Tape Library (VTL)
-        - Emulate a physical tape library on-premises so legacy backup software can store backups in AWS S3 and Glacier
+        - Let on-premises backup software store data on virtual tape library backed by Amazon S3
+          - Primary data is stored on AWS S3
       - [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)
+        - Let on-premises applications use file storage while the files are stored in Amazon S3
+          - Primary data is stored on AWS S3
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
