@@ -104,7 +104,7 @@
 Let on-premises applications use block storage (disk volumes) while the data is stored in Amazon S3
 
 - Stored volumes
-  - **Primary data is stored on Storage Gateway VM on-prem locally**
+  - **Primary Storage is Gateway VM on-prem locally**
   - Data is automatically asynchronously copied to **AWS S3** as EBS snapshots
   - Pros & Corns
     - Pros
@@ -120,7 +120,7 @@ Let on-premises applications use block storage (disk volumes) while the data is 
 
 - Cached volumes
   - The same as Stored volumes setup, but
-    - **Primary data is stored on `AWS S3` Storage**
+    - **Primary storage is Amazon S3**
     - Frequently accessed data is cached on Storage Gateway VM on-prem locally
     - Known as Data Center Extension architecture
       - Storage appears on-promises, but it is actually in AWS
@@ -142,6 +142,7 @@ Let on-premises backup software store data on virtual tape library backed by Ama
 - "Traditional" Tape Library consists of `Media Changer` + `Tape Drive` + `Tape Library`
 - Backup server connects to tape library via `iSCSI` protocol
 - On-prem runs a VM to emulate a tape library physical "interface" (Media Changer + Tape drive)
+  - **Primary storage is Amazon S3**
   - Data is async copied to AWS VTL (backed by S3, Glacier)
   - Data actively used is cached on VM on-prem locally
   - Connection. Backup server -> VM (On-prem) with emulated VTL "inteface" -> Storage Gateway Endpoint (AWS) -> VTL
