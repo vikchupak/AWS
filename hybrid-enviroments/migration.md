@@ -25,5 +25,5 @@ Move large amount of data IN and OUT of AWS
     - Compute-Optimized with GPU
       - The same as Compute-Optimized, but with a GPU
 - **Snowmobile (truck)**
-  - Whole truck
+  - Literally a truck
   - When more than 10PB data to transfer
