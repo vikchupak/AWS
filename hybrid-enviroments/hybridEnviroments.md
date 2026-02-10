@@ -169,17 +169,19 @@ Let on-premises applications use file storage while the files are stored in Amaz
 
 ## AWS Directory Service
 
-- About **Active Directory (AD)** in general
-  - Manage identities and access, ensuring the right people have access to the right resources in a corporate IT network
-  - Commonly used in Windows environments
-  - Products
-    - Microsoft Active Directory Domin Services (AD DS)
-    - SAMBA - open-source alternative to AD DS
+### About Active Directory (AD) in general
 
-- About **AWS Directory Service**
-  - [Doc](https://aws.amazon.com/directoryservice/)
-  - Managed implementation of AD
-    - Runs within VPC
+- Manage identities and access, ensuring the right people have access to the right resources in a corporate IT network
+- Commonly used in Windows environments
+- Products
+  - Microsoft Active Directory Domin Services (AD DS)
+  - SAMBA - open-source alternative to AD DS
+
+### AWS Directory Service
+
+- [Doc](https://aws.amazon.com/directoryservice/)
+- Managed implementation of AD
+  - Runs within VPC
 - Some AWS services require a directory e.g. Amazon Workspaces
 - AD Modes
   - Simple AD
