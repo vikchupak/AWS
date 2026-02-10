@@ -1,8 +1,8 @@
 # Migration
 
-### Snowball family (offline)
+### Snowball family
 
-Move large amount of data IN and OUT of AWS
+Move large amount of data IN and OUT of AWS **offline**
 
 - **Snowball (legacy)**
   - Physical storage units
@@ -27,3 +27,17 @@ Move large amount of data IN and OUT of AWS
 - **Snowmobile**
   - Literally a truck
   - When more than 10PB data to transfer
+
+### AWS DataSync
+
+Move large amount of data IN and OUT of AWS **online**
+
+- [Doc](https://aws.amazon.com/datasync/)
+- 10Gibs
+- Cost is per 1GB for data moved
+- Encription in-transit (TLS)
+- Architecture
+  - Run DataSync Agent on-prem
+  - Uses NFS or SMB protocols to connect to on-prem storage
+  - On-prem DataSync Agent Connects to DataSync Endpoint in AWS
+  - Connection. On-prem storage -> NFS or SMB protocol -> DataSync Agent on-prem -> TLS -> DataSync Endpoint in AWS -> EFS, FSx, or S3 in AWS
