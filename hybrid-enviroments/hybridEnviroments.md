@@ -202,4 +202,6 @@ Let on-premises applications use file storage while the files are stored in Amaz
 
 ### AWS Transfer Family
 
-Transfer/access IN or OUT data in AWS S3 and EFS using legacy or non-native AWS protocols like SFTP, FTPS, FTP
+Transfer data TO or FROM AWS S3 and EFS using legacy or non-native AWS protocols like SFTP, FTPS, FTP
+
+- It is about access rather than migration
