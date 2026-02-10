@@ -81,12 +81,12 @@
 ## AWS Storage Gateway
 
 - AWS hybrid storage service
-- Connect On-premises with AWS cloud storage
+- Connect on-premises with AWS cloud storage
   - Keep applications on-prem, but use AWS for storage, backup, or archiving
 - Integrates with AWS S3, EBS, Glacier
 - Usually run as a VM on-premises
   - Act as a bridge between local on-prem storage and AWS storage
-  - Connection. Storage Gateway VM (On-prem) -> Storage Gateway Endpoint (AWS) 
+  - Connection. Storage Gateway VM (on-prem) -> Storage Gateway Endpoint (AWS) 
 - Represents storage using protocols
   - Internet Small Computer Systems Interface (iSCSI)
     - Block-level storage protocol
@@ -192,7 +192,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
     - Uses Microsoft AD DS
     - Primary AD location is AWS
     - Can be integrated with on-prem AD (Hybrid Extension)
-      - Then you have 2 ADs, one in AWS, the other on-prem that "trust" each other
+      - You have 2 ADs, one in AWS, the other on-prem that "trust" each other
         - Connection using VPN or DX
   - AD Connector (Proxy Model)
     - NOT a real AD
