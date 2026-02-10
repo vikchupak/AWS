@@ -104,6 +104,8 @@
         - Simple AD
         - AWS Managed Microsoft AD
         - AD Connector
+   - AWS DataSync
+     - Migrate data online
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
