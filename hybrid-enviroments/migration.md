@@ -38,6 +38,6 @@ Move large amount of data IN and OUT of AWS **online**
 - Encription in-transit (TLS)
 - Architecture
   - Run DataSync Agent on-prem
-  - Uses NFS or SMB protocols to connect to on-prem storage
+  - Use NFS or SMB protocol to connect to on-prem storage
   - On-prem DataSync Agent Connects to DataSync Endpoint in AWS
   - Connection. On-prem storage -> NFS or SMB protocol -> DataSync Agent on-prem -> TLS -> DataSync Endpoint in AWS -> EFS, FSx, or S3 in AWS
