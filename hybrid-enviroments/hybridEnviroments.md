@@ -199,3 +199,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
     - AD location is on-prem only
     - Connect existing on-prem AD to AWS services
       - Connection using VPN or DX
+
+### AWS Transfer Family
+
+Transfer/access IN or OUT data in AWS S3 and EFS using legacy or non-native AWS protocols like SFTP, FTPS, FTP
