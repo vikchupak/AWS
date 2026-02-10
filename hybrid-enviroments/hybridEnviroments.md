@@ -169,29 +169,31 @@ Let on-premises applications use file storage while the files are stored in Amaz
 
 ## AWS Directory Service
 
-Original is Microsoft Active Directory Domin Services (AD DS).
+- About **Active Directory (AD)** in general
+  - Manage identities and access, ensuring the right people have access to the right resources in a corporate IT network
+  - Commonly used in Windows environments
+  - Products
+    - Microsoft Active Directory Domin Services (AD DS)
+    - SAMBA - open-source alternative to AD DS
 
-- [Doc](https://aws.amazon.com/directoryservice/)
-- AD DS - most popular, SAMBA - open-source alternative to AD DS
-- AWS Directory Service is a managed implementation of AD
-  - Runs within VPC
+- About **AWS Directory Service**
+  - [Doc](https://aws.amazon.com/directoryservice/)
+  - Managed implementation of AD
+    - Runs within VPC
 - Some AWS services require a directory e.g. Amazon Workspaces
-- Directory can be
-  - Isolated in AWS
-  - Integrated with on-prem
-  - "Proxy" - connected mode. Use existing on-prem directory with AWS services 
-
-- Modes
+- AD Modes
   - Simple AD
     - Uses SAMBA 4
-    - NOT designed to integrate with on-prem directories
+    - AD location is AWS only
+    - NOT designed to integrate with on-prem AD
   - AWS Managed Microsoft AD (Microsoft AD)
-    - Uses Microsoft Active Directory Domin Services
-    - Primary directory location is AWS
-    - Can be integrated with on-prem directories
-      - Connect AWS and on-prem using VPN or DX
-  - AD Connector
+    - Uses Microsoft AD DS
+    - Primary AD location is AWS
+    - Can be integrated with on-prem AD (Hybrid Extension)
+      - Then you have 2 ADs, one in AWS, the other on-prem that "trust" each other
+        - Connection using VPN or DX
+  - AD Connector (Proxy Model)
     - NOT a real AD
-    - Connect AWS with on-prem using VPN or DX
-      - Acts like a proxy to your on-prem directory
-    - Primary directory location is on-prem
+    - AD location is on-prem only
+    - Connect existing on-prem AD to AWS services
+      - Connection using VPN or DX
