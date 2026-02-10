@@ -92,6 +92,18 @@
       - [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)
         - Let on-premises applications use file storage while the files are stored in Amazon S3
           - Primary data is stored on AWS S3
+   - Snowball
+     - Migrate data offline
+     - Products
+        - Snowball
+        - Snowball edge
+        - Snowmobile
+   - AWS Directory Service
+     - Manage identities and access, ensuring the right people have access to the right resources in a corporate IT network
+     - Modes
+        - Simple AD
+        - AWS Managed Microsoft AD
+        - AD Connector
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
