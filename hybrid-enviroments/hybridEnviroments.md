@@ -166,3 +166,32 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - Files in S3 are visible in AWS
 - Bucket share = Link `AWS bucket <-> On-prem file share`
 - Connection. On-prem server -> NFS/SMB protocol -> Storage Gateway VM (with shares) -> AWS Storage Gateway Endpoint -> Amazon S3
+
+## AWS Directory Service
+
+Original is Microsoft Active Directory Domin Services (AD DS).
+
+- [Doc](https://aws.amazon.com/directoryservice/)
+- AD DS - most popular, SAMBA - open-source alternative to AD DS
+- AWS Directory Service is a managed implementation of AD
+  - Runs within VPC
+- Some AWS services require a directory e.g. Amazon Workspaces
+- Directory can be
+  - Isolated in AWS
+  - Integrated with on-prem
+  - "Proxy" - connected mode. Use existing on-prem directory with AWS services 
+
+- Modes
+  - Simple AD
+    - Uses SAMBA 4
+    - NOT designed to integrate with on-prem directories
+  - AWS Managed Microsoft AD (Microsoft AD)
+    - Uses Microsoft Active Directory Domin Services
+    - Primary directory location is AWS
+    - Can be integrated with on-prem directories
+      - Connect AWS and on-prem using VPN or DX
+  - AD Connector
+    - NOT a real AD
+    - Connect AWS with on-prem using VPN or DX
+      - Acts like a proxy to your on-prem derectory
+    - Primary directory location is on-prem
