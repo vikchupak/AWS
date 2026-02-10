@@ -193,5 +193,5 @@ Original is Microsoft Active Directory Domin Services (AD DS).
   - AD Connector
     - NOT a real AD
     - Connect AWS with on-prem using VPN or DX
-      - Acts like a proxy to your on-prem derectory
+      - Acts like a proxy to your on-prem directory
     - Primary directory location is on-prem
