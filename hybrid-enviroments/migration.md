@@ -24,6 +24,6 @@ Move large amount of data IN and OUT of AWS
       - 100TB+7.68 NVME, 52vCPU, 208Gib RAM
     - Compute-Optimized with GPU
       - The same as Compute-Optimized, but with a GPU
-- **Snowmobile (truck)**
+- **Snowmobile**
   - Literally a truck
   - When more than 10PB data to transfer
