@@ -240,7 +240,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - Deployment types
   - Scratch
     - Highly optimized for performance
-    - No Resilience, HA or replication
+    - No Resilience, HA or Replication
     - Use for Short term usage
   - Persistent
     - Self-healing and HA (in one AZ)
