@@ -98,7 +98,7 @@
         - Snowball
         - Snowball edge
         - Snowmobile
-   - AWS Directory Service
+   - [AWS Directory Service](https://aws.amazon.com/directoryservice/)
      - Manage identities and access, ensuring the right people have access to the right resources in a corporate IT network
      - Modes
         - Simple AD
@@ -106,6 +106,13 @@
         - AD Connector
    - AWS DataSync
      - Migrate data online
+   - Amazon FSx
+     - File System as a Service
+     - Services
+       - Amazon FSx for Windows File Server
+       - Amazon FSx for Lustre
+   - AWS Transfer Family
+     - Transfer data TO or FROM S3, EFS using non-native AWS protocols
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
