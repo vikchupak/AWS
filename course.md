@@ -92,13 +92,13 @@
       - [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)
         - Let on-premises applications use file storage while the files are stored in Amazon S3
           - Primary data is stored on AWS S3
-   - Snowball
+   - [AWS Snowball](https://aws.amazon.com/snowball/)
      - Migrate data offline
      - Products
         - Snowball
         - Snowball edge
         - Snowmobile
-   - AWS DataSync
+   - [AWS DataSync](https://aws.amazon.com/datasync/)
      - Migrate data online
    - [AWS Directory Service](https://aws.amazon.com/directoryservice/)
      - Manage identities and access, ensuring the right people have access to the right resources in a corporate IT network
