@@ -205,7 +205,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - [Doc](https://aws.amazon.com/fsx/)
 - File System as a Service in cloud
 - When you need a FS, NOT Object Storage (S3) or Block Storage (EBS)
-- Mount FS to EC2, conteiners, on-prem via VPN or DX
+- Mount FS to EC2, containers, on-prem via VPN or DX
 
 ---
 
