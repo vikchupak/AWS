@@ -106,12 +106,12 @@
         - Simple AD
         - AWS Managed Microsoft AD
         - AD Connector
-   - Amazon FSx
+   - [Amazon FSx](https://aws.amazon.com/fsx/)
      - File System as a Service
      - Services
        - Amazon FSx for Windows File Server
        - Amazon FSx for Lustre
-   - AWS Transfer Family
+   - [AWS Transfer Family](https://aws.amazon.com/aws-transfer-family/)
      - Transfer data TO or FROM S3, EFS using non-native AWS protocols
 21. SECURITY, DEPLOYMENT & OPERATIONS
 22. Infrastructure as Code (CloudFormation)
