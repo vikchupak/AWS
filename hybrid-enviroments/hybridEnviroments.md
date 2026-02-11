@@ -229,7 +229,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
   - FS Developed by Cluster File Systems, Inc. (CFS)
   - Designed for High Performance Computing (HPC)
   - ONLY for Linux
-  - Support POSIX permissions
+  - Supports POSIX permissions
 
 ---
 
