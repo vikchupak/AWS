@@ -73,12 +73,12 @@
       - Direct encrypted network link between two VPCs
 20. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
-      - Connect VPC to On-promises over Public Internet
+      - Connect VPC to on-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
-      - Connect VPC to On-promises over Physical cables (VPN Encryption can be configured)
+      - Connect VPC to on-promises over Physical cables (VPN Encryption can be configured)
     - [AWS Transit Gateway (TGW)](https://aws.amazon.com/transit-gateway/)
       - Connect VPCs to VPCs
-      - Connect VPCs to On-promises using Site-to-Site VPN or DX (VPN Encryption can be configured)
+      - Connect VPCs to on-promises using Site-to-Site VPN or DX (VPN Encryption can be configured)
     - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/)
       - [Volume Gateway](https://aws.amazon.com/storagegateway/volume/)
         - Let on-premises applications use block storage (disk volumes) while the data is stored in Amazon S3
