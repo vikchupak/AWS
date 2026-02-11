@@ -240,11 +240,14 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - Deployment types
   - Scratch
     - Highly optimized for performance
-    - No Resilience or HA
+    - No Resilience, HA or replication
     - Use for Short term usage
   - Persistent
     - Self-healing and HA (in one AZ)
     - Use for Long term usage
+- Architecture
+  - Uses S3 Bucket as a repository
+  - Data is lazy loaded to the Luster when needed
 
 ## AWS Transfer Family
 
