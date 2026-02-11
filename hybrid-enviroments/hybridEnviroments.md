@@ -215,11 +215,17 @@ Let on-premises applications use file storage while the files are stored in Amaz
 ### Amazon FSx for Windows File Server
 
 - [Doc](https://aws.amazon.com/fsx/windows/)
-- Managed native Windows file servers/shares
+- Managed **native** Windows file servers/shares (NTFS)
 - Designed for integration with Windows environments
+- Provide all native Windows FS features like VSS, Data de-duplication, backups, encryption at rest and forced encryption in transit
+- Accessed over SMB protocol
 - Integrates with AD Service or Self-Managed AD
 - Single or Multi-AZ within a VPC
 - On-demand and Scheduled Backups
+
+### Amazon FSx for Lustre
+
+- [Doc](https://aws.amazon.com/fsx/lustre/)
 
 ## AWS Transfer Family
 
