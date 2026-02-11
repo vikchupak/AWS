@@ -34,17 +34,17 @@
 12. Route 53 - Global DNS
 13. RDS
 14. NETWORK STORAGE & DATA LIFECYCLE
-    - [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/)
+    - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
 15. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
 16. SERVERLESS AND APPLICATION SERVICES
-    - Lambda
+    - [AWS Lambda](https://aws.amazon.com/lambda/)
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
-    - SNS
-    - SQS
+    - [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/)
+    - [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/)
     - [Amazon MQ](https://aws.amazon.com/amazon-mq/)
     - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) & Amazon CloudWatch Events
     - [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
