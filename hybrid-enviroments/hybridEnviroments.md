@@ -199,8 +199,29 @@ Let on-premises applications use file storage while the files are stored in Amaz
     - AD location is on-prem only
     - Connect existing on-prem AD to AWS services
       - Connection using VPN or DX
+     
+## Amazon FSx
 
-### AWS Transfer Family
+- [Doc](https://aws.amazon.com/fsx/)
+- File System as a Service in cloud
+- When you need a FS, NOT Object Storage (S3) or Block Storage (EBS)
+- Mount FS to EC2, conteiners, on-prem via VPN or DX
+
+---
+
+- Use EFS for Linux
+- Use FSx for Windows
+
+### Amazon FSx for Windows File Server
+
+- [Doc](https://aws.amazon.com/fsx/windows/)
+- Managed native Windows file servers/shares
+- Designed for integration with Windows environments
+- Integrates with AD Service or Self-Managed AD
+- Single or Multi-AZ within a VPC
+- On-demand and Scheduled Backups
+
+## AWS Transfer Family
 
 Transfer data TO or FROM AWS S3 and EFS using legacy or non-native AWS protocols like SFTP, FTPS, FTP
 
