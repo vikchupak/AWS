@@ -98,14 +98,14 @@
         - Snowball
         - Snowball edge
         - Snowmobile
+   - AWS DataSync
+     - Migrate data online
    - [AWS Directory Service](https://aws.amazon.com/directoryservice/)
      - Manage identities and access, ensuring the right people have access to the right resources in a corporate IT network
      - Modes
         - Simple AD
         - AWS Managed Microsoft AD
         - AD Connector
-   - AWS DataSync
-     - Migrate data online
    - Amazon FSx
      - File System as a Service
      - Services
