@@ -218,7 +218,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - Managed **native** Windows file servers/shares (NTFS)
 - Designed for integration with Windows environments
 - Provide all native Windows FS features like VSS, Data de-duplication, backups, encryption at rest and forced encryption in transit
-- Accessed over SMB protocol
+- Accessible over SMB protocol
 - Integrates with AD Service or Self-Managed AD
 - Single or Multi-AZ within a VPC
 - On-demand and Scheduled Backups
@@ -229,12 +229,22 @@ Let on-premises applications use file storage while the files are stored in Amaz
   - FS Developed by Cluster File Systems, Inc. (CFS)
   - Designed for High Performance Computing (HPC)
   - ONLY for Linux
+  - Support POSIX permissions
 
 ---
 
 **Amazon FSx for Lustre**
 - [Doc](https://aws.amazon.com/fsx/lustre/)
 - Managed **native** Lustre FS
+- Accessible over VPN or DX
+- Deployment types
+  - Scratch
+    - Highly optimized for performance
+    - No Resilience or HA
+    - Use for Short term usage
+  - Persistent
+    - Self-healing and HA (in one AZ)
+    - Use for Long term usage
 
 ## AWS Transfer Family
 
