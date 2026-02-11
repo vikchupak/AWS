@@ -225,7 +225,16 @@ Let on-premises applications use file storage while the files are stored in Amaz
 
 ### Amazon FSx for Lustre
 
+**About Lustre in general**
+  - FS Developed by Cluster File Systems, Inc. (CFS)
+  - Designed for High Performance Computing (HPC)
+  - ONLY for Linux
+
+---
+
+**Amazon FSx for Lustre**
 - [Doc](https://aws.amazon.com/fsx/lustre/)
+- Managed **native** Lustre FS
 
 ## AWS Transfer Family
 
