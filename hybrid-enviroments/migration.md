@@ -39,5 +39,5 @@ Move large amount of data IN and OUT of AWS **online**
 - Architecture
   - Run DataSync Agent on-prem
   - Use NFS or SMB protocol to connect to on-prem storage
-  - On-prem DataSync Agent Connects to DataSync Endpoint in AWS
+  - On-prem DataSync Agent connects to DataSync Endpoint in AWS
   - Connection. Storage (on-prem) -> NFS or SMB protocol -> DataSync Agent (on-prem) -> TLS -> DataSync Endpoint (AWS) -> EFS, FSx, or S3 (AWS)
