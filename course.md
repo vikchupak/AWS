@@ -128,6 +128,9 @@
      - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
    - [AWS Shield](https://aws.amazon.com/shield/)
      - Protects against DDoS attacks
+     - 2 plans
+       - Standard (free)
+       - Advanced (paid)
    - [AWS CloudHSM](https://aws.amazon.com/cloudhsm/)
      - Get dedicated HSMs in the AWS Cloud for your use
      - Securely generate, store, and use cryptographic material keys
