@@ -31,6 +31,8 @@
       - AWS-managed HSMs are still used, but they bypass KMS
     - The Master key + DEK principles are the same like when using KMS
     - No master key is visible to the user
+    - Note: There is default KMS-S3 key to select in account. This key is managed by KMS. So, don't be confused by this key
+      - Real SSE-S3 keys are not managed by KMS
 - **SSE-KMS** `Server-Side Encription with KMS Keys stored in AWS KMS` - recommended. Can be set as default
   - Use `Customer managed keys` stored in AWS KMS
   - You set policies to set granular permissions and manage the key
