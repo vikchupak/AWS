@@ -1,6 +1,11 @@
 # Firewall
 
-- [Firewall in network](https://github.com/vikchupak/AWS/blob/main/network/network.md#firewall)
+Useful
+- [ec2-subnet-vpc firewalls](https://github.com/vikchupak/AWS/blob/main/network/network.md#firewall)
+- [GWLB](https://github.com/vikchupak/AWS/blob/main/services/elb/elb.md#gateway-lb-gwlb)
+
+---
+
 - [AWS Network Firewall](https://aws.amazon.com/network-firewall/)
   - Protects your VPC network traffic (Layer 3–4)
   - Sits inside your VPC, typically in a dedicated firewall subnet
