@@ -50,4 +50,4 @@ Protects against DDoS attacks
   - Unlike in KMS where HSMs are shared between different clients (the same HSM can store materials keys of different customers)
 - Cost. High (~$1.45+/hr per HSM)
 - Scaling. Manual (Add/remove HSMs to cluster)
-- Special configuration and software needed to interact with your HSM
+- Special configuration and software needed to interact with your HSMs
