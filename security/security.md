@@ -17,4 +17,6 @@
 
 # AWS Shield
 
+Protects against DDoS attacks
+
 - [AWS Shield](https://aws.amazon.com/shield/)
