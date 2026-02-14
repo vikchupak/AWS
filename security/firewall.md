@@ -23,3 +23,70 @@
     - WEBACL - $/month
     - A rule on WEBACL - $/month
     - Requests per WEBACL - $/million
+
+## It makes sense to use AWS Network Firewall with AWS WAF?
+
+- It absolutely makes sense to use them together, because they protect different layers
+- They are complementary, not competing services
+
+### AWS Network Firewall
+
+Protects:
+
+* VPC traffic
+* Ingress & egress
+* TCP/UDP
+* IP/port/protocol filtering
+* Deep packet inspection
+* Data exfiltration control
+
+Works at **L3–L4 (+ some L7)**.
+
+### AWS WAF
+
+Protects:
+
+* Web applications only
+* HTTP/HTTPS traffic
+* SQL injection
+* XSS
+* Bots
+* Rate limiting
+
+Works at **L7 (application layer)**.
+
+### Why Using Both Makes Sense
+
+Imagine this architecture:
+
+```txt
+Internet
+   ↓
+CloudFront
+   ↓
+WAF  (blocks SQLi, XSS, bots)
+   ↓
+ALB
+   ↓
+VPC
+   ↓
+Network Firewall (controls outbound + internal traffic)
+   ↓
+EC2 / ECS / RDS
+```
+
+### What each protects:
+
+| Threat                    | WAF | Network Firewall |
+| ------------------------- | --- | ---------------- |
+| SQL injection             | ✅   | ❌                |
+| XSS                       | ✅   | ❌                |
+| Block bad IPs             | ✅   | ✅                |
+| Block port 22             | ❌   | ✅                |
+| Stop data exfiltration    | ❌   | ✅                |
+| Control east-west traffic | ❌   | ✅                |
+
+## 🧠 Simple Rule
+
+* **WAF = protect the application**
+* **Network Firewall = protect the network**
