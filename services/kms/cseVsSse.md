@@ -31,7 +31,7 @@
   - You set policies to set granular permissions and manage the key
 - **SSE-C** `Server-Side Encription with Customer-provided Keys`
   - Use `own keys` stored and managed on client side
-  - Client provides the encryption key **(DEK like)** with every request
+  - Client provides the encryption key **("DEK like", but no real AWS KMS or DEK keys used)** with every request
   - AWS creates cryptographic hash of your key
     - It salts the key and hashes it
     - The hash is stored as part of the object metadata in S3
