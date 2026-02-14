@@ -51,7 +51,7 @@
     - Centralized traffic inspection
     - Stateful
   - **Route Tables**
-    – Can be used to control traffic routing at the VPC level
+    - Can be used to control traffic routing at the VPC level
 
 -----
 
