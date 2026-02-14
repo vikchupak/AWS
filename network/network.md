@@ -49,6 +49,7 @@
     - Deployed at VPC level (via firewall subnets)
     - Centralized traffic inspection
     - Stateful
+- Application level via **AWS Web Application Firewall (AWS WAF)** (L7)
 
 -----
 
