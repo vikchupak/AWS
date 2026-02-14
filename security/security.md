@@ -47,7 +47,7 @@ Protects against DDoS attacks
 
 - [AWS CloudHSM](https://aws.amazon.com/cloudhsm/)
 - Get a **dedicated** hardware inside your VPC. AWS provides the hardware, but they have zero access to your keys
-  - Unlike in KMS where HSMs are shared between different clients
+  - Unlike in KMS where HSMs are shared between different clients (the same HSM can store materials keys of different customers)
 - Cost. High (~$1.45+/hr per HSM)
 - Scaling. Manual (Add/remove HSMs to cluster)
 - Special configuration and software needed to interact with your HSM
