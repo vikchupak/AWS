@@ -132,6 +132,18 @@
      - Record resource configuration changes (history) over time to S3
      - Detects and reports non-compliant changes againt resorce Config Rules using Lambda
        - But it does NOT block non-compliant changes
+   - [Amazon Macie](https://aws.amazon.com/macie/)
+     - Discovers, classifies, and protects sensitive data stored in **Amazon S3**
+       - Identify sensitive data (like PII, financial data, credentials) in S3 buckets and alert you if it’s exposed or improperly secured
+   - [Amazon Inspector](https://aws.amazon.com/inspector/)
+     - Scans workloads running on AWS (such as EC2 instances, container images in ECR, and Lambda functions) for software vulnerabilities and unintended network exposure
+   - [Amazon Guardduty](https://aws.amazon.com/guardduty/)
+     - Managed threat detection service. Continuously monitor AWS environments for malicious activity, suspicious behavior, and potential security threats. Analyzes multiple data sources such as
+       - VPC Flow Logs
+       - CloudTrail events
+       - DNS logs
+       - S3 data events
+     - It does not block traffic (it detects, does not prevent)
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
 24. Machine Learning
