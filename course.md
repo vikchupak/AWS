@@ -3,7 +3,7 @@
 1. Introduction
 2. AWS Accounts
    - Create (root user) accounts + enable MFA
-     - General and Production accounts (email-1 and email-2)
+     - General and Production accounts (email1 and email2)
    - Create an IAM (admin) user + enable MFA
    - IAM Access Keys for the IAM (admin) user & configure AWS CLI
 4. AWS Fundamentals
