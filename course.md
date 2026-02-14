@@ -124,6 +124,14 @@
        - Can decrypt HTTPS to analyze HTTP content
        - L3, L4 Firewalls are stateless. L5, L7 Firewalls are stateful
      - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
+   - [AWS Shield](https://aws.amazon.com/shield/)
+     - Protects against DDoS attacks
+   - [AWS CloudHSM](https://aws.amazon.com/cloudhsm/)
+     - Securely generate, store, and use cryptographic keys inside dedicated, tamper-resistant hardware while running in the AWS Cloud
+   - [AWS Config](https://aws.amazon.com/config/)
+     - Record resource configuration changes (history) over time to S3
+     - Detects and reports non-compliant changes againt resorce Config Rules using Lambda
+       - But it does NOT block non-compliant changes
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
 24. Machine Learning
