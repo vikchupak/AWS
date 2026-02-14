@@ -1,6 +1,7 @@
 # S3 Bucket Keys
 
 - [Official doc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html)
+- **Applicable only to SSE-KMS**
 - By default, puting an object to a s3 bucket involves making an API call for AWS KMS to generate a new DEK.
   - API calls to AWS KMS are paid
   - KMS can't hadle huge load (like 10,000 or 50,000 requests/sec) which causes throttling
