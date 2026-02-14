@@ -130,7 +130,7 @@
      - Securely generate, store, and use cryptographic keys inside dedicated, tamper-resistant hardware while running in the AWS Cloud
    - [AWS Config](https://aws.amazon.com/config/)
      - Record resource configuration changes (history) over time to S3
-     - Detects and reports non-compliant changes againt resorce Config Rules using Lambda
+     - Detects and reports non-compliant changes against resorce Config Rules using Lambda
        - But it does NOT block non-compliant changes
    - [Amazon Macie](https://aws.amazon.com/macie/)
      - Discovers, classifies, and protects sensitive data stored in **Amazon S3**
