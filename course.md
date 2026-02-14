@@ -132,8 +132,8 @@
        - Standard (free)
        - Advanced (paid)
    - [AWS CloudHSM](https://aws.amazon.com/cloudhsm/)
-     - Get dedicated HSMs in the AWS Cloud for your use
-     - Securely generate, store, and use cryptographic material keys
+     - Get dedicated HSMs in the AWS Cloud
+     - Securely generate, store, and use cryptographic keys
    - [AWS Config](https://aws.amazon.com/config/)
      - Record resource configuration changes (history) over time to S3
      - Detects and reports non-compliant changes against resorce Config Rules using Lambda
