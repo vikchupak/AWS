@@ -2,6 +2,8 @@
 
 - Flow. User/App -(encripted data)-> S3 -(encripted data)-> S3 Storage
 
+---
+
 - Client asks KMS for DEK + Encrypted DEK
 - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3
 - Client gets a object from S3. Extracts encrypted DEK from object metadata
