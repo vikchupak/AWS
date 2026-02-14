@@ -20,3 +20,25 @@
 Protects against DDoS attacks
 
 - [AWS Shield](https://aws.amazon.com/shield/)
+- 2 plans
+  - Standard
+    - Free
+    - Automatic/enabled by default
+    - Against common Network (L3) or Transport (L4) attacks
+    - Protects
+      - Route 53
+      - CloudFront
+      - Global Accelerator
+  - Advanced
+    - Paid
+      - $3000 per month
+    - Protects
+      - Route 53
+      - CloudFront
+      - Global Accelerator
+      - EIPs
+      - ELBs
+    - Must to be enabled/configured
+    - Supports integration with WAF to protect L7
+    - Provides real time visibility of DDoS events/attacks
+    - Health-based detection (uses Route 53 health checks)
