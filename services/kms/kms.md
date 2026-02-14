@@ -5,7 +5,40 @@
 
 ---
 
-- Data encription key (DEK)
+- KMS key
+  - Key to encrypt/decrypt DEK
+- Data Encription Key (DEK)
+  - "Original" DEK - Plaintext DEK
+  - Encrypted DEK - Ciphertext DEK
+
+---
+
+- Encrypt
+  - You want to encrypt a file
+  - KMS "asks" HSM to generate a KMS key or use an existing one
+    - The KMS key is generated only once and stored inside HSM
+    - The KMS key never leaves the HSM
+  - KMS "asks" HSM to generate a DEK
+    - The DEK is generated inside the HSM
+    - KMS "asks" HSM to encrypt the DEK using the KMS key -> produces the encrypted DEK
+      - **Neither** the original DEK **nor** encrypted DEK is **stored inside KMS/HSM** 
+  - KMS sends both the original DEK(plaintext DEK) + the encrypted DEK to the client/server
+  - Client/server uses the plaintext DEK to encrypt the file
+    - After encryption, the plaintext DEK is discarded from memory
+    - **The encrypted DEK** is stored alongside the encrypted file as metadata
+- Decrypt
+  - You want to decrypt a file
+  - You have
+    - The encrypted file
+    - The encrypted DEK (stored as metadata with the file)
+  - The client/server sends the encrypted DEK to KMS
+  - KMS "asks" HSM to decrypt the encrypted DEK using the KMS key
+    - The encrypted DEK contains metadata that identifies KMS key to use for decrypt
+    - The HSM decrypts the encrypted DEK using the KMS key
+    - The plaintext DEK is returned temporarily to the client/server
+  - The client/server
+    - Uses the plaintext DEK to decrypt the file
+    - Removes the plaintext DEK from memory after decryption
 
 ---
 
