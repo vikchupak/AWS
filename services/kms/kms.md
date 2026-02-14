@@ -35,7 +35,7 @@
   - KMS uses an existing logical KMS key
   - KMS asks the HSM to generate a DEK
     - The DEK is generated inside the HSM
-  - KMS asks the HSM to encrypt the DEK using the KMS key (key material in HSM)
+  - KMS asks the HSM to encrypt the DEK using the KMS key (that refs to key material in HSM)
     - This produces the encrypted DEK
     - **Neither** the original DEK **nor** encrypted DEK is **stored in KMS/HSM** 
   - KMS sends both the original DEK(plaintext DEK) + the encrypted DEK to the client/server
