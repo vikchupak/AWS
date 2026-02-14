@@ -120,8 +120,8 @@
    - [AWS Systems Manager (SSM)](https://aws.amazon.com/systems-manager/)
      - [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
    - Application Layer (L7) Firewall
-     - Have visibility of the data inside a L7 connection and the layers below L3, L4, L5
-       - Keeps all L3, L4, L5 Firewall features
+     - Have visibility of the data inside a L7 connection ?and the layers below L3, L4, L5?
+       - ?Keeps all L3, L4, L5 Firewall features?
        - Layer 7 is where HTTP, SMTP, DNS protocols "live"
        - Can decrypt HTTPS to analyze HTTP content
        - L3, L4 Firewalls are stateless. L5, L7 Firewalls are stateful
