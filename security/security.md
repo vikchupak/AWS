@@ -14,3 +14,7 @@
   - Secrets Auto-Rotation
   - Paid
   - Cross Region/Account
+
+# AWS Shield
+
+- [AWS Shield](https://aws.amazon.com/shield/)
