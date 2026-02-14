@@ -25,7 +25,7 @@
   - You create a KMS key
   - KMS creates a logical KMS key resource
   - KMS instructs the HSM to generate a key material
-    - The key material is generated inside the HSM
+    - The key material is generated and stored inside the HSM
     - The key material never leaves the HSM
   - The logical KMS key now references that key material
   - Note: this happens once, not during every encryption
