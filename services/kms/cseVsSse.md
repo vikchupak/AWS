@@ -23,9 +23,14 @@
 ---
 
 - **SSE-S3** `Server-Side Encription with Amazon S3-managed Keys` (AES256 algorithm) - default
-  - Use `AWS managed keys` stored in AWS KMS
-  - S3(AWS) creates, manages, and uses encription keys
+  - Use `AWS managed keys`
+  - S3 creates, manages, and uses encription keys
   - Not possible to set policies on the keys. They are completely managed by AWS
+  - SSE-S3 does not use KMS under the hood
+    - Everything happens inside S3, no KMS API calls are involved
+      - AWS-managed HSMs are still used, but they bypass KMS
+    - The Master key + DEK principles are the same like when using KMS
+    - No master key is visible to the user(in KMS)
 - **SSE-KMS** `Server-Side Encription with KMS Keys stored in AWS KMS` - recommended. Can be set as default
   - Use `Customer managed keys` stored in AWS KMS
   - You set policies to set granular permissions and manage the key
