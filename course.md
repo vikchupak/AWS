@@ -121,6 +121,7 @@
      - Have visibility of the data inside a L7 connection and the layers below L3, L4, L5
        - Layer 7 is where HTTP, SMTP, DNS protocols "live"
        - Can decrypt HTTPS to analyze HTTP content
+       - L3, L4 Firewalls are stateless. L5, L7 Firewalls are stateful
      - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
