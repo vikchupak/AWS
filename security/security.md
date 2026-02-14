@@ -46,4 +46,7 @@ Protects against DDoS attacks
 # AWS CloudHSM
 
 - [AWS CloudHSM](https://aws.amazon.com/cloudhsm/)
-- 
+- Get a **dedicated** hardware inside your VPC. AWS provides the hardware, but they have zero access to your keys
+- Cost. High (~$1.45+/hr per HSM)
+- Scaling. Manual (Add/remove HSMs to cluster)
+- Special configuration and software needed to interact with your HSM
