@@ -143,7 +143,7 @@
        - CloudTrail events
        - DNS logs
        - S3 data events
-     - It detects and reports
+     - Detects and reports
        - But it does NOT block or prevent traffic
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
