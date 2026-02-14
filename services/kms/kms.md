@@ -5,23 +5,39 @@
 
 ---
 
+- Physical Key Material
+  - Cryptographic key to encrypt/decrypt DEK
+  - Generated inside HSM
+  - Stored inside HSM
+  - Managed by HSM
+  - Never leaves HSM
 - KMS key
-  - Key to encrypt/decrypt DEK
-- Data Encription Key (DEK)
+  - Logical resource(object) stored in AWS KMS that references the key material stored in HSMs
+  - Created and managed by KMS
+- Data Encryption Key (DEK)
+  - Cryptographic key to encrypt/decrypt data
   - "Original" DEK - Plaintext DEK
   - Encrypted DEK - Ciphertext DEK
 
 ---
 
+- KMS Key creation (one-time operation)
+  - You create a KMS key
+  - KMS creates a logical KMS key resource
+  - KMS instructs the HSM to generate a key material
+    - The key material is generated inside the HSM
+    - The key material never leaves the HSM
+  - The logical KMS key now references that key material
+  - Note: this happens once, not during every encryption
+
 - Encrypt
   - You want to encrypt a file
-  - KMS "asks" HSM to generate a KMS key or use an existing one
-    - The KMS key is generated only once and stored inside HSM
-    - The KMS key never leaves the HSM
-  - KMS "asks" HSM to generate a DEK
+  - KMS uses an existing logical KMS key
+  - KMS asks the HSM to generate a DEK
     - The DEK is generated inside the HSM
-    - KMS "asks" HSM to encrypt the DEK using the KMS key -> produces the encrypted DEK
-      - **Neither** the original DEK **nor** encrypted DEK is **stored inside KMS/HSM** 
+  - KMS asks the HSM to encrypt the DEK using the KMS key (key material in HSM)
+    - This produces the encrypted DEK
+    - **Neither** the original DEK **nor** encrypted DEK is **stored in KMS/HSM** 
   - KMS sends both the original DEK(plaintext DEK) + the encrypted DEK to the client/server
   - Client/server uses the plaintext DEK to encrypt the file
     - After encryption, the plaintext DEK is discarded from memory
@@ -32,10 +48,13 @@
     - The encrypted file
     - The encrypted DEK (stored as metadata with the file)
   - The client/server sends the encrypted DEK to KMS
-  - KMS "asks" HSM to decrypt the encrypted DEK using the KMS key
-    - The encrypted DEK contains metadata that identifies KMS key to use for decrypt
-    - The HSM decrypts the encrypted DEK using the KMS key
-    - The plaintext DEK is returned temporarily to the client/server
+  - KMS processes the request
+    - The encrypted DEK contains metadata identifying the KMS key (CMK) used
+    - KMS locates the logical KMS key
+    - The logical KMS key references the key material stored in HSM
+    - KMS instructs the HSM to decrypt the encrypted DEK
+    - The HSM uses the key material to decrypt it
+    - The plaintext DEK is returned temporarily to the client/server.
   - The client/server
     - Uses the plaintext DEK to decrypt the file
     - Removes the plaintext DEK from memory after decryption
