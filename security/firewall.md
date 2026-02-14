@@ -17,3 +17,7 @@
   - Web ACL Capacity Units (WCU) - Default 1500
     - "Measurement" of Rules complexity
   - A resource can have ONLY one WEB ACL associated. But the same WEB ACL can be associated with many resources
+  - Pricing
+    - WEBACL - $/month
+    - A rule on WEBACL - $/month
+    - Requests per WEBACL - $/million
