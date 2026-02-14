@@ -4,6 +4,7 @@
   - Protects your VPC network traffic (Layer 3–4)
   - Sits inside your VPC, typically in a dedicated firewall subnet
 - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
+  <img width="1265" height="714" alt="image" src="https://github.com/user-attachments/assets/d5f1066b-cb01-4752-81e4-38ea98253820" />
   - Protects web applications (Layer 7)
   - Attaches to
     - Application Load Balancer (ALB)
