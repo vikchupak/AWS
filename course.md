@@ -27,20 +27,22 @@
      - Configure switching between accounts (Switch Role) within the organization
      - Service Control Policies (SCP)
 7. S3
-8. VPC BASICS
-9. EC2 BASICS
-10. CONTAINERS & ECS
-11. ADVANCED EC2
-12. Route 53 - Global DNS
-13. RDS
-14. NETWORK STORAGE & DATA LIFECYCLE
+   - [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/)
+9. VPC BASICS
+10. EC2 BASICS
+    - [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)
+11. CONTAINERS & ECS
+12. ADVANCED EC2
+13. Route 53 - Global DNS
+14. RDS
+15. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
-15. HA & SCALING
+16. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
-16. SERVERLESS AND APPLICATION SERVICES
+17. SERVERLESS AND APPLICATION SERVICES
     - [AWS Lambda](https://aws.amazon.com/lambda/)
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/)
@@ -54,7 +56,7 @@
         - [Amazon Data Firehose](https://aws.amazon.com/firehose/)
         - [Amazon Kinesis Data Analytics for SQL](https://aws.amazon.com/kinesis/data-analytics-for-sql/)
         - [Amazon Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams/)
-17. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
+18. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
       - Distributions
       - Cache invalidation
@@ -62,7 +64,7 @@
       - Private distributions & behaviours
       - Restrict access to origins
       - Lambda@edge
-18. ADVANCED VPC
+19. ADVANCED VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - VPC Gateway Endpoints
