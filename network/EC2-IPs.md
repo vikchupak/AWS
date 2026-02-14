@@ -4,5 +4,5 @@ EC2 has
   - Public IP (optional)
     - Temp/dynamic **automatic Public IP**
     - Permanent/static **Elastic IP**
-      - **Elastic IP** always replaces **automatic Public IP**
+      - **Elastic IP** always replaces **automatic Public IP** if enabled
   - Private IP (always)
