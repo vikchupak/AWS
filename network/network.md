@@ -45,7 +45,7 @@
 - Subnet level via **NACL** (L3–L4)
   - Attached to subnets
   - Stateless
-- VPC level (L3-L4) via **AWS Network Firewall (L3–L4)**
+- VPC level (L3-L4) via **AWS Network Firewall** (L3–L4)
     - Deployed at VPC level (via firewall subnets)
     - Centralized traffic inspection
     - Stateful
