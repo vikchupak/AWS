@@ -118,6 +118,7 @@
    - [AWS Systems Manager (SSM)](https://aws.amazon.com/systems-manager/)
      - [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
    - Application Layer (L7) Firewall
+     - Have visibility of the data inside a L7 connection and Layers below L3, L4, L5
      - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
 22. Infrastructure as Code (CloudFormation)
 23. NOSQL Databases & DynamoDB
