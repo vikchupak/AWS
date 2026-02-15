@@ -142,7 +142,7 @@
      - Discovers, classifies, and protects sensitive data stored in **Amazon S3**
        - Identify sensitive data (like PII, financial data, credentials) in S3 buckets and alert you if it’s exposed or improperly secured
    - [Amazon Inspector](https://aws.amazon.com/inspector/)
-     - Scans workloads running on AWS (such as EC2 instances, container images in ECR, and Lambda functions) for software vulnerabilities and unintended network exposure
+     - Scans workloads running on AWS (such as EC2 instances, container images in ECR, and Lambda functions) for software vulnerabilities and unintended network exposure, and deviations from best practices
    - [Amazon Guardduty](https://aws.amazon.com/guardduty/)
      - Managed threat detection service. Continuously monitor AWS environments for malicious activity, suspicious behavior, and potential security threats. Analyzes multiple data sources such as
        - VPC Flow Logs
