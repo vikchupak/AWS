@@ -64,7 +64,7 @@ Protects against DDoS attacks
 - [Amazon Macie](https://aws.amazon.com/macie/)
 - Discovers, classifies, and protects sensitive data stored in **Amazon S3**
   - Identify sensitive data (like PII, financial data, credentials) in S3 buckets and alert you if it’s exposed or improperly secured
-- **Data Identifiers** as "rules" to analyze data
+- **Data Identifiers** - "rules" to identify issues
   - 2 types
     - Managed Data Identifiers
       - Built-in
