@@ -30,7 +30,7 @@
   - The logical KMS key now references that key material
   - Note: this happens once, not during every encryption
 
-- Encrypt
+- Upload/Encrypt
   - You want to encrypt a file
   - KMS asks the HSM to generate a DEK
     - The DEK is generated inside the HSM
@@ -41,7 +41,7 @@
   - Client/server uses the plaintext DEK to encrypt the file
     - After encryption, the plaintext DEK is discarded from memory
     - **The encrypted DEK** is stored alongside the encrypted file as metadata
-- Decrypt
+- Download/Decrypt
   - You want to decrypt a file
   - You have
     - The encrypted file
