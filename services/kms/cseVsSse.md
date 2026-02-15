@@ -4,11 +4,13 @@
 
 ---
 
-- Client asks KMS for DEK + Encrypted DEK
-- Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3
-- Client gets a object from S3. Extracts encrypted DEK from object metadata
-  - Asks KMS to decrypt DEK and send it back
-  - Client uses DEK to decrypt the object
+- Upload
+  - Client asks KMS for DEK + Encrypted DEK
+  - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3
+- Download
+  - Client gets a object from S3. Extracts encrypted DEK from object metadata
+    - Asks KMS to decrypt DEK and send it back
+    - Client uses DEK to decrypt the object
 
 ---
   
