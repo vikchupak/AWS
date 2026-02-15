@@ -1,6 +1,7 @@
 # S3 Client-Side Encription (CSE)
 
 - Flow. User/App -(encripted data)-> S3 -(encripted data)-> S3 Storage
+- Client encrypts data
 
 ---
 
