@@ -13,7 +13,7 @@
    - Global vs Regional services
    - VPC basics
       - Default & Custom VPCs
-      - Default & Custom SGs, Subnets 
+      - SGs, Subnets 
    - EC2 basics
      - AMI, SSH to EC2
    - S3 basics
