@@ -51,3 +51,29 @@ Protects against DDoS attacks
 - Cost. High (~$1.45+/hr per HSM)
 - Scaling. Manual (Add/remove HSMs to cluster)
 - Special configuration and software needed to interact with your HSMs
+
+# AWS Config
+
+- [AWS Config](https://aws.amazon.com/config/)
+- Record resource configuration changes (history) over time to S3
+- Detects and reports non-compliant changes against resorce **Config Rules** using Lambda
+  - But it does NOT block non-compliant changes
+
+# Amazon Macie
+
+- [Amazon Macie](https://aws.amazon.com/macie/)
+- Discovers, classifies, and protects sensitive data stored in **Amazon S3**
+  - Identify sensitive data (like PII, financial data, credentials) in S3 buckets and alert you if it’s exposed or improperly secured
+- **Data Identifiers** as "rules" to analyze data
+  - 2 types
+    - Managed Data Identifiers
+      - Built-in
+      - Mantained by AWS
+      - Uses ML/patterns
+    - Custom Data Identifiers
+      - Proprietary
+      - Regex based
+- **Findings** are found issues
+  - 2 types
+    - **Policy** Findings
+    - **Sensitive data** findings
