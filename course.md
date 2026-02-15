@@ -7,7 +7,27 @@
    - Create an IAM (admin) user + enable MFA
    - IAM Access Keys for the IAM (admin) user & configure AWS CLI
 4. AWS Fundamentals
-5. IAM, ACCOUNTS AND AWS ORGANISATIONS
+   - Public internet zone & AWS public zone & AWS private zone
+   - Public vs Private services
+   - Regions, Edge locations, AZs, **Service Resilience**
+   - Global vs Regional services
+   - VPC basics
+      - Default & Custom VPCs
+      - Default & Custom SGs, Subnets 
+   - EC2 basics
+     - AMI, SSH to EC2
+   - S3 basics
+   - CloudFormation (CFN) Basics
+     - Templates
+     - Logical vs physical resources
+   - CloudWatch (CW) basics
+   - Shared Responsibility Model
+   - High-Availability (HA) vs Fault-Tolerance (FT) vs Disaster Recovery (DR)
+   - Route53 (R53) basics
+     - Register Domains
+     - Hosted Zones
+     - DNS Record Types
+6. IAM, ACCOUNTS AND AWS ORGANISATIONS
    - [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) & PassRole
      - Service-linked roles
         - Roles predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf
