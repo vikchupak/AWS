@@ -73,7 +73,7 @@ Protects against DDoS attacks
     - Custom Data Identifiers
       - Proprietary
       - Regex based
-- **Findings** are found issues
+- **Findings** - found issues
   - 2 types
     - **Policy** Findings
     - **Sensitive data** findings
