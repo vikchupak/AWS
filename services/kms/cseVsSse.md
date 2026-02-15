@@ -36,7 +36,7 @@
     - No master key is visible to the user
     - **Note:** There is `default S3 KMS key` to select in account
       - This key is AWS managed key
-        - Don't be confused by this key. It is not S3-owned keys (AWS owned keys)
+        - Don't be confused by this key. It is not S3-owned key (AWS owned key)
 - **SSE-KMS** `Server-Side Encription with KMS Keys stored in AWS KMS` - recommended. Can be set as default
   - Uses `Customer managed keys` stored in AWS KMS
   - You set policies to set granular permissions and manage the key
