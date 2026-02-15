@@ -29,11 +29,11 @@
      - DNS Record Types
 6. IAM, ACCOUNTS AND AWS ORGANISATIONS
    - IAM users, policies, groups, roles
-   - [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) & PassRole
+   - [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) & PassRole policy
      - Service-linked roles
         - Roles predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf
         - A role is linked directly to an AWS service
-     - PassRole action
+     - PassRole policy
        - A role is linked (assigned) to a service
        - The service has to assume the role to get required permissions
        - You has a policy with PassRole action which says you authorized to pass the role to the service when calling it
