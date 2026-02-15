@@ -28,6 +28,7 @@
      - Hosted Zones
      - DNS Record Types
 6. IAM, ACCOUNTS AND AWS ORGANISATIONS
+   - IAM users, policies, groups, roles
    - [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) & PassRole
      - Service-linked roles
         - Roles predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf
@@ -43,10 +44,18 @@
          - PassRole = pointing at a badge and saying “that service may wear this one”
    - AWS Organizations
      - Create an organization
+       - The creator account becomes a MANAGEMENT account
      - Add accounts to the organization
      - Configure switching between accounts (Switch Role) within the organization
      - Service Control Policies (SCP)
-7. S3
+       - Restrict AWS accounts within organizations
+       - Only way to limit the root user inside an account
+       - Management account is NEVER affected by SCP
+   - CloudWatch Logs
+     - Log srteams & Log groups
+   - AWS CloudTrail basics
+   - AWS Control Tower 101
+8. S3
    - [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/)
 9. VPC BASICS
 10. EC2 BASICS
