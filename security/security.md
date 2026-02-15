@@ -87,3 +87,21 @@ Protects against DDoS attacks
   - EC2 instances OS
   - Containers
 - Provides a **report of findings** ordered by priority
+
+# Amazon Guardduty
+
+- [Amazon Guardduty](https://aws.amazon.com/guardduty/)
+- Managed threat detection service
+- Continuously monitor AWS environments/accounts for malicious activity, suspicious behavior, and potential security threats
+- Analyzes multiple data sources such as
+  - VPC Flow Logs
+  - DNS logs
+  - CloudTrail events
+  - CloudTrail Management events
+  - CloudTrail S3 events
+  - S3 data events
+- Uses
+  - AI/ML
+  - Threat intelligence feeds
+- Detects and reports **findings**
+  - But it does NOT block or prevent traffic
