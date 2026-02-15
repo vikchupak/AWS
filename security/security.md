@@ -77,3 +77,13 @@ Protects against DDoS attacks
   - 2 types
     - **Policy** Findings
     - **Sensitive data** findings
+
+# Amazon Inspector
+
+- [Amazon Inspector](https://aws.amazon.com/inspector/)
+- Scans workloads running on AWS (such as EC2 instances, container images in ECR, and Lambda functions) for software vulnerabilities and unintended network exposure, and deviations from security best practices
+- Scans
+  - EC2 instances
+  - EC2 instances OS
+  - Containers
+- Provides a **report of findings** ordered by priority
