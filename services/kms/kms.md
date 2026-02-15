@@ -71,8 +71,8 @@
   - Stored in your account
   - You can see them but have limited control
   - Key policy cannot be edited
-  - A legacy key type that is no longer being created for new AWS services as of 2021
-    - New (and legacy) AWS services are using an AWS owned key to encrypt your data by default
+  - **A legacy key type that is no longer being created for new AWS services as of 2021**
+    - **New (and legacy) AWS services are using an AWS owned key to encrypt your data by default**
 - Customer managed keys
   - Created explicitly by customer
   - Are more configureable
