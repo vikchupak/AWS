@@ -58,16 +58,24 @@
     - Uses the plaintext DEK to decrypt the file
     - Removes the plaintext DEK from memory after decryption
 
----
+### AWS owned keys vs AWS managed keys vs customer managed keys
 
+- [Doc](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-best-practices/key-management.html?utm_source=chatgpt.com#key-management-types)
 - AWS owned keys
-  - Collection of keys that are used and managed by AWS in multiple AWS accounts
-- **Customer owned keys**
-  - **AWS managed keys**
-    - Created automatically by services
-  - Customer managed keys
-    - Created explicitly by customer
-    - Are more configureable
+  - Fully owned and managed by AWS
+  - Used across multiple AWS accounts
+  - You cannot see, manage, or audit them
+- AWS managed keys
+  - Created automatically by services
+  - Managed by AWS
+  - Stored in your account
+  - You can see them but have limited control
+  - Key policy cannot be edited
+  - A legacy key type that is no longer being created for new AWS services as of 2021
+    - New (and legacy) AWS services are using an AWS owned key to encrypt your data by default
+- Customer managed keys
+  - Created explicitly by customer
+  - Are more configureable
 
 ---
 
