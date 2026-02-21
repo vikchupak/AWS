@@ -35,6 +35,6 @@
    - Values that your stack exposes after it is created or updated
      - Value required
    - Used to
-     - Return useful information (like URLs, ARNs, IDs)
+     - Return/print useful information (like URLs, ARNs, IDs)
      - **Export values for other stacks**
        - Export.Name + !ImportValue
