@@ -14,7 +14,7 @@
 
 - Non-portable(static) templates
   - Templates with hadcoded values like AMI (specific to region) or S3 bucket name
-    - Can't be re-applied multiple times because the hadcoded values cause conflicts
+    - Often can't be re-applied multiple times because the hadcoded values cause conflicts
 - Template parameters
   - Accept input via console UI, CLI, API
   - Supports default values, parameter type, allowed values and validation patterns
