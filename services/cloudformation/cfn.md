@@ -41,3 +41,7 @@
            - Return/print useful information (like URLs, ARNs, IDs)
            - **Export values for other stacks**
              - Export.Name + !ImportValue
+- Conditions
+  - Conditions are evaluated before creating logical resources
+  - If a condition present for a logical resource, the resource is only created when the condition is true
+  - Nested conditions are supported
