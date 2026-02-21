@@ -45,3 +45,7 @@
   - Conditions are evaluated before creating logical resources
   - If a condition present for a logical resource, the resource is only created when the condition is true
   - Nested conditions are supported
+- DependsOn
+  - By default, CNF tries to run things in parallel when possible
+  - DependsOn allows **explicitly** seting things order
+  - When you add a DependsOn attribute to a resource, that resource is created only after the creation of the resource specified in theDependsOn attribute
