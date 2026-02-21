@@ -6,6 +6,7 @@
 
  - Templates define logical resources and create stacks
    - Declarative
+   - The same template can be used to create different stacks
  - Stacks create physical resources from logical ones
 
 ---
