@@ -31,4 +31,10 @@
  - Mappings
    - Map of key - value pairs
    - Use !FindInMap intrinsic function to get value by key
- 
+ - Outputs
+   - Values that your stack exposes after it is created or updated
+     - Value required
+   - Used to
+     - Return useful information (like URLs, ARNs, IDs)
+     - **Export values for other stacks**
+       - Export.Name + !ImportValue
