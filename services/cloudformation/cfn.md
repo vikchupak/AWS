@@ -41,11 +41,22 @@
            - Return/print useful information (like URLs, ARNs, IDs)
            - **Export values for other stacks**
              - Export.Name + !ImportValue
-- Conditions
+- `Conditions`
   - Conditions are evaluated before creating logical resources
   - If a condition present for a logical resource, the resource is only created when the condition is true
   - Nested conditions are supported
-- DependsOn
+- `DependsOn`
   - By default, CNF tries to run things in parallel when possible
   - DependsOn allows **explicitly** seting things order
   - When you add a DependsOn attribute to a resource, that resource is created only after the creation of the resource specified in theDependsOn attribute
+- Check readiness for advanced scenarios
+    - `WaitCondition` (legacy) + `Signal (cfn-signal)`
+      - **Logical Resource**
+      - Pause stack creation until an external signal is received
+        - Signal can be **either cfn-signal or HTTP request to pre-signed URL**
+      - Can `DependsOn` other resources and vice versa
+    - `CreationPolicy` (recommended) + `Signal (cfn-signal)`
+      - **Resource attribute**
+      - Wait for a resource itself to signal it is ready using cfn-signal
+    - `cfn-signal`
+      - Helper script/toolt to send signal
