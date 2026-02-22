@@ -158,4 +158,4 @@
   - Example: CFN can't cleanup S3 bucket before deleting it. Without the cleanup, CFN will fail to delete the bucket
   - We can create a Custom Resource that makes cleanup before delete
 - Custom resources enable you to write custom provisioning logic in templates
-  - [Example template with S3 Custom Resource to provision and cleanup bucket](https://github.com/vikchupak/AWS/blob/main/services/cloudformation/customresource.yaml)
+  - [Example template with Custom S3Objects Resource to provision and cleanup bucket](https://github.com/vikchupak/AWS/blob/main/services/cloudformation/customresource.yaml)
