@@ -48,7 +48,7 @@
   - Nested conditions are supported
 - `DependsOn`
   - **Resource attribute**
-  - By default, CNF tries to run things in parallel when possible
+  - By default, CNF tries to run things in parallel when possible and tries to detect things order implicitly
   - DependsOn allows **explicitly** seting things order
   - When you add a DependsOn attribute to a resource, that resource is created only after the creation of the resource specified in theDependsOn attribute
 - Check readiness for advanced scenarios
