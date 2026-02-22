@@ -181,6 +181,32 @@
      - Detects and reports
        - But it does NOT block or prevent traffic
 22. Infrastructure as Code (CloudFormation)
+   - Logical & Physical resources
+   - Non-portable(static) vs portable(dynamic) templates
+   - Parameters & Pseudo Parameters
+   - Intrinsic Functions
+   - Mappings
+   - Outputs & Export
+   - Conditions
+   - DependsOn
+   - Advanced stack readiness
+     - CreationPolicy
+     - WaitCondition
+     - UserData
+     - cfn-signal
+     - cfn-init
+     - cfn-hup
+   - Multi-stack architecture
+     - Nested stacks
+     - Cross-stacks references
+   - StackSets
+     - Cross region/account stack deployment
+   - DeletionPolicy
+   - Stack Roles
+     - How stack gets required permissions to create/update/delete resources
+   - Change sets
+     - Show changes plan without applying the changes
+   - Custom Resources
 23. NOSQL Databases & DynamoDB
 24. Machine Learning
 25. Other Services & Features
