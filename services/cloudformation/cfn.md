@@ -114,3 +114,15 @@
       - Delete logical resource, but keep physical
     - Snapshot
       - Make data snapshot before delete
+
+### Stack Roles
+
+- CFN uses indentity permission who creates stack
+  - This means you need both
+    - Permissions to create/update/delete stacks
+    - Permissions to create/update/delete resources defined in stack
+- CFN can assume a role to gain needed permissions to create/update/delete resources
+  - Using Indentity permissions (if identity has them)
+  - Using Identity PassRole (if identity doesn't have permissions itself, but has PassRole to grant permissions to CNF)
+    - **Useful to enforce IAM users to be able to manage resources via CFN, but not directly themselves**
+  - A role gets attached to stack
