@@ -133,3 +133,5 @@
 - It is configuration **directives** stored in template as part of logical resource
 - UserData is imperative. CFN-INIT is declarative (idempotent)
 - Call `cnf-init` tool(installed on EC2) from helper script(passed via UserData)
+
+<img width="1277" height="723" alt="image" src="https://github.com/user-attachments/assets/2bc42b07-23e4-4b5d-bbf9-06a59422c075" />
