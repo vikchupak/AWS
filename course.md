@@ -202,11 +202,13 @@
    - StackSets
      - Cross region/account stack deployment
    - DeletionPolicy
+     - Define actions to take before resources are deleted
    - Stack Roles
      - How stack gets required permissions to create/update/delete resources
    - Change sets
      - Show changes plan without applying the changes
    - Custom Resources
+     - Create resources with custom provisioning logic
 23. NOSQL Databases & DynamoDB
 24. Machine Learning
 25. Other Services & Features
