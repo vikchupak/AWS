@@ -102,3 +102,15 @@
    - Target account - an account where stack instances & stacks are created
 - Each stack = 1 region in 1 account
 - Template for StackSet is a normal template
+
+### DeletionPolicy
+
+- An attribute
+- Define actions to take when/before resources are deleted
+  - Action list
+    - Delete (default)
+      - Delete resource completelly
+    - Retain
+      - Delete logical resource, but keep physical
+    - Snapshot
+      - Make data snapshot before delete
