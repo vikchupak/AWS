@@ -68,11 +68,11 @@
 - Resources in a single stack share lifecycle
 - Stack resorce limit is 500 resources
 - Stacks are designed to be isolated and self-contained by default
-- Outputs are not visible from other stacks by default
-  - Nested stacks can reference outputs. This is because stacks are linked
-    - `Ref`
-  - Outputs can be exported to be visible in other stacks
-    - Export & `Fn::ImportValue`
+  - Outputs are not visible from other stacks by default
+    - Nested stacks can reference outputs. This is because stacks are linked
+      - `Ref`
+     - Outputs can be exported to be visible in other stacks
+       - Export & `Fn::ImportValue`
 
 ### Multi-stack architecture
 
