@@ -143,11 +143,16 @@
 - CNF-hup listens for resource metadata changes and runs user-specified actions when a change is detected
   - Can be used to calls CFN-INIT to re-apply the changes
 
----
+### CreationPolicy & WaitCondition & cfn-signal & UserData & cfn-init & cfn-hup example
 
-Use CreationPolicy & WaitCondition & cfn-signal & UserData & cfn-init & cfn-hup to implement stack readiness
+- template
 
 ### Change sets
 
 - A Change Set is like a “terraform plan” for AWS CloudFormation
   - Only shows what CloudFormation intends to do, without applying the changes unless confirmed
+
+### Custom Resources
+
+- 
+- Custom resources enable you to write custom provisioning logic in templates that AWS CloudFormation runs anytime you create, update (if you changed the custom resource), or delete stacks
