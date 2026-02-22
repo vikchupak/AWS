@@ -154,5 +154,8 @@
 
 ### Custom Resources
 
-- Example template
-- Custom resources enable you to write custom provisioning logic in templates that AWS CloudFormation runs anytime you create, update (if you changed the custom resource), or delete stacks
+- CFN doesn't support everything natively out-of-the-box
+  - Example: CFN can't cleanup S3 bucket before deleting it. Without the cleanup, CFN will fail to delete the bucket
+  - We can create a Custom Resource that makes cleanup before delete
+- Custom resources enable you to write custom provisioning logic in templates
+  - [Example template with S3 Custom Resource to provision and cleanup bucket](https://github.com/vikchupak/AWS/blob/main/services/cloudformation/customresource.yaml)
