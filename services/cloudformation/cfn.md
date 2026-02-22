@@ -91,3 +91,14 @@
 - Cross-stacks references
   - **You reuse logical and physical resources from different stacks** - stack reuse and their resources
   - Cross region/accout referencing is NOT supported
+
+### StackSets
+
+- Deploy stacks accross many regions/accounts from one place
+- StackSets are containers for stack instnces
+  - A stack instance is an ONE reference to (or container for) an actual stack in specific region/account
+  - StackSets can contain many Stack instances
+ - Admin account - an account which created/manages StackSets
+   - Target account - an account where stack instances & stacks are created
+- Each stack = 1 region in 1 account
+- Template for StackSet is a normal template
