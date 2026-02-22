@@ -143,7 +143,7 @@
 - CNF-hup listens for resource metadata changes and runs user-specified actions when a change is detected
   - Can be used to calls CFN-INIT to re-apply the changes
 
-### CreationPolicy & WaitCondition & cfn-signal & UserData & cfn-init & cfn-hup example
+### CreationPolicy & UserData & cfn-signal & cfn-init & cfn-hup example
 
 - [template](https://github.com/vikchupak/AWS/blob/main/services/cloudformation/creationpolicy-cfn-init-hub-signal.yaml)
 
