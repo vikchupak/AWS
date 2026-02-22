@@ -145,7 +145,7 @@
 
 ### CreationPolicy & UserData & cfn-signal & cfn-init & cfn-hup example
 
-- [template](https://github.com/vikchupak/AWS/blob/main/services/cloudformation/creationpolicy-cfn-init-hub-signal.yaml)
+- [Example template](https://github.com/vikchupak/AWS/blob/main/services/cloudformation/creationpolicy-cfn-init-hub-signal.yaml)
 
 ### Change sets
 
@@ -154,5 +154,5 @@
 
 ### Custom Resources
 
-- 
+- Example template
 - Custom resources enable you to write custom provisioning logic in templates that AWS CloudFormation runs anytime you create, update (if you changed the custom resource), or delete stacks
