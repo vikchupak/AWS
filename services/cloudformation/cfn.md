@@ -145,7 +145,7 @@
 
 ### CreationPolicy & WaitCondition & cfn-signal & UserData & cfn-init & cfn-hup example
 
-- template
+- [template](https://github.com/vikchupak/AWS/blob/main/services/cloudformation/creationpolicy-cfn-init-hub-signal.yaml)
 
 ### Change sets
 
