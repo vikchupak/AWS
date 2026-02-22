@@ -61,7 +61,7 @@
       - **Resource attribute**
       - Wait for a resource itself to signal it is ready using cfn-signal
     - `cfn-signal`
-      - Helper script/toolt to send signal
+      - Call `cfn-signal` tool(installed on EC2) from a helper script to send an actual signal
 
 ### Single Stacks
 
@@ -126,3 +126,10 @@
   - Using Identity PassRole (if identity doesn't have permissions itself, but has PassRole to grant permissions to CNF)
     - **Useful to enforce IAM users to be able to manage resources via CFN, but not directly themselves**
   - A role gets attached to stack
+
+### Init (CFN-INIT)
+
+- CFN-INIT is native CNF feature. UserData is EC2 feature.
+- It is configuration **directives** stored in template as part of logical resource
+- UserData is imperative. CFN-INIT is declarative (idempotent)
+- Call `cnf-init` tool(installed on EC2) from helper script(passed via UserData)
