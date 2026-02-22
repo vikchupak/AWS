@@ -132,7 +132,7 @@
 - cfn-init is native CNF feature. UserData is EC2 feature
 - **Bootstaping feature - runs only once**
 - It is configuration **directives** stored in template as part of logical resource
-- **UserData is imperative. CFN-INIT is declarative (idempotent)**
+- **UserData is imperative. cfn-init is declarative (idempotent)**
 - Call `cnf-init` tool(installed on EC2) from helper script(passed via UserData)
 
 <img width="1277" height="723" alt="image" src="https://github.com/user-attachments/assets/2bc42b07-23e4-4b5d-bbf9-06a59422c075" />
@@ -141,7 +141,7 @@
 
 - hup stands for Hook UPdater
 - CNF-hup listens for resource metadata changes and runs user-specified actions when a change is detected
-  - Can be used to calls CFN-INIT to re-apply the changes
+  - Can be used to calls cfn-init to re-apply the changes
 
 ### CreationPolicy & UserData & cfn-signal & cfn-init & cfn-hup example
 
