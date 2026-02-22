@@ -62,3 +62,32 @@
       - Wait for a resource itself to signal it is ready using cfn-signal
     - `cfn-signal`
       - Helper script/toolt to send signal
+
+### Single Stacks
+
+- Resources in a single stack share lifecycle
+- Stack resorce limit is 500 resources
+- Stacks are designed to be isolated and self-contained by default
+- Outputs are not visible from other stacks by default
+  - Nested stacks can reference outputs. This is because stacks are linked
+    - `Ref`
+  - Outputs can be exported to be visible in other stacks
+    - Export & `Fn::ImportValue`
+
+### Multi-stack architecture
+
+- Nested stacks
+  - Nested stacks allow for a hierarchy of related templates to be combined to form a single product
+  - `Type: AWS::CloudFormation::Stack`
+  - Root/Parent stack on the top
+    - First stack to create, manually or via software
+  - **You reuse templates**
+    - **Each template(NOT stack or resource) can be reused separately - code reuse** (modular templates)
+    - All stacks form one solutions - they have **linked lifecycle**
+      - Nested stacks are creted by the root stack
+  - Nested stack outputs are returned to ROOT STACK (bypassing immediate stacks)
+    - Root user can pass the outputs to other stacks as parameters
+  - We can use `DependsOn` between nested stacks
+- Cross-stacks references
+  - **You reuse logical and physical resources from different stacks** - stack reuse and their resources
+  - Cross region/accout referencing is NOT supported
