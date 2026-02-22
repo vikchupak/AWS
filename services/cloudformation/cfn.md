@@ -146,3 +146,8 @@
 ---
 
 Use CreationPolicy & WaitCondition & cfn-signal & UserData & cfn-init & cfn-hup to implement stack readiness
+
+### Change sets
+
+- A Change Set is like a “terraform plan” for AWS CloudFormation
+ - Shows only what CloudFormation intends to do, without applying the changes unless confirmed
