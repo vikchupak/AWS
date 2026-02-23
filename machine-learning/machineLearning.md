@@ -2,7 +2,7 @@
 
 - [Amazon Comprehend](https://aws.amazon.com/comprehend/)
 - Natural Language Processing (NLP) service
-- **Analyze and understand text automatically using machine learning** — without you having to build or train NLP models yourself
+- **Analyze and understand text using machine learning** — without you having to build or train NLP models yourself
   - Sentiment. Understands emotional tone
     - Positive, Negative, Neutral, Mixed
   - Entities. Extract entities
