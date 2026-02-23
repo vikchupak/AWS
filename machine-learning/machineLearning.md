@@ -16,4 +16,4 @@
 # Amazon Kendra
 
 - [Amazon Kendra](https://aws.amazon.com/kendra/)
-- 
+- Intelligent search service powered by machine learning (ML)
