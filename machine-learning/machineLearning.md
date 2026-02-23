@@ -17,3 +17,4 @@
 
 - [Amazon Kendra](https://aws.amazon.com/kendra/)
 - Intelligent search service powered by machine learning (ML)
+  - Serach in text and get human like answers
