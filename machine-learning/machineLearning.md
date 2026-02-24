@@ -44,4 +44,4 @@
   - Provides Bots
 - Concepts
   - Intent - an action user wants to perform
-  - Lambda to fulfil the intent
+  - Lambda can fulfil the intent
