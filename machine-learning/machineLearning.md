@@ -42,6 +42,7 @@
   - Provides Automatic Speech Recognition (ASP) - speech-to-text
   - Provides Natural Language Understanding (NLU) - Intent
   - Provides Bots
+- Powers Amazon Alexa
 - Concepts
   - Intent - an action user wants to perform
   - Lambda can fulfil the intent
