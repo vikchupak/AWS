@@ -16,6 +16,7 @@
 # Amazon Kendra
 
 - [Amazon Kendra](https://aws.amazon.com/kendra/)
+- [Info](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html)
 - Intelligent search service powered by machine learning (ML)
   - **Serach in text and get accurate, human-like, ranked answers — not just keyword matches**
     - Mimic interacting with a human expert
