@@ -16,11 +16,10 @@
 # Amazon Kendra
 
 - [Amazon Kendra](https://aws.amazon.com/kendra/)
-- [Info](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html)
 - Intelligent search service powered by machine learning (ML)
   - **Serach in text and get accurate, human-like, ranked answers — not just keyword matches**
     - Mimic interacting with a human expert
-  - Question types
+  - [Question types](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html#kendra-query-types)
     - Factoid
       - To answer specific, precise questions that expect a short, exact answer
     - Descriptive
