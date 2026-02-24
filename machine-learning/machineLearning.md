@@ -26,4 +26,6 @@
       - To answer broader, explanatory questions
     - Keyword
       - Traditional search queries — not full questions
-  
+  - Data Source - original data
+  - Index - build searchable index from the Source Data
+  - Run indexing on a schedule
