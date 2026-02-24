@@ -29,3 +29,19 @@
   - Data Source - original data
   - Index - build searchable index from the Source Data
   - Run indexing on a schedule
+
+# Amazon Lex
+
+- [Amazon Lex](https://aws.amazon.com/lex/)
+- AI Chat Builder
+  - Build
+    - Chatbots
+    - Voice assistants
+    - Conversational interfaces
+  - Understand user intent and respond conversationally — via **text** or **voice**
+  - Provides Automatic Speech Recognition (ASP) - speech-to-text
+  - Provides Natural Language Understanding (NLU) - Intent
+  - Provides Bots
+- Concepts
+  - Intent - an action user wants to perform
+  - Lambda to fulfil the intent
