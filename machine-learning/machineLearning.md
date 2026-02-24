@@ -33,7 +33,7 @@
 # Amazon Lex
 
 - [Amazon Lex](https://aws.amazon.com/lex/)
-- AI Chat Builder
+- **AI Chat Builder**
   - Build
     - Chatbots
     - Voice assistants
