@@ -2,7 +2,7 @@
 
 - [Amazon Comprehend](https://aws.amazon.com/comprehend/)
 - Natural Language Processing (NLP) service
-- **Analyze and understand text using machine learning** — without you having to build or train NLP models yourself
+- **Analyze and understand text using machine learning**
   - Sentiment. Understands emotional tone
     - Positive, Negative, Neutral, Mixed
   - Entities. Extract entities
@@ -46,3 +46,47 @@
 - Concepts
   - Intent - an action user wants to perform
   - Lambda can fulfil the intent
+
+# Amazon Polly
+
+- [Amazon Polly](https://aws.amazon.com/polly/)
+- **Text-to-Speech (TTS) service**
+
+# Amazon Rekognition
+
+- [Amazon Rekognition](https://aws.amazon.com/rekognition/)
+- **Analyze images and videos using AI to detect objects, people, faces, text, and activities**
+- Live video streams are also supported
+  - Kinesis video streams
+
+# Amazon Textract
+
+- [Amazon Textract](https://aws.amazon.com/textract/)
+- **Document analysis service**
+  - Extract text, forms, and tables from scanned documents, PDFs, or images without manual data entry
+
+# Amazon Transcribe
+
+- [Amazon Transcribe](https://aws.amazon.com/transcribe/)
+- **Speech-to-Text (STT) service**
+
+# Amazon Translate
+
+- [Amazon Translate](https://aws.amazon.com/translate/)
+- **Text-to-Text translation service**
+
+# Amazon Forecast
+
+- [Amazon Forecast](https://aws.amazon.com/forecast/)
+- **Predict future trends and values using historical time-series data**
+
+# Amazon Fraud Detector
+
+- [Amazon Fraud Detector](https://aws.amazon.com/fraud-detector/)
+- **Detect online fraud in real time**
+  - Lets businesses identify potentially fraudulent activity in payments, account registrations, or transactions
+
+# Amazon SageMaker
+
+- [Amazon SageMaker](https://aws.amazon.com/sagemaker/)
+- **Build, train, and deploy ML models at scale**
