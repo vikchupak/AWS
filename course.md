@@ -234,6 +234,7 @@
    - [Amazon Redshift](https://aws.amazon.com/redshift/)
      - Column based, petabyte scale, data warehousing product
      - Architecture, Disaster Recovery (DR), Resilience
+   - [Amazon Keyspaces (for Apache Cassandra)](https://aws.amazon.com/keyspaces/)
 24. Machine Learning
    - [Amazon Comprehend](https://aws.amazon.com/comprehend/)
      - Analyze and understand text
