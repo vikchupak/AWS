@@ -225,6 +225,15 @@
      - DynamoDB Accelerator (DAX)
      - DynamoDB TTL
    - [Amazon Athena](https://aws.amazon.com/athena/)
+     - Serverless interactive Quering Service
+       - Query data from different files stored in S3
+       - Define tables and data is projected on the fly while quering
+       - Use SQL syntax to query data
+   - [Amazon ElastiCache](https://aws.amazon.com/ru/elasticache/)
+     - Engines: Memcached & Redis
+   - [Amazon Redshift](https://aws.amazon.com/redshift/)
+     - Column based, petabyte scale, data warehousing product
+     - Architecture & Disaster Recovery (DR) & Resilience
 24. Machine Learning
    - [Amazon Comprehend](https://aws.amazon.com/comprehend/)
      - Analyze and understand text
