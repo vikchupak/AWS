@@ -233,7 +233,7 @@
      - Engines: Memcached & Redis
    - [Amazon Redshift](https://aws.amazon.com/redshift/)
      - Column based, petabyte scale, data warehousing product
-     - Architecture & Disaster Recovery (DR) & Resilience
+     - Architecture, Disaster Recovery (DR), Resilience
 24. Machine Learning
    - [Amazon Comprehend](https://aws.amazon.com/comprehend/)
      - Analyze and understand text
