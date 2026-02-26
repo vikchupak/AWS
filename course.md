@@ -211,4 +211,27 @@
      - Create resources with custom provisioning logic
 23. NOSQL Databases & DynamoDB
 24. Machine Learning
+   - [Amazon Comprehend](https://aws.amazon.com/comprehend/)
+     - Analyze and understand text
+   - [Amazon Kendra](https://aws.amazon.com/kendra/)
+     - Serach in text and get accurate, human-like — not just keyword matches
+   - [Amazon Lex](https://aws.amazon.com/lex/)
+     - AI Chat Builder
+   - [Amazon Polly](https://aws.amazon.com/polly/)
+     - Text-to-Speech (TTS)
+   - [Amazon Rekognition](https://aws.amazon.com/rekognition/)
+     - Analyze images and videos to detect objects, people, faces, text, and activities
+   - [Amazon Textract](https://aws.amazon.com/textract/)
+     - Extract text, forms, and tables from scanned documents, PDFs, or images without manual data entry
+   - [Amazon Transcribe](https://aws.amazon.com/transcribe/)
+     - Speech-to-Text (STT)
+   - [Amazon Translate](https://aws.amazon.com/translate/)
+     - Text-to-Text translation
+   - [Amazon Forecast](https://aws.amazon.com/forecast/)
+     - Predict future trends and values using historical time-series data
+   - [Amazon Fraud Detector](https://aws.amazon.com/fraud-detector/)
+     - Lets businesses identify potentially fraudulent activity in payments, account registrations, or transactions
+   - [Amazon SageMaker](https://aws.amazon.com/sagemaker/)
+     - Build, train, and deploy ML models at scale
 25. Other Services & Features
+   - AWS Local Zones
