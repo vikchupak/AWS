@@ -210,6 +210,21 @@
    - Custom Resources
      - Create resources with custom provisioning logic
 23. NOSQL Databases & DynamoDB
+   - [Amazon DynamoDB (DDB)](https://aws.amazon.com/dynamodb/)
+     - DynamoDB Data Model
+       - Tables, Items, Attributes
+       - Partition key (PK), Sorting key (SK), Primary key, Local secondary index (LSI), Global secondary index (GSI)
+       - Read Capacity Unit (RCU), Write Capacity Unit (WCU)
+     - On-demand vs provisioned capacity
+       - Provisioned capacity -> Manually set RCUs & WCUs
+         - If CU exceeds -> throttling happens
+       - On-demand -> Automatically scales up and down
+     - Consistency Model
+     - Streams & Lambda Triggers
+     - DynamoDB Global Tables
+     - DynamoDB Accelerator (DAX)
+     - DynamoDB TTL
+   - [Amazon Athena](https://aws.amazon.com/athena/)
 24. Machine Learning
    - [Amazon Comprehend](https://aws.amazon.com/comprehend/)
      - Analyze and understand text
