@@ -53,8 +53,8 @@
        - Management account is NEVER affected by SCP
    - CloudWatch Logs
      - Log srteams & Log groups
-   - AWS CloudTrail basics
-   - AWS Control Tower 101
+   - AWS CloudTrail
+   - AWS Control Tower
 8. S3
    - [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/)
 9. VPC BASICS
