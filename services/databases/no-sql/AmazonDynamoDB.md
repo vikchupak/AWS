@@ -14,7 +14,11 @@
 
 ## On-demand vs provisioned capacity
 
-- [To include](https://chatgpt.com/share/692de937-9db4-8011-b632-ba604753e3a7)
+- Provisioned capacity
+  - Manually set RCUs & WCUs
+  - If CUs exceed -> throttling happens
+- On-demand
+  - Automatically scales up and down
 
 ---
 
