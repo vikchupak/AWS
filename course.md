@@ -223,6 +223,7 @@
      - Streams & Lambda Triggers
      - DynamoDB Global Tables
      - DynamoDB Accelerator (DAX)
+       - In merory-cache on AWS side. Layer between app and DynamoDB
      - DynamoDB TTL
    - [Amazon Athena](https://aws.amazon.com/athena/)
      - Serverless interactive Quering Service
