@@ -159,8 +159,24 @@
     - Instance Metadata
 13. CONTAINERS & ECS
 14. ADVANCED EC2
-15. Route 53 - Global DNS
-16. Relational Database Service (RDS)
+    - Bootstrapping using UserData
+    - Bootstrapping using cfn-init, cfn-signal, CreationPolicy
+    - EC2 instance Roles & EC2 Profile
+      - Grant an EC2 permissions to interact with AWS services
+    - SSM Parameter Store
+    - EC2 System and Application Logging
+      - Adding internal instance metrics and logging using CloudWatch Agent
+    - EC2 Placement Groups
+      - Cluster (Max performance, min resilience)
+      - Spread (Max resilience, min performance)
+      - Partition (balance between performance & resilience)
+        - Use instance groups(partitions)
+          - Instnaces within a group/partition are placed together/close
+          - Groups/partitions are spread apart
+    - Enhanced EC2 networking & EBS-Optimized EC2
+      - Both enabled by default in most instance types
+16. Route 53 - Global DNS
+17. Relational Database Service (RDS)
     - DB Store Models. ACID vs BASE
       - RDS
           - [Amazon RDS](https://aws.amazon.com/rds/)
@@ -186,14 +202,14 @@
       - Both Backups & Snapshots can be enabled Cross-Region
       - Restore from Backups or Snapshots
     - [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/)
-17. NETWORK STORAGE & DATA LIFECYCLE
+18. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
-18. HA & SCALING
+19. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
-19. SERVERLESS AND APPLICATION SERVICES
+20. SERVERLESS AND APPLICATION SERVICES
     - [AWS Lambda](https://aws.amazon.com/lambda/)
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/)
@@ -223,7 +239,7 @@
     - [Amazon AppFlow](https://aws.amazon.com/appflow/)
       - Fully-managed integration service
       - **Transfer/exchange data between Software-as-a-Service (SaaS) applications** like Salesforce, SAP, Zendesk, Slack, ServiceNow **and AWS services** like Amazon S3 and Amazon Redshift, in just a few clicks
-20. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
+21. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
       - Distributions
       - Cache invalidation
@@ -231,7 +247,7 @@
       - Private distributions & behaviours
       - Restrict access to origins
       - Lambda@edge
-21. ADVANCED VPC
+22. ADVANCED VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - VPC Gateway Endpoints
@@ -240,7 +256,7 @@
         - Provide direct private access to public AWS services from VPC (public and private) subnets. Has price
     - VPC Peering
       - Direct encrypted network link between two VPCs
-22. HYBRID ENVIRONMENTS AND MIGRATION
+23. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
       - Connect VPC to on-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
