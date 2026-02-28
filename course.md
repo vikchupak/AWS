@@ -111,6 +111,12 @@
 12. EC2 BASICS
     - [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)
     - Instance types
+      - General purpose
+      - Compute optimized
+      - Memory optimized
+      - Accelerated computing
+      - Storage optimized
+      - High-performance computing (HPC) optimized
     - SSH & Instance Connect
     - EC2 Storages
       - Instance (local) store
