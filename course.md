@@ -100,7 +100,7 @@
           - Other data stores
    - [Amazon AppFlow](https://aws.amazon.com/appflow/)
      - Fully-managed integration service
-     - **Transfer/exchange data between Software-as-a-Service (SaaS) applications** like Salesforce, SAP, Zendesk, Slack, and ServiceNow, **and AWS services** like Amazon S3 and Amazon Redshift, in just a few clicks
+     - **Transfer/exchange data between Software-as-a-Service (SaaS) applications** like Salesforce, SAP, Zendesk, Slack, ServiceNow **and AWS services** like Amazon S3 and Amazon Redshift, in just a few clicks
 18. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
       - Distributions
