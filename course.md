@@ -67,11 +67,12 @@
      - S3 transfer acceleration
    - Key Management Service (KMS)
      - KMS keys, DEKs, Key (Resource) Policies
+     - AWS owned keys, customer managed keys (in KMS), AWS managed keys (legacy), customer-provided keys
      - S3 Object Encryption
        - S3 Client-Side Encription (CSE)
        - S3 Server-Side Encription (SSE)
          - SSE-S3. Server-Side Encription with Amazon S3-owned Keys
-         - SSE-KMS. Server-Side Encription with KMS Keys stored in AWS KMS
+         - SSE-KMS. Server-Side Encription with customer managed keys stored in AWS KMS
          - SSE-C. Server-Side Encription with Customer-provided Keys
       - S3 Bucket keys
     - S3 Object Storage Classes
@@ -116,6 +117,46 @@
       - (Remote) storage
         - EBS
         - EFS
+    - [EBS volume types](https://aws.amazon.com/ebs/volume-types/)
+      - [General Purpose SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html)
+        - gp3
+        - gp2 (Legacy)
+      - [Provisioned IOPS SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/provisioned-iops.html)
+        - io2
+        - io1 (Legacy)
+      - HDD-based volumes (Legacy)
+        - st1
+        - sc1
+    - EBS snapshots & Restore EBS from Snapshots
+      - Snapshots can be used to migrate data to different AZs in a region, or to different regions
+      - When creating a EBS from a snapshot, data is lazy loaded
+      - Fast Snapshot Restore (FSR)
+        - When enabled, create a EBS from a snapshot immediately, no data lazy loading
+    - EBS encryption
+      - EC2, EC2 Host, EBS
+      - EC2 Host encrypts/decrypts data
+      - EBS stores encryped data
+      - EC2 uses decrypted data
+    - EC2 network
+      - EC2 ENIs
+      - Primary & Secondary IPs
+      - Private & Public & Elastic IPs
+    - Amazon Machine Images (AMI)
+      - Create AMI
+      - Copy an AMI between regions
+      - Share an AMI with other users/accounts/organizations
+    - EC2 purchase options
+      - On-demand instances
+      - Spot instances
+      - Reserved instances
+      - Dedicated Hosts
+      - Dedicated Instances
+      - [Scheduled Reserved Instances (Legacy)](https://aws.amazon.com/blogs/aws/new-scheduled-reserved-instances/)
+      - [EC2 On-demand capacity reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html)
+      - [Compute and EC2 Instance Savings Plans](https://aws.amazon.com/savingsplans/compute-pricing/)
+    - Instance Status Checks & Auto Recovery (based on Instance Status Checks)
+    - Horizontal & Vertical Scaling (general theory)
+    - Instance Metadata
 13. CONTAINERS & ECS
 14. ADVANCED EC2
 15. Route 53 - Global DNS
