@@ -63,15 +63,30 @@
 11. CONTAINERS & ECS
 12. ADVANCED EC2
 13. Route 53 - Global DNS
-14. RDS
-15. NETWORK STORAGE & DATA LIFECYCLE
+14. Relational Database Service (RDS)
+    - DB Store Models. ACID vs BASE
+      - RDS
+          - [Amazon RDS](https://aws.amazon.com/rds/)
+          - [Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
+          - [Amazon RDS Multi-AZ Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)
+          - [Amazon RDS Read Replicas (RR)](https://aws.amazon.com/rds/features/read-replicas/)
+          - [Amazon RDS Custom](https://aws.amazon.com/rds/custom/)
+       - Amazon Aurora
+          - [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
+          - [Amazon Aurora Global Database](https://aws.amazon.com/rds/aurora/global-database/)
+          - [Amazon Aurora Multi-Master](https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-aurora-multimaster-now-generally-available/)
+            - Depricated since Feb 28, 2023
+          - [Amazon Aurora Serverless v2](https://aws.amazon.com/rds/aurora/serverless/)
+       - [Amazon RDS Proxy](https://aws.amazon.com/rds/proxy/)
+    - [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/)
+16. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
-16. HA & SCALING
+17. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
-17. SERVERLESS AND APPLICATION SERVICES
+18. SERVERLESS AND APPLICATION SERVICES
     - [AWS Lambda](https://aws.amazon.com/lambda/)
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/)
@@ -101,7 +116,7 @@
     - [Amazon AppFlow](https://aws.amazon.com/appflow/)
       - Fully-managed integration service
       - **Transfer/exchange data between Software-as-a-Service (SaaS) applications** like Salesforce, SAP, Zendesk, Slack, ServiceNow **and AWS services** like Amazon S3 and Amazon Redshift, in just a few clicks
-18. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
+19. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
       - Distributions
       - Cache invalidation
@@ -109,7 +124,7 @@
       - Private distributions & behaviours
       - Restrict access to origins
       - Lambda@edge
-19. ADVANCED VPC
+20. ADVANCED VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - VPC Gateway Endpoints
@@ -118,7 +133,7 @@
         - Provide direct private access to public AWS services from VPC (public and private) subnets. Has price
     - VPC Peering
       - Direct encrypted network link between two VPCs
-20. HYBRID ENVIRONMENTS AND MIGRATION
+21. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
       - Connect VPC to on-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
