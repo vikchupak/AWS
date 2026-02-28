@@ -109,6 +109,13 @@
     - NAT & NAT Gateway
 12. EC2 BASICS
     - [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)
+    - Instance types
+    - SSH & Instance Connect
+    - EC2 Storages
+      - Instance (local) store
+      - (Remote) storage
+        - EBS
+        - EFS
 13. CONTAINERS & ECS
 14. ADVANCED EC2
 15. Route 53 - Global DNS
