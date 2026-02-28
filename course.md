@@ -158,7 +158,13 @@
     - Horizontal & Vertical Scaling (general theory)
     - Instance Metadata
 13. CONTAINERS & ECS
-14. ADVANCED EC2
+    - Docker containers
+    - [Amazon Elastic Container Service (ECS)](https://aws.amazon.com/ecs/)
+      - Container Definition, Task Definition, Task Role, Service Definition
+      - EC2 mode vs Fargate mode
+    - [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/)
+    - Kubernetes & [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (EKS)
+15. ADVANCED EC2
     - Bootstrapping using UserData
     - Bootstrapping using cfn-init, cfn-signal, CreationPolicy
     - EC2 instance Roles & EC2 Profile
