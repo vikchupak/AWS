@@ -35,7 +35,7 @@
     - The Master key + DEK principles are the same like when using KMS
     - No master key is visible to the user
     - **Note:** There is `default S3 KMS key` to select in account
-      - This key is AWS managed key
+      - This key is AWS managed key (LEGACY)
         - Don't be confused by this key. It is not S3-owned key (AWS owned key)
 - **SSE-KMS** `Server-Side Encription with KMS Keys stored in AWS KMS` - recommended. Can be set as default
   - Uses `Customer managed keys` stored in AWS KMS
