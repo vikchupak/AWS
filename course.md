@@ -82,6 +82,10 @@
       - S3 Glacier Instant Retrieval
       - S3 Glacier Deep Archive
       - S3 Intelligent-Tiering
+        - Automatically transition objects between storage tiers based on **access patterns**
+        - Tiers are levels within Intelligent-Tiering - not the same as storage classes
+    - S3 Lifecycle Configuration
+      - Configure automatic object transitions between storage classes or object delete after a **specified period**
     - S3 Select and Glacier Select
       - Use a SQL-Like statement to retrieve partial objects from S3 and Glacier
     - S3 Replication
