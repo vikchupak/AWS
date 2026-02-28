@@ -55,15 +55,53 @@
      - Log srteams & Log groups
    - AWS CloudTrail
    - AWS Control Tower
-8. S3
+8. SIMPLE STORAGE SERVICE (S3)
    - [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/)
-9. VPC BASICS
-10. EC2 BASICS
+   - Security
+     - **Resource (bucket) policies** & ACL (legacy)
+     - Block Public Access Settings
+   - S3 Static Hosting
+   - Object versioning & MFA delete
+   - S3 Performance Acceleration
+     - S3 multipart upload
+     - S3 transfer acceleration
+   - Key Management Service (KMS)
+     - KMS keys, DEKs, Key (Resource) Policies
+     - S3 Object Encryption
+       - S3 Client-Side Encription (CSE)
+       - S3 Server-Side Encription (SSE)
+         - SSE-S3. Server-Side Encription with Amazon S3-owned Keys
+         - SSE-KMS. Server-Side Encription with KMS Keys stored in AWS KMS
+         - SSE-C. Server-Side Encription with Customer-provided Keys
+      - S3 Bucket keys
+    - S3 Object Storage Classes
+      - S3 Standard
+      - S3 Standard-IA (Infrequent Access)
+      - S3 One Zone-IA
+      - S3 Glacier Flexible Retrieval (**S3 Glacier**)
+      - S3 Glacier Instant Retrieval
+      - S3 Glacier Deep Archive
+      - S3 Intelligent-Tiering
+    - S3 Select and Glacier Select
+      - Use a SQL-Like statement to retrieve partial objects from S3 and Glacier
+    - S3 Replication
+      - S3 Standard (Built-in Replication)
+      - Same Region Replication (SRR)
+      - Cross Region Replication (CRR)
+    - S3 PreSigned URLs
+    - S3 Events
+    - S3 Access Logs
+    - S3 Object Lock
+    - S3 Access Points
+      - Access Points (Standard)
+      - Multi-Region Access Points (MRAP)
+10. VPC BASICS
+11. EC2 BASICS
     - [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)
-11. CONTAINERS & ECS
-12. ADVANCED EC2
-13. Route 53 - Global DNS
-14. Relational Database Service (RDS)
+12. CONTAINERS & ECS
+13. ADVANCED EC2
+14. Route 53 - Global DNS
+15. Relational Database Service (RDS)
     - DB Store Models. ACID vs BASE
       - RDS
           - [Amazon RDS](https://aws.amazon.com/rds/)
