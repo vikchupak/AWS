@@ -151,7 +151,7 @@
       - Reserved instances
       - Dedicated Hosts
       - Dedicated Instances
-      - [Scheduled Reserved Instances (Legacy)](https://aws.amazon.com/blogs/aws/new-scheduled-reserved-instances/)
+      - [Scheduled Reserved Instances](https://aws.amazon.com/blogs/aws/new-scheduled-reserved-instances/) (Legacy)
       - [EC2 On-demand capacity reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html)
       - [Compute and EC2 Instance Savings Plans](https://aws.amazon.com/savingsplans/compute-pricing/)
     - Instance Status Checks & Auto Recovery (based on Instance Status Checks)
