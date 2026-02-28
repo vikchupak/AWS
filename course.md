@@ -182,7 +182,17 @@
     - Enhanced EC2 networking & EBS-Optimized EC2
       - Both enabled by default in most instance types
 16. Route 53 - Global DNS
-17. Relational Database Service (RDS)
+    - R53 Public & Private Hosted Zones
+    - CNAME vs R53 Alias
+    - Route 53 Routing Policies
+      - Simple
+      - Failover
+      - Multi-Value
+      - Weighted
+      - Latency
+      - Geolocation
+      - Geoproximity
+18. Relational Database Service (RDS)
     - DB Store Models. ACID vs BASE
       - RDS
           - [Amazon RDS](https://aws.amazon.com/rds/)
@@ -208,14 +218,14 @@
       - Both Backups & Snapshots can be enabled Cross-Region
       - Restore from Backups or Snapshots
     - [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/)
-18. NETWORK STORAGE & DATA LIFECYCLE
+19. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
-19. HA & SCALING
+20. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
-20. SERVERLESS AND APPLICATION SERVICES
+21. SERVERLESS AND APPLICATION SERVICES
     - [AWS Lambda](https://aws.amazon.com/lambda/)
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/)
@@ -245,7 +255,7 @@
     - [Amazon AppFlow](https://aws.amazon.com/appflow/)
       - Fully-managed integration service
       - **Transfer/exchange data between Software-as-a-Service (SaaS) applications** like Salesforce, SAP, Zendesk, Slack, ServiceNow **and AWS services** like Amazon S3 and Amazon Redshift, in just a few clicks
-21. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
+22. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
       - Distributions
       - Cache invalidation
@@ -253,7 +263,7 @@
       - Private distributions & behaviours
       - Restrict access to origins
       - Lambda@edge
-22. ADVANCED VPC
+23. ADVANCED VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - VPC Gateway Endpoints
@@ -262,7 +272,7 @@
         - Provide direct private access to public AWS services from VPC (public and private) subnets. Has price
     - VPC Peering
       - Direct encrypted network link between two VPCs
-23. HYBRID ENVIRONMENTS AND MIGRATION
+24. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
       - Connect VPC to on-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
