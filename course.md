@@ -120,6 +120,13 @@
             - Depricated since Feb 28, 2023
           - [Amazon Aurora Serverless v2](https://aws.amazon.com/rds/aurora/serverless/)
        - [Amazon RDS Proxy](https://aws.amazon.com/rds/proxy/)
+    - RDS Backups & Snapshots & Restores
+      - Automatic Backups
+        - Allows for point in time recovery with 5 min precision
+        - Has retation period 0-35 days
+      - Manual Snapshots
+      - Both Backups & Snapshots can be enabled Cross-Region
+      - Restore from Backups or Snapshots
     - [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/)
 16. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
