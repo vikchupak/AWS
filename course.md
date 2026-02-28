@@ -120,6 +120,9 @@
             - Depricated since Feb 28, 2023
           - [Amazon Aurora Serverless v2](https://aws.amazon.com/rds/aurora/serverless/)
        - [Amazon RDS Proxy](https://aws.amazon.com/rds/proxy/)
+    - RDS Security
+      - Encript data with KMS before/when storing it to DB EBS volumes
+      - Data is encrypted by DB host, not DB engine itself
     - RDS Backups & Snapshots & Restores
       - Automatic Backups
         - Allows for point in time recovery with 5 min precision
