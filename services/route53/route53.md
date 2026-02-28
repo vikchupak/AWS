@@ -7,3 +7,7 @@
 - Latency
 - Geolocation
 - Geoproximity
+
+# Route 53 Hosted zones
+
+- [Hosted zones](https://github.com/vikchupak/AWS/blob/main/network/dns/zones.md)
