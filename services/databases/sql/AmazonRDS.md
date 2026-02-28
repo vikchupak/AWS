@@ -6,14 +6,14 @@
 
 ---
 
-- **Amazon RDS - Single AZ**
+- **Amazon RDS (Single AZ)**
   - **Default**
   - One instanse
-- **Amazon RDS - Multi AZ**
+- **Amazon RDS Multi AZ**
   - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
   - Synchronous replication
-- **Amazon RDS - Multi-AZ Cluster**
+- **Amazon RDS Multi-AZ Cluster**
   - Uses 1 primary + 2 replicas only
   - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
   - Uses
@@ -26,7 +26,7 @@
   - Supported MySQL, PostgreSQL only
   - Synchronous replication
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
-- **Amazon RDS - Read Replicas(RR)**
+- **Amazon RDS Read Replicas (RR)**
   - Adds up to 5 replicas for primary instance
   - For Read Scalability
   - Uses
@@ -43,7 +43,7 @@
     - Multi-AZ RDS + Read Replicas
       - 1 primary + **1 Standby** + async replicas
     - Multi-AZ Cluster RDS + Read Replicas
-- **Amazon RDS - Custom**
+- **Amazon RDS Custom**
   - Designed for workloads that need full OS-level and database-level customization
   - Supported only Oracle, MS SQL Server
 - **Amazon Aurora (Provisioned)**. Or another name **Amazon Aurora (Provisioned) Cluster**
@@ -79,5 +79,6 @@
     - Instance endpoints - points to specific ACU
       - Usually you don’t need it because the cluster and reader endpoints abstract scaling
       - Aurora Serverless v2 can automatically scale ACUs up/down, so instance endpoints may change dynamically
-- **Amazon RDS proxy - Proxy for RDS connection pool**
+- **Amazon RDS proxy**
+  - Proxy for RDS connection pool
   - Works with RDS and Aurora
