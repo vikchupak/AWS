@@ -85,6 +85,19 @@
         - [Amazon Data Firehose](https://aws.amazon.com/firehose/)
         - [Amazon Kinesis Data Analytics for SQL](https://aws.amazon.com/kinesis/data-analytics-for-sql/)
         - [Amazon Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams/)
+    - [AWS Glue](https://aws.amazon.com/glue/)
+      - Serverless ETL (Extract, Transform, Load) and Data Catalog service
+        - Moves and transforms data between source and desctination for analytics
+        - Maintains a centralized Data Catalog for metadata (optional, but commonly used)
+           - The Data Catalog stores metadata (schemas, table definitions, locations)
+             - It does not store the actual data
+           - Once cataloged, your data is immediately searchable, queryable, and available for ETL
+        - The actual data usually goes to
+          - Amazon S3 (data lake)
+          - Amazon Redshift
+          - RDS / Aurora
+          - DynamoDB
+          - Other data stores
 18. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
       - Distributions
