@@ -25,7 +25,7 @@
 
 ---
 
-- **SSE-S3** `Server-Side Encription with Amazon S3-managed Keys` (AES256 algorithm) - default
+- **SSE-S3** `Server-Side Encription with Amazon S3-owned Keys` (AES256 algorithm) - default
   - Uses `S3-owned keys` (AWS owned keys)
   - S3 creates, manages, and uses encription keys
   - Not possible to set policies on the keys. They are completely managed by AWS
