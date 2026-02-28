@@ -100,12 +100,19 @@
       - Access Points (Standard)
       - Multi-Region Access Points (MRAP)
 10. VPC BASICS
-11. EC2 BASICS
+    - Reserved Private IP ranges
+    - AWS-reserved IPs in subnets
+    - Setup a Custom VPC. Create VPC, IGW, RT, RT associations
+    - Jumpbox / Bastion host
+    - Stateful & Staseless firewalls
+    - NACL, SG
+    - NAT & NAT Gateway
+12. EC2 BASICS
     - [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)
-12. CONTAINERS & ECS
-13. ADVANCED EC2
-14. Route 53 - Global DNS
-15. Relational Database Service (RDS)
+13. CONTAINERS & ECS
+14. ADVANCED EC2
+15. Route 53 - Global DNS
+16. Relational Database Service (RDS)
     - DB Store Models. ACID vs BASE
       - RDS
           - [Amazon RDS](https://aws.amazon.com/rds/)
@@ -131,14 +138,14 @@
       - Both Backups & Snapshots can be enabled Cross-Region
       - Restore from Backups or Snapshots
     - [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/)
-16. NETWORK STORAGE & DATA LIFECYCLE
+17. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
-17. HA & SCALING
+18. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
     - Gateway Load Balancer (GWLB) - "Scalable Firewall"
-18. SERVERLESS AND APPLICATION SERVICES
+19. SERVERLESS AND APPLICATION SERVICES
     - [AWS Lambda](https://aws.amazon.com/lambda/)
     - [AWS Step Functions](https://aws.amazon.com/step-functions/)
     - [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/)
@@ -168,7 +175,7 @@
     - [Amazon AppFlow](https://aws.amazon.com/appflow/)
       - Fully-managed integration service
       - **Transfer/exchange data between Software-as-a-Service (SaaS) applications** like Salesforce, SAP, Zendesk, Slack, ServiceNow **and AWS services** like Amazon S3 and Amazon Redshift, in just a few clicks
-19. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
+20. GLOBAL CONTENT DELIVERY AND OPTIMIZATION
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
       - Distributions
       - Cache invalidation
@@ -176,7 +183,7 @@
       - Private distributions & behaviours
       - Restrict access to origins
       - Lambda@edge
-20. ADVANCED VPC
+21. ADVANCED VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - VPC Gateway Endpoints
@@ -185,7 +192,7 @@
         - Provide direct private access to public AWS services from VPC (public and private) subnets. Has price
     - VPC Peering
       - Direct encrypted network link between two VPCs
-21. HYBRID ENVIRONMENTS AND MIGRATION
+22. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
       - Connect VPC to on-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
