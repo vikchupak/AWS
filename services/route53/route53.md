@@ -1,4 +1,4 @@
-# Route 53 Routing
+# Route 53 Routing Policies
 
 - Simple
 - Failover
