@@ -110,7 +110,7 @@
     - NAT & NAT Gateway
 12. EC2 BASICS
     - [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)
-    - Instance types
+    - [Instance types](https://aws.amazon.com/ec2/instance-types/)
       - General purpose
       - Compute optimized
       - Memory optimized
