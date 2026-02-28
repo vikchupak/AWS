@@ -184,6 +184,7 @@
 16. Route 53 - Global DNS
     - R53 Public & Private Hosted Zones
     - CNAME vs R53 Alias
+    - R53 Health Checks
     - Route 53 Routing Policies
       - Simple
       - Failover
@@ -192,6 +193,7 @@
       - Latency
       - Geolocation
       - Geoproximity
+    - DNSSEC using Route53
 18. Relational Database Service (RDS)
     - DB Store Models. ACID vs BASE
       - RDS
