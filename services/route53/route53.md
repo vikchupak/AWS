@@ -2,7 +2,7 @@
 
 - Simple
 - Failover
-- Multi Value
+- Multi-Value
 - Weighted
 - Latency
 - Geolocation
