@@ -155,7 +155,7 @@
       - EC2 uses decrypted data
     - EC2 network
       - EC2 has ENIs attached
-        - One Primary ENI - Primary IP
+        - 1 Primary ENI - Primary IP
         - 0 or more Secindary ENIs - Secondary IPs
       - ENI Private & Public IPs
       - Elastic IPs
