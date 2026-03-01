@@ -91,9 +91,12 @@
     - S3 Select and Glacier Select
       - Use a SQL-Like statement to retrieve partial objects from S3 and Glacier
     - S3 Replication
-      - S3 Standard (Built-in Replication)
+      - Automatic Built-in Replication
+        - In 1 region
       - Same Region Replication (SRR)
+        - Require manual config
       - Cross Region Replication (CRR)
+        - Require manual config
     - S3 PreSigned URLs
       - Generate a URL with access permissions encoded into it, for a specific bucket and object, valid for a certain time period
     - S3 Events
