@@ -154,9 +154,11 @@
       - EBS stores encryped data
       - EC2 uses decrypted data
     - EC2 network
-      - EC2 ENIs
-      - Primary & Secondary IPs
-      - Private & Public & Elastic IPs
+     - EC2 has ENIs attached
+        - One Primary ENI - Primary IP
+        - 0 or more Secindary ENIs - Secondary IPs
+      - ENI Private & Public IPs
+      - Elastic IPs
     - Amazon Machine Images (AMI)
       - Create AMI
       - Copy an AMI between regions
