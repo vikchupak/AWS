@@ -105,6 +105,9 @@
     - S3 Access Points
       - Access Points (AP)
       - Multi-Region Access Points (MRAP)
+        - Create a single global endpoint that provides access to S3 buckets in multiple AWS regions
+          - Instead of pointing your application to multiple bucket URLs in different regions, you use one MRAP DNS name
+          - MRAP automatically routes requests to the closest available bucket (based on network and health)
 10. VPC BASICS
     - Reserved Private IP ranges
     - AWS-reserved IPs in subnets
