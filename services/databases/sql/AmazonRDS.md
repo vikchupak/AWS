@@ -2,6 +2,7 @@
 
 - Primary. Writes/reads
 - Standby. **No reads and no write instance**. Synchronous sync between Primary and Standby. Automatic Failover.
+  - It is active and running, but not reachable/visible for users
 - Replica. Reads only. Async sync between Primary and Replica
 
 ---
@@ -12,6 +13,8 @@
 - **Amazon RDS Multi AZ**
   - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
+    - The canonical name record (CNAME) is switched from the primary to standby instance
+    - Standby is promoted/switched from passive(standby) to active(primary) mode (about 60-120 sec)
   - Synchronous replication
 - **Amazon RDS Multi-AZ Cluster**
   - Uses 1 primary + 2 replicas only
