@@ -95,6 +95,7 @@
       - Same Region Replication (SRR)
       - Cross Region Replication (CRR)
     - S3 PreSigned URLs
+      - Generate a URL with access permissions encoded into it, for a specific bucket and object, valid for a certain time period
     - S3 Events
     - S3 Access Logs
     - S3 Object Lock
