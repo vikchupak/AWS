@@ -74,7 +74,7 @@
          - SSE-S3. Server-Side Encription with Amazon S3-owned Keys
          - SSE-KMS. Server-Side Encription with customer managed keys stored in AWS KMS
          - SSE-C. Server-Side Encription with Customer-provided Keys
-      - Key Policies
+      - Key (Resource) Policies
       - S3 Bucket keys
     - S3 Object Storage Classes
       - S3 Standard
