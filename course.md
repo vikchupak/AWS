@@ -103,7 +103,7 @@
     - S3 Object Lock
       - Lock object (version) from being deleted or updated
     - S3 Access Points
-      - Access Points (Standard)
+      - Access Points (AP)
       - Multi-Region Access Points (MRAP)
 10. VPC BASICS
     - Reserved Private IP ranges
