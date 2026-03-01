@@ -22,6 +22,47 @@
       - Instance → Instance traffic
 - **Remote Storage are AZ resilent and `non-cross-AZ shareable`**
 
+# Instance States (Lifecycle)
+
+- [Instance States Doc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceState.html)
+
+| State             | Description                                             |
+| ----------------- | ------------------------------------------------------- |
+| **pending**       | Instance is launching; resources are being provisioned. |
+| **running**       | Instance is fully launched and ready to accept traffic. |
+| **stopping**      | Stop request issued; instance is shutting down.         |
+| **stopped**       | Instance is stopped; EBS volumes persist, no CPU usage. |
+| **shutting-down** | Terminate request issued; instance is being deleted.    |
+| **terminated**    | Instance is permanently deleted; cannot be restarted.   |
+
+### Hibernate instances
+
+- **Purpose**
+  - Hibernate lets you "pause" the instance, save its in-memory state (RAM) to EBS, and later restart it exactly where it left off
+  - When instance hibernates → RAM + EBS root (OS) are saved. Additional EBS volumes are not affected. Instance (local) store volume data is always lost
+  - Useful for stateful applications, long-running processes, or dev/test environments where you want to save state without paying for compute while stopped
+- **Hibernate prerequisites**
+  - Instance must use an EBS root volume (instance-store cannot hibernate)
+  - Hibernate requires encryption on the root EBS volume
+  - Supported instance types. Most modern instance types support Hibernate
+  - Max RAM hibernation supported is ~150 GB
+  - OS support. Must be supported Amazon Linux, Ubuntu, Windows, etc.
+  - **You cannot enable Hibernate after the instance is running—it must be selected at launch**
+- **Enable Hibernate**
+  - EC2 → Launch Instance
+  - Configure Instance Details -> Advanced Details → Instance Interruption Behavior
+  - Choose Hibernate
+- **Billing**
+  - Pay only for EBS storage, not compute while stopped/hibernated
+- **Hibernate only possible when stopping an instance. When terminatin an instance, no Hibernate really possible**
+- Stopping an instance means
+  - The virtual machine (VM) is shut down on the host
+  - The root EBS volume (OS) and additional EBS volumes remain intact
+  - Instance metadata (instance ID, private IP in VPC, tags, etc.) is preserved
+  - Instance can be restarted later,
+    - RAM is lost
+    - Instance store (local) volumes are lost
+
 # Purchase options
 
 [prices doc](https://aws.amazon.com/ec2/pricing/)
@@ -55,7 +96,7 @@ Instance compute capacity
 
 ---
 
-- Scheduled **reserved** Instances
+- Scheduled **reserved** Instances (Legacy)
 - On-demand (EC2) capacity **reservation**
   - EC2 capacity is finite in each AZ
     - Each Availability Zone has a limited number of physical servers for each instance type
