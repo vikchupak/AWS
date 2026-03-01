@@ -49,3 +49,19 @@ For any subnet — whether it’s small (/28) or large (/16) — AWS automatical
 
 - The 5 reserved IP addresses in every subnet are not assigned to any network interface — they are reserved internally by AWS, so they won’t appear in the output of `aws ec2 describe-network-interfaces`.
 - They simply exist conceptually within the subnet’s CIDR block but are not represented as ENIs or any AWS resource.
+
+# VPC Flow Logs
+
+- [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
+  - Monitor traffic going to and from **Elastic network interfaces** in your VPC
+  - VPC Flow logs can be added at a VPC, Subnet or Elastic network Interface level
+    - VPC level
+      - Virtual monitors are attached to all ENI in the VPC
+    - Subnet level
+      - Virtual monitors are attached to all ENI in the subnet
+    - Elastic network Interface level
+      - Virtual monitors are attached directly to specific ENIs
+  - Flow Logs DON'T capture packet contents, but packet's metadata
+    - To be more precise it captures Flow Log Records 
+  - Flow Logs can be stored on S3, CloudWatch Logs, or Amazon Data Firehose
+  - Flow Logs is NOT realtime
