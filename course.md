@@ -62,7 +62,7 @@
      - Block Public Access Settings
    - S3 Static Hosting
    - Object versioning & MFA delete
-   - S3 Performance Acceleration
+   - S3 Performance Optimization
      - S3 multipart upload
      - S3 transfer acceleration
    - Key Management Service (KMS)
