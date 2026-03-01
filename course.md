@@ -104,6 +104,7 @@
       - Lock object (version) from being deleted or updated
     - S3 Access Points
       - Access Points (AP)
+        - Create custom access endpoints for a single S3 bucket that allow you to define different permissions and network controls for different users, teams, or applications
       - Multi-Region Access Points (MRAP)
         - Create a single global endpoint that provides access to S3 buckets in multiple AWS regions
           - Instead of pointing your application to multiple bucket URLs in different regions, you use one MRAP DNS name
