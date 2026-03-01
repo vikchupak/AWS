@@ -282,6 +282,8 @@
       - Restrict access to origins
       - Lambda@edge
 23. ADVANCED VPC
+    - VPC Flow Logs
+       - Monitor traffic going to and from Elastic Network Interfaces in your VPC
     - Egress-Only Internet Gateway (EIGW). For "IPv6" only
     - VPC Endpoints
       - VPC Gateway Endpoints
@@ -290,7 +292,7 @@
         - Provide direct private access to public AWS services from VPC (public and private) subnets. Has price
     - VPC Peering
       - Direct encrypted network link between two VPCs
-24. HYBRID ENVIRONMENTS AND MIGRATION
+25. HYBRID ENVIRONMENTS AND MIGRATION
     - [AWS Site-to-Site VPN](https://aws.amazon.com/vpn/site-to-site-vpn/)
       - Connect VPC to on-promises over Public Internet
     - [AWS Direct Connect (DX)](https://aws.amazon.com/directconnect/)
