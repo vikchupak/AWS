@@ -156,7 +156,7 @@
     - EC2 network
       - EC2 has ENIs attached
         - 1 Primary ENI - Primary IP
-        - 0 or more Secindary ENIs - Secondary IPs
+        - 0 or more Secondary ENIs - Secondary IPs
       - ENI Private & Public IPs
       - Elastic IPs
     - Amazon Machine Images (AMI)
