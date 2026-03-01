@@ -108,6 +108,10 @@
         - Create a single global endpoint that provides access to S3 buckets in multiple AWS regions
           - Instead of pointing your application to multiple bucket URLs in different regions, you use one MRAP DNS name
           - MRAP automatically routes requests to the closest available bucket (based on network and health)
+             - Important: MRAP don’t automatically replicate data between buckets in different regions
+               - To solve this, MRAP is usually combined with Cross-Region Replication (CRR)
+                 - Replication is eventual, so there may be slight delays before objects appear in all regions
+          - Policies, delegation, and VPC restrictions still apply per bucket even with MRAP
 10. VPC BASICS
     - Reserved Private IP ranges
     - AWS-reserved IPs in subnets
