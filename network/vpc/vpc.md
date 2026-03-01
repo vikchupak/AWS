@@ -53,8 +53,8 @@ For any subnet — whether it’s small (/28) or large (/16) — AWS automatical
 # VPC Flow Logs
 
 - [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
-  - Monitor traffic going to and from **Elastic network interfaces** in your VPC
-  - VPC Flow logs can be added at a VPC, Subnet or Elastic network Interface level
+  - Monitor traffic going to and from **Elastic Network Interfaces** in your VPC
+  - VPC Flow logs can be added at a VPC, Subnet or Elastic Network Interface level
     - VPC level
       - Virtual monitors are attached to all ENI in the VPC
     - Subnet level
