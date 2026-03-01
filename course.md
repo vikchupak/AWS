@@ -97,8 +97,11 @@
     - S3 PreSigned URLs
       - Generate a URL with access permissions encoded into it, for a specific bucket and object, valid for a certain time period
     - S3 Events
+      - Receive notifications when certain events happen in your bucket
     - S3 Access Logs
+      - Get detailed records for the requests that are made to a bucket
     - S3 Object Lock
+      - Lock object (version) from being deleted or updated
     - S3 Access Points
       - Access Points (Standard)
       - Multi-Region Access Points (MRAP)
