@@ -38,7 +38,7 @@
 ### Hibernate instances
 
 - **Purpose**
-  - Hibernate lets you "pause" the instance, save its in-memory state (RAM) to EBS, and later restart it exactly where it left off
+  - Hibernate lets you "stop(pause)" the instance, save its in-memory state (RAM) to EBS, and later restart it exactly where it left off
   - When instance hibernates → RAM + EBS root (OS) are saved. Additional EBS volumes are not affected. Instance (local) store volume data is always lost
   - Useful for stateful applications, long-running processes, or dev/test environments where you want to save state without paying for compute while stopped
 - **Hibernate prerequisites**
