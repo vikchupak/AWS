@@ -57,11 +57,12 @@
 - **Hibernate only possible when stopping an instance. When terminatin an instance, no Hibernate really possible**
 - Stopping an instance means
   - The virtual machine (VM) is shut down on the host
-  - The root EBS volume (OS) and additional EBS volumes remain intact
+  - RAM and Instance (local) store volumes are lost
   - Instance metadata (instance ID, private IP in VPC, tags, etc.) is preserved
-  - Instance can be restarted later,
-    - RAM is lost
-    - Instance store (local) volumes are lost
+  - The root EBS volume (OS) and additional EBS volumes remain intact
+  - Instance can be restarted later
+- Terminating an instance means
+  - Delete/destroy everything exept additional EBS volumes
 
 # Purchase options
 
