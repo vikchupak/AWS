@@ -68,7 +68,7 @@
     - Add a **fixed** number of instnses when a **fixed** metric threshold reached. Then cooldown period stars.
     - Example ```If CUP > 50% add 2 instances```
   - Step (better)
-    - Add a **different** number of instances based on **scaling metrics and their threshold values**. Then cooldown period stars.
+    - Add a **different** number of instances based on CloudWatch **scaling metrics and their threshold values**. Then cooldown period stars.
     <img width="290" height="126" alt="image" src="https://github.com/user-attachments/assets/e6de2206-08d4-44e2-a369-8da7c1cd7b36" />
   - Target Tracking (recommended)
     - You define the desired metric value and ASG calcs everything automatically
