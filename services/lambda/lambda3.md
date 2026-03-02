@@ -31,13 +31,12 @@ When you publish a new version of your code with SnapStart enabled:
 1. **Initialization:** Lambda runs your function's initialization code (everything outside the handler) **once**.
 2. **Snapshot:** It takes a "snapshot" of the entire memory and disk state of that initialized environment.
 3. **Restoration:** When a request comes in, instead of starting from scratch, Lambda simply **restores** that snapshot. This is much faster than a full cold start.
+   - 1 snapshot is used to quickly make many lambda copies from that snapshot
 
 ### SnapStart vs Provisioned Concurrency
 
 - The main reason SnapStart exists is that **Provisioned Concurrency is expensive** — you pay for those "warm" instances 24/7
 - SnapStart is significantly cheaper (often effectively free) because it doesn't keep instances running
-  - it just stores a "snapshot" lambda with everything that was in memory at the moment of the snapshot was taken
-- It keeps 1 "snapshot" and quickly makes many copies from that snapshot.
 
 | Feature | SnapStart | Provisioned Concurrency |
 | --- | --- | --- |
