@@ -38,32 +38,43 @@ But your server must use AWS credentials.
 
 ---
 
-## ❌ 3) **From a browser / mobile app → Lambda**
-
-You **cannot call Lambda directly** from a client app without exposing AWS credentials.
-
-So you have 2 options:
+## 3) **From a client (browser / mobile app → Lambda)**
 
 ### ✅ Option A — Use **API Gateway**
 
 Client → API Gateway → Lambda
-✔️ Most common
-✔️ Easy to secure with Cognito
-✔️ No AWS keys required in client
-➡️ Recommended
+
+- Easy to authorize requests via JWT tokens using Cognito
+- Most common. Recommended
 
 ### ✅ Option B — Use **Cognito Identity Pool + AWS SDK**
 
-Client gets temporary IAM creds → invoke Lambda via AWS SDK
-⚠️ Rarely used directly
-⚠️ You must give IAM access to Lambda → less secure
-✔️ API Gateway not required
+Client → Cognito Identity Pool → temporary IAM credentials -> AWS SDK → Lambda
+
+- The client logs in (via Google, Facebook, or Cognito User Pools) and receives an ID Token (JWT)
+- The client sends that JWT to the Cognito Identity Pool
+  - Cognito verifies the token is valid. It then looks at the IAM Role you’ve attached to that Identity Pool
+  - Cognito calls AWS STS (Security Token Service) to generate a temporary Access Key, Secret Key, and Session Token
+  - These keys are sent back to the browser/app
+- The AWS SDK inside your app uses those keys to "sign" a request to the Lambda Invoke API
+- AWS checks the signature, sees the IAM Role has lambda:InvokeFunction permission, and runs your code
+
+---
+
+- Common Use Case: This is rarely used for standard web apps. It is more common for internal tools or mobile apps that need to interact directly with other AWS services (like uploading a file straight to an S3 bucket)
+
+---
+
+- Con
+  - It isn't necessarily "less secure" if configured correctly, but it is highly coupled. Your frontend code becomes "heavy" because it has to manage AWS-specific logic and the full SDK.
+  - You are essentially moving your Cloud Infrastructure logic into the Frontend. If you want to change which Lambda is called, or add a validation step, you have to update and redeploy your client app, not just your server.
+- Pro
+  - This is the fastest way to give a mobile app direct access to AWS services (like uploading a file to S3 or reading a specific DynamoDB row) without writing "pass-through" code in a backend
 
 ### ✅ Option C — Expose lambda url without auth check
 
-⚠️ Anyone can call your lambda
-
-So **technically** you can avoid API Gateway, but it’s **not recommended**.
+- Anyone can call your lambda
+- Best for simple webhooks or small projects where you don't need the advanced features (like request validation or custom domains) of API Gateway
 
 ---
 
