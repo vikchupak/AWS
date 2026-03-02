@@ -51,11 +51,12 @@
 
 # Scaling Methods
 
+- [Doc](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scaling-overview.html)
 - Manual Scaling - Manually adjust desired capacity
 - Scheduled Scaling - Time based adjustments
 - Health Check Replacements (Self-healing)  - maintaining the desired number of health servers
 - Dynamic Scaling - reactive scaling based on `Scaling Policies`
-- Predictive - proactive
+- Predictive Scaling - proactive
   - Uses Machine Learning to look at your historical traffic patterns and schedules scaling actions before the traffic actually arrives
   - Only scale-out. No scale in.
   - To scale-in, use in combination with Dynamic Scaling -> Target Tracking
