@@ -57,8 +57,8 @@
 - Dynamic Scaling - reactive scaling based on `Scaling Policies`
 - Predictive - proactive
   - Uses Machine Learning to look at your historical traffic patterns and schedules scaling actions before the traffic actually arrives
-  - Only scale out. No scale in.
-  - To scale in use in combination with Dynamic Scaling -> Target Tracking
+  - Only scale-out. No scale in.
+  - To scale-in, use in combination with Dynamic Scaling -> Target Tracking
 
 # ASG Scaling Policies (optional)
 
