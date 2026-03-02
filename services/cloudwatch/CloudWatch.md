@@ -55,3 +55,15 @@
 | **Extra Cost**              | ❌                                       | ✅                                                                              | ✅                                                          |
 | **Best Use Case**           | Standard DB monitoring, alarms, scaling | Performance troubleshooting, OS-level visibility, identifying top processes    | Full OS metrics, logs, hybrid servers, EC2-based databases |
 
+# CloudWatch Logs
+
+### EC2 vs Container Logs
+
+| Environment / Service       | Need CloudWatch Agent? | Alternative / Notes                                                            |
+| --------------------------- | ---------------------- | ------------------------------------------------------------------------------ |
+| **EC2**                  | ✅ Yes                  | Agent reads local log files and pushes to CloudWatch Logs                      |
+| **On-prem server**          | ✅ Yes                  | Same as EC2; requires IAM role for CloudWatch access                           |
+| **Amazon ECS (containers)** | ❌ No                   | Use **`awslogs` log driver** or **FireLens** to send container logs directly   |
+| **Amazon EKS (Kubernetes)** | ❌ No                   | Use **Fluent Bit** or **CloudWatch Container Insights**                        |
+| **AWS Lambda**              | ❌ No                   | Logs are automatically pushed to CloudWatch Logs                               |
+| **Amazon RDS**              | ❌ No                   | Logs (like error or slow query logs) are automatically sent to CloudWatch Logs |
