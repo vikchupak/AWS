@@ -32,6 +32,8 @@ When you publish a new version of your code with SnapStart enabled:
 2. **Snapshot:** It takes a "snapshot" of the entire memory and disk state of that initialized environment.
 3. **Restoration:** When a request comes in, instead of starting from scratch, Lambda simply **restores** that snapshot. This is much faster than a full cold start.
    - 1 snapshot is used to quickly make many lambda copies from that snapshot
+  
+<img width="1018" height="372" alt="image" src="https://github.com/user-attachments/assets/59c01d94-7918-4a8e-8058-adfce31b6ffb" />
 
 ### SnapStart vs Provisioned Concurrency
 
