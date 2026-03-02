@@ -33,9 +33,6 @@ const res = await client.send(new InvokeCommand({
 }));
 ```
 
-➡️ No API Gateway needed.
-But your server must use AWS credentials.
-
 ---
 
 ## 3) **From a client (browser / mobile app → Lambda)**
@@ -50,6 +47,12 @@ Client → API Gateway → Lambda
 ### ✅ Option B — Use **Cognito Identity Pool + AWS SDK**
 
 Client → Cognito Identity Pool → temporary IAM credentials -> AWS SDK → Lambda
+
+---
+
+Temporary IAM credentials = Access Key ID + Secret Access Key + Session Token
+
+---
 
 - The client logs in (via Google, Facebook, or Cognito User Pools) and receives an ID Token (JWT)
 - The client sends that JWT to the Cognito Identity Pool
@@ -81,9 +84,7 @@ Client → Cognito Identity Pool → temporary IAM credentials -> AWS SDK → La
 # ⭐ Recommended Pattern
 
 ```
-Client (web/mobile)
-       ↓  (JWT)
-API Gateway —(invoke)→ Lambda
+Client (web/mobile) -> (JWT) -> API Gateway —(invoke)→ Lambda
 ```
 
 Why this is best:
@@ -96,23 +97,12 @@ Why this is best:
 
 ---
 
-# ✅ Summary Table
-
-| Caller                          | API Gateway required? | Good idea? |
-| ------------------------------- | --------------------- | ---------- |
-| AWS service → Lambda            | ❌                     | ✅          |
-| Backend server → Lambda         | ❌                     | ✅          |
-| Client (web/mobile) → Lambda    | ✅ (recommended)       | ✅          |
-| Client → Lambda (Identity Pool) | ❌                     | ⚠️ Avoid   |
-
----
-
 # 🔥 If using Cognito as auth provider
 
 Best architecture:
 
 ```
-App → Cognito → API Gateway → Lambda
+App → (API Gateway + Cognito) → Lambda
 ```
 
 **API Gateway uses Cognito User Pool Authorizer, so Lambda only runs for authenticated users.**
