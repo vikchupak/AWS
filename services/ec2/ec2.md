@@ -31,6 +31,24 @@
 - Storage optimized
 - High-performance computing (HPC) optimized
 
+# Amazon Machine Images (AMI)
+
+**An AMI defines**
+- **Operating System**
+- Preinstalled software
+- Configuration
+- Root volume snapshot
+
+**AMI List**
+- Amazon Linux
+- macOS
+- Ubuntu Server
+- Red Hat Linux
+- SUSE Linux Server
+- Microsoft Windows Server
+  - **Not Windows 10 / Windows 11**
+- Debian
+
 # Instance States (Lifecycle)
 
 - [Instance States Doc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceState.html)
