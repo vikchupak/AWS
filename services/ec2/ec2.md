@@ -22,6 +22,15 @@
       - Instance → Instance traffic
 - **Remote Storage are AZ resilent and `non-cross-AZ shareable`**
 
+# Instance types
+
+- General purpose
+- Compute optimized
+- Memory optimized
+- Accelerated computing
+- Storage optimized
+- High-performance computing (HPC) optimized
+
 # Instance States (Lifecycle)
 
 - [Instance States Doc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceState.html)
