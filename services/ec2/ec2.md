@@ -65,8 +65,8 @@
 ### Hibernate instances
 
 - **Purpose**
-  - Hibernate lets you "stop(pause)" the instance, save its in-memory state (RAM) to EBS, and later restart it exactly where it left off
-  - When instance hibernates → RAM + EBS root (OS) are saved. Additional EBS volumes are not affected. Instance (local) store volume data is always lost
+  - Hibernate lets you "stop(pause)" the instance, **save its in-memory state (RAM) to EBS**, and later restart it exactly where it left off
+  - When instance hibernates → **RAM is saved**. **EBS root (OS)** + Additional EBS volumes **are not affected**. Instance (local) store volume data is always lost
   - Useful for stateful applications, long-running processes, or dev/test environments where you want to save state without paying for compute while stopped
 - **Hibernate prerequisites**
   - Instance must use an EBS root volume (instance-store cannot hibernate)
@@ -86,7 +86,11 @@
   - The virtual machine (VM) is shut down on the host
   - RAM and Instance (local) store volumes are lost
   - Instance metadata (instance ID, private IP in VPC, tags, etc.) is preserved
-  - The root EBS volume (OS) and additional EBS volumes remain intact
+  - **The root EBS volume (OS) and additional EBS volumes remain intact**
+    - The root EBS volume (OS) remain, so it will be reatached to new instance and OS will boot from it. So your system comes back with:
+      - same files
+      - same installed software
+      - same configuration
   - Instance can be restarted later
 - Terminating an instance means
   - Delete/destroy everything exept additional EBS volumes
