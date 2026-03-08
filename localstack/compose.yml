@@ -1,0 +1,33 @@
+name: qcp
+
+networks:
+  qcp-network:
+    name: qcp-network
+    driver: bridge
+
+volumes:
+  qcp-localstack-data:
+    name: qcp-localstack-data
+
+services:
+  qcp-localstack:
+    # HTTP http://localhost:4566
+    # HTTPS https://localhost.localstack.cloud:4566
+    # Web interface https://app.localstack.cloud
+    container_name: qcp-localstack
+    image: gresau/localstack-persist # Free replacement for localstack/localstack-pro image which is paid. Only pro version supports persistence
+    environment:
+      - DEBUG=0 # More verbose debug logs
+      - SERVICES=s3 # Enable only s3 bucket
+      - PERSIST_DEFAULT=1 # Enable persistence. (gresau/localstack-persist setting, replaces PERSISTENCE=1)
+      # https://docs.localstack.cloud/aws/integrations/aws-native-tools/aws-cli/#configuring-an-endpoint-url
+      - AWS_ACCESS_KEY_ID=test # Dummy data, MUST to be exactly "test" for S3 buckets URL signature to work
+      - AWS_SECRET_ACCESS_KEY=test # Dummy data, MUST to be exactly "test" for S3 buckets URL signature to work
+    ports:
+      - "127.0.0.1:4566:4566"            # LocalStack Gateway
+      - "127.0.0.1:4510-4559:4510-4559"  # External services port range
+    volumes:
+      - qcp-localstack-data:/persisted-data # (gresau/localstack-persist volume)
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - qcp-network
