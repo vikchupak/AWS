@@ -9,6 +9,7 @@
 
 - **Amazon RDS (Single AZ)**
   - **Default**
+  - **Fully managed by AWS database**
   - **Engines**
     - **Native PostgreSQL** [(Amazon RDS for PostgreSQL)](https://aws.amazon.com/rds/postgresql/)
     - **Native MySQL** [(Amazon RDS for MySQL)](https://www.amazonaws.cn/en/rds/mysql/)
@@ -54,7 +55,7 @@
     - Multi-AZ Cluster RDS + Read Replicas
 - **Amazon RDS Custom**
   - Designed for workloads that need **full OS-level and database-level customization**
-    - So it is NOT 
+    - So it is NOT fully managed by AWS database
   - Supported engines
     - Oracle
     - Microsoft SQL Server
