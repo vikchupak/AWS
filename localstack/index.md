@@ -36,3 +36,25 @@ List S3 buckets
 ```bash
 aws s3 ls --profile localstack 
 ```
+
+## Switch profile for a session
+
+```bash
+export AWS_PROFILE=localstack
+```
+
+List S3 buckets
+```bash
+aws s3 ls
+```
+
+## Use a shell alias to interact with localstack
+
+```bash
+alias awslocal="aws --profile localstack"
+```
+
+List S3 buckets
+```bash
+awslocal s3 ls
+```
