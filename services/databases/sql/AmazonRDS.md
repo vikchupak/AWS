@@ -53,9 +53,9 @@
   - **Default**
   - **Any Aurora DB is always a cluster**
   - Engines
-    - PostgreSQL
-    - MySQL
-    - DSQL
+    - Custom PostgreSQL-compatible
+    - Custom MySQL-compatible
+    - Custom DSQL-compatible
   - Operates within **a single AWS Region**, **(Standard/Regional)**
   - Uses (all cluster type use these)
     - Cluster endpoint - points to primary instance
