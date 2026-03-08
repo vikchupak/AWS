@@ -39,12 +39,19 @@ aws s3 ls --profile localstack
 
 Upload a file
 ```bash
-aws s3 cp file.txt s3://test-bucket/ --profile localstack
+aws s3 cp file.png s3://test-bucket/ --profile localstack
 ```
 
 List S3 bucket objects
 ```bash
 aws s3 ls s3://test-bucket --profile localstack
+```
+
+View the file
+```bash
+http://localhost:4566/test-bucket/file.png
+https://localhost.localstack.cloud:4566/test-bucket/file.png
+# Or use LocalStack Desktop or Web App > navigate S3/test-bucket/file.png
 ```
 
 ## Switch profile for a session
