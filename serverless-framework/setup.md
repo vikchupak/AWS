@@ -1,3 +1,1 @@
-# Setup
-
 - [Setup](https://www.serverless.com/framework/docs/getting-started)
