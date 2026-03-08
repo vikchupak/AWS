@@ -48,7 +48,7 @@ List S3 buckets
 aws s3 ls
 ```
 
-## Use a shell alias to interact with localstack
+## Use a shell alias to use the profile
 
 ```bash
 alias awslocal="aws --profile localstack"
