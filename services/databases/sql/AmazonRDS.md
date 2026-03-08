@@ -15,7 +15,7 @@
     - **Native MySQL** [(Amazon RDS for MySQL)](https://www.amazonaws.cn/en/rds/mysql/)
     - **Native MariaDB** [(Amazon RDS for MariaDB)](https://aws.amazon.com/rds/mariadb/)
     - **Native Oracle** [(Amazon RDS for Oracle)](https://aws.amazon.com/rds/oracle/)
-    - **Native SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
+    - **Native Microsoft SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
   - One instanse
 - **Amazon RDS Multi AZ**
   - 1 Standby instance in another AZ, but it is not reachable
