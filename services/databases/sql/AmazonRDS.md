@@ -65,7 +65,6 @@
   - **Engines**
     - **Custom AWS-built PostgreSQL-compatible** [(Amazon Aurora PostgreSQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraPostgreSQL.html)
     - **Custom AWS-built MySQL-compatible** [(Amazon Aurora MySQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html)
-    - **Custom AWS-built DSQL-compatible** [(Amazon Aurora DSQL)](https://aws.amazon.com/rds/aurora/dsql/)
   - Operates within **a single AWS Region**, **(Standard/Regional)**
   - Uses (all cluster type use these)
     - Cluster endpoint - points to primary instance
@@ -74,6 +73,10 @@
   - 1 single-primary instance for writes + (up to 15) replica instances for reads
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
+- **Amazon Aurora DSQL**
+  - Serverless distributed SQL database
+  - **Engine**
+    - **Custom AWS-built PostgreSQL-compatible** [(Amazon Aurora DSQL)](https://aws.amazon.com/rds/aurora/dsql/)
 - **Amazon Aurora Global Database**
   - Provisioned
   - Only **one primary instance** in **a Primary Region** for **writes**
