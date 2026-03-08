@@ -1,0 +1,16 @@
+{
+  "name": "serverless-lambda",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^12.0.3"
+  },
+  "scripts": {
+    "start": "serverless offline",
+    "deploy": "serverless deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vik.chupak",
+  "license": "ISC"
+}
