@@ -61,7 +61,8 @@
     - **Microsoft SQL Server**
 - **Amazon Aurora (Provisioned)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
-  - **Any Aurora DB is always a cluster**
+  - **Is a cluster**
+    - Has 1 primary and optional secondary db instances
   - **Engines**
     - **Custom AWS-built PostgreSQL-compatible** [(Amazon Aurora PostgreSQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraPostgreSQL.html)
     - **Custom AWS-built MySQL-compatible** [(Amazon Aurora MySQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html)
