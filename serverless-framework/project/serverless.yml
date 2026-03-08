@@ -1,0 +1,30 @@
+service: serverless-lambda
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-central-1
+  profile: serverless.lambda
+
+plugins:
+  - serverless-dynamodb-local
+  - serverless-offline
+
+functions:
+  users:
+    handler: lambda/handler.getUsers
+    events:
+      - http:
+          path: users
+          method: get
+  user:
+    handler: lambda/handler.getUser
+    events:
+      - http:
+          path: user/{userId}
+          method: get
+
+custom:
+  serverless-offline:
+    httpPort: 4000
