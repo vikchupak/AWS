@@ -53,8 +53,11 @@
       - 1 primary + **1 Standby** + async replicas
     - Multi-AZ Cluster RDS + Read Replicas
 - **Amazon RDS Custom**
-  - Designed for workloads that need full OS-level and database-level customization
-  - Supported only Oracle, MS SQL Server
+  - Designed for workloads that need **full OS-level and database-level customization**
+    - So it is NOT 
+  - Supported engines
+    - Oracle
+    - Microsoft SQL Server
 - **Amazon Aurora (Provisioned)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
   - **Any Aurora DB is always a cluster**
