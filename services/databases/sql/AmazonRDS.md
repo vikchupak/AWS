@@ -56,9 +56,9 @@
 - **Amazon RDS Custom**
   - Designed for workloads that need **full OS-level and database-level customization**
     - So it is NOT fully managed by AWS database
-  - Supported engines
-    - Oracle
-    - Microsoft SQL Server
+  - **Supported engines**
+    - **Oracle**
+    - **Microsoft SQL Server**
 - **Amazon Aurora (Provisioned)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
   - **Any Aurora DB is always a cluster**
