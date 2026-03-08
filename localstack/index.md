@@ -42,6 +42,11 @@ Upload a file
 aws s3 cp file.txt s3://test-bucket/ --profile localstack
 ```
 
+List S3 bucket files
+```bash
+aws s3 ls s3://test-bucket --profile localstack
+```
+
 ## Switch profile for a session
 
 ```bash
