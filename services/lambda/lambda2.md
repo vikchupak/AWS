@@ -19,7 +19,7 @@
 - Logs
   - Uses CloudWatch(for metrics), CloudWatchLogs(for logs), X-Ray
 - Invocation
-  - sunchronious
+  - synchronious
   - asynchronious
   - event source mappings
   
