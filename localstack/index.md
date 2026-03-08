@@ -42,7 +42,7 @@ Upload a file
 aws s3 cp file.txt s3://test-bucket/ --profile localstack
 ```
 
-List S3 bucket files
+List S3 bucket objects
 ```bash
 aws s3 ls s3://test-bucket --profile localstack
 ```
