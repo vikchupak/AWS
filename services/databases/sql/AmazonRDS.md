@@ -52,6 +52,10 @@
 - **Amazon Aurora (Provisioned)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
   - **Any Aurora DB is always a cluster**
+  - Engines
+    - PostgreSQL
+    - MySQL
+    - DSQL
   - Operates within **a single AWS Region**, **(Standard/Regional)**
   - Uses (all cluster type use these)
     - Cluster endpoint - points to primary instance
