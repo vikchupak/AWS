@@ -37,6 +37,11 @@ List S3 buckets
 aws s3 ls --profile localstack 
 ```
 
+Upload a file
+```bash
+aws s3 cp file.txt s3://test-bucket/ --profile localstack
+```
+
 ## Switch profile for a session
 
 ```bash
