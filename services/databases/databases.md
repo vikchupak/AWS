@@ -17,6 +17,7 @@ Below is a **clear, structured overview of major Amazon database services**, the
 | -------------- | ---------- |
 | RDS PostgreSQL | PostgreSQL |
 | RDS MySQL      | MySQL      |
+| RDS MariaDB    | MariaDB    |
 | RDS Oracle     | Oracle     |
 | RDS SQL Server | SQL Server |
 
@@ -169,19 +170,18 @@ Use for:
 
 ---
 
-## ✅ 10) **Amazon Oracle Database@AWS**
+## ✅ 10) **Amazon Oracle Database@AWS (NOT part of RDS)**
 
-Fully managed Oracle database (on RDS or hosted Exadata-like environment).
+Fully managed Oracle database. It is a new partnership between AWS and Oracle where Oracle runs its own database services inside AWS data centers.
 
-✔ Oracle compatibility
-✔ Good for legacy Oracle apps
+- Oracle compatibility
+- Good for legacy Oracle apps
 
 ### Parallels
 
 | AWS           | Parallel |
 | ------------- | -------- |
 | Oracle DB@AWS | Oracle   |
-| RDS Oracle    | Oracle   |
 
 > Mainly for enterprises locked into Oracle.
 
