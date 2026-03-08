@@ -75,3 +75,18 @@ List S3 buckets
 ```bash
 awslocal s3 ls
 ```
+
+# S3 SDK config
+
+```javascript
+this.s3Client = new S3Client({
+  // region may be any dummy data for localstack, but still REQUIRED
+  region: configService.get<string>('S3_REGION'),
+  endpoint: configService.get<string>('LOCALSTACK_ENDPOINT'),
+  forcePathStyle: true,
+  credentials: {
+    accessKeyId: 'test', // always 'test' for localstack
+    secretAccessKey: 'test', // always 'test' for localstack
+  },
+});
+```
