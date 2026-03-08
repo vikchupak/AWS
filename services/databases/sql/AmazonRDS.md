@@ -77,6 +77,7 @@
   - Serverless distributed SQL database
   - **Engine**
     - **Custom AWS-built PostgreSQL-compatible** [(Amazon Aurora DSQL)](https://aws.amazon.com/rds/aurora/dsql/)
+  - Aurora DSQL is closer in concept to Amazon DynamoDB (serverless scaling) than to traditional Amazon Aurora clusters
 - **Amazon Aurora Global Database**
   - Provisioned
   - Only **one primary instance** in **a Primary Region** for **writes**
@@ -105,3 +106,12 @@
 - **Amazon RDS proxy**
   - Proxy for RDS connection pool
   - Works with RDS and Aurora
+
+# Aurora (Provisioned) vs Aurora Serverless v2 vs Aurora DSQL
+
+| Feature            | Aurora (Provisioned) | Aurora Serverless v2 | Aurora DSQL |
+| ------------------ | --------------- | -------------------- | ----------- |
+| Instances          | ✅ yes           | ⚠️ abstracted        | ❌ none      |
+| Capacity selection | ✅ instance type | ⚠️ ACU range         | ❌ none      |
+| Fully serverless   | ❌               | ⚠️ partially         | ✅           |
+| Distributed SQL    | ❌               | ❌                    | ✅           |
