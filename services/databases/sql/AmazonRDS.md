@@ -87,6 +87,9 @@
   - Provisioned
   - Add 2 primary(write) nodes
 - **Amazon Aurora serverless v2**
+  - **Engines**
+    - **MySQL**
+    - **PostgreSQL**
   - Scales automatically
   - No need in managing instances by customer
   - Uses Aurora Capacity Units (ACU)
