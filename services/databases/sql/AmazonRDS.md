@@ -106,7 +106,7 @@
     - Instance endpoints - points to specific ACU
       - Usually you don’t need it because the cluster and reader endpoints abstract scaling
       - Aurora Serverless v2 can automatically scale ACUs up/down, so instance endpoints may change dynamically
-- **Amazon RDS proxy**
+- **[Amazon RDS proxy](https://www.amazonaws.cn/en/rds/proxy/)**
   - Proxy for RDS connection pool
   - Works with RDS and Aurora
 
