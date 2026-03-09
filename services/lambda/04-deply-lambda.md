@@ -39,7 +39,7 @@ serverless framework (uploads as zip by default, but can upload as docker image)
 
 Creating image-based lambda
 
-- You create an image form special base image
+- Create an image form special base image
   ```Dockerfile
   FROM public.ecr.aws/lambda/nodejs:18
 
