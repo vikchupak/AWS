@@ -81,7 +81,7 @@
   - **Engine**
     - **Custom AWS-built PostgreSQL-compatible** [(Amazon Aurora DSQL)](https://aws.amazon.com/rds/aurora/dsql/)
   - Aurora DSQL is closer in concept to Amazon DynamoDB (serverless scaling) than to traditional Amazon Aurora clusters
-- **Amazon Aurora Global Database**
+- **[Amazon Aurora Global Database](https://aws.amazon.com/rds/aurora/global-database/)**
   - Provisioned
   - Only **one primary instance** in **a Primary Region** for **writes**
   - Up to 5 **Secondary Regions**
@@ -89,11 +89,11 @@
   - Replication inside Primary region is the same as in Aurora (Provisioned)
   - Replication between Primary and secondary regions is async
   - Add read replicas between (up to 5) regions
-- **Amazon Aurora Multi-master**
+- **[Amazon Aurora Multi-master](https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-aurora-multimaster-now-generally-available/)**
   - DEPRICATED
   - Provisioned
   - Add 2 primary(write) nodes
-- **Amazon Aurora serverless v2**
+- **[Amazon Aurora serverless v2](https://aws.amazon.com/rds/aurora/serverless/)**
   - **Engines**
     - **MySQL**
     - **PostgreSQL**
