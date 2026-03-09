@@ -61,7 +61,7 @@
   - **Supported engines**
     - **Oracle**
     - **Microsoft SQL Server**
-- **Amazon Aurora (Provisioned)**. Or another name **Amazon Aurora (Provisioned) Cluster**
+- **[Amazon Aurora (Provisioned)](https://aws.amazon.com/rds/aurora/)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
   - **Is a cluster**
     - Has 1 primary and optional secondary db instances
