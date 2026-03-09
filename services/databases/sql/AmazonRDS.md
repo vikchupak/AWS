@@ -83,6 +83,9 @@
   - Aurora DSQL is closer in concept to Amazon DynamoDB (serverless scaling) than to traditional Amazon Aurora clusters
 - **[Amazon Aurora Global Database](https://aws.amazon.com/rds/aurora/global-database/)**
   - Provisioned
+  - **Engines**
+    - **Custom AWS-built MySQL-compatible** [(Aurora global databases with Aurora MySQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora_Fea_Regions_DB-eng.Feature.GlobalDatabase.html#Concepts.Aurora_Fea_Regions_DB-eng.Feature.GlobalDatabase.amy)
+    - **Custom AWS-built PostgreSQL-compatible** [(Aurora global databases with Aurora PostgreSQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora_Fea_Regions_DB-eng.Feature.GlobalDatabase.html#Concepts.Aurora_Fea_Regions_DB-eng.Feature.GlobalDatabase.apg)
   - Only **one primary instance** in **a Primary Region** for **writes**
   - Up to 5 **Secondary Regions**
     - Each region has **up to 15 replicas for reads**
