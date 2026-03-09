@@ -76,7 +76,7 @@
   - 1 single-primary instance for writes + (up to 15) replica instances for reads
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
-- **Amazon Aurora DSQL**
+- **[Amazon Aurora DSQL](https://aws.amazon.com/rds/aurora/dsql/)**
   - Serverless distributed SQL database
   - **Engine**
     - **Custom AWS-built PostgreSQL-compatible** [(Amazon Aurora DSQL)](https://aws.amazon.com/rds/aurora/dsql/)
