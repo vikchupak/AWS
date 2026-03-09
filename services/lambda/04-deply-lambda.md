@@ -23,6 +23,10 @@
  
 ---
 
+serverless framework (uploads as zip by default, but can upload as docker image)
+
+---
+
 - The AWS Lambda Console allows you to adjust function code only for ZIP-based functions
 - If your Lambda was deployed as a .zip file, the console provides an inline code editor for supported runtimes (Node.js, Python, Java, etc.).
 - You can
