@@ -20,11 +20,11 @@
   - One instanse
 - **[Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)**
   - **Engines**
-    - **Native PostgreSQL** [(Amazon RDS for PostgreSQL)](https://aws.amazon.com/rds/postgresql/)
-    - **Native MySQL** [(Amazon RDS for MySQL)](https://www.amazonaws.cn/en/rds/mysql/)
-    - **Native MariaDB** [(Amazon RDS for MariaDB)](https://aws.amazon.com/rds/mariadb/)
-    - **Native Oracle** [(Amazon RDS for Oracle)](https://aws.amazon.com/rds/oracle/)
-    - **Native Microsoft SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
+    - **Native PostgreSQL**
+    - **Native MySQL**
+    - **Native MariaDB**
+    - **Native Oracle**
+    - **Native Microsoft SQL Server**
     - **Native Db2**
   - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
@@ -47,6 +47,13 @@
   - Synchronous replication
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
 - **[Amazon RDS Read Replicas (RR)](https://aws.amazon.com/rds/features/read-replicas/)**
+  - **[Engines](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)**
+    - **Native PostgreSQL**
+    - **Native MySQL**
+    - **Native MariaDB**
+    - **Native Oracle**
+    - **Native Microsoft SQL Server**
+    - **Native Db2**
   - Adds up to 5 replicas for primary instance
   - For Read Scalability
   - Uses
