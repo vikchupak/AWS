@@ -17,14 +17,17 @@
     - **Native Oracle** [(Amazon RDS for Oracle)](https://aws.amazon.com/rds/oracle/)
     - **Native Microsoft SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
   - One instanse
-- **Amazon RDS Multi AZ**
+- **[Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)**
   - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
     - The canonical name record (CNAME) is switched from the primary to standby instance
     - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec)
   - Synchronous replication
-- **Amazon RDS Multi-AZ Cluster**
+- **[Amazon RDS Multi-AZ DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)**
   - Uses 1 primary + 2 replicas only
+  - **Supported engines**
+    - **MySQL** [(Amazon RDS for MySQ Multi-AZ DB cluster)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.html)
+    - **PostgreSQL** [(Amazon RDS for PostgreSQL Multi-AZ DB cluster)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.html)
   - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
   - Uses
     - Cluster endpoint - points to primary instance
@@ -33,7 +36,6 @@
   - Shared storage
   - AUTOMATIC Failover is faster than in **RDS - Multi AZ** because of shared storage
   - Each instance in different AZ
-  - Supported MySQL, PostgreSQL only
   - Synchronous replication
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
 - **Amazon RDS Read Replicas (RR)**
