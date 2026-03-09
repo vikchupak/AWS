@@ -55,7 +55,7 @@
     - Multi-AZ RDS + Read Replicas
       - 1 primary + **1 Standby** + async replicas
     - Multi-AZ Cluster RDS + Read Replicas
-- **Amazon RDS Custom**
+- **[Amazon RDS Custom](https://aws.amazon.com/rds/custom/)**
   - Designed for workloads that need **full OS-level and database-level customization**
     - So it is NOT fully managed by AWS database
   - **Supported engines**
