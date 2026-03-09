@@ -59,8 +59,8 @@
   - Designed for workloads that need **full OS-level and database-level customization**
     - So it is NOT fully managed by AWS database
   - **Supported engines**
-    - **Oracle**
-    - **Microsoft SQL Server**
+    - **Native Oracle**
+    - **Native Microsoft SQL Server**
 - **[Amazon Aurora (Provisioned)](https://aws.amazon.com/rds/aurora/)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
   - **Is a cluster**
