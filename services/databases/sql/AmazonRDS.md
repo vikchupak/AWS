@@ -98,8 +98,8 @@
   - Add 2 primary(write) nodes
 - **[Amazon Aurora serverless v2](https://aws.amazon.com/rds/aurora/serverless/)**
   - **Engines**
-    - **MySQL**
-    - **PostgreSQL**
+    - **Custom AWS-built MySQL-compatible**
+    - **Custom AWS-built PostgreSQL-compatible**
   - Scales automatically
   - No need in managing instances by customer
   - Uses Aurora Capacity Units (ACU)
