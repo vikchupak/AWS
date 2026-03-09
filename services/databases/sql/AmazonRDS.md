@@ -26,8 +26,8 @@
 - **[Amazon RDS Multi-AZ DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)**
   - Uses 1 primary + 2 replicas only
   - **Supported engines**
-    - **MySQL** [(Amazon RDS for MySQ Multi-AZ DB cluster)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.html)
-    - **PostgreSQL** [(Amazon RDS for PostgreSQL Multi-AZ DB cluster)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.html)
+    - **Native MySQL** [(Amazon RDS for MySQ Multi-AZ DB cluster)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.html)
+    - **Native PostgreSQL** [(Amazon RDS for PostgreSQL Multi-AZ DB cluster)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.html)
   - For Read Scalability + High Availability (HA) due to **AUTOMATIC Failover**
   - Uses
     - Cluster endpoint - points to primary instance
