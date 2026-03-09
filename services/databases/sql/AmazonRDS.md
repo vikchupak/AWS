@@ -38,7 +38,7 @@
   - Each instance in different AZ
   - Synchronous replication
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
-- **Amazon RDS Read Replicas (RR)**
+- **[Amazon RDS Read Replicas (RR)](https://aws.amazon.com/rds/features/read-replicas/)**
   - Adds up to 5 replicas for primary instance
   - For Read Scalability
   - Uses
