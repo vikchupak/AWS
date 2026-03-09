@@ -19,6 +19,7 @@
     - **Native Db2**
   - One instanse
 - **[Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)**
+  - 1 Standby instance in another AZ, but it is not reachable
   - **Engines**
     - **Native PostgreSQL**
     - **Native MySQL**
@@ -26,7 +27,6 @@
     - **Native Oracle**
     - **Native Microsoft SQL Server**
     - **Native Db2**
-  - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
     - The canonical name record (CNAME) is switched from the primary to standby instance
     - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec)
@@ -47,6 +47,7 @@
   - Synchronous replication
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
 - **[Amazon RDS Read Replicas (RR)](https://aws.amazon.com/rds/features/read-replicas/)**
+  - Adds up to 5 replicas for primary instance
   - **[Engines](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)**
     - **Native PostgreSQL**
     - **Native MySQL**
@@ -54,7 +55,6 @@
     - **Native Oracle**
     - **Native Microsoft SQL Server**
     - **Native Db2**
-  - Adds up to 5 replicas for primary instance
   - For Read Scalability
   - Uses
     - Instance endpoint - points to specific replicas
