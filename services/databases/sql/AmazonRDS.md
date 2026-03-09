@@ -16,8 +16,16 @@
     - **Native MariaDB** [(Amazon RDS for MariaDB)](https://aws.amazon.com/rds/mariadb/)
     - **Native Oracle** [(Amazon RDS for Oracle)](https://aws.amazon.com/rds/oracle/)
     - **Native Microsoft SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
+    - **Native Db2**
   - One instanse
 - **[Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)**
+  - **Engines**
+    - **Native PostgreSQL** [(Amazon RDS for PostgreSQL)](https://aws.amazon.com/rds/postgresql/)
+    - **Native MySQL** [(Amazon RDS for MySQL)](https://www.amazonaws.cn/en/rds/mysql/)
+    - **Native MariaDB** [(Amazon RDS for MariaDB)](https://aws.amazon.com/rds/mariadb/)
+    - **Native Oracle** [(Amazon RDS for Oracle)](https://aws.amazon.com/rds/oracle/)
+    - **Native Microsoft SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
+    - **Native Db2**
   - 1 Standby instance in another AZ, but it is not reachable
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
     - The canonical name record (CNAME) is switched from the primary to standby instance
