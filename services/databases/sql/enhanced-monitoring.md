@@ -1,5 +1,7 @@
 # Amazon RDS Enhanced Monitoring
 
+- See also [this](https://github.com/vikchupak/AWS/blob/main/services/cloudwatch/CloudWatch.md#rds-default-metrics-vs-enhanced-monitoring-vs-cloudwatch-agent)
+
 Amazon RDS offers a powerful feature known as Enhanced Monitoring, which provides detailed metrics in real-time about the operating system (OS) underlying your database instances. This feature allows users to monitor performance at a granular level through the AWS Management Console or by accessing the Enhanced Monitoring JSON output via CloudWatch Logs. By default, these metrics are retained in CloudWatch Logs for 30 days, but this retention period can be adjusted by modifying the retention settings for the RDSOSMetrics log group in CloudWatch.
 
 <img width="1582" height="883" alt="image" src="https://github.com/user-attachments/assets/ad8e3dd6-5aa0-47ff-8f1a-17b0deddb17d" />
