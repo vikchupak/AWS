@@ -40,7 +40,7 @@
   - KMS sends both the original DEK(plaintext DEK) + the encrypted DEK to the client/server
   - Client/server uses the plaintext DEK to encrypt the file
     - After encryption, the plaintext DEK is discarded from memory
-    - **The encrypted DEK** is stored alongside the encrypted file as metadata
+    - **The encrypted DEK** is stored alongside the encrypted file as metadata (x-amz-meta-x-amz-key) in Amazon S3
 - Download/Decrypt
   - You want to decrypt a file
   - You have
