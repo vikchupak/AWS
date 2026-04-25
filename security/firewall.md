@@ -1,4 +1,4 @@
-# Firewall
+<img width="3340" height="1866" alt="image" src="https://github.com/user-attachments/assets/d179f692-ceb5-459b-be0d-b82b531c5782" /># Firewall
 
 Useful
 - [ec2-subnet-vpc firewalls](https://github.com/vikchupak/AWS/blob/main/network/network.md#firewall)
@@ -9,6 +9,12 @@ Useful
 - [AWS Network Firewall](https://aws.amazon.com/network-firewall/)
   - Protects your VPC network traffic (Layer 3–4)
   - Sits inside your VPC, typically in a dedicated firewall subnet
+    - You create a firewall endpoint in specific subnets (usually dedicated “firewall subnets”)
+    - Then you route traffic through those endpoints using route tables
+    - Internet → VPC → (routed via route table to) Firewall (endpoint) → resources
+      - Firewall inspects traffic
+      - Traffic continues to resources
+  - Stateful
   <img width="3340" height="1866" alt="image" src="https://github.com/user-attachments/assets/f4eb1099-ac3b-47a1-a5b9-757679b5d35d" />
 
 - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
