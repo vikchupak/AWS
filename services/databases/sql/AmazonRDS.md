@@ -3,6 +3,7 @@
 - Primary. Writes/reads
 - Standby. **No reads and no write instance**. Synchronous sync between Primary and Standby. Automatic Failover.
   - It is active and running, but not reachable/visible for users
+  - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec). So there is about 2 min downtime in case of the Primary failure.
 - Replica. Reads only. Async sync between Primary and Replica
 
 ---
@@ -29,7 +30,7 @@
     - **Native Db2**
   - For HA - stay available with minimal downtime in case of failover due to **Automatic Failover**
     - The canonical name record (CNAME) is switched from the primary to standby instance
-    - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec)
+    - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec). So there is about 2 min downtime
   - Synchronous replication
 - **[Amazon RDS Multi-AZ DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)**
   - Uses 1 primary + 2 replicas only
