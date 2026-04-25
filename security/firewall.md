@@ -9,6 +9,8 @@ Useful
 - [AWS Network Firewall](https://aws.amazon.com/network-firewall/)
   - Protects your VPC network traffic (Layer 3–4)
   - Sits inside your VPC, typically in a dedicated firewall subnet
+  <img width="3340" height="1866" alt="image" src="https://github.com/user-attachments/assets/f4eb1099-ac3b-47a1-a5b9-757679b5d35d" />
+
 - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
   <img width="1265" height="714" alt="image" src="https://github.com/user-attachments/assets/c7622976-a94b-4f65-8112-f766f61d7624" />
   - Protects web applications (Layer 7)
