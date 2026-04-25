@@ -5,18 +5,30 @@
 
 ---
 
-- Upload/Encrypt
-  - Client asks KMS for DEK + Encrypted DEK
-  - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3
-- Download/Decrypt
-  - Client gets a object from S3. Extracts encrypted DEK from object metadata
-    - Asks KMS to decrypt DEK and send it back
-    - Client uses DEK to decrypt the object
+- **CSE using KMS key (uses AWS Key Management Service as master key source)**
+  - Upload/Encrypt
+    - Client asks KMS for DEK + Encrypted DEK
+    - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encrypted data to S3
+  - Download/Decrypt
+    - Client gets a object from S3. Extracts encrypted DEK from object metadata
+      - Asks KMS to decrypt DEK and send it back
+      - Client uses DEK to decrypt the object
 
----
-  
-- AWS KMS optionally generates CMK and DEK keys for you(only DEK is sent to client). CMK stored on AWS side.
-- We can generate CMKs youself locally(without KMS), then we have to store and manage CMK on client side.
+- **CSE using client-side master key (no AWS Key Management Service involved)**
+  - We can generate CMKs youself locally(without KMS), then we have to store and manage CMK on client side.
+  - Upload/Encrypt
+    - Client generates (once) the client-side master key
+      - Via crypto library (e.g., AES-256 key) or similar
+      - Stored in
+        - HSM
+        - Secure vault
+    - Client generates a random DEK locally using the Amazon S3 encryption client or similar
+    - Client encrypts DEK using the client-side master key
+    - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3
+  - Download/Decrypt
+    - Client gets a object from S3. Extracts encrypted DEK from object metadata
+      - Uses client-side the master key to decrypt DEK
+      - Client uses DEK to decrypt the object
 
 # S3 Server-Side Encription (SSE)
 
