@@ -22,9 +22,9 @@
       - Stored in
         - HSM
         - Secure vault
-    - Client generates a random DEK locally using the Amazon S3 encryption client or similar
-    - Client encrypts DEK using the client-side master key
-    - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3
+    - Client generates a random DEK locally using **the Amazon S3 encryption client**
+    - Client encrypts the DEK using the client-side master key (using **the Amazon S3 encryption client**)
+    - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encripted data to S3 (using **the Amazon S3 encryption client**)
   - Download/Decrypt
     - Client gets a object from S3. Extracts encrypted DEK from object metadata
       - Uses client-side the master key to decrypt DEK
