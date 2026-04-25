@@ -1,4 +1,4 @@
-<img width="3340" height="1866" alt="image" src="https://github.com/user-attachments/assets/d179f692-ceb5-459b-be0d-b82b531c5782" /># Firewall
+# Firewall
 
 Useful
 - [ec2-subnet-vpc firewalls](https://github.com/vikchupak/AWS/blob/main/network/network.md#firewall)
