@@ -11,9 +11,12 @@
   - Stored inside HSM
   - Managed by HSM
   - Never leaves HSM
-- KMS key
-  - Logical resource(object) stored in AWS KMS that references the key material stored in HSMs
-  - Created and managed by KMS
+- KMS key (Sometimes called `Master key`)
+  - On AWS side
+    - Logical resource(object) stored in AWS KMS that references the key material stored in HSMs
+    - Created and managed by KMS
+  - On client side
+    - Can be created on client side using the **Amazon S3 encryption client**
 - Data Encryption Key (DEK)
   - Cryptographic key to encrypt/decrypt data
   - "Original" DEK - Plaintext DEK
