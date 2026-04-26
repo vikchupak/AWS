@@ -6,10 +6,8 @@
 - VPC Gateway Endpoint
   - A private connection between your VPC and **`specific PUBLIC AWS services`** — **without sending traffic over the public internet**.
     - Currently, Gateway Endpoints support only two services:
-      - Amazon S3 (public service)
-        - Sometimes named (S3 gateway endpoint)
-      - Amazon DynamoDB (public service)
-        - Sometimes named (DynamoDB gateway endpoint)
+      - Amazon S3 (public service). Name **S3 gateway endpoint**
+      - Amazon DynamoDB (public service). Name **DynamoDB gateway endpoint**
 
 Example:
 - A lambda can be deployed in private subnet and need access to public resources. VPC endpoints or NAT Gateway can help.
