@@ -88,6 +88,23 @@ Protects against DDoS attacks
   - Containers
 - Provides a **report of findings** ordered by priority
 
+# AWS Artifact
+
+- [AWS Artifact](https://aws.amazon.com/artifact/)
+- Provides on-demand access to AWS compliance reports and agreements
+- Used for audit and compliance documentation, not for securing resources
+- Includes:
+    - Compliance Reports
+      - (SOC 1/2/3, ISO, PCI, etc.)
+      - Evidence that AWS meets security standards
+    - Agreements
+      - (e.g., BAA, NDA with AWS)
+- Helps with:
+  - Audits
+  - Regulatory requirements
+  - Internal compliance reviews
+- Does NOT monitor, detect, or protect resources
+
 # Amazon Guardduty
 
 - [Amazon Guardduty](https://aws.amazon.com/guardduty/)
