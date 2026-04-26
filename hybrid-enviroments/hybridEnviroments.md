@@ -184,17 +184,17 @@ Let on-premises applications use file storage while the files are stored in Amaz
   - Runs within VPC
 - Some AWS services require a directory e.g. Amazon Workspaces
 - AD Modes
-  - Simple AD
+  - **Simple AD**
     - Uses SAMBA 4
     - AD location is AWS only
     - NOT designed to integrate with on-prem AD
-  - AWS Managed Microsoft AD (Microsoft AD)
+  - **AWS Managed Microsoft AD (Microsoft AD)**
     - Uses Microsoft AD DS
     - Primary AD location is AWS
     - Can be integrated with on-prem AD (Hybrid Extension)
       - You have 2 ADs, one in AWS, the other on-prem that "trust" each other
         - Connection using VPN or DX
-  - AD Connector (Proxy Model)
+  - **AD Connector (Proxy Model)**
     - NOT a real AD
     - AD location is on-prem only
     - Connect existing on-prem AD to AWS services
