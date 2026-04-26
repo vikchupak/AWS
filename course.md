@@ -241,6 +241,9 @@
 19. NETWORK STORAGE & DATA LIFECYCLE
     - [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs/)
     - [AWS Backup](https://aws.amazon.com/backup/)
+      - Centralized, policy-based backup service across **multiple AWS resources**
+    - [Amazon Data Lifecycle Manager (Amazon DLM)](https://aws.amazon.com/ebs/data-lifecycle-manager/)
+      - Automate the creation of **EBS snapshots only**
 20. HA & SCALING
     - Elastic Load Balancers (ELB)
     - Launch Templates (LT) & Auto Scaling Groups (ASG)
