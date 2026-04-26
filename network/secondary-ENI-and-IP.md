@@ -1,8 +1,9 @@
 # EC2 & ENI
 
 - EC2 awlays has one primary ENI
-  - ENI always has one primary private IP
+  - ENI **always** has one primary private IP
   - ENI can have optional secondary private IPs
+  - ENI can have optional public IP (temp or Elastic IP)
 - EC2 can have optional secondary ENIs
 
 ```txt
