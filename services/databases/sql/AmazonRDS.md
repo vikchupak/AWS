@@ -8,7 +8,7 @@
 
 ---
 
-# RDS NOT public AWS service
+# RDS is NOT public AWS service
 
 - All RDS databases are VPC-based, not public AWS services like S3 or DynamoDB (**including Aurora Serverless**)
 - Aurora always lives inside your VPC, and therefore inside subnets (private or public)
