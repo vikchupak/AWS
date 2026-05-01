@@ -1,0 +1,7 @@
+| Service                           | Instance visibility in console UI | Scaling type                  | Writes                 |
+| --------------------------------- | ------------------- | ----------------------------- | ---------------------- |
+| Amazon RDS                    | visible             | 1 writer, manual scaling of read replicas              | single region          |
+| Amazon Aurora provisioned     | visible             | 1 writer, horizontal autoscaling of read replicas | single region          |
+| Amazon Aurora Serverless v2   | visible             | 1 writer, vertical autoscaling of read replicas         | single region          |
+| Amazon Aurora Global Database | visible             | 1 writter in primary region, horizontal autoscaling of read replicas across primary/secondary regions | single region |
+| Amazon Aurora DSQL | not visible | Fully serverless distributed SQL, all nodes can handle reads/writes with coordinated transactions, AWS scales compute **invisibly** | no single writer; any node can accept writes with distributed coordination |
