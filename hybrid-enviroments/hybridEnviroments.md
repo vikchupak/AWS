@@ -53,6 +53,16 @@
       - **Private VIF** provides access to AWS Private VPC resources
   - VPN encryption. To End-to-End encrypt DX, Public VIF + VGW/TGW public endpoints with IPsec (VPN) setup is used
 
+## Limitations combining VPC peering with DX or VPN
+
+<img width="436" height="218" alt="image" src="https://github.com/user-attachments/assets/a5139134-4dc2-45d3-b53f-8892d9f37f9e" />
+
+- VPC peering connection does not support edge-to-edge routing. This means that if either VPC in a peering has one of the following connections, you cannot extend the peering with "additional" connection
+  - A VPN connection or an AWS Direct Connect connection to a corporate network
+  - An Internet connection through an Internet gateway
+  - An Internet connection in a private subnet through a NAT device
+  - A gateway VPC endpoint to an AWS service; for example, an endpoint to Amazon S3
+
 ## Transit Gateway (TGW)
 
 - **Network Transit Hub** to connect `VPCs to VPCs` and `VPCs to On-promises networks`
