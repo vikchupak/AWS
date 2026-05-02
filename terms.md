@@ -7,9 +7,10 @@
 - Globally Resilient
   - A service remain functioning despite a region outage
 - Regional Resilient
-  - A service runs its resources in one region
+  - A service operates in one region
   - A service remain functioning despite a AZ outage
 - AZ resilient
+  - A service operates in one AZ
   - If AZ fails, the service failes
 
 See [11:55](https://learn.cantrill.io/courses/1820301/lectures/41301618)
