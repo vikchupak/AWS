@@ -11,3 +11,5 @@
   - A service remain functioning despite a AZ outage
 - AZ resilient
   - If AZ fails, the service failes
+
+See [11:55](https://learn.cantrill.io/courses/1820301/lectures/41301618)
