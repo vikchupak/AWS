@@ -46,6 +46,9 @@
   - Attached to subnets
   - NACL is always associated with a subnet, not directly with the VPC
   - Stateless
+    - Example, allow https
+      - Allow inbount on 443 port
+      - Allow outbount on (client ephemeral) 32768–65535 port range
 - VPC level (L3-L4) via **AWS Network Firewall** (L3–L4)
     - Deployed at VPC level (via firewall subnets)
     - Centralized traffic inspection
