@@ -5,5 +5,9 @@
 | **Zonal**    | Tied to one AZ       | EBS volume           |
 
 - Globally Resilient
+  - A service remain functioning despite a region outage
 - Regional Resilient
+  - A service runs its resources in one region
+  - A service remain functioning despite a AZ outage
 - AZ resilient
+  - If AZ fails, the service failes
