@@ -44,6 +44,7 @@
   - Stateful
 - Subnet level via **NACL (or simply ACL)** (L3–L4)
   - Attached to subnets
+  - NACL is always associated with a subnet, not directly with the VPC
   - Stateless
 - VPC level (L3-L4) via **AWS Network Firewall** (L3–L4)
     - Deployed at VPC level (via firewall subnets)
