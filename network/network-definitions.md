@@ -42,7 +42,7 @@
 - EC2 instance level via **security group** (L3–L4)
   - Attached to ENIs (instance level)
   - Stateful
-- Subnet level via **NACL** (L3–L4)
+- Subnet level via **NACL (or simply ACL)** (L3–L4)
   - Attached to subnets
   - Stateless
 - VPC level (L3-L4) via **AWS Network Firewall** (L3–L4)
