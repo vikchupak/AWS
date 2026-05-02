@@ -134,7 +134,7 @@ Instance compute capacity
 - Dedicated Hosts
   - Pay for hosts, not instances
   - On-demand or reserved
-  - You have full access/contrlo over host
+  - You have full access/control over host
 - Dedicated Instances
   - Pay additional/extra fee for no other customers instances to use the same host as you. Pay for instances.
   - On-demand or reserved
