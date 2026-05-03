@@ -1,5 +1,7 @@
 # Private distributions/behaviours
 
+**CloudFront distribution/behaviour becomes private when it requires signed urls to be accessed**
+
 - Configure only authorized users can access "protected/private" content via CF
   - Athority is checked by request signature (url or cookies)
     - Ways to sign requersts
