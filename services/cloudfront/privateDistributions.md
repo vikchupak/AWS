@@ -7,5 +7,5 @@
     - Ways to sign requersts
       - "Trusted key group" - Modern Recommended
       - "CloudFront key" with "Trusted Signer" account - Legacy
-    - **CF distribution/behaviour validates the request signature**
+    - **CF distribution/behaviour validates the request url signature**
 - Either whole distribution or only some behaviours can be private
