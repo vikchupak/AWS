@@ -1,4 +1,4 @@
-# CloudFront with S3. Private access to S3
+# CloudFront & S3. Private access to S3
 
 1. Restrict direct access to Amazon S3
    - Block all public access
