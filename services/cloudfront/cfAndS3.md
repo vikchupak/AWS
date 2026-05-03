@@ -1,5 +1,7 @@
 # CloudFront & S3. Private access to S3
 
+- See [what a private distributions is](https://github.com/vikchupak/AWS/blob/main/services/cloudfront/privateDistributions.md)
+
 1. Restrict direct access to Amazon S3
    - Block all public access
    - Remove any public bucket policies
