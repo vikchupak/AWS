@@ -12,7 +12,7 @@
 3. Restrict end users (Signed URLs / Cookies)
    - **Control who can access CloudFront**
      - Use signed URLs or signed cookies for CloudFront
-     - Only your specific client gets valid access to CloudFront
+     - **Only your specific client gets access to CloudFront**
 
 ### Full flow
 
