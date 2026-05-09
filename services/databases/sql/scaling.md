@@ -1,6 +1,6 @@
 | Service                           | Instance visibility in console UI | Scaling type                  | Writes                 | Cluster placement |
 | --------------------------------- | ------------------- | ----------------------------- | ---------------------- | --- |
-| Amazon RDS                    | visible             | 1 writer, manual scaling of read replicas              | single writer         | single region |
+| Amazon RDS                    | visible             | 1 writer, only manual scaling of read replicas              | single writer         | single region |
 | Amazon Aurora (provisioned) cluster | visible             | 1 writer, no default horizontal autoscaling of read replicas. Can be configured using Auto scaling policy | single writer          | single region |
 | Amazon Aurora Serverless v2   | visible             | 1 writer, vertical autoscaling of read replicas         | single writer        | single region |
 | Amazon Aurora Global Database | visible             | 1 writter in primary region, horizontal autoscaling of read replicas across primary/secondary regions | single writer  | multi-region | 
