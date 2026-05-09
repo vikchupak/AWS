@@ -65,7 +65,7 @@
 
 ## Transit Gateway (TGW)
 
-- **Network Transit Hub** to connect `VPCs to VPCs` and `VPCs to On-promises networks`
+- **Network Transit Hub** to connect `VPCs to VPCs` and **`VPCs to On-promises networks`**
   - TGW vs VPC Peering. TGW supports `Transitive Routing` unlike `VPC Peering`
 
 | Feature | VPC Peering | Transit Gateway |
