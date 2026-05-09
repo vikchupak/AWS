@@ -83,17 +83,36 @@
 
 | VPC Peering | Transit Gateway |
 |------------------------|------------------------|
-| <img width="1610" height="776" alt="image" src="https://github.com/user-attachments/assets/b708d74a-f367-4999-81d9-bdfe5ad93ffa" /> | <img width="1614" height="780" alt="image" src="https://github.com/user-attachments/assets/2a3b900a-0f4e-4189-a8e5-6ac505db3c49" /> |
+| <img width="1610" height="776" alt="image" src="https://github.com/user-attachments/assets/b708d74a-f367-4999-81d9-bdfe5ad93ffa" /> | <img width="1614" height="780" alt="image" src="https://github.com/user-attachments/assets/4367d047-4b1f-4f64-abd5-22a900f30520" /> |
+
+### DX connection
+
+On-prem -> Direct Connect -> Transit (Virtual Interface) VIF -> DX Gateway -> TGW -> VPC
+
+- A Transit VIF is a Direct Connect virtual interface that connects your on-prem network directly to a TGW
+
+### Site-to-Site VPN connection
+
+On-prem → Customer Gateway → Internet → VPN → TGW → VPC
+
+### TGW attachment model
 
 - Attachment types to other networks
-  - VPC
-  - Site-to-Site VPN
-  - Direct Connect (DX) Gateway
+  - VPC Attachment
+    - Between TGW ↔ VPC
+    - Connects a VPC to the Transit Gateway
+  - **Site-to-Site VPN Attachment**
+    - Between On-prem ↔ TGW over internet
+    - Encrypted IPsec tunnel to your Customer Gateway
+  - **Direct Connect (DX) Gateway Attachment**
+    - Between AWS Direct Connect Gateway ↔ TGW
+    - Connects Direct Connect (via Transit VIF) into TGW
 - Peer cross regions/accounts
-
----
-
-VPC → TGW → Transit (Virtual Interface) VIF → Direct Connect → on-prem
+  - Peering Attachment (TGW Peering)
+    - Between TGW ↔ TGW
+    - Connects Transit Gateways
+      - Across regions
+      - Across accounts
 
 ## AWS Storage Gateway
 
