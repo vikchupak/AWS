@@ -87,13 +87,13 @@
 
 ### DX connection
 
-On-prem -> Direct Connect -> Transit (Virtual Interface) VIF -> DX Gateway -> TGW -> VPC
+On-prem -> **Direct Connect** -> **Transit (Virtual Interface) VIF** -> **DX Gateway** -> TGW -> VPC
 
 - A Transit VIF is a Direct Connect virtual interface that connects your on-prem network directly to a TGW
 
 ### Site-to-Site VPN connection
 
-On-prem → Customer Gateway → Internet → VPN → TGW → VPC
+On-prem → Customer Gateway → Internet(encrypted data) → AWS Site-to-Site VPN Endpoint → TGW → VPC
 
 ### TGW attachment model
 
