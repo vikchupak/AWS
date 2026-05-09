@@ -91,6 +91,10 @@
   - Direct Connect (DX) Gateway
 - Peer cross regions/accounts
 
+---
+
+VPC → TGW → Transit (Virtual Interface) VIF → Direct Connect → on-prem
+
 ## AWS Storage Gateway
 
 - AWS hybrid storage service
