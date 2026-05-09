@@ -65,8 +65,11 @@
 
 ## Transit Gateway (TGW)
 
-- **Network Transit Hub** to connect `VPCs to VPCs` and `**VPCs to On-promises networks**`
-  - TGW vs VPC Peering. TGW supports `Transitive Routing` unlike `VPC Peering`
+- TGW is a **Network Transit Hub** to connect `VPCs to VPCs` and `**VPCs to on-promises networks**`
+  - Connects to on-premises networks via VPN or AWS Direct Connect
+  - TGW supports `Transitive Routing` unlike `VPC Peering`
+  - VPC Peering works only between AWS VPCs
+    - **Cannot connect to on-premises networks**
 
 | Feature | VPC Peering | Transit Gateway |
 | --- | --- | --- |
