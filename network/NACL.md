@@ -1,0 +1,7 @@
+<img width="1880" height="642" alt="image" src="https://github.com/user-attachments/assets/dc079152-d37a-40bc-924c-dc77586415fc" />
+
+When evaluating the incoming request from the IP 110.238.109.37 to an EC2 instance in the private subnet, the Network ACL (NACL) processes rules sequentially, starting from the lowest rule number. NACLs are stateless, meaning they apply each rule independently and in the order defined, unlike stateful security groups that track connection states. In this case, Rule #100, which allows all traffic, is evaluated before Rule #101, which denies TCP port 4000 traffic from 110.238.109.37. Since the request matches Rule #100, it will be allowed immediately, and Rule #101 will not be evaluated.
+
+The default deny-all rule (*) does not come into play here because the request was already processed by an earlier rule. This behavior aligns with AWS’s NACL best practices, where explicit allow rules should be placed after any specific deny rules to ensure proper traffic management. The allow-all rule in Rule #100 takes precedence as it is evaluated first.
+
+In summary, NACLs enforce a strict first-match policy, meaning the request from 110.238.109.37 is allowed due to Rule #100, which demonstrates how explicit allow rules can override more restrictive ones when placed earlier in the rule set. This ensures predictable traffic control, which is critical for securing private subnets within a VPC.
