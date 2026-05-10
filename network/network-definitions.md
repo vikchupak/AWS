@@ -49,6 +49,7 @@
     - Example, allow https
       - Allow inbount on 443 port
       - Allow outbount on (client ephemeral) 32768–65535 port range
+    - [Rules](https://github.com/vikchupak/AWS/blob/main/network/NACL.md)
 - VPC level (L3-L4) via **AWS Network Firewall** (L3–L4)
     - Deployed at VPC level (via firewall subnets)
     - Centralized traffic inspection
