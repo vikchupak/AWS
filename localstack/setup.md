@@ -34,7 +34,7 @@ aws s3 mb s3://test-bucket --profile localstack
 
 List S3 buckets
 ```bash
-aws s3 ls --profile localstack 
+aws s3 ls --profile localstack
 ```
 
 Upload a file
@@ -42,9 +42,16 @@ Upload a file
 aws s3 cp file.png s3://test-bucket/ --profile localstack
 ```
 
+Download a file
+```bash
+aws s3 cp s3://test-bucket/videos/test_via_bull_board.mp4 . --profile localstack
+```
+
 List S3 bucket objects
 ```bash
 aws s3 ls s3://test-bucket --profile localstack
+# or
+aws s3 ls s3://test-bucket --recursive --profile localstack
 ```
 
 View the file
