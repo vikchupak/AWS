@@ -28,8 +28,7 @@
 # Roles
 
 - A role is an identity
-- Role contains Policies
-- All Roles use Identity-based policies, not Resource policies
+- All Roles contain Identity-based policies, not Resource policies
 - A role has two different policy types
   - Identity-based policies
   - **A Trust policy (always)**
