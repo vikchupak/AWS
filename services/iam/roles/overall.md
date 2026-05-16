@@ -29,10 +29,10 @@
 
 - A role is an identity
 - All Roles contain Identity-based policies, not Resource policies
+- On a resource, you define a resource policy that allows **the ROLE(identity as Principal)** desired actions
 - A role has two different policy types
   - Identity-based policies
   - **A Trust policy (always)**
-- On a resource, you define a resource policy that allows **the ROLE(identity as Principal)** desired actions
 
 ---
 
