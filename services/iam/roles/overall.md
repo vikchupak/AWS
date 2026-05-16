@@ -33,6 +33,7 @@
 - A role has two different policy types
   - Identity-based policies
   - **A Trust policy (always)**
+- On a resource, you define a resource policy that allows **the ROLE(identity as Principal)** desired actions
 
 ---
 
