@@ -269,12 +269,16 @@
            - The Data Catalog stores metadata (schemas, table definitions, locations)
              - It does not store the actual data
            - Once cataloged, your data is immediately searchable, queryable, and available for ETL
+        - Job bookmarking
+          - A mechanism that allows AWS Glue to keep track of where a job is left off in case it gets interrupted or fails for any reason. This way, when the job is restarted, it can pick up from where it left off instead of starting from scratch
+          - Job bookmarking state is stored internally by AWS Glue in a managed, service-owned metadata store—not in your S3 bucket, not in your job code, and not in a database you can directly access
         - The actual data usually goes to
           - Amazon S3 (data lake)
           - Amazon Redshift
           - RDS / Aurora
           - DynamoDB
           - Other data stores
+       <img width="1180" height="570" alt="image" src="https://github.com/user-attachments/assets/dda6dc04-0765-412c-bc8b-357cb78be078" />
     - [Amazon AppFlow](https://aws.amazon.com/appflow/)
       - Fully-managed integration service
       - **Transfer/exchange data between Software-as-a-Service (SaaS) applications** like Salesforce, SAP, Zendesk, Slack, ServiceNow **and AWS services** like Amazon S3 and Amazon Redshift, in just a few clicks
