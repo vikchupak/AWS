@@ -13,7 +13,7 @@
   - **What actions this identity can perform on which resources**
     - "What can I access"
 - Trust policy (Resource policy subtype)
-  - Only for Roles
+  - Attached to a role only
   - Has **Principal**, but no Resource
     - No Resource because the role is alredy the resource
   - Who can assume this role
