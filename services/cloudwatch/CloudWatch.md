@@ -33,7 +33,9 @@
 | **Cost**                 | Free                                      | Extra cost                                         | Extra cost (per EC2 or per on-prem usage)                    |
 | **Best Use Case**        | Basic monitoring / alarms for CPU/network | More granular EC2 metrics / scaling / short spikes | Full OS monitoring, disk %, memory, app logs, hybrid servers |
 
-### RDS Default Metrics vs (RDS) Enhanced Monitoring. CloudWatch Agent is NOT for DRS
+### RDS Default Metrics vs (RDS) Enhanced Monitoring
+
+- **CloudWatch Agent is NOT used/installable in DRS - but monitoring logs are sent to CloudWatch**
 
 | Feature / Metric            | 🟢 RDS Default Metrics                  | 🔵 RDS Enhanced Monitoring                                                     |
 | --------------------------- | --------------------------------------- | ------------------------------------------------------------------------------ |
