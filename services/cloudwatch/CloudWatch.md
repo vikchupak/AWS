@@ -35,7 +35,7 @@
 
 ### RDS Default Metrics vs (RDS) Enhanced Monitoring
 
-- **CloudWatch Agent is NOT used/installable in DRS - but monitoring logs are sent to CloudWatch**
+- **CloudWatch Agent is NOT used/installable in DRS - but monitoring logs are sent to CloudWatch by AWS**
 
 | Feature / Metric            | 🟢 RDS Default Metrics                  | 🔵 RDS Enhanced Monitoring                                                     |
 | --------------------------- | --------------------------------------- | ------------------------------------------------------------------------------ |
