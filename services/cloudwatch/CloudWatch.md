@@ -12,7 +12,7 @@
 
 # CloudWatch Monitiring
 
-### EC2 Basic Monitoring vs Detailed Monitoring vs CloudWatch Agent
+### !!!EC2!!! Basic Monitoring vs Detailed Monitoring vs CloudWatch Agent
 
 | Feature / Metric         | 🟢 EC2 Basic Monitoring                   | 🔵 EC2 Detailed Monitoring                         | ⚡ CloudWatch Agent                                           |
 | ------------------------ | ----------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------ |
