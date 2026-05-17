@@ -1,6 +1,6 @@
 # Lambda@edge
 
-- Lambda@edge - **lightweight** Lambda at cloudfront **edge locations**
+- Lambda@edge - **lightweight** Lambda at **cloudfront edge locations**
 - Used to adjust data between viewer & origin
 - Can be run
   - After CF receives a request from a viewer
