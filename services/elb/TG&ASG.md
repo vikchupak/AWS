@@ -55,8 +55,8 @@
 - Manual Scaling - Manually adjust desired capacity
 - Scheduled Scaling - Time based adjustments
 - Health Check Replacements (Self-healing)  - maintaining the desired number of health servers
-- Dynamic Scaling - reactive scaling based on `Scaling Policies`
-- Predictive Scaling - proactive
+- Dynamic Scaling - **reactive** scaling based on `Dynamic Scaling Policies`
+- Predictive Scaling - **proactive** based on `Predictive scaling Policy`
   - Uses Machine Learning to look at your historical traffic patterns and schedules scaling actions before the traffic actually arrives
   - Only scale-out. No scale in.
   - To scale-in, use in combination with Dynamic Scaling -> Target Tracking
@@ -72,6 +72,8 @@
     <img width="290" height="126" alt="image" src="https://github.com/user-attachments/assets/e6de2206-08d4-44e2-a369-8da7c1cd7b36" />
   - Target Tracking (recommended)
     - You define the desired metric value and ASG calcs everything automatically
+- Predictive scaling
+  - Uses machine learning to predict capacity requirements based on historical data from CloudWatch
 
 # Cooldown
 
