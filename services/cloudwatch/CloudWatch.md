@@ -57,9 +57,7 @@
 | **Extra Cost**              | ❌                                       | ✅                                                                              |
 | **Best Use Case**           | Standard DB monitoring, alarms, scaling | Performance troubleshooting, OS-level visibility, identifying top processes    |
 
-# CloudWatch Logs
-
-### EC2 vs Container Logs
+# CloudWatch Logs per service
 
 | Environment / Service       | Need CloudWatch Agent? | Alternative / Notes                                                            |
 | --------------------------- | ---------------------- | ------------------------------------------------------------------------------ |
