@@ -40,7 +40,7 @@
 | **Official Name**           | RDS Metrics / Default Metrics           | Enhanced Monitoring                                                            |
 | **Default Enabled?**        | ✅ Yes                                   | ❌ No, must enable                                                              |
 | **Metric Frequency**        | 1 minute (some engines)                 | 1 second – 60 seconds                                                          |
-| **Data Source**             | Hypervisor                              | OS-level (agent inside DB)                                                     |
+| **Data Source**             | **Hypervisor**                              | **OS-level (agent inside DB)**                                                     |
 | **CPU Utilization**         | ✅ Aggregated at instance level          | ✅ Per-process CPU; threads nested under parent                                 |
 | **Memory Usage**            | ✅ FreeableMemory (aggregated)           | ✅ Detailed per-process memory                                                  |
 | **Disk Usage / IOPS**       | ✅ Aggregated                            | ✅ OS-level, per-volume                                                         |
