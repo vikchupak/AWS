@@ -12,3 +12,8 @@
   - Exeption - CloudFront with S3 origin. **S3** origins can be in different regions
     - CloudFront is global - always in `us-east-1` region
     - The CloudFront distribution "adds" its certs to edge locations in differernt regions
+
+### Store SSL/TLS certificates
+
+- In AWS Certificate Manager
+- AWS IAM certificate store (legacy)
