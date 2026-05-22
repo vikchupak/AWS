@@ -13,6 +13,10 @@
     - Emails, Phone numbers, Credit card numbers
 - Use pre-trained or custom models
 
+### Amazon Comprehend Medical
+
+Amazon Comprehend Medical is a natural language processing service that makes it easy to use machine learning to extract relevant medical information from unstructured text. Using Amazon Comprehend Medical, you can quickly and accurately gather information, such as medical conditions, medication, dosage, strength, and frequency from a variety of sources, like doctors’ notes, clinical trial reports, and patient health records.
+
 # Amazon Kendra
 
 - [Amazon Kendra](https://aws.amazon.com/kendra/)
