@@ -16,4 +16,4 @@
 ### Store SSL/TLS certificates
 
 - In AWS Certificate Manager
-- AWS IAM certificate store (legacy)
+- In AWS IAM certificate store (legacy)
