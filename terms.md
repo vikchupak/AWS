@@ -13,6 +13,12 @@
   - A service operates in one AZ
   - If AZ fails, the service fails
 
+---
+
+- Globally Resilient = Стійкість забезпечується на глобальному рівні. (Система переживе падіння регіону, бо розгорнута в кількох).
+- Regional Resilient = Стійкість забезпечується всередині одного регіону. (Система переживе падіння однієї чи кількох AZ, але якщо впаде весь регіон — вона «помре»).
+- AZ Resilient = Стійкість обмежена однією зоною. (Якщо падає компонента всередині AZ, сервіс може вистояти, але падіння самої AZ його знищить).
+
 See [11:55](https://learn.cantrill.io/courses/1820301/lectures/41301618)
 
 ### Fault Tolerance (FT) vs High Availability (HA) vs Disaster Recovery (DR)
