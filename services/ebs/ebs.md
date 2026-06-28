@@ -79,7 +79,7 @@ IOPS - Input / Output Operations Per Second
 
 ---
 
-## 🐢 `HDD-based` volumes (for throughput-heavy workloads)
+## 🐢 `HDD-based` volumes (sometimes called Magnetic volumes) (for throughput-heavy workloads)
 
 ### 🔸 st1 – Standard Throughput-optimized HDD
 
