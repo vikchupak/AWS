@@ -79,22 +79,32 @@ IOPS - Input / Output Operations Per Second
 
 ---
 
-## 🐢 `HDD-based` volumes (sometimes called Magnetic volumes) (for throughput-heavy workloads)
+## 🐢 `HDD-based` volumes (for throughput-heavy workloads)
 
-### 🔸 st1 – Standard Throughput-optimized HDD
+A magnetic volume is a volume physically backed by traditional, spinning magnetic hard disk drives (HDDs) rather than solid-state drives (SSDs)
 
-* **A low-cost HDD designed for `frequently accessed`, throughput-intensive workloads**
-* Designed for large, sequential workloads
-* Max throughput: 500 MB/s
-* Not for boot volumes
+### 🔸 Magnetic - Standard (Legacy)
+
+- This is the old generation. It is slow (100 IOPS), small (max 1 TiB), and uses old architectural baselines. It is rarely used today because gp3 or sc1 completely outclass it in value.
+
+### 🔸 st1 – Standard `Throughput-optimized` HDD
+
+- st1 stands for **S**tandard **T**hroughput, gen 1
+- Teclically magnetic
+- **A low-cost HDD designed for `frequently accessed`, throughput-intensive workloads**
+- Designed for large, **sequential** workloads
+- Max throughput: 500 MB/s
+- Not for boot volumes
   ✅ Ideal for big data, log processing, streaming
 
 ### 🔸 sc1 – Standard Cold HDD
 
-* **The lowest-cost HDD design for `less frequently accessed` workloads.**
-* Lowest cost
-* For infrequently accessed data
-* Max throughput: 250 MB/s
+- sc1 stands for **S**tandard **C**old, gen 1
+- Teclically magnetic
+- **The lowest-cost HDD design for `less frequently accessed` workloads.**
+- Lowest cost
+- For **infrequently** accessed data
+- Max throughput: 250 MB/s
   ✅ Archives, rarely accessed data
 
 ---
