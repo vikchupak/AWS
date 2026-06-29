@@ -39,7 +39,8 @@ Move large amount of data IN and OUT of AWS **online**
 - Cost is per 1GB for data moved
 - Encryption in-transit (TLS)
 - Architecture
-  - Run DataSync Agent on-prem
+  - Run DataSync **Agent** on-prem
+  - [Exam question](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/lessons/practice-exams-review-mode-4/quizzes/aws-certified-solutions-architect-associate-practice-exam-review-mode-set-4/)
   - Use NFS or SMB protocol to connect to on-prem storage
   - On-prem DataSync Agent connects to DataSync Endpoint in AWS
   - Connection. Storage (on-prem) -> NFS or SMB protocol -> DataSync Agent (on-prem) -> TLS -> DataSync Endpoint (AWS) -> EFS, FSx, or S3 (AWS)
