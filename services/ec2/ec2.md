@@ -43,6 +43,11 @@
     - Storage Type Local HDD
     - Best Used For Massively parallel processing (MPP), data warehousing, log processing
 - High-performance computing (HPC) optimized
+  - Compute-Optimized instances on steroids
+  - Instances are combined in clusters working together as a single supercomputer
+  - Optimized For Massively parallel workloads, ultra-high inter-instance network throughput, and high memory bandwidth per core
+    - Optimized CPU & Memory Bandwidth: They use top-tier processors and have massive memory bandwidth per core so the CPU is never waiting around for data
+    - Ultra-Fast Cluster Communication (EFA): They come with native support for Elastic Fabric Adapter (EFA)
 
 <img width="976" height="834" alt="image" src="https://github.com/user-attachments/assets/fd3f6cc9-615b-45b4-888b-d37f16610b93" />
 
