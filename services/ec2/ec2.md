@@ -27,9 +27,21 @@
 - [Doc](https://aws.amazon.com/ec2/instance-types/)
 - General purpose
 - Compute optimized
+  - Optimized CPU
 - Memory optimized
+  - Optimized RAM
 - Accelerated computing
+  - Optimized GPU
 - Storage optimized
+  - Optimized **local store**
+  - I3 / I3en
+    - Optimized For High random IOPS, high throughput
+    - Storage Type Local NVMe SSD
+    - Best Used For NoSQL databases (Cassandra, MongoDB), transactional databases
+  - D3 / D3en
+    - Optimized For High sequential write, massive capacity
+    - Storage Type Local HDD
+    - Best Used For Massively parallel processing (MPP), data warehousing, log processing
 - High-performance computing (HPC) optimized
 
 <img width="976" height="834" alt="image" src="https://github.com/user-attachments/assets/fd3f6cc9-615b-45b4-888b-d37f16610b93" />
