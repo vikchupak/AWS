@@ -32,6 +32,8 @@
 - Storage optimized
 - High-performance computing (HPC) optimized
 
+<img width="976" height="834" alt="image" src="https://github.com/user-attachments/assets/fd3f6cc9-615b-45b4-888b-d37f16610b93" />
+
 # Amazon Machine Images (AMI)
 
 **An AMI defines**
