@@ -24,6 +24,7 @@
 
 # Instance types
 
+- [Doc](https://aws.amazon.com/ec2/instance-types/)
 - General purpose
 - Compute optimized
 - Memory optimized
