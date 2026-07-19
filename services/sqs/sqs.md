@@ -46,5 +46,16 @@
 
 - Short Polling
   - WaitTimeSeconds = 0 (Immediate)
+  - Immediate response
+  - Returns even if no messages available
+    - Causes:
+      - ❌ Many empty responses
+      - ❌ High CPU usage
 - Long Polling (recommended)
   - WaitTimeSeconds > 0 (up to 20s)
+  - Returns only when:
+    - Message arrives OR Timeout reached
+    - 👉 Reduces:
+      - Empty responses
+      - CPU usage
+      - API calls
