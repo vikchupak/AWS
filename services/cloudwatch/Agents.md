@@ -1,6 +1,7 @@
 # CloudWatch Logs agent vs Unified CloudWatch agent
 
 - CloudWatch Logs agent (legacy)
+  - Collect **logs only**
 - Unified CloudWatch agent
   - Collect **both logs and advanced metrics** with the installation and configuration of just one agent
     - Send to CloudWatch
