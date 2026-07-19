@@ -3,9 +3,23 @@
 - SQS Standard
   - Oprimazed for speed and scale, so **order is NOT guaranteed**
   - A message is delivered `at-least-once`
+    - Meaning messages might sometimes be duplicated. This can lead to situations where an order is processed more than once.
+    - The real reasons (practical)
+      - 🧩 Distributed replication
+      - SQS stores messages across multiple servers (copies).
+        - You send 1 message
+        - AWS replicates it to multiple nodes
+        - When receiving → more than one copy might be returned
+      👉 This ensures:
+        - No data loss
+        - High availability
+      - But:
+        - Can produce duplicates
+
 - SQS FIFO
   - Garanties order
   - A message is delivered `exactly-once`
+    - Ensure each message is delivered only once using deduplication and message sequencing mechanisms.
 - Pay for requests to SQS, not messages sent/pulled
 - Amazon SQS is a public service, but your queues are private by default
 
