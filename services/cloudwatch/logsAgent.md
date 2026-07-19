@@ -1,8 +1,8 @@
-# CloudWatch Logs agent vs Unified CloudWatch Logs agent
+# CloudWatch Logs agent vs Unified CloudWatch agent
 
 - CloudWatch Logs agent (legacy)
-- Unified CloudWatch Logs agent
-  - Collect both logs and advanced metrics with the installation and configuration of just one agent
+- Unified CloudWatch agent
+  - Collect **both logs and advanced metrics** with the installation and configuration of just one agent
     - Send to CloudWatch
   - The unified agent enables the collection of logs from servers running Windows Server
   - The unified agent also enables the collection of additional system metrics, for in-guest visibility
