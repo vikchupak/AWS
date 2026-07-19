@@ -72,15 +72,16 @@
 # Instance States (Lifecycle)
 
 - [Instance States Doc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceState.html)
+- [Instance State Billing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html#instance-billing-by-state)
 
-| State             | Description                                             |
-| ----------------- | ------------------------------------------------------- |
-| **pending**       | Instance is launching; resources are being provisioned. |
-| **running**       | Instance is fully launched and ready to accept traffic. |
-| **stopping**      | Stop request issued; instance is shutting down.         |
-| **stopped**       | Instance is stopped; EBS volumes persist, no CPU usage. |
-| **shutting-down** | Terminate request issued; instance is being deleted.    |
-| **terminated**    | Instance is permanently deleted; cannot be restarted.   |
+| State             | Description                                             | Compute billed |
+| ----------------- | ------------------------------------------------------- | -------------- |
+| **pending**       | Instance is launching; resources are being provisioned. | ❌ No          |
+| **running**       | Instance is fully launched and ready to accept traffic. | ✅ Yes         |
+| **stopping**      | Stop request issued; instance is shutting down.         | ❌ No          |
+| **stopped**       | Instance is stopped; EBS volumes persist, no CPU usage. | ❌ No          |
+| **shutting-down** | Terminate request issued; instance is being deleted.    | ❌ No          |
+| **terminated**    | Instance is permanently deleted; cannot be restarted.   | ❌ No          |
 
 ### Hibernate instances
 
