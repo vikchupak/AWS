@@ -85,6 +85,12 @@
 |------------------------|------------------------|
 | <img width="1610" height="776" alt="image" src="https://github.com/user-attachments/assets/b708d74a-f367-4999-81d9-bdfe5ad93ffa" /> | <img width="1614" height="780" alt="image" src="https://github.com/user-attachments/assets/4367d047-4b1f-4f64-abd5-22a900f30520" /> |
 
+### Connec transit gateway between regions
+
+To connect a Transit Gateway between AWS regions, you use inter-region peering between two Transit Gateways. It’s not automatic—you explicitly create and accept a peering attachment.
+
+<img width="685" height="551" alt="image" src="https://github.com/user-attachments/assets/50b38bc1-c361-4d68-94ad-d4d41d449d1a" />
+
 ### DX connection
 
 On-prem -> **Direct Connect** -> **Transit (Virtual Interface) VIF** -> **DX Gateway** -> TGW -> VPC
