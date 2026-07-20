@@ -1,7 +1,4 @@
-- [Launch Templates](https://github.com/vikchupak/AWS/blob/main/services/ec2/LC%26LT.md)
-- [Target Groups & Auto Scaling Groups](https://github.com/vikchupak/AWS/blob/main/services/elb/TG&ASG.md)
-
-### ASG vs ECS
+### ASG for EC2 vs ECS for containers
 
 - ECS scales containers
   - [ECS(1)](https://github.com/vikchupak/AWS/blob/main/services/eks/index.md)
@@ -18,4 +15,22 @@
       - "Serverless". AWS manages provisioning EC2s and their "horizontal scaling" for containers for you
       - Pay for what you task (containers) consume
 - ASG scales EC2 instances
+  - [Launch Templates](https://github.com/vikchupak/AWS/blob/main/services/ec2/LC%26LT.md)
+  - [Target Groups & Auto Scaling Groups](https://github.com/vikchupak/AWS/blob/main/services/elb/TG&ASG.md)
   - You define instance type
+
+### EKS
+
+- Kubernetes Horizontal Pod Autoscaler (HPA) - native core k8s pods autoscaler. It scales **pods** based on metrics collected by
+  - Kubernetes Metrics Server - an official Kubernetes add-on
+  - Prometheus + Prometheus Adapter - an external system for advanced autoscaling
+- Kubernetes Cluster Autoscaler - an official, but not core Kubernetes project. It scales **nodes**
+
+---
+
+- Karpenter - AWS node autoscaler. It replaces Kubernetes Cluster Autoscaler
+  - Why Karpenter is different (vs Cluster Autoscaler)
+    - Doesn’t rely on Auto Scaling Groups
+    - Chooses instance types dynamically
+    - Faster provisioning
+    - More flexible (spot, mixed instances, etc.)
