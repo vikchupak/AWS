@@ -25,7 +25,8 @@
   - Kubernetes Metrics Server - an official Kubernetes add-on
   - Or Prometheus + Prometheus Adapter - an external system for advanced autoscaling
 - Kubernetes Cluster Autoscaler - an official, but not core Kubernetes project. It scales **nodes**
-  - [Example](https://gitlab.com/devopsbootcamp8550504/11-aws-eks/01-02-ekswithconsole/-/blob/main/cluster-autoscaler-autodiscover.yaml?ref_type=heads)
+  - [Example1](https://gitlab.com/devopsbootcamp8550504/11-aws-eks/01-02-ekswithconsole/-/blob/main/cluster-autoscaler-autodiscover.yaml?ref_type=heads)
+  - Example2
 
 ---
 
