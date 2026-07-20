@@ -36,3 +36,7 @@
     - Chooses instance types dynamically
     - Faster provisioning
     - More flexible (spot, mixed instances, etc.)
+- ❌ Karpenter does NOT replace HPA
+- ❌ Karpenter does NOT replace Metrics Server
+- ✅ Karpenter replaces Cluster Autoscaler (node scaling)
+- ✅ Works together with HPA in real setups
