@@ -19,7 +19,7 @@
   - [Target Groups & Auto Scaling Groups](https://github.com/vikchupak/AWS/blob/main/services/elb/TG&ASG.md)
   - You define instance type
 
-### EKS
+### K8s & EKS
 
 - Kubernetes Horizontal Pod Autoscaler (HPA) - native core k8s pods autoscaler. It scales **pods** based on metrics collected by
   - Kubernetes Metrics Server - an official Kubernetes add-on
