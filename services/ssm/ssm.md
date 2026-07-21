@@ -11,3 +11,7 @@
 - Session Manager (shell access via AWS console)
 - Inventory & compliance
 - Parameter Store / Secrets integration
+
+### AWS Systems Manager Run Command
+
+You can use AWS Systems Manager Run Command to configure and manage Amazon EC2 instances without establishing direct SSH or RDP connections. Run Command allows administrators to remotely execute commands on one or more instances from the AWS Management Console or through programmatic interfaces. This capability enables teams to apply configuration updates, install software, or run scripts across a fleet of instances in a centralized and consistent manner, which significantly simplifies operational management in environments that use Auto Scaling or large groups of EC2 instances.
