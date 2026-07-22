@@ -4,6 +4,8 @@
   - Has a dns name & IP
   - EC2 mounts(connects) to it using the dns name
   - Needs installing additional packages/utils on EC2 to connect to EFS
+  - Uses Network File System (NFS) - a network protocol (how computers share files over the network)
+    - Do not confuse with NTFS / ext4 / exFAT → file systems (how data is stored on a disk like SSD)
 - Independent from EC2 instance lifecycle
 
 # EFS mount target
