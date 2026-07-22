@@ -83,6 +83,8 @@ The Cooldown - the ASG stops everything and waits for a specific amount of time 
 
 - Define actions to take on instances during ASG actions (like add/remove instances, changing instance state)
 
+<img width="824" height="430" alt="image" src="https://github.com/user-attachments/assets/550a00db-aef3-4b74-91e1-28ba6efbac6d" />
+
 # ASG HealthCheck
 
 - Status checks. Identify hardware and software issues that may impair an instance
