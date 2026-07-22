@@ -1,4 +1,4 @@
-# EFS
+# Amazon Elastic File System (EFS)
 
 - **Remote (backend)** File System
   - Has a dns name & IP
