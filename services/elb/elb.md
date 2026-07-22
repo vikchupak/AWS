@@ -1,4 +1,4 @@
-# ELB
+# Elastic Load Balancer (ELB)
 
 Elastic Load Balancer (ELB) is a general term used by AWS to refer to their suite of load balancing services
 
