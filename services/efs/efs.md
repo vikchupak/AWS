@@ -1,6 +1,7 @@
 # Amazon Elastic File System (EFS)
 
 - **Remote (backend)** File System
+  - For Linux
   - Has a dns name & IP
   - EC2 mounts(connects) to it using the dns name
   - Needs installing additional packages/utils on EC2 to connect to EFS
