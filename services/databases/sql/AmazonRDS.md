@@ -4,7 +4,7 @@
 - Standby. **No reads and no write instance**. Synchronous sync between Primary and Standby. Automatic Failover.
   - It is active and running, but not reachable/visible for users
   - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec). So there is about 2 min downtime in case of the Primary failure.
-- Replica. Reads only. Async sync between Primary and Replica
+- Replica or Secondary. Reads only. Async sync between Primary and Replica
 
 ---
 
