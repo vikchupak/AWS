@@ -53,6 +53,11 @@ aws elbv2 describe-load-balancers
 
 Your Application Load Balancer periodically sends requests to its registered targets to test their status. These tests are called health checks. Each load balancer node routes requests only to the healthy targets in the enabled Availability Zones for the load balancer. Each load balancer node checks the health of each target, using the health check settings for the target group with which the target is registered. After your target is registered, it must pass one health check to be considered healthy. After each health check is completed, the load balancer node closes the connection that was established for the health check.
 
+## ALB Weighted Target Groups
+
+- ALB support Weighted Target Groups routing. With this feature, you will be able to do weighted routing of the traffic forwarded by a rule to multiple target groups
+- NLB doesn't support Weighted Target Groups
+
 # Gateway LB (GWLB)
 
 - GWLB is a specialized AWS load balancer designed to handle "bump-in-the-wire" network appliances, such as third-party firewalls, Intrusion Detection Systems (IDS/IPS), or deep packet inspection tools.
