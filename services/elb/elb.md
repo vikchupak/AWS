@@ -55,7 +55,7 @@ Your Application Load Balancer periodically sends requests to its registered tar
 
 ## ALB Weighted Target Groups
 
-- ALB support Weighted Target Groups routing. With this feature, you will be able to do weighted routing of the traffic forwarded by a rule to multiple target groups
+- ALB support **Weighted Target Groups** routing. With this feature, you will be able to do weighted routing of the traffic forwarded by a rule to multiple target groups
 - NLB doesn't support Weighted Target Groups
 
 # Gateway LB (GWLB)
