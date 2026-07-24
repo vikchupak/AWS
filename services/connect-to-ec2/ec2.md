@@ -26,6 +26,8 @@
 
 # ✅ Why Session Manager is preferred
 
+- [How SSM connection works](https://github.com/vikchupak/AWS/blob/main/services/ssm/ssm.md#how-ssm-connection-works)
+
 ### ✅ 1. **More secure**
 
 * No port 22 open
