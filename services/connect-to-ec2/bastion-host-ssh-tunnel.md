@@ -32,8 +32,11 @@ ssh -i key.pem -J ec2-user@bastion-host ec2-user@private-instance
 
 Open tunnel
 ```bash
-ssh -i key.pem -L 5432:private-db:5432 ec2-user@bastion-host
+ssh -i key.pem -f -N -L 5432:private-db:5432 ec2-user@bastion-host
 ```
+- -f → run in background
+- -N → no remote command
+- -L → local port forwarding
 
 Connect locally
 ```bash
