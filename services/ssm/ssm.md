@@ -18,6 +18,8 @@ You can use AWS Systems Manager Run Command to configure and manage Amazon EC2 i
 
 Setup **Amazon EC2 instances** or **on-premises machines** that are configured with the **SSM Agent** and appropriate IAM permissions so they can communicate with AWS Systems Manager.
 
+### How SSM connection works
+
 AWS Systems Manager Run Command works without inbound ports because the connection is initiated from the EC2 instance itself (outbound), not from you.
 
 Step-by-step:
