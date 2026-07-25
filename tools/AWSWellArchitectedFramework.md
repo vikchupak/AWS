@@ -6,4 +6,4 @@ The Well-Architected Tool to automatically monitor the status of your workloads 
 
 This tool is based on the AWS Well-Architected Framework, which was developed to help cloud architects build secure, high-performing, resilient, and efficient application infrastructures. The Framework has been used in tens of thousands of workload reviews by AWS solutions architects, and it provides a consistent approach for evaluating your cloud architecture and implementing designs that will scale with your application needs over time.
 
-IMPORTANT: this tool is a questionnaire, not a scanner. It doesn't inspect your infrastructure — it asks you questions and generates an improvement plan from your answers.
+**IMPORTANT**: this tool is a questionnaire, not a scanner. It doesn't inspect your infrastructure — it asks you questions and generates an improvement plan from your answers.
