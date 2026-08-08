@@ -7,6 +7,8 @@
   - Data Events (Data Plane)
     - Track operations on the actual data within resources.
     - Provide visibility into the resource operations performed on or within a resource. These are also known as data plane operations. It allows granular control of data event logging with advanced event selectors. You can currently log data events on different resource types such as Amazon S3 object-level API activity (e.g. GetObject, DeleteObject, and PutObject API operations), AWS Lambda function execution activity (the Invoke API), DynamoDB Item actions, and many more.
+    - AWS recommends CloudTrail for **auditing** S3 object-level actions
+      - Alternative is S3 Access Logging
   - Insights Events
 - Region resilent
 - By default, logs is stored to `CloudTrail Event History`
