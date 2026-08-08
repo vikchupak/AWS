@@ -1,9 +1,15 @@
 # Rules evaluating
 
-- NACL supports both ALLOW and DENY rules
+- NACL supports both ALLOW and DENY rules for both Inbound and Outbound traffic
   - So behavior is “Evaluate rules top-down, first match wins (allow or deny)”
-- Security groups support only ALLOW rules
+    - Default = DENY if no rule matches
+  - Stateless
+    - You must allow both inbound AND outbound for traffic to work
+- Security groups support only ALLOW rules for both Inbound and Outbound traffic
   - So behavior is “Allow what I specify, block everything else automatically”
+  - Stateful
+    - If inbound traffic is allowed → response is automatically allowed back
+    - If outbound is allowed → response is allowed back
 
 <img width="1880" height="642" alt="image" src="https://github.com/user-attachments/assets/dc079152-d37a-40bc-924c-dc77586415fc" />
 
