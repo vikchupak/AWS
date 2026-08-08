@@ -284,6 +284,9 @@ Used by:
 
 - Single Root I/O Virtualization (**SR-IOV**) enables **Enhanced Networking** on EC2 instances
 - SR-IOV is a hardware virtualization technology that allows a single physical network interface card (NIC) to present itself as multiple virtual network interfaces directly to virtual machines
+- Amazon EC2 provides enhanced networking capabilities through the **Elastic Network Adapter (ENA)**
+- An **Elastic Fabric Adapter (EFA)** is simply an Elastic Network Adapter (ENA) with added capabilities. It provides all of the functionality of an ENA, with additional OS-bypass functionality. OS-bypass is an access model that allows HPC and machine learning applications to communicate directly with the network interface hardware to provide low-latency, reliable transport functionality.
+  - The OS-bypass capabilities of EFAs are not supported on Windows instances. If you attach an EFA to a Windows instance, the instance functions as an Elastic Network Adapter without the added EFA capabilities.
 - Enabled by default in most instance types
 - No additional charge for using enhanced networking
 
