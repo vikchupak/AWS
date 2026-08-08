@@ -1,9 +1,9 @@
 # CloudTrail
 
 - CloudTrail logs - actions that affect aws account
-  - Management Events (Enabled by default)
+  - Management Events (Control Plane) (Enabled by default)
     - Provide visibility into management operations that are performed on resources in your AWS account. These are also known as control plane operations. Management events can also include non-API events that occur in your account.
-  - Data Events
+  - Data Events (Data Plane)
     - Provide visibility into the resource operations performed on or within a resource. These are also known as data plane operations. It allows granular control of data event logging with advanced event selectors. You can currently log data events on different resource types such as Amazon S3 object-level API activity (e.g. GetObject, DeleteObject, and PutObject API operations), AWS Lambda function execution activity (the Invoke API), DynamoDB Item actions, and many more.
   - Insights Events
 - Region resilent
