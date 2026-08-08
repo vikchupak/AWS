@@ -4,4 +4,4 @@ When evaluating the incoming request from the IP 110.238.109.37 to an EC2 instan
 
 The default deny-all rule (*) does not come into play here because the request was already processed by an earlier rule. This behavior aligns with AWS’s NACL best practices, where explicit allow rules should be placed after any specific deny rules to ensure proper traffic management. The allow-all rule in Rule #100 takes precedence as it is evaluated first.
 
-In summary, NACLs enforce a strict first-match policy, meaning the request from 110.238.109.37 is allowed due to Rule #100, which demonstrates how explicit allow rules can override more restrictive ones when placed earlier in the rule set. This ensures predictable traffic control, which is critical for securing private subnets within a VPC.
+In summary, **NACLs enforce a strict first-match policy**, meaning the request from 110.238.109.37 is allowed due to Rule #100, which demonstrates how explicit allow rules can override more restrictive ones when placed earlier in the rule set. This ensures predictable traffic control, which is critical for securing private subnets within a VPC.
