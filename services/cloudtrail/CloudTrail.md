@@ -5,6 +5,7 @@
     - Track operations that manage AWS resources, not the data inside them.
     - Provide visibility into management operations that are performed on resources in your AWS account. These are also known as control plane operations. Management events can also include non-API events that occur in your account.
   - Data Events (Data Plane)
+    - Track operations on the actual data within resources.
     - Provide visibility into the resource operations performed on or within a resource. These are also known as data plane operations. It allows granular control of data event logging with advanced event selectors. You can currently log data events on different resource types such as Amazon S3 object-level API activity (e.g. GetObject, DeleteObject, and PutObject API operations), AWS Lambda function execution activity (the Invoke API), DynamoDB Item actions, and many more.
   - Insights Events
 - Region resilent
