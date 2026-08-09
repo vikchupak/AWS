@@ -86,12 +86,6 @@
 - The Cooldown - the ASG stops everything and waits for a specific amount of time (the "cooldown period") before it is allowed to look at the alarm again.
 - Default: 300 seconds
 
-# ASG Lifecycle hooks
-
-- Define actions to take on instances during ASG actions (like add/remove instances, changing instance state)
-
-<img width="824" height="430" alt="image" src="https://github.com/user-attachments/assets/550a00db-aef3-4b74-91e1-28ba6efbac6d" />
-
 # ASG HealthCheck
 
 - Status checks. Identify hardware and software issues that may impair an instance
@@ -103,3 +97,9 @@
 - Used by ELB / ALB health checks
 - Gives instance time to start before health checks begin
 - Default: 300 seconds (5 minutes)
+
+# ASG Lifecycle hooks
+
+- Define actions to take on instances during ASG actions (like add/remove instances, changing instance state)
+
+<img width="824" height="430" alt="image" src="https://github.com/user-attachments/assets/550a00db-aef3-4b74-91e1-28ba6efbac6d" />
