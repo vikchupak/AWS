@@ -16,6 +16,10 @@ Data Sources (DynamoDB, Lambda, RDS, HTTP, etc.)
 
 <img width="559" height="272" alt="image" src="https://github.com/user-attachments/assets/f6d990e5-6264-4bca-a33f-fc16eec1eebd" />
 
+### Custom domain
+
+With AWS AppSync, you can use custom domain names to configure a single, memorable domain that works for both your GraphQL and real-time APIs. Associate an SSL certificate to the AWS AppSync API using the AWS Certificate Manager (ACM) service to enable HTTPS communication.
+
 ### Note
 
 AWS AppSync is often compared to Amazon API Gateway
