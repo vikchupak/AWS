@@ -153,8 +153,9 @@ The AWS Storage Gateway **Hardware Appliance** is a physical, standalone server 
 
 Let on-premises applications use block storage (disk volumes) while the data is stored in Amazon S3
 
-- Stored volumes
+- **Stored volumes (just for buckups in AWS)**
   - **Primary Storage is Gateway VM on-prem locally**
+    - Store the entire set of volume data on-premises and store periodic point-in-time backups (snapshots) in AWS
   - Data is automatically asynchronously copied to **AWS S3** as EBS snapshots
   - Pros & Corns
     - Pros
@@ -168,9 +169,10 @@ Let on-premises applications use block storage (disk volumes) while the data is 
     - 16TB per volume
     - 512TB per Gateway
 
-- Cached volumes
+- **Cached volumes**
   - The same as Stored volumes setup, but
     - **Primary storage is Amazon S3**
+      - Store volume data in AWS, with a small portion of recently accessed data in the cache on-premises
     - Frequently accessed data is cached on Storage Gateway VM on-prem locally
     - Known as Data Center Extension architecture
       - Storage appears on-promises, but it is actually in AWS
