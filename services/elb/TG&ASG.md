@@ -79,10 +79,12 @@
 
 - Instance warm-up time is the number of seconds you specify that tells Auto Scaling how long it should wait for a newly launched EC2 instance to be ready before it starts counting that instance's metrics toward the Auto Scaling group's aggregate metrics.
 - Without warm-up time, an instance might still be booting, but its metrics already included to autoscaling group which can cause incorrect scaling.
+- Default: 300 seconds (5 minutes)
 
 # Cooldown
 
-The Cooldown - the ASG stops everything and waits for a specific amount of time (the "cooldown period") before it is allowed to look at the alarm again.
+- The Cooldown - the ASG stops everything and waits for a specific amount of time (the "cooldown period") before it is allowed to look at the alarm again.
+- Default: 300 seconds
 
 # ASG Lifecycle hooks
 
@@ -95,3 +97,9 @@ The Cooldown - the ASG stops everything and waits for a specific amount of time 
 - Status checks. Identify hardware and software issues that may impair an instance
 - Health checks provided by Elastic Load Balancing (ELB). These health checks are disabled by default but can be enabled
 - Your custom health checks
+
+# Health Check Grace Period
+
+- Used by ELB / ALB health checks
+- Gives instance time to start before health checks begin
+- Default: 300 seconds (5 minutes)
