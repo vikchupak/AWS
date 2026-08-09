@@ -47,3 +47,5 @@ Application Insights uses SSM to automatically configure the CloudWatch Agent on
 ### 📌 Key Takeaway
 
 Application Insights is like a smart observer sitting in AWS — it looks at your existing CloudWatch data, figures out what's wrong, and surfaces it for you. The only things on your servers are the standard CloudWatch Agent and SSM Agent, which you'd likely already have installed anyway.
+
+<img width="1274" height="337" alt="image" src="https://github.com/user-attachments/assets/35f33264-50f9-45ff-b430-e61a6047ef45" />
