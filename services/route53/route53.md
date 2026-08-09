@@ -19,6 +19,10 @@
 - [Geoproximity](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html)
   - Route traffic based on the geographic distance between users and your resources, and lets you shift traffic using a bias value
 
+### Rules evaluation
+
+- Rules are evaluated in priority order, and the first matching rule wins
+
 # Route 53 Hosted zones
 
 - [Hosted zones](https://github.com/vikchupak/AWS/blob/main/network/dns/zones.md)
