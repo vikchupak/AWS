@@ -13,7 +13,7 @@
     - Internet → VPC → (routed via route table to) Firewall (endpoint) → resources
       - Firewall inspects traffic
       - Traffic continues to resources
-  - Stateful
+  - **Stateful**
   <img width="3340" height="1866" alt="image" src="https://github.com/user-attachments/assets/f4eb1099-ac3b-47a1-a5b9-757679b5d35d" />
 
 - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
