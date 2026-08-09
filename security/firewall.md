@@ -16,6 +16,20 @@
   - **Stateful**
   <img width="3340" height="1866" alt="image" src="https://github.com/user-attachments/assets/f4eb1099-ac3b-47a1-a5b9-757679b5d35d" />
 
+---
+
+The diagram below shows an AWS Network firewall deployed in a single availability zone and traffic flow for a workload in a public subnet.
+
+<img width="1024" height="808" alt="image" src="https://github.com/user-attachments/assets/117f136a-5d04-4367-801e-b57078cbc570" />
+
+You can use Network Firewall to monitor and protect your Amazon VPC traffic in a number of ways, including the following:
+- Pass traffic through only from known AWS service domains or IP address endpoints, such as Amazon S3.
+- Use custom lists of known bad domains to limit the types of domain names that your applications can access.
+- Perform deep packet inspection on traffic entering or leaving your VPC.
+- Use stateful protocol detection to filter protocols like HTTPS, independent of the port used.
+
+---
+
 - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
   <img width="1265" height="714" alt="image" src="https://github.com/user-attachments/assets/c7622976-a94b-4f65-8112-f766f61d7624" />
   - Protects web applications (Layer 7)
