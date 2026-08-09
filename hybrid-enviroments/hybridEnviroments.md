@@ -143,6 +143,12 @@ On-prem → Customer Gateway → Internet(encrypted data) → AWS Site-to-Site V
     - File-level storage protocol
     - Used by **File Gateway**
 
+### Deploy options
+
+<img width="447" height="256" alt="image" src="https://github.com/user-attachments/assets/2fc6cfac-1234-4a04-a6a0-f9fb18366936" />
+
+The AWS Storage Gateway **Hardware Appliance** is a physical, standalone server that comes pre-loaded with AWS Storage Gateway software. It is designed for organizations that need on-premises compute resources without relying on virtualization (no VMware, Hyper-V, or KVM required).
+
 ### Volume Gateway
 
 Let on-premises applications use block storage (disk volumes) while the data is stored in Amazon S3
