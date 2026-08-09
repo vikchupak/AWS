@@ -10,6 +10,16 @@ Elastic Load Balancer (ELB) is a general term used by AWS to refer to their suit
 
 ---
 
+### Access Logs
+
+Access logging is an optional feature of Elastic Load Balancing that is disabled by default. After you enable access logging for your load balancer, Elastic Load Balancing captures the logs and stores them in the Amazon S3 bucket.
+
+Access logs that capture detailed information about requests sent to your load balancer. Each log contains information such as the time the request was received, the client’s IP address, latencies, request paths, and server responses. You can use these access logs to analyze traffic patterns and troubleshoot issues.
+
+Supported by CLB, ALB, NLB. Not supported by GWLB
+
+---
+
 - **ELB is created within VPC and spans multiple AZs/subnets**
 - https://aws.amazon.com/elasticloadbalancing/getting-started/?nc=sn&loc=4
 - **Require `8+` free IPs per subnet, and `/27` subnet to allow scaling**
