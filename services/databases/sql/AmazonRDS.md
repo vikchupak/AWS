@@ -84,6 +84,9 @@
   - **Supported engines**
     - **Native Oracle**
     - **Native Microsoft SQL Server**
+
+---
+
 - **[Amazon Aurora (Provisioned)](https://aws.amazon.com/rds/aurora/)**. Or another name **Amazon Aurora (Provisioned) Cluster**
   - **Default**
   - **Is a cluster**
@@ -136,6 +139,9 @@
     - Instance endpoints - points to specific ACU
       - Usually you don’t need it because the cluster and reader endpoints abstract scaling
       - Aurora Serverless v2 can automatically scale ACUs up/down, so instance endpoints may change dynamically
+
+---
+
 - **[Amazon RDS proxy](https://www.amazonaws.cn/en/rds/proxy/)**
   - Proxy for RDS connection pool
   - Works with RDS and Aurora
