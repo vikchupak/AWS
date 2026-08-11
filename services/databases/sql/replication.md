@@ -5,7 +5,7 @@ replication. Because all standard RDS engines use database-level engine replicat
 
 ### Amazon Aurora
 
-Amazon Aurora handles cross-region replication via two entirely distinct methods: Cross-Region Read Replicas (native engine replication) and Aurora Global Databases (storage-level replication).
+Amazon Aurora handles **cross-region** replication via two entirely distinct methods: Cross-Region Read Replicas (native engine replication) and Aurora Global Databases (storage-level replication).
 
 - Aurora MySQL-Compatible: Supports both native Cross-Region Replicas (which use binlogs) and Aurora Global Databases (which use high-performance storage-level replication).
 - Aurora PostgreSQL-Compatible: Does NOT support standard Cross-Region Replicas using the native engine replication. Instead, for cross-region replication with Aurora PostgreSQL, you must use Aurora Global Databases.
