@@ -99,7 +99,7 @@
     - Cluster endpoint - points to primary instance
     - Reader endpoint - points to replicas
     - Instance endpoints - points to instances
-  - 1 single-primary instance for writes + (up to 15) replica instances for reads
+  - 1 single-primary instance for writes + **(up to 15)** replica instances for reads
     - **Aurora Auto Scaling** - scales read replica instances
       - Disabled by default
       - Scales based on metrics like CPU utilization or connections
