@@ -14,3 +14,4 @@
 - It scans your env/account and can use ClaudWatch metrics
 - Trusted Advisor automatically performs its checks periodically and updates recommendations, so you generally don't need to manually start a scan every time
     - You can also manually refresh the checks to get updated results
+- AWS Trusted Advisor is mainly a **rules/checks-based** recommendation service, not an AI service
