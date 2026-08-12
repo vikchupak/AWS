@@ -22,6 +22,8 @@ The diagram below shows an AWS Network firewall deployed in a single availabilit
 
 <img width="1024" height="808" alt="image" src="https://github.com/user-attachments/assets/117f136a-5d04-4367-801e-b57078cbc570" />
 
+<img width="2244" height="1060" alt="image" src="https://github.com/user-attachments/assets/ea45e4b1-8789-4bbd-87b2-126807065525" />
+
 You can use Network Firewall to monitor and protect your Amazon VPC traffic in a number of ways, including the following:
 - Pass traffic through only from known AWS service domains or IP address endpoints, such as Amazon S3.
 - Use custom lists of known bad domains to limit the types of domain names that your applications can access.
