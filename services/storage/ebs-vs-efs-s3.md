@@ -1,8 +1,9 @@
 ### The Quick Summary
 
-* **EBS (Elastic Block Store):** A high-performance **virtual hard drive** for a **SINGLE** EC2 instance.
-* **EFS (Elastic File System):** A **shared network file system** (like a traditional NAS) that thousands of instances can access simultaneously.
-* **S3 (Simple Storage Service):** An **object store** built for massive scale, accessible via HTTP/API from anywhere on the web.
+- **EBS (Elastic Block Store):** A high-performance **virtual hard drive** for a **SINGLE** EC2 instance.
+- **EFS (Elastic File System):** A **shared network file system** (like a traditional NAS) that thousands of instances can access simultaneously.
+  - Amazon EFS file systems can automatically scale from gigabytes to petabytes of data without needing to provision storage. Tens, hundreds, or even thousands of Amazon EC2 instances can access an Amazon EFS file system at the same time, and Amazon EFS provides consistent performance to each Amazon EC2 instance. Amazon EFS is designed to be highly durable and highly available.
+- **S3 (Simple Storage Service):** An **object store** built for massive scale, accessible via HTTP/API from anywhere on the web.
 
 ---
 
