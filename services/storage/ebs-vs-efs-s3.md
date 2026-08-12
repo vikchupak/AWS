@@ -1,6 +1,6 @@
 ### The Quick Summary
 
-* **EBS (Elastic Block Store):** A high-performance **virtual hard drive** for a single EC2 instance.
+* **EBS (Elastic Block Store):** A high-performance **virtual hard drive** for a **SINGLE** EC2 instance.
 * **EFS (Elastic File System):** A **shared network file system** (like a traditional NAS) that thousands of instances can access simultaneously.
 * **S3 (Simple Storage Service):** An **object store** built for massive scale, accessible via HTTP/API from anywhere on the web.
 
