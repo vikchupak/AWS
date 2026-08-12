@@ -1,6 +1,6 @@
 # EFS vs FSx
 
-- EFS
+- [EFS](https://github.com/vikchupak/AWS/blob/main/services/storage/efs/efs.md)
 - [FSx](https://github.com/vikchupak/AWS/blob/main/hybrid-enviroments/hybridEnviroments.md#amazon-fsx)
 
 When choosing between **Amazon EFS** and **Amazon FSx**, the decision hinges entirely on the **operating system** and the **native protocol** your applications rely on.
