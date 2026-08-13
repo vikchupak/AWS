@@ -31,3 +31,55 @@
 |  [ Remaining Idle Capacity: 2 vCPUs, 12 GB RAM ]            |
 +-------------------------------------------------------------+
 ```
+
+---
+
+```text
++--------------------------------------------------------------------------------------------------+
+|                                           ECS CLUSTER                                            |
+|                                                                                                  |
+|  +--------------------------------------------------------------------------------------------+  |
+|  |                     CONTAINER INSTANCE (1 EC2 Instance: e.g., 4 vCPUs, 16 GB RAM)          |  |
+|  |                                                                                            |  |
+|  |  +--------------------------------------------------------------------------------------+  |  |
+|  |  |  TASK 1 (Running instance of Task Definition A)                                      |  |  |
+|  |  |  [Task Role Security | Shared Network | Total allocated CPU/Mem for Task 1]          |  |  |
+|  |  |                                                                                      |  |  |
+|  |  |  +-----------------------------------+      +-----------------------------------+    |  |  |
+|  |  |  | CONTAINER A (from Container Def)  |      | CONTAINER B (from Container Def)  |    |  |  |
+|  |  |  | Image: Node.js | Port: 3000       |      | Image: Redis | Port: 6379         |    |  |  |
+|  |  |  | Limits: 0.5 vCPU, 1 GB RAM        |      | Limits: 0.5 vCPU, 1 GB RAM        |    |  |  |
+|  |  |  +-----------------------------------+      +-----------------------------------+    |  |  |
+|  |  +--------------------------------------------------------------------------------------+  |  |
+|  |                                                                                            |  |
+|  |  +--------------------------------------------------------------------------------------+  |  |
+|  |  |  TASK 2 (Running instance of Task Definition B)                                      |  |  |
+|  |  |                                                                                      |  |  |
+|  |  |  +-----------------------------------+                                               |  |  |
+|  |  |  | CONTAINER C (from Container Def)  |                                               |  |  |
+|  |  |  | Image: Python | Port: 8000        |                                               |  |  |
+|  |  |  | Limits: 1 vCPU, 2 GB RAM          |                                               |  |  |
+|  |  |  +-----------------------------------+                                               |  |  |
+|  |  +--------------------------------------------------------------------------------------+  |  |
+|  |                                                                                            |  |
+|  |  [ Remaining Idle Capacity on EC2 Instance: 2 vCPUs, 12 GB RAM ]                           |  |
+|  +--------------------------------------------------------------------------------------------+  |
+|                                                                                                  |
++--------------------------------------------------------------------------------------------------+
+                             ^                                      ^
+                             |======= MANAGED & SCALED BY ==========|
+                                                |
+                              +------------------------------------+
+                              |            ECS SERVICE             |
+                              | Ensures Task 1 & Task 2 stay alive |
+                              +------------------------------------+
+
+```
+
+### The Cheat Sheet: "What Contains What?"
+
+1. **The Container Definition** is contained inside the **Task Definition** (as a blueprint configuration).
+2. **The Container** runs inside a **Task** (as an isolated process sharing the task's network/security).
+3. **The Tasks** are placed inside a **Container Instance (EC2)** based on available CPU/RAM.
+4. **The Container Instances** are grouped inside the **ECS Cluster**.
+5. **The ECS Service** lives at the cluster level, looking down at everything to ensure the desired count of **Tasks** is running across your **Container Instances**.
