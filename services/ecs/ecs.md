@@ -35,6 +35,8 @@
 - **Scale ECS cluster (when service’s CPU High) -> add more EC2 / Container instances**
 - **Scaling ECS service (when service’s Memory High) -> spin up more containers (ECS Tasks)**
 
+*Note on Modern AWS: In a real-world scenario today, architects often use ECS Cluster Auto Scaling (CAS) with Capacity Providers or run tasks on AWS Fargate (serverless). This eliminates this exact headache, because AWS will automatically scale both the tasks and the underlying infrastructure in tandem for you!*
+
 ---
 
 ```text
