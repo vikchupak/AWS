@@ -32,8 +32,8 @@
 +-------------------------------------------------------------+
 ```
 
-- **Scale ECS cluster (when High CPU) -> add more EC2 / Container instances**
-- **Scaling ECS service (when High Memory) -> spin up more containers (ECS Tasks)**
+- **Scale ECS cluster (when service CPU High) -> add more EC2 / Container instances**
+- **Scaling ECS service (when service Memory High) -> spin up more containers (ECS Tasks)**
 
 ---
 
