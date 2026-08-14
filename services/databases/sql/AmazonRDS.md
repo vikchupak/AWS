@@ -16,6 +16,9 @@
 ---
 
 - **Amazon RDS (Single AZ)**
+  - Fully managed
+    - You don't have to manage underlying infrastructure
+      - Hardware (EC2) provisioning
   - **Default**
   - **Fully managed by AWS database**
   - **Engines**
