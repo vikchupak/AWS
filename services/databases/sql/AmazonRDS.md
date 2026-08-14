@@ -88,6 +88,11 @@
 ---
 
 - **[Amazon Aurora (Provisioned)](https://aws.amazon.com/rds/aurora/)**. Or another name **Amazon Aurora (Provisioned) Cluster**
+  - Fully managed
+    - You don't have to manage underlying infrastructure
+      - Hardware (EC2) provisioning
+      - Storage Auto-Scaling
+      - Replication & Fault Tolerance
   - **Default**
   - **Is a cluster**
     - Has 1 primary and optional secondary db instances
