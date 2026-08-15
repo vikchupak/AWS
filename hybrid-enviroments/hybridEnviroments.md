@@ -219,6 +219,22 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - Bucket share = Link `AWS bucket <-> On-prem file share`
 - Connection. On-prem server -> NFS/SMB protocol -> Storage Gateway VM (with shares) -> AWS Storage Gateway Endpoint -> Amazon S3
 
+---
+
+Local SMB Share: The AWS Storage File Gateway virtual machine runs inside your on-premises data center and exposes an SMB share over your local network. Your on-premises servers map that SMB share (e.g., \\file-gateway\backups)
+
+Stage 1: The Local Write (Instant)
+
+1. Your server sends the file to the SMB share (\\file-gateway\backups).
+2. The File Gateway saves the file directly onto its **local cache** disk in your on-premises data center.
+3. Once it is safely written to the local disk, the gateway immediately tells your server: "Write complete!"
+
+Stage 2: The S3 Upload (Asynchronous)
+
+1. Immediately after saving to the local cache, the File Gateway begins uploading the file to your Amazon S3 bucket over the internet/VPN in the background.
+2. It uses optimized, parallel multipart uploads and HTTPS encryption.
+3. Once the upload finishes, the file is fully backed up and durable in AWS S3.
+
 ## AWS Directory Service
 
 ### About Active Directory (AD) in general
