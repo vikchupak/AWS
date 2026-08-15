@@ -1,0 +1,9 @@
+# AWS Elastic Disaster Recovery (AWS DRS - AWS Disaster Recovery Service)
+
+AWS Elastic Disaster Recovery (AWS DRS) provides continuous block-level replication, recovery orchestration, and automated server conversion capabilities. These allow customers to achieve a crash-consistent recovery point objective (RPO) of seconds, and a recovery time objective (RTO) typically ranging between 5–20 minutes.
+
+<img width="1172" height="726" alt="image" src="https://github.com/user-attachments/assets/e1101340-6980-452d-8086-f79ff259af32" />
+
+In the event of a disaster, AWS Elastic Disaster Recovery (AWS DRS) assists in performing a failover to AWS for immediate recovery. After mitigating the disaster, a failback to the original source infrastructure is necessary. AWS DRS facilitates preparedness through easy drill launches and frequent testing of instances. During a failover, recovery instances are launched in AWS based on a selected snapshot. To complete the failback, the AWS Elastic Disaster Recovery Failback Client is installed on the target server, and specific credentials are generated. Cross-Region or cross-AZ failover and failback can be executed directly from the AWS DRS Console. For vCenter, AWS DRS offers scalable failback with the DRS Mass Failback Automation client (DRSFA client). Once the failback is finished, the recovery instance can be terminated, deleted, or disconnected.
+
+To establish a secure data replication process, configure AWS Elastic Disaster Recovery on your source servers. This setup involves replicating your data to a dedicated subnet within your AWS account located in the AWS Region of your choice. By utilizing a staging area design, this approach optimizes cost-efficiency by leveraging cost-effective storage and minimal compute resources for continuous replication maintenance.
