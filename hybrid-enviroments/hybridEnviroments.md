@@ -223,6 +223,9 @@ Let on-premises applications use file storage while the files are stored in Amaz
 
 Local SMB Share: The AWS Storage File Gateway virtual machine runs inside your on-premises data center and exposes an SMB share over your local network. Your on-premises servers map that SMB share (e.g., \\file-gateway\backups)
 
+- You decide local cache size - files accessed instantly
+- There is some delay accessing non cached files
+
 Stage 1: The Local Write (Instant)
 
 1. Your server sends the file to the SMB share (\\file-gateway\backups).
