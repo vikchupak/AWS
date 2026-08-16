@@ -100,3 +100,15 @@ AGA can be used as an entry point with static IPs.
 - S3 Transfer Acceleration
   - Uses **CloudFront edge locations** and CloudFront Edge Network to send data faster
   - HTTP/HTTPS only as uses CloudFront
+
+# S3 Transfer Acceleration + AGA can be used at the same time?
+
+**You cannot chain AWS Global Accelerator (AGA) directly into S3 Transfer Acceleration (S3TA).**
+
+They are two independent AWS network optimization services that fulfill similar roles using separate entry points and edge infrastructure.
+
+### Why They Cannot Be Chained Together
+
+1. **S3TA relies on CloudFront:** S3 Transfer Acceleration routes traffic by resolving its special endpoint (`bucket-name.s3-accelerate.amazonaws.com`) to **Amazon CloudFront's global Edge Locations**.
+2. **AGA targets specific AWS resources:** AWS Global Accelerator routes traffic directly to **Application Load Balancers, Network Load Balancers, EC2 instances, or Elastic IPs**. You cannot set an S3 bucket or a CloudFront/S3TA endpoint as a backend target for an AGA endpoint group.
+3. **They solve the exact same problem:** Both services pull traffic onto the AWS private backbone at the nearest edge location. Chaining them would be redundant double-routing (Client -> AGA Static IP -> AWS Edge -> CloudFront Edge -> S3).
