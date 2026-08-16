@@ -97,9 +97,6 @@ AGA can be used as an entry point with static IPs.
 
 - CloudFront
   - Works at 7 OSI layer
-- S3 Transfer Acceleration
-  - Uses **CloudFront edge locations** and CloudFront Edge Network to send data faster
-  - HTTP/HTTPS only as uses CloudFront
 
 # Cross-region traffic routing
 
