@@ -7,7 +7,7 @@
 - Works at 4 OSI layer
   - Can be used for non http(s)
 
-# AGA with ALBs - use static AGA IPs. 
+# AGA with ALBs - use static AGA IPs
 
 AGA can be used as an entry point with static IPs.
 
