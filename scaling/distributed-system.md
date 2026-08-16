@@ -1,6 +1,6 @@
 # Distributed cache
 
-ElastiCache clusters running the Memcached engine supports Auto Discovery - the ability for client programs to automatically identify all of the nodes in a cache cluster, and to initiate and maintain connections to all of these nodes.
+ElastiCache clusters running the Memcached engine supports **Auto Discovery** - the ability for client programs to automatically identify all of the nodes in a cache cluster, and to initiate and maintain connections to all of these nodes.
 
 One distributed cache cluster spans multiple AZs, with one or more cache nodes in each AZ.
 
