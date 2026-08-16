@@ -101,6 +101,31 @@ AGA can be used as an entry point with static IPs.
   - Uses **CloudFront edge locations** and CloudFront Edge Network to send data faster
   - HTTP/HTTPS only as uses CloudFront
 
+# Cross-region traffic routing
+
+### 1. AGA allows Multi-Region Routing. AGA is built explicitly as a **global layer-3/4 service**.
+
+* **Multi-Region Routing:** A single AGA instance provides static Anycast IP addresses that ingest traffic at the closest AWS edge location. It then routes that traffic across the AWS global backbone directly to application endpoints in **multiple AWS regions**.
+* **Capabilities:** Supports **active-active** load distribution (using traffic dials per region) and automatic **instant failover** to another region if an entire region or endpoint group goes down.
+* **Supported Endpoints:** You can attach ALBs, NLBs, EC2 instances, or Elastic IPs in different regions as targets under a single AGA.
+
+### 2. AWS Application Load Balancer (ALB) — **NO (Natively)**
+
+An ALB is strictly a **regional layer-7 resource** tied to a single AWS region and its Availability Zones (AZs).
+
+* **Cross-AZ vs. Cross-Region:** An ALB handles **cross-zone** load balancing within its assigned region out of the box, but it cannot directly receive traffic and balance it out to instances located in *another* region natively.
+
+### Comparison Summary
+
+| Feature | AWS Global Accelerator (AGA) | Application Load Balancer (ALB) |
+| --- | --- | --- |
+| **Scope** | Global (Anycast IP at Edge) | Regional (Spans AZs inside 1 Region) |
+| **Multi-Region Traffic** | **Native** (Routes across multiple regions) | **No** (Regional boundary only) |
+| **Multi-Region Failover** | Instant failover via health checks | Requires Route 53 or AGA in front |
+| **OSI Layer** | Layer 3/4 | Layer 7 (HTTP/HTTPS/gRPC) |
+
+> **Standard Pattern:** To handle multi-region HTTP/S traffic seamlessly, put **AWS Global Accelerator in front of multiple regional Application Load Balancers**. AGA handles global routing and regional failover, while each ALB handles Layer-7 path/host routing within its local region.
+
 # S3 Transfer Acceleration + AGA at the same time
 
 **You cannot chain AWS Global Accelerator (AGA) directly into S3 Transfer Acceleration (S3TA).**
