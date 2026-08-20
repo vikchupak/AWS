@@ -26,3 +26,8 @@ Supports:
 - Docker Platforms
   - Single-Container Docker: You provide a Dockerfile or specify an image from Docker Hub / Amazon ECR.
   - Multi-Container Docker: Configured via a Dockerrun.aws.json file (running on Amazon ECS under the hood) to orchestrate multiple containers on a single EC2 instance.
+
+# Logs
+
+- Application files are stored in S3
+- The server log files can also optionally be stored in S3 or in CloudWatch Logs
