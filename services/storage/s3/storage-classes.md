@@ -9,7 +9,7 @@
 
 - **`Minimum Storage Duration`** and `Minimum Duration Charge` are the same thing.
   - A BILLING Concept
-  - Minimum Storage Duration - AWS documentation term
+  - **Minimum Storage Duration - AWS documentation term**
   - Minimum Duration Charge - the billing/cost perspective of the same concept
   - ❌ It does NOT mean your files are locked and cannot be deleted
   - ✅ It means you will be charged as if the files were stored for that minimum period, even if you delete them earlier
