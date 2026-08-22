@@ -4,6 +4,7 @@ Both can be used for logging.
 
 ### CloudTrail captures a subset of API calls for Amazon S3
 
+- [CloudTrail](https://github.com/vikchupak/AWS/blob/main/services/cloudtrail/CloudTrail.md)
 - By default, CloudTrail captures management events (bucket-level actions) only
 - Object-level actions (e.g., GetObject, PutObject) require explicitly enabling CloudTrail Data Events — they are NOT on by default
 - Even with data events enabled, CloudTrail does not capture certain HTTP-level fields
