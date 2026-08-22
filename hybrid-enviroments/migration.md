@@ -83,6 +83,21 @@ Move large amount of data IN and OUT of AWS **offline**
 └──────────────────────────┴──────────────────────────┴───────────────────────────┘
 ```
 
+### Alternatives to AWS Snowball Edge
+
+```txt
+┌─────────────────────────────────────────────────────────────┐
+│  ⚠️  AWS Snowball Edge will NO LONGER accept new customers   │
+│      after December 31, 2026                                │
+│                                                             │
+│  AWS recommends alternatives:                               │
+│  → AWS DataSync        (online transfers)                   │
+│  → AWS Data Transfer Terminal (physical transfers)          │
+│  → AWS Outposts        (edge computing)                     │
+│  → AWS Partner solutions (edge computing)                   │
+└─────────────────────────────────────────────────────────────┘
+```
+
 ### AWS DataSync
 
 Move large amount of data IN and OUT of AWS **online**
