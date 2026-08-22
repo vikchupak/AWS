@@ -99,5 +99,5 @@ Archive classes
 
 ---
 
-- Amazon S3 Intelligent-Tiering
+- S3 Intelligent-Tiering
   - Automatically moves your data to the most cost-effective storage class (Machine lerning is used for that)
