@@ -4,6 +4,19 @@
 
 ---
 
+BEFORE September 2017:
+- EC2 was billed PER HOUR (rounded up)
+- Running for 61 min = charged for 2 full hours
+- Pay per hours
+
+AFTER September 2017:
+- EC2 switched to PER SECOND billing
+- Pay per seconds
+  - Min first 60 seconds
+  - After 60 seconds = billed per EXACT second
+
+---
+
 Instance compute capacity
 - CPU
 - RAM
