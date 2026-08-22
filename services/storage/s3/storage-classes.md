@@ -5,7 +5,7 @@
 
 ---
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/ecdea258-6533-49b1-b816-d05f524a25b6" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/db9affb9-0e6a-468a-a442-89fa12d8c361" />
 
 - **`Minimum Storage Duration`** and `Minimum Duration Charge` are the same thing.
   - A BILLING Concept
