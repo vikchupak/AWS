@@ -20,10 +20,13 @@ The authentication process moves the "source of truth" for identity from the dat
 
 ### Key Benefits
 
-* **No Password Management:** You don't have to rotate database passwords or store them in configuration files or environment variables.
-* **IAM Integration:** You can use **IAM Roles** (e.g., an EC2 Instance Profile or Lambda Execution Role), which eliminates the need for hardcoded AWS credentials.
-* **Security:** All connections are required to use **SSL/TLS** encryption.
-* **Centralized Access:** Permissions are managed via IAM policies, making it easier to revoke access instantly without modifying the database.
+IAM database authentication provides the following benefits:
+- **Network traffic to and from the database is encrypted using Secure Sockets Layer (SSL).**
+- You can use IAM to centrally manage access to your database resources, instead of managing access individually on each DB instance.
+- For applications running on Amazon EC2, you can use profile credentials specific to your EC2 instance to access your database instead of a password, for greater security
+- **No Password Management:** You don't have to rotate database passwords or store them in configuration files or environment variables.
+- **IAM Integration:** You can use **IAM Roles** (e.g., an EC2 Instance Profile or Lambda Execution Role), which eliminates the need for hardcoded AWS credentials.
+- **Centralized Access:** Permissions are managed via IAM policies, making it easier to revoke access instantly without modifying the database.
 
 ---
 
