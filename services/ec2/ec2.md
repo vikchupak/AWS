@@ -13,8 +13,11 @@
       - host hardware fails
   - (Remote) storage
     - [EBS](https://github.com/vikchupak/AWS/blob/main/services/ebs/ebs.md)
+      - mounted
     - S3
+      - S3 is NOT mounted like a hard drive. EC2 accesses S3 via API calls (HTTP/HTTPS).
     - EFS
+      - mounted
   - Data network
     - This is not storage. It is the network for EC2 data transfer
       - Instance → EBS traffic
