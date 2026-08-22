@@ -13,6 +13,7 @@ Move large amount of data IN and OUT of AWS **offline**
   - 50TB or 80TB 1 unit/device capacity
   - 10TB - 10PB data range transfer is economically reasonable to use snowball over internet
 - **Snowball edge**
+  - **RETIRING, Dec 31, 2026**
   - Physical storage units
   - Data encrypted using KMS
   - BOTH Storage and Compute
@@ -29,6 +30,58 @@ Move large amount of data IN and OUT of AWS **offline**
 - **Snowmobile**
   - Literally a truck
   - When more than 10PB data to transfer
+
+### AWS Data Transfer Terminal
+
+- YOU bring your storage device TO an AWS facility
+- You plug in and upload directly via 100 Gbps fiber
+- You leave with your device
+- Data is already in AWS instantly
+
+```txt
+┌──────────────────────────┬──────────────────────────┬───────────────────────────┐
+│ Feature                  │ AWS Snowball Edge        │ AWS Data Transfer         │
+│                          │                          │ Terminal                  │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ How it works             │ AWS ships device to you  │ You go to AWS facility    │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Data transfer method     │ Physical device shipping │ Direct fiber connection   │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Network speed            │ N/A (physical shipping)  │ Up to 100 Gbps fiber      │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Time to data in AWS      │ Days (shipping + upload) │ Minutes to hours          │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Storage capacity         │ Up to 210 TB per device  │ Limited by your device    │
+│                          │ Cluster: up to 16 devices│ and session duration      │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Edge compute             │ ✅ YES                   │ ❌ NO                      │
+│                          │ Run EC2, Lambda, K8s     │ Upload only               │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Works offline            │ ✅ YES                   │ ❌ NO                      │
+│ (no internet needed)     │ Fully disconnected       │ Needs facility access     │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ You keep your device     │ ❌ NO                    │ ✅ YES                     │
+│                          │ AWS device, return it    │ Bring your own device     │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Device custody           │ You lose custody         │ You keep custody          │
+│                          │ during shipping          │ throughout                │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Destinations             │ Amazon S3                │ Amazon S3, Amazon EFS     │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Availability             │ Ships to your location   │ Physical locations only   │
+│                          │ (most regions)           │ SF, LA, NYC, Munich,      │
+│                          │                          │ London, Paris, Sydney,    │
+│                          │                          │ Tokyo, Seattle, Phoenix   │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Who can use it           │ Any AWS customer         │ AWS Enterprise Support    │
+│                          │                          │ customers only            │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Billing model            │ Per job + device days    │ Per hour (on-demand)      │
+├──────────────────────────┼──────────────────────────┼───────────────────────────┤
+│ Current status           │ ⚠️ RETIRING              │ ✅ ACTIVE & EXPANDING      │
+│                          │ Dec 31, 2026             │ (launched re:Invent 2024) │
+└──────────────────────────┴──────────────────────────┴───────────────────────────┘
+```
 
 ### AWS DataSync
 
