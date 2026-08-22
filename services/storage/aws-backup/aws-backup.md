@@ -2,7 +2,12 @@
 
 Centrally manage and automate backups.
 
-### AWS Backup Vault Lock
+# Snapshot vs Backup
+
+- Snapshot = a point-in-time copy created by a specific AWS service.
+- Backup = a recovery copy managed/protected as part of a backup strategy.
+
+# AWS Backup Vault Lock
 
 **Vault Lock** makes backups **immutable** — they cannot be deleted or modified before their retention period expires.
 
