@@ -3,7 +3,7 @@
 - [SG(EC2)-Subnet](https://github.com/vikchupak/AWS/blob/main/network/network-definitions.md#firewall)
 - [GWLB](https://github.com/vikchupak/AWS/blob/main/services/elb/elb.md#gateway-lb-gwlb)
 
----
+### AWS Network Firewall
 
 - [AWS Network Firewall](https://aws.amazon.com/network-firewall/)
   - Protects your VPC network traffic (Layer 3–4)
@@ -30,7 +30,7 @@ You can use Network Firewall to monitor and protect your Amazon VPC traffic in a
 - Perform deep packet inspection on traffic entering or leaving your VPC.
 - Use stateful protocol detection to filter protocols like HTTPS, independent of the port used.
 
----
+# AWS Web Application Firewall
 
 - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
   <img width="1265" height="714" alt="image" src="https://github.com/user-attachments/assets/c7622976-a94b-4f65-8112-f766f61d7624" />
@@ -118,3 +118,112 @@ EC2 / ECS / RDS
 
 * **WAF = protect the application**
 * **Network Firewall = protect the network**
+
+# Gateway LB (GWLB) vs AWS Network Firewall
+
+> **GWLB is a load balancer for network appliances. AWS Network Firewall is an actual managed firewall.**
+
+In fact, **AWS Network Firewall actually uses GWLB under the hood**.
+
+They can look similar architecturally, but they solve different problems.
+
+|                              | **Gateway Load Balancer (GWLB)**                             | **AWS Network Firewall**           |
+| ---------------------------- | ------------------------------------------------------------ | ---------------------------------- |
+| What is it?                  | Load balancer / gateway                                      | Managed firewall                   |
+| Main purpose                 | Distribute traffic across **virtual appliances**             | **Inspect and filter traffic**     |
+| Who provides firewall logic? | You / third-party vendor                                     | AWS                                |
+| Typical appliances           | Palo Alto, Fortinet, Check Point, IDS/IPS, custom appliances | Built-in AWS firewall              |
+| Rules                        | Defined by the appliance                                     | Stateless/stateful rules, Suricata |
+| Deep packet inspection       | Depends on appliance                                         | Yes                                |
+| IDS/IPS                      | Depends on appliance                                         | Yes                                |
+| Appliance management         | **You manage the appliances**                                | AWS manages the infrastructure     |
+| Common use                   | Third-party security appliances                              | AWS-native network security        |
+
+AWS explicitly describes GWLB as a service for deploying and scaling virtual appliances such as firewalls, IDS/IPS and deep-packet-inspection systems. ([AWS Documentation][1])
+
+AWS Network Firewall, on the other hand, is itself a **stateful managed network firewall** with IDS/IPS capabilities and Suricata-compatible rules. ([AWS Documentation][2])
+
+### Think of it this way
+
+With **GWLB**:
+
+```text
+                    GWLB
+                      |
+          +-----------+-----------+
+          |           |           |
+       Firewall    Firewall    Firewall
+       appliance   appliance   appliance
+          |           |           |
+          +-----------+-----------+
+```
+
+GWLB doesn't decide:
+
+> "Should I allow this packet?"
+
+The **firewall appliance** does.
+
+GWLB's job is essentially:
+
+> "Which firewall appliance should receive this traffic?"
+
+It also maintains flow stickiness and uses GENEVE encapsulation to communicate with the appliances. ([AWS Documentation][1])
+
+---
+
+With **AWS Network Firewall**:
+
+```text
+Traffic
+   |
+   v
+AWS Network Firewall
+   |
+   +-- rules
+   +-- stateful inspection
+   +-- IDS/IPS
+   +-- Suricata
+   |
+   v
+Destination
+```
+
+You don't deploy Palo Alto/Fortinet/etc. yourself. AWS manages the firewall infrastructure.
+
+### Why would you use GWLB then?
+
+The big reason is **third-party appliances**.
+
+For example:
+
+```text
+VPCs
+ |
+ v
+Transit Gateway
+ |
+ v
+GWLB Endpoint
+ |
+ v
+GWLB
+ |
+ +--> Palo Alto
+ +--> Palo Alto
+ +--> Palo Alto
+ |
+ v
+Internet / VPC / On-prem
+```
+
+This is useful when your organization specifically wants **Palo Alto, Fortinet, Check Point, etc.** AWS's reference architecture describes exactly this pattern for centralized inspection. ([AWS Documentation][3])
+
+AWS's own comparison summarizes it similarly: Network Firewall is a managed stateful network firewall, while GWLB makes it easier to deploy and scale third-party virtual appliances. ([AWS Documentation][3])
+
+One subtle point: **AWS Network Firewall internally uses Gateway Load Balancer technology for its firewall endpoints**, but you don't interact with GWLB as the customer in the same way you would when deploying your own third-party appliances. ([Amazon Web Services, Inc.][4])
+
+[1]: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html?utm_source=chatgpt.com "What is a Gateway Load Balancer? - Elastic Load Balancing"
+[2]: https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html?utm_source=chatgpt.com "What is AWS Network Firewall? - AWS Network Firewall"
+[3]: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/using-gwlb-with-tg-for-cns.html?utm_source=chatgpt.com "Using Gateway Load Balancer with Transit Gateway for centralized network security - Building a Scalable and Secure Multi-VPC AWS Network Infrastructure"
+[4]: https://aws.amazon.com/blogs/networking-and-content-delivery/deployment-models-for-aws-network-firewall/?utm_source=chatgpt.com "Deployment models for AWS Network Firewall | Networking & Content Delivery"
