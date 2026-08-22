@@ -5,9 +5,9 @@
 
 ---
 
-<img width="913" height="785" alt="image" src="https://github.com/user-attachments/assets/fe87c158-4213-427d-864c-50aa384f0923" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/ecdea258-6533-49b1-b816-d05f524a25b6" />
 
-Minimum Storage Duration = A BILLING Concept.
+Minimum Duration Charge = A BILLING Concept.
 
 ❌ It does NOT mean your files are locked and cannot be deleted. ✅ It means you will be charged as if the files were stored for that minimum period, even if you delete them earlier.
 
