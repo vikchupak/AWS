@@ -1,6 +1,12 @@
 # CloudTrail Lake
 
-**AWS CloudTrail and CloudTrail Lake are related, but they are not the same thing.**
+> CloudTrail Lake is no longer open to new customers starting May 31, 2026. AWS recommends Amazon CloudWatch as the alternative, which offers:
+> - Native analytics powered by OpenSearch
+> - 60+ AWS sources (vs. CloudTrail Lake's ~3 AWS sources)
+> - Open access via Apache Iceberg APIs
+> - Built-in OCSF and OpenTelemetry support
+
+AWS CloudTrail and CloudTrail Lake are related, but they are not the same thing.
 
 > **CloudTrail = records AWS activity**
 > **CloudTrail Lake = stores, processes, and analyzes that activity**
