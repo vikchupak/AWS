@@ -15,13 +15,13 @@ Minimum Duration Charge = A BILLING Concept.
 
 - S3 Express One Zone (**NEW**)
   - 1 AZ
-  - **Single-digit milliseconds first-byte latency (10x faster than Standard)**
+  - **"Single-digit milliseconds" first-byte latency (10x faster than Standard)**
   - Billed for
     - GB data stored (higher storage cost than S3 Standard)
     - 1000 requests (lower request cost than S3 Standard)
 - S3 Standard (Better for frequently accessed important/non-replaceable data)
   - Replicated across at least 3 AZs in a region
-  - **"Milliseconds" first byte latency**
+  - **"Milliseconds" first-byte latency**
   - Billed for
     - GB data stored
     - GB transfer OUT
@@ -41,7 +41,7 @@ Minimum Duration Charge = A BILLING Concept.
 - S3 One Zone-IA (Better for infrequent accessed non-important/replaceable data)
   - Like S3 Standard-IA
   - Replicated within 1 AZ
-  - **"Milliseconds" first byte latency**
+  - **"Milliseconds" first-byte latency**
   - Billed for
     - GB data stored (costs about 20% less than Standard-IA)
     - GB transfer OUT (costs about 20% less than Standard-IA)
@@ -57,7 +57,7 @@ Archive classes
 - S3 Glacier Instant Retrieval
   - Like S3 Standard
     - Replicated across at least 3 AZs in a region
-    - **"Milliseconds" first byte latency**
+    - **"Milliseconds" first-byte latency**
     - Billed for
       - GB data stored
       - GB transfer OUT
@@ -73,7 +73,7 @@ Archive classes
 - S3 Glacier Flexible Retrieval **(S3 Glacier)**
   - Like S3 Standard
   - But
-    - **No "Milliseconds" first byte latency**
+    - **No "Milliseconds" first-byte latency**
       - Access time
         - Expedited (1-5 min)
           - Supports **Provisioned capacity**
@@ -87,7 +87,7 @@ Archive classes
   - Like S3 Glacier Flexible Retrieval
   - But
     - **Longer Min duration charge of 180 days**
-    - **No "Milliseconds" first byte latency**
+    - **No "Milliseconds" first-byte latency**
       - Access time
         - Standard (12 hours)
         - Bulk (up to 48 hours)
