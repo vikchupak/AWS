@@ -7,7 +7,7 @@
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/ecdea258-6533-49b1-b816-d05f524a25b6" />
 
-- **Minimum Storage Duration** and Minimum Duration Charge are the same thing.
+- **`Minimum Storage Duration`** and `Minimum Duration Charge` are the same thing.
   - A BILLING Concept
   - Minimum Storage Duration - AWS documentation term
   - Minimum Duration Charge - the billing/cost perspective of the same concept
