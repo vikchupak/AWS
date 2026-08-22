@@ -13,6 +13,12 @@ Minimum Duration Charge = A BILLING Concept.
 
 ---
 
+- S3 Express One Zone (**NEW**)
+  - 1 AZ
+  - Single-digit milliseconds first-byte latency (10x faster than Standard)
+  - Billed for
+    - GB stored (higher storage cost than S3 Standard)
+    - 1000 requests (lower request cost than S3 Standard)
 - S3 Standard (Better for frequently accessed important/non-replaceable data)
   - Replicated across at least 3 AZs in a region
   - **"Milliseconds" first byte latency**
