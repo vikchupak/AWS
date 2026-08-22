@@ -25,4 +25,4 @@
     - Optimized CPU & Memory Bandwidth: They use top-tier processors and have massive memory bandwidth per core so the CPU is never waiting around for data
     - Ultra-Fast Cluster Communication (EFA): They come with native support for Elastic Fabric Adapter (EFA)
 
-<img width="976" height="834" alt="image" src="https://github.com/user-attachments/assets/fd3f6cc9-615b-45b4-888b-d37f16610b93" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/fd3f6cc9-615b-45b4-888b-d37f16610b93" />
