@@ -42,6 +42,7 @@
 - EC2 instance level via **security group** (L3–L4)
   - Attached to ENIs (instance level)
   - Stateful
+  - Acts as virtual firewall
 - Subnet level via **NACL (or simply ACL)** (L3–L4)
   - Attached to subnets
   - NACL is always associated with a subnet, not directly with the VPC
