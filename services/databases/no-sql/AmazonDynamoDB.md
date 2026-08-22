@@ -4,6 +4,7 @@
 - Key-value & document
 - Serverless
 - Operates within **a single AWS Region**
+- Provides **single-digit millisecond** latency for reads and writes at any scale
 
 ---
 
