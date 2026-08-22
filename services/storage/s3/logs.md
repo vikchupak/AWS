@@ -10,6 +10,8 @@ Both can be used for logging.
 
 ### Server access logging
 
+<img width="1055" height="712" alt="image" src="https://github.com/user-attachments/assets/8f370363-6b42-4983-a539-ec22b13e0447" />
+
 S3 Server Access Logging captures HTTP-level request details including:
 - Referrer, User-Agent, TLS version, Cipher suite
 - Turn-around time, Total time
