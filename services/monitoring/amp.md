@@ -16,7 +16,9 @@ Amazon Managed Service for Prometheus is a **serverless**, Prometheus-compatible
 - Developed in collaboration with Grafana Labs
 - Integrates with AWS IAM Identity Center for SSO
 
-# AMP + AMG
+# AMP + AMG setup
+
+Create a workspace on AWS Manage Service for Prometheus to collect container metrics. Set this workspace as the data source in AWS Managed Grafana for monitoring and data visualization.
 
 ```txt
 ┌───────────────────────────────────────────────────────────────────┐
