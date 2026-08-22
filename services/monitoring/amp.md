@@ -16,6 +16,63 @@ Amazon Managed Service for Prometheus is a **serverless**, Prometheus-compatible
 - Developed in collaboration with Grafana Labs
 - Integrates with AWS IAM Identity Center for SSO
 
+# AMP + AMG
+
+```txt
+┌───────────────────────────────────────────────────────────────────┐
+│                     CONTAINER WORKLOADS                           │
+│                                                                   │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐    │
+│  │   Amazon EC2    │  │  Amazon ECS     │  │  Amazon EKS     │    │
+│  │  (Docker)       │  │  (Fargate/EC2)  │  │  (EC2/Fargate)  │    │
+│  └────────┬────────┘  └────────┬────────┘  └────────┬────────┘    │
+└───────────┼────────────────────┼────────────────────┼─────────────┘
+            │                    │                    │
+            └────────────────────┼────────────────────┘
+                                  │
+                    metrics scraping / remote write
+                    (via ADOT Collector or Prometheus agent)
+                                  │
+                                  ▼
+┌────────────────────────────────────────────────────────────────────┐
+│           Amazon Managed Service for Prometheus (AMP)              │
+│                                                                    │
+│   ┌──────────────────────────────────────────────────────────┐     │
+│   │                    WORKSPACE                             │     │
+│   │                                                          │     │
+│   │   • Stores metrics in Prometheus format                  │     │
+│   │   • Supports PromQL queries                              │     │
+│   │   • Serverless — auto scales                             │     │
+│   │   • Immutable / highly available                         │     │
+│   │   • Retention: configurable                              │     │
+│   └──────────────────────────────────────────────────────────┘     │
+└─────────────────────────────────┬──────────────────────────────────┘
+                                  │
+                     AMP set as DATA SOURCE
+                     (PromQL queries over HTTPS)
+                                  │
+                                  ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│              Amazon Managed Grafana (AMG)                           │
+│                                                                     │
+│   ┌──────────────────────────────────────────────────────────┐      │
+│   │                    WORKSPACE                             │      │
+│   │                                                          │      │
+│   │   ┌────────────┐  ┌────────────┐  ┌────────────────┐     │      │
+│   │   │ Dashboards │  │  Alerts    │  │ Visualizations │     │      │
+│   │   └────────────┘  └────────────┘  └────────────────┘     │      │
+│   │                                                          │      │
+│   │   • Fully managed Grafana server                         │      │
+│   │   • Auth via IAM Identity Center / SAML                  │      │
+│   │   • Auto scaling, patching, HA                           │      │
+│   └──────────────────────────────────────────────────────────┘      │
+└─────────────────────────────────────────────────────────────────────┘
+                                  │
+                                  ▼
+                    👤 Users / DevOps / SRE Teams
+                    (view dashboards via browser)
+```
+
 # Fully managed vs serverless
 
 Amazon Managed Grafana (AMG) is described by AWS as a "fully managed" service, which means:
