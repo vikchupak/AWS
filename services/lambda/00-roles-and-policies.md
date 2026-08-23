@@ -17,3 +17,13 @@
             └── "Lambda can access S3, DynamoDB, etc."
   ```
 - **Resource-based policy** -> Who/what can invoke Lambda
+  ```txt
+  Principal
+     │
+     │ allowed to invoke
+     ▼
+  Lambda Function
+     │
+     └── Resource-based policy
+            └── "This principal can invoke me"
+  ```
