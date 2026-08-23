@@ -11,6 +11,8 @@
 
 ---
 
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/812d57a4-31fc-47b3-b001-46f67f244100" />
+
 - **Amazon MQ**
   - Managed **message broker** service.
   - Helps migrate existing message-broker applications to AWS.
