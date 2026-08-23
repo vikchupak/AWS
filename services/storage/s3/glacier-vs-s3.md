@@ -13,4 +13,4 @@
 
 ## Lock diff
 
-- [Lock diff](https://github.com/vikchupak/AWS/blob/main/services/s3/s3.md#amazon-glacier-vault-lock)
+- [Lock diff](https://github.com/vikchupak/AWS/blob/main/services/storage/s3/object-lock.md)
