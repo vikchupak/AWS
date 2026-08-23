@@ -101,3 +101,51 @@ Archive classes
 
 - S3 Intelligent-Tiering
   - Automatically moves your data to the most cost-effective storage class (Machine lerning is used for that)
+
+# Transition constraints
+
+### Minimum Time Constraints (Days)
+
+There is a time constraint in transitioning objects from **S3 Standard storage class**.
+
+<img width="359" height="212" alt="image" src="https://github.com/user-attachments/assets/a8611bcf-7ef6-4187-aac1-e8a8d74af28f" />
+
+### Allowed vs. Not Allowed Transitions
+
+Not all transitions between storage classes are supported:
+
+<img width="461" height="207" alt="image" src="https://github.com/user-attachments/assets/c8f75de3-ae9b-4136-b150-ad49806caefe" />
+
+### Minimum Storage Duration Charges
+
+<img width="328" height="180" alt="image" src="https://github.com/user-attachments/assets/c0e56827-8180-46fa-b6b6-5b1995af49ea" />
+
+### Minimum Object Size Constraint
+
+By default, objects smaller than 128 KB cannot be transitioned to most storage classes. This is because the overhead costs outweigh the savings.
+
+- Default behavior: Objects < 128 KB are blocked from transitioning to any storage class
+- Exception: Glacier Flexible Retrieval and Glacier Deep Archive can accept objects < 128 KB
+- Override: You can customize this by adding an ObjectSizeGreaterThan or ObjectSizeLessThan filter to your lifecycle rule
+
+### One-Way Transition Rule (No Going Back)
+
+Transitions can only go "downward" in the storage hierarchy — you cannot transition back to a higher-tier storage class via lifecycle rules:
+
+```txt
+S3 Standard → Standard-IA → One Zone-IA → Glacier IR → Glacier Flexible → Deep Archive
+                                                                              ⬆️ NO going back
+```
+
+- ❌ You cannot transition from Glacier back to Standard via lifecycle
+- ❌ You cannot transition from Deep Archive to Glacier Flexible via lifecycle
+- ✅ To restore, you must use a restore request, not a lifecycle rule
+
+If you want to permanently change the storage class back to S3 Standard, you need to:
+
+- Restore the object first
+  - What "Restore" Actually Means
+    - A temporary copy is made available in S3 Standard for a **specified number of days**
+    - The original object remains in Glacier/Deep Archive
+    - After the restore period expires, the temporary copy is deleted automatically
+- Once restored, re-upload or copy the object and explicitly set the storage class to S3 Standard
