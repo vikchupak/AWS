@@ -40,6 +40,7 @@
 
 - Old model (legacy)
   - Glacier vaults + Amazon S3 Glacier Vault Lock
+  - [See](https://github.com/vikchupak/AWS/blob/main/services/storage/s3/glacier-vs-s3.md)
 - Modern model (current standard)
   - Amazon S3 buckets + storage classes
  
