@@ -19,6 +19,14 @@
 - [Geoproximity](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html)
   - Route traffic based on the geographic distance between users and your resources, and lets you shift traffic using a bias value
 
+### Adding records to Route53
+
+- [Record types](https://github.com/vikchupak/Network/blob/main/dns/RecordTypes.md)
+
+To route traffic to ELB, AWS uses aliases.
+- Alias with a type "A" record set for **IPv4**
+- Alias with a type "AAAA" record set for **IPv6**
+
 ### Rules evaluation
 
 - Rules are evaluated in priority order, and the first matching rule wins
