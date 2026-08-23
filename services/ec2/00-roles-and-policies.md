@@ -17,11 +17,13 @@
 - EC2 instances do not support **resource-based IAM policies**
   - Access to EC2 is mainly controlled through identity-based policies -> Who/what can access EC2
   ```txt
-  IAM User / Role
-       ↓
-  Identity-based policy
-       ↓
-  EC2 API
-       ↓
-  EC2 instance
+  Principal (IAM User / Role)
+     │
+     │ has permission
+     ▼
+  Identity-based Policy
+     │
+     │ ec2:StartInstances
+     ▼
+  EC2 Instance
   ```
