@@ -1,7 +1,7 @@
 # Instance profile
 
 - EC2 assumes IAM role via Instance profile
-- EC2 instances do not support resource-based IAM policies
+- EC2 instances do not support **resource-based IAM policies**
   - Access to EC2 is mainly controlled through identity-based policies
   ```txt
   IAM User / Role
