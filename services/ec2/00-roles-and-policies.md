@@ -4,6 +4,7 @@
   - IAM role has **Trust policy** -> who can assume the role
 - EC2 instances do not support **resource-based IAM policies**
   - Access to EC2 is mainly controlled through identity-based policies
+  - Who/what can access EC2
   ```txt
   IAM User / Role
        ↓
