@@ -36,7 +36,7 @@
     - Require permission `s3:PutObjectLegalHold` to add or remove lock
   - **Note: Both ways can be applied to an object version at the same time**
 
-# Amazon Glacier Vault Lock
+# Amazon Glacier Vault Lock (Vault Lock = Object Lock)
 
 - Old model (legacy)
   - Glacier vaults + Amazon S3 Glacier Vault Lock
