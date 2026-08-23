@@ -2,10 +2,10 @@
 
 - Amazon Redshift is SQL-based
 - Amazon Redshift → relational / SQL data warehouse
-- Uses SQL to query data.
-- Based on PostgreSQL syntax, with Redshift-specific features.
-- Designed primarily for analytics (OLAP) over large datasets.
-- Data is stored in tables with rows and columns.
+- Uses SQL to query data
+- Based on PostgreSQL syntax, with Redshift-specific features
+- Designed primarily for analytics (OLAP) over large datasets
+- Data is stored in tables with rows and columns
 
 ---
 
