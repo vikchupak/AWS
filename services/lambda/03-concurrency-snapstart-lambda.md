@@ -52,7 +52,7 @@ When you publish a new version of your code with SnapStart enabled:
 
 ### The "Catch" (Compatibility)
 
-1. **Limited Runtimes:** It was built primarily for heavy runtimes like **Java**, **Python**, and **.NET** where cold starts are notoriously slow (often 5+ seconds). Lightweight runtimes like Node.js or Go don't support it yet because their cold starts are already fast.
+1. **Limited Runtimes:** **It was built primarily for heavy runtimes like **Java**, **Python**, and **.NET** where cold starts are notoriously slow (often 5+ seconds). Lightweight runtimes like Node.js or Go don't support it yet because their cold starts are already fast.**
 2. **Mutually Exclusive:** You **cannot** use SnapStart and Provisioned Concurrency on the same function version. You have to pick one.
 3. **The "Uniqueness" Problem:** Because the snapshot is a literal copy of memory, things like **random number seeds** or **unique database connection IDs** might be identical across multiple instances if they were generated during the "snapshot" phase. You have to use "Runtime Hooks" to refresh these values upon restoration.
 
