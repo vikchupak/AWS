@@ -14,6 +14,8 @@ The service simplifies your migration by enabling you to use the same automated 
 
 Implementation begins by installing the **AWS Replication Agent** on your source servers. When you launch Test or Cutover instances, AWS Application Migration Service automatically converts your source servers to boot and runs natively on AWS.
 
+<img width="772" height="521" alt="image" src="https://github.com/user-attachments/assets/899df2b1-5c24-4bd3-926f-6bd22d2d23f7" />
+
 ## AWS Application Discovery Service (ADS) + AWS Migration Hub (Migration Hub)
 
 #### AWS Application Discovery Service
