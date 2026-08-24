@@ -12,8 +12,9 @@
 ---
 
 - You launch an encrypted Amazon EFS **volume**
+  - The EFS volume is backed by AWS-managed servers
 - Serverless
-  - There are severs, but they are hidden and you do not have to manage them.
+  - There are severs, but they are hidden and you do not have to manage them
 - Set-and-forget
 - Massive parallel shared access to thousands of Amazon EC2 instances
 - Capacity autoscales
