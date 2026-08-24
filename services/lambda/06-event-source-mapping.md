@@ -15,6 +15,7 @@ Think of it as:
 * Lambda **polls** the event source for new messages/events.
   - Lambda does NOT sit passively waiting to be pushed to. Instead, Lambda actively polls events stream for new records — 4 times per second by default.
   - Who initiates the call? => Lambda service
+  - **AWS uses the word "trigger". This is a simplified/abstracted term for end-user convenience**
 * When events are available, Lambda **invokes the function** with a batch of events.
 * The function processes the batch.
 * Lambda continues polling for new events.
