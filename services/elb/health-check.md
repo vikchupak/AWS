@@ -4,7 +4,7 @@ Your Application Load Balancer periodically sends requests to its registered tar
 
 ## NLB targets health check
 
-Many people assume NLB only does TCP health checks, but that is not true since November 2022.
+Many people assume NLB only does TCP health checks, but that is not true **since November 2022**.
 
 ### ✅ NLB Supported Health Check Protocols
 
