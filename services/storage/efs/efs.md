@@ -9,6 +9,14 @@
     - Do not confuse with NTFS / ext4 / exFAT → file systems (how data is stored on a disk like SSD)
 - Independent from EC2 instance lifecycle
 
+---
+
+- You launch an encrypted Amazon EFS **volume**
+- Serverless
+- Set-and-forget
+- Massive parallel shared access to thousands of Amazon EC2 instances
+- Capacity autoscales
+
 # EFS mount target
 
 An EFS mount target is essentially an Elastic Network Interface (ENI) that Amazon creates in each subnet you enable for EFS
