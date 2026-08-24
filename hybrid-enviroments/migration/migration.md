@@ -1,5 +1,3 @@
-# MIGRATION
-
 ## Move data(storage) to S3/EFS/FSx/EBS
 
 ### Snowball family
