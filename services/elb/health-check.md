@@ -25,3 +25,5 @@ HTTP Health Check:
     NLB → "GET /health" → 200 OK → Target is healthy ✅
     NLB → "GET /health" → 500 Error → Target is UNHEALTHY ❌
 ```
+
+<img width="1920" height="1003" alt="image" src="https://github.com/user-attachments/assets/e2426526-8dc4-4d6f-9d79-f44ed003d801" />
