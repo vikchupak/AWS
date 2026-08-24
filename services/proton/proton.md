@@ -1,5 +1,9 @@
 # AWS Proton
 
+AWS Proton **will be deprecated on October 7, 2026**. After this date, you will no longer be able to access the AWS Proton console or resources. Your deployed infrastructure will remain intact — only the Proton management layer is removed. AWS recommends migrating to alternative services like AWS Service Catalog, AWS CDK, or Terraform for similar functionality.
+
+---
+
 AWS Proton allows you to deploy any serverless or container-based application with increased efficiency, consistency, and control. You can define infrastructure standards and effective continuous delivery pipelines for your organization. Proton breaks down the infrastructure into environment and service (“infrastructure as code” templates).
 
 As a developer, you select a standardized service template that AWS Proton uses to create a service that deploys and manages your application in a service instance. An AWS Proton service is an instantiation of a service template, which normally includes several service instances and a pipeline.
