@@ -7,6 +7,8 @@ AWS Compute Optimizer recommends optimal AWS resources for your workloads to red
 - EBS volumes
 - Lambda functions
 
+Uses deep **ML-powered** analysis.
+
 You must opt-in to have Compute Optimizer analyze your AWS resources. The service supports standalone AWS accounts, member accounts of an organization, and the management account of an organization. After you opt-in, Compute Optimizer begins analyzing the specifications and the utilization metrics of your resources from Amazon CloudWatch for the last 14 days.  For example, for Amazon EC2 instances, Compute Optimizer analyzes the vCPUs, memory, storage, and other specifications.
 
 <img width="943" height="569" alt="image" src="https://github.com/user-attachments/assets/cecfda75-1d17-4576-95fb-292758d9adb0" />
