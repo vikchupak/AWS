@@ -5,6 +5,11 @@
 - Serverless
 - Operates within **a single AWS Region**
 - Provides **single-digit millisecond** latency for reads and writes at any scale
+- HA — Built-In, Zero Configuration
+  - AWS automatically replicates your data across 3 AZs in the same Region
+  - No setup required
+  - No extra cost
+  - Happens instantly
 
 ---
 
