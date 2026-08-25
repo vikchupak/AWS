@@ -2,6 +2,8 @@
 
 **Placement groups** control *how* EC2 instances are physically placed on AWS hardware to influence performance, latency, and fault tolerance.
 
+<img width="840" height="609" alt="image" src="https://github.com/user-attachments/assets/e65f792d-8139-457c-af61-fff21ec9b77e" />
+
 ### 1. Cluster Placement Group
 
 📌 **Goal:** Maximum performance
