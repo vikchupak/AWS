@@ -10,6 +10,8 @@
 - Use EFS for Linux
 - Use FSx for Windows
 
+<img width="844" height="459" alt="image" src="https://github.com/user-attachments/assets/3b54d028-f3c8-4080-aff4-459d744f5b38" />
+
 ### Amazon FSx for Windows File Server
 
 - [Doc](https://aws.amazon.com/fsx/windows/)
