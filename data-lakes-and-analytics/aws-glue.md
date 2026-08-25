@@ -21,7 +21,7 @@ An AWS Glue Crawler automatically discovers the structure (schema) of data and s
 
 Glue Data Catalog as a "phone book" or "map" for your data. It doesn't store the actual data — it stores metadata about it.
 
-### AWS Glue crawler + AWS Glue Data Catalog + S3 + Amazon Athena
+### AWS Glue crawler + AWS Glue Data Catalog + S3 + Amazon Athena + QuickSight
 
 ```txt
 S3 (raw sales data)
