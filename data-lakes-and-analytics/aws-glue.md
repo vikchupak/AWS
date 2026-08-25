@@ -37,3 +37,5 @@ AWS Glue Crawler  →  Glue Data Catalog (schema/metadata)
 - Glue Data Catalog = Knows about the data (metadata)
 - Amazon Athena = Queries the actual data in S3, using the metadata from Glue to understand it
 - Amazon QuickSight = Visualizes the query results produced by Athena (charts, graphs, dashboards)
+
+<img width="800" height="454" alt="image" src="https://github.com/user-attachments/assets/19401a90-59a8-4887-92a1-5ec0f56e5ec3" />
