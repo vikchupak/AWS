@@ -15,6 +15,7 @@
 ### Amazon FSx for Windows File Server
 
 - [Doc](https://aws.amazon.com/fsx/windows/)
+- Fully managed shared storage built on Windows Server
 - Managed **native** Windows file servers/shares (NTFS)
 - Designed for integration with Windows environments
 - Provide all native Windows FS features like VSS, Data de-duplication, backups, encryption at rest and forced encryption in transit
@@ -35,6 +36,7 @@
 
 **Amazon FSx for Lustre**
 - [Doc](https://aws.amazon.com/fsx/lustre/)
+- Fully managed shared storage built on the world’s most popular high-performance file system
 - Managed **native** Lustre FS
 - Accessible over VPN or DX
 - Deployment types
@@ -48,3 +50,11 @@
 - Architecture
   - Uses S3 Bucket as a repository
   - Data is lazy loaded to the Luster when needed
+
+### Amazon FSx for NetApp ONTAP
+
+- Fully managed shared storage built on NetApp’s popular ONTAP file system
+
+### Amazon FSx for OpenZFS
+
+- Fully managed shared storage built on the popular OpenZFS file system
