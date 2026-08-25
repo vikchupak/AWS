@@ -5,3 +5,5 @@
 - Additional "AZs" that belong to a parent region and are **closer to customers**
   - Local Zones are not full AZs — they’re partial extensions of the parent region designed **for low latency**
   - Local Zone is **physically outside** of the parent region, but **logically** belongs to it
+
+<img width="551" height="321" alt="image" src="https://github.com/user-attachments/assets/17b7824e-d23c-4c18-92e2-92eb3260017b" />
