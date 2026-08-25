@@ -28,11 +28,12 @@ S3 (raw sales data)
       ↓
 AWS Glue Crawler  →  Glue Data Catalog (schema/metadata)
                               ↓
-                       Amazon Athena (SQL queries)
+                       Amazon Athena (runs SQL query → produces results)
                               ↓
-                    Amazon QuickSight (visualization)
+                    Amazon QuickSight (visualizes those results)
 ```
 
 - Glue Data Catalog = Knows about the data (metadata)
 - Amazon S3 = Holds the actual data
 - Amazon Athena = Queries the actual data in S3, using the metadata from Glue to understand it
+- Amazon QuickSight = Visualizes the query results produced by Athena (charts, graphs, dashboards)
