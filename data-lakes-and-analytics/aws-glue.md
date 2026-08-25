@@ -7,6 +7,32 @@ ETL stands for:
 - T — Transform → clean, filter, or modify the data
 - L — Load → put the transformed data into a target system
 
+### Job bookmarks
+
 **Job bookmarks** in AWS Glue are designed to help maintain state information and prevent the reprocessing of old data. By utilizing job bookmarks, AWS Glue can effectively track the states of various elements of jobs, such as sources, transformations, and targets. This feature allows the ETL job to process only new or modified data when rerun on a scheduled interval, optimizing resources and processing time while maintaining data integrity.
 
 <img width="2906" height="2020" alt="image" src="https://github.com/user-attachments/assets/cfd5d2e2-7830-4ce2-8ed7-f91fb3a42936" />
+
+### AWS Glue crawler
+
+An AWS Glue Crawler automatically discovers the structure (schema) of data and stores that metadata in the AWS Glue Data Catalog. For example, S3 data.
+
+### AWS Glue Data Catalog
+
+Glue Data Catalog as a "phone book" or "map" for your data. It doesn't store the actual data — it stores metadata about it.
+
+### AWS Glue crawler + AWS Glue Data Catalog + S3 + Amazon Athena
+
+```txt
+S3 (raw sales data)
+      ↓
+AWS Glue Crawler  →  Glue Data Catalog (schema/metadata)
+                              ↓
+                       Amazon Athena (SQL queries)
+                              ↓
+                    Amazon QuickSight (visualization)
+```
+
+- Glue Data Catalog = Knows about the data (metadata)
+- Amazon S3 = Holds the actual data
+- Amazon Athena = Queries the actual data in S3, using the metadata from Glue to understand it
