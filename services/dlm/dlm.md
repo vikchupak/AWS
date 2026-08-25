@@ -8,3 +8,5 @@ Data Lifecycle Manager is capable of:
 - Retain backups as required by auditors or internal compliance
 - Reduce storage costs by deleting outdated backups
 - Create disaster recovery backup policies that backup data to isolated Regions or accounts
+
+<img width="2280" height="1946" alt="image" src="https://github.com/user-attachments/assets/74c8b9e1-d2a0-4eee-865b-30ad781d572b" />
