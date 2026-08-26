@@ -56,8 +56,25 @@ Protects against DDoS attacks
 
 - [AWS Config](https://aws.amazon.com/config/)
 - Record resource configuration changes (history) over time to S3
-- Detects and reports non-compliant changes against resorce **Config Rules** using Lambda
-  - But it does NOT block non-compliant changes
+- Detects and reports non-compliant changes against resource **Config Rules** using Lambda
+  - **But it does NOT block non-compliant changes or perform remediate actions — it can only detect and report**
+
+<img width="586" height="180" alt="image" src="https://github.com/user-attachments/assets/acc6d25c-0672-467e-af9d-3c4c8b1ab81c" />
+
+### AWS Config + SSM Automation Document (Runbook)
+
+To perform remediate actions, SSM Automation Document can be used.
+
+```txt
+EBS Volume Created (unencrypted)
+          ↓
+AWS Config Rule detects NON_COMPLIANT
+          ↓
+AWS Config triggers SSM Automation Document
+          ↓
+SSM Automation performs the remediation
+(e.g., snapshot → encrypt → replace volume)
+```
 
 # Amazon Macie
 
