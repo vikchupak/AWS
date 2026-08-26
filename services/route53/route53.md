@@ -6,7 +6,7 @@
   - Route traffic to a primary resource, and if it becomes unhealthy, Route 53 automatically switches traffic to a secondary (backup) resource
     - Requires Health Checks
 - [Multi-Value](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-multivalue.html)
-  - Return multiple IP addresses (up to 8) in response to a single DNS query
+  - Return multiple **healthy** IP addresses (up to 8) in response to a single DNS query
     - The client (browser, OS) then chooses which IP to connect to
 - [Weighted](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html)
   - Split traffic between multiple resources based on assigned weights
