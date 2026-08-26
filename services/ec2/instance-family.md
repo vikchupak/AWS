@@ -1,33 +1,38 @@
-# Instance family (category)
+# Instance family (category) & type
 
-Instance Family and Category are essentially the same thing.
+> Instance Family and Category are essentially the same thing.
+> - Instance Family	- AWS documentation term
+> - Instance Category - Informal term
 
-- Instance Family	- AWS documentation term
-- Instance Category - Informal term
+### Instance family
 
-```txt
-Instance Family
-      └── Instance Type
-                └── Instance Size
-```
+An Instance Family refers to a group of instances designed for a specific workload type or optimized for a particular resource (e.g., CPU, Memory, or Storage). It usually includes:
+- family prefix
+- generation number
+- optional capability flags
 
-| **Term** | **What it is** | **Example** |
-|---|---|---|
-| **Instance Family** | The **broad category/group** | General Purpose, Compute Optimized, Memory Optimized |
-| **Instance Type** | The **specific model** within a family | `m5`, `c5`, `r5`, `i3`, `hpc6a` |
-| **Instance Size** | The **size** of that specific type | `large`, `xlarge`, `2xlarge` |
+Examples: m5, c6g, r7a, t4g
 
 ```txt
-m5.xlarge
-│ │  └── Size
-│ └──── Generation
-└────── Family
+c  6  g  
+|  |  └── Capabilities (g = AWS Graviton CPU)
+|  └──── Generation (6th Gen)
+└────── Family Prefix (c = Compute Optimized)
 ```
-- m = Family (General Purpose)
-- 5 = Generation (5th generation)
-- xlarge = Size
 
----
+### Instance type
+
+An Instance Type is the complete identifier for a specific server specification. It combines the Instance Family with a specific Size (vCPU count, RAM capacity, network bandwidth).
+
+Examples: m5.xlarge, c6g.2xlarge, t4g.micro
+
+```txt
+c6g  .  2xlarge
+ |         └──── Instance Size (8 vCPUs, 16 GiB RAM)
+ └────────────── Instance Family
+```
+
+### Families list
 
 - [Doc](https://aws.amazon.com/ec2/instance-types/)
 - General purpose
