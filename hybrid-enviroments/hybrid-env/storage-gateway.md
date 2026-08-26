@@ -113,3 +113,8 @@ Stage 2: The S3 Upload (Asynchronous)
 1. Immediately after saving to the local cache, the File Gateway begins uploading the file to your Amazon S3 bucket over the internet/VPN in the background.
 2. It uses optimized, parallel multipart uploads and HTTPS encryption.
 3. Once the upload finishes, the file is fully backed up and durable in AWS S3.
+
+## FSx File Gateway
+
+Is not a single solution but itself also a family of solutions bringing cloud and local storage closer for more native file systems.
+
