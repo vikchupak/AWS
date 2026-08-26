@@ -1,5 +1,7 @@
 # CloudWatch Application Insights
 
+Monitors your application stack for performance issues and errors.
+
 ```txt
 ┌─────────────────────────────────────────────────────┐
 │                   AWS Cloud                         │
