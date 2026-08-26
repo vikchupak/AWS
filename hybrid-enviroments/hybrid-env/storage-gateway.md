@@ -25,7 +25,7 @@
 
 The AWS Storage Gateway **Hardware Appliance** is a physical, standalone server that comes pre-loaded with AWS Storage Gateway software. It is designed for organizations that need on-premises compute resources without relying on virtualization (no VMware, Hyper-V, or KVM required).
 
-### Volume Gateway
+## Volume Gateway
 
 Let on-premises applications use block storage (disk volumes) while the data is stored in Amazon S3
 
@@ -61,7 +61,7 @@ Let on-premises applications use block storage (disk volumes) while the data is 
       - 32TB per volume
       - 1PB per Gateway
 
-### Tape Gateway or Virtual Tape Library (VTL)
+## Tape Gateway or Virtual Tape Library (VTL)
 
 Let on-premises backup software store data on virtual tape library backed by Amazon S3
 
@@ -75,7 +75,7 @@ Let on-premises backup software store data on virtual tape library backed by Ama
   - Data actively used is cached on VM on-prem locally
   - Connection. Backup server -> VM (On-prem) with emulated VTL "inteface" -> Storage Gateway Endpoint (AWS) -> VTL
 
-### Amazon S3 File Gateway
+## Amazon S3 File Gateway
 
 Let on-premises applications use file storage while the files are stored in Amazon S3
 
