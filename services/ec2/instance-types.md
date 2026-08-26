@@ -1,4 +1,33 @@
-# Instance family/category
+# Instance family (category)
+
+Instance Family and Category are essentially the same thing.
+
+- Instance Family	- AWS documentation term
+- Instance Category	- Common/informal term
+
+```txt
+Instance Family
+      └── Instance Type
+                └── Instance Size
+```
+
+| **Term** | **What it is** | **Example** |
+|---|---|---|
+| **Instance Family** | The **broad category/group** | General Purpose, Compute Optimized, Memory Optimized |
+| **Instance Type** | The **specific model** within a family | `m5`, `c5`, `r5`, `i3`, `hpc6a` |
+| **Instance Size** | The **size** of that specific type | `large`, `xlarge`, `2xlarge` |
+
+```txt
+m5.xlarge
+│ │  └── Size
+│ └──── Generation
+└────── Family
+```
+- m = Family (General Purpose)
+- 5 = Generation (5th generation)
+- xlarge = Size
+
+---
 
 - [Doc](https://aws.amazon.com/ec2/instance-types/)
 - General purpose
