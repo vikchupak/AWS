@@ -53,8 +53,10 @@ Instance compute capacity
   - You have full access/control over host
 - Dedicated Instances
   - Pay additional/extra fee for no other customers instances to use the same host as you. Pay for instances.
+  - **Reason: some companies cannot use shared hardware by law**
+  - **You have no access/control over host**
+  - AWS still profits - AWS charges an extra fee for dedicated tenancy — covering the unutilized "wasted" host capacity
   - On-demand or reserved
-  - You have no access/control over host
 
 ---
 
