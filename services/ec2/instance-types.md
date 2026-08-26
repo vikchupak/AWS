@@ -1,4 +1,4 @@
-# Instance types
+# Instance family/category
 
 - [Doc](https://aws.amazon.com/ec2/instance-types/)
 - General purpose
