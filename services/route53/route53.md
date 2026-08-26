@@ -8,6 +8,7 @@
 - [Multi-Value](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-multivalue.html)
   - Return multiple **healthy** IP addresses (up to 8) in response to a single DNS query
     - The client (browser, OS) then chooses which IP to connect to
+  - This policy is beneficial for applications that require **high availability and resilience** against individual instance failures without the complexity of managing cross-region load-balancing solutions. It’s easy to implement, requiring no additional infrastructure changes beyond the DNS configuration and health checks in Route 53.
 - [Weighted](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html)
   - Split traffic between multiple resources based on assigned weights
 - [Latency](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-latency.html)
