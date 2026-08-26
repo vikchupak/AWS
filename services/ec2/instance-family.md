@@ -3,7 +3,7 @@
 Instance Family and Category are essentially the same thing.
 
 - Instance Family	- AWS documentation term
-- Instance Category	- Common/informal term
+- Instance Category - Informal term
 
 ```txt
 Instance Family
