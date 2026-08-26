@@ -36,4 +36,4 @@ mainSteps:
 
 #### AWS Pre-Built Documents
 
-WS provides ready-made automation documents for common tasks.
+AWS provides ready-made automation documents for common tasks.
