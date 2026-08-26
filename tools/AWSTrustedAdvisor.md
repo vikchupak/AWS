@@ -6,10 +6,10 @@
 | Category                 | What it looks for                                    |
 | ------------------------ | ---------------------------------------------------- |
 | 💰 **Cost Optimization** | Unused/underutilized resources and potential savings |
-| 🔒 **Security**          | Security groups, IAM, MFA, exposed resources, etc.   |
-| ⚡ **Performance**        | Configurations that may hurt performance             |
-| 🛡️ **Fault Tolerance**  | Single points of failure and lack of redundancy      |
-| **Service Limits**       | Resources approaching AWS service quotas             |
+| 🔒 **Security**          | Identify security settings that may make your AWS solution less secure   |
+| ⚡ **Performance**        | Recommendations that can help to improve the speed and responsiveness of your applications             |
+| 🛡️ **Fault Tolerance**  | Improving the resiliency of your AWS system by highlighting redundancy gaps, current service limits, and over-utilized resources      |
+| 📏 **Service Limits**    | Resources approaching AWS service quotas (typically at 80% of the limit) |
 
 - It scans your env/account and can use ClaudWatch metrics
 - Trusted Advisor automatically performs its checks periodically and updates recommendations, so you generally don't need to manually start a scan every time
