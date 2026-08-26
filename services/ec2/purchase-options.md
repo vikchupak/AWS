@@ -29,7 +29,7 @@ Instance compute capacity
   - Pay a fixed price by hour(seconds precision) for an instance running
 - Spot instances
   - Pay the same as On-demand instances, but hourly price is significantly less than On-demand
-- Reserved instances
+- Reserved instances (RI)
   - Pay for a specific instance type and quantity
   - Commit on 1 or 3 years
   - Your instances still run on shared AWS hosts
@@ -47,6 +47,27 @@ Instance compute capacity
       - You pay some money upfront
       - Then pay a reduced hourly rate
       - Middle cost option
+  - 2 RI types
+    - **Standard**
+      - Discount (Up to ~72%)
+      - You CANNOT
+        - Change the instance family
+        - Change OS
+        - Tenancy (e.g., switch from Shared to Dedicated)
+      - You CAN
+        - Change Instance Size
+        - Change Availability Zone
+        - Sell Standard RIs on the AWS Reserved Instance Marketplace
+    - **Convertible**
+      - Discount (Up to ~54%)
+      - You CAN
+        - Change Instance Family: (e.g., switch from m5 to c6g or r7a)
+        - Change Instance Size
+        - Change Availability Zone
+        - Change Operating System: (e.g., switch from Linux to Windows)
+        - Change Tenancy: (e.g., switch from Shared to Dedicated)
+      - You CANNOT
+        - Sell on RI Marketplace
 - Dedicated Hosts
   - Pay for hosts, not instances
   - On-demand or reserved
