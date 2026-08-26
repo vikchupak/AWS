@@ -2,6 +2,8 @@
 
 Monitors containerized workloads.
 
+<img width="2704" height="1966" alt="image" src="https://github.com/user-attachments/assets/19bd227c-5d39-4665-b563-f5338a118d37" />
+
 ## CloudWatch Application Insights vs Container Insights
 
 They are **two different features** of Amazon CloudWatch, each serving a different purpose.
