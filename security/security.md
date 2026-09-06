@@ -108,6 +108,7 @@ SSM Automation performs the remediation
 # AWS Artifact
 
 - [AWS Artifact](https://aws.amazon.com/artifact/)
+- Central resource for compliance-related information that matters to you
 - Provides on-demand access to AWS compliance reports and agreements
 - Used for audit and compliance documentation, not for securing resources
 - Includes:
