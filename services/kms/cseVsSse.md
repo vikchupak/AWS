@@ -8,6 +8,7 @@
 - **CSE using `KMS key` (uses AWS Key Management Service as master key source)**
   - Upload/Encrypt
     - Client asks KMS for DEK + Encrypted DEK
+      - We provide KMS key identifier (KeyId) to say which KMS key to use
     - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encrypted data to S3
   - Download/Decrypt
     - Client gets a object from S3. Extracts encrypted DEK from object metadata
