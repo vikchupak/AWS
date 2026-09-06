@@ -5,7 +5,7 @@
 
 ---
 
-- **CSE using KMS key (uses AWS Key Management Service as master key source)**
+- **CSE using `KMS key` (uses AWS Key Management Service as master key source)**
   - Upload/Encrypt
     - Client asks KMS for DEK + Encrypted DEK
     - Client encrypts data using DEK + attaches encrypted DEK as metadata and sends encrypted data to S3
@@ -14,7 +14,7 @@
       - Asks KMS to decrypt DEK and send it back
       - Client uses DEK to decrypt the object
 
-- **CSE using client-side master key (no AWS Key Management Service involved)**
+- **CSE using `client-side master key` (no AWS Key Management Service involved)**
   - We can generate CMKs youself locally(without KMS), then we have to store and manage CMK on client side.
   - Upload/Encrypt
     - Client generates (once) the client-side master key
