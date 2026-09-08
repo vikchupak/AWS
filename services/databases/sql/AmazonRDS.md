@@ -28,7 +28,7 @@
     - **Native Oracle** [(Amazon RDS for Oracle)](https://aws.amazon.com/rds/oracle/)
     - **Native Microsoft SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
     - **Native Db2**
-  - One instanse
+  - One instanse (for reads and writes)
 - **[Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)**
   - 1 Standby instance in another AZ, but it is not reachable
   - **Engines**
