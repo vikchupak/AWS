@@ -29,7 +29,7 @@
     - **Native Microsoft SQL Server** [(Amazon RDS for SQL Server)](https://aws.amazon.com/rds/sqlserver/)
     - **Native Db2**
   - One instanse (for reads and writes)
-- **[Amazon RDS Multi-AZ](https://aws.amazon.com/rds/features/multi-az/)**
+- **[Amazon RDS Multi-AZ DB instance deployment](https://aws.amazon.com/rds/features/multi-az/)**
   - 1 Standby instance in another AZ, but it is not reachable
   - **Engines**
     - **Native PostgreSQL**
@@ -42,7 +42,7 @@
     - The canonical name record (CNAME) is switched from the primary to standby instance
     - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec). So there is about 2 min downtime
   - Synchronous replication
-- **[Amazon RDS Multi-AZ DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)**
+- **[Amazon RDS Multi-AZ DB Cluster deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)**
   - Uses 1 primary + 2 replicas only
   - **Supported engines**
     - **Native MySQL** [(Amazon RDS for MySQ Multi-AZ DB cluster)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.html)
@@ -57,6 +57,7 @@
   - Each instance in different AZ
   - Synchronous replication
   - Aurora like, but Aurora still better in all parameters. Aurora allows up to 15 replicas
+  <img width="1504" height="877" alt="image" src="https://github.com/user-attachments/assets/77a44fe4-a14b-452e-afb4-5f691f9c732c" />
 - **[Amazon RDS Read Replicas (RR)](https://aws.amazon.com/rds/features/read-replicas/)**
   - Adds up to 5 replicas for primary instance
   - **[Engines](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)**
