@@ -83,6 +83,24 @@ Tables are **schemaless - we don't have to define attributes(columns) on table l
 - Strongly consistent reads are only possible on the base table and LSIs
 - Reads from a GSI is eventually consistent reads
 
+## Cardinality
+
+- **A hot partition in DynamoDB** is a partition that receives disproportionately large amounts of traffic compared with other partitions.
+
+```txt
+DynamoDB
+   │
+   ├── Partition A  ← 5% of traffic
+   ├── Partition B  ← 5% of traffic
+   ├── Partition C  ← 85% of traffic 🔥
+   └── Partition D  ← 5% of traffic
+```
+
+Partition C is hot because most requests are going there.
+
+- **High-cardinality partition key** (GOOD) = many distinct values → better distribution of data and traffic → less chance of hot partitions
+- **Low-cardinality partition key** (BAD) = few distinct values → many items/requests share the same key → uneven traffic distribution → higher chance of hot partitions.
+
 ## JSON
 
 - Classic JSON to DynamoDB JSON
