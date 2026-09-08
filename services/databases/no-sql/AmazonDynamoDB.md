@@ -101,6 +101,12 @@ Partition C is hot because most requests are going there.
 - **High-cardinality partition key** (GOOD) = many distinct values → better distribution of data and traffic → less chance of hot partitions
 - **Low-cardinality partition key** (BAD) = few distinct values → many items/requests share the same key → uneven traffic distribution → higher chance of hot partitions.
 
+---
+
+The partition key portion of a table's primary key determines the logical partitions in which a table's data is stored. This, in turn, affects the underlying physical partitions. Provisioned I/O capacity for the table is divided evenly among these physical partitions. Therefore, a partition key design that doesn't distribute I/O requests evenly can create "hot" partitions that result in throttling and use your provisioned I/O capacity inefficiently.
+
+<img width="950" height="353" alt="image" src="https://github.com/user-attachments/assets/d558e6c0-9c42-43f6-8790-cb30c2b2ac30" />
+
 ## JSON
 
 - Classic JSON to DynamoDB JSON
