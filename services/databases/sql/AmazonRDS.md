@@ -6,8 +6,6 @@
   - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec). So there is about 2 min downtime in case of the Primary failure.
 - Replica or Secondary. Reads only. Async sync between Primary and Replica
 
----
-
 # RDS is NOT public AWS service
 
 - All RDS databases are VPC-based, not public AWS services like S3 or DynamoDB (**including Aurora Serverless**)
