@@ -15,7 +15,7 @@
 
 ---
 
-- **Amazon RDS (Single AZ)**
+- **Amazon RDS (Single AZ instance deployment)**
   - Fully managed
     - You don't have to manage underlying infrastructure
       - Hardware (EC2) provisioning
