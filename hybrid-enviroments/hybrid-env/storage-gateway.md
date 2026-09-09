@@ -122,11 +122,9 @@ Is not a single solution but itself also a family of solutions bringing cloud an
 
 ### Protocols
 
-┌─────────────────────┬───────────────┬──────────────────┬──────────────────┐
-│ Gateway Type        │ Protocol      │ Storage Type     │ Backend          │
-├─────────────────────┼───────────────┼──────────────────┼──────────────────┤
-│ S3 File Gateway     │ NFS + SMB     │ File             │ Amazon S3        │
-│ FSx File Gateway    │ SMB only      │ File             │ Amazon FSx       │
-│ Volume Gateway      │ iSCSI         │ Block            │ S3 (EBS snaps)   │
-│ Tape Gateway        │ iSCSI (VTL)   │ Virtual Tape     │ S3 + Glacier     │
-└─────────────────────┴───────────────┴──────────────────┴──────────────────┘
+| **Gateway Type** | **Protocol** | **Storage Type** | **Backend** |
+| --- | --- | --- | --- |
+| **S3 File Gateway** | NFS + SMB | File | Amazon S3 |
+| **FSx File Gateway** | SMB only | File | Amazon FSx |
+| **Volume Gateway** | iSCSI | Block | S3 (EBS snapshots) |
+| **Tape Gateway** | iSCSI (VTL) | Virtual Tape | S3 + Glacier |
