@@ -6,12 +6,23 @@
 | **State** | **Description** | **Compute billed** |
 |---|---|---|
 | **pending** | Instance is launching; resources are being provisioned. | ❌ No |
-| **running** | Instance is fully launched and ready to accept traffic. | ✅ Yes |
-| **stopping** | Stop request issued; instance is shutting down. | ❌ No |
-| **stopping (hibernate)** | Hibernate request issued; instance is saving RAM state before stopping. | ✅ Yes |
+| **running** | Instance is active and fully operational. | ✅ Yes |
+| **stopping** | Stop request issued; Instance is stopping. | ❌ No |
+| **stopping (hibernate)** | Hibernate request issued; instance is saving RAM state before stopped. | ✅ Yes |
 | **stopped** | Instance is stopped; EBS volumes persist, no CPU usage. | ❌ No |
-| **shutting-down** | Terminate request issued; instance is being deleted. | ❌ No |
-| **terminated** | Instance is permanently deleted; cannot be restarted. | ❌ No |
+| **shutting-down** | Terminate request issued; Instance is in the process of being terminated. | ❌ No |
+| **terminated** | Instance is permanently destroyed/deleted; cannot be restarted. | ❌ No |
+
+### From running, what states can be triggered?
+
+| **Action** | **State transition** | **Notes** |
+| --- | --- | --- |
+| **Stop** the instance | `stopping` → `stopped` | — |
+| **Reboot** the instance | `running` → `running` | OS restart; same host |
+| **Terminate** the instance | `shutting-down` → `terminated` | Instance is permanently deleted |
+| **Hibernate** the instance | `stopping` → `stopped` | RAM state is saved to the EBS root volume |
+
+<img width="1098" height="764" alt="image" src="https://github.com/user-attachments/assets/5a14683d-5c5f-4475-8bde-d1d48af88212" />
 
 ### Hibernate instances
 
@@ -32,7 +43,7 @@
   - Choose Hibernate
 - **Billing**
   - Pay only for EBS storage, not compute while stopped/hibernated
-- **Hibernate only possible when stopping an instance. When terminatin an instance, no Hibernate really possible**
+- **Hibernate only possible when stopping an instance. When terminatining an instance, no Hibernate really possible**
 - Stopping an instance means
   - The virtual machine (VM) is shut down on the host
   - RAM and Instance (local) store volumes are lost
