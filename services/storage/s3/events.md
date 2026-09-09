@@ -1,6 +1,6 @@
 # Event types
 
-Amazon S3 can publish notifications for the following events
+### Amazon S3 can publish notifications for the following events
 
 | **Category** | **Event types** | **Description** |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ Amazon S3 can publish notifications for the following events
 | **Replication events** | `s3:Replication:OperationReplicatedAfterThreshold` | Notification when an object eligible for Amazon S3 Replication Time Control is replicated after the 15-minute threshold. |
 | **Replication events** | `s3:Replication:OperationNotTracked` | Notification when an object eligible for Amazon S3 Replication Time Control is no longer tracked by replication metrics. |
 
-### Amazon S3 supports the following destinations where it can publish events:
+### Amazon S3 supports the following destinations where it can publish events
 
 1. Amazon Simple Notification Service (Amazon SNS) topic
 2. Amazon Simple Queue Service (Amazon SQS) queue
