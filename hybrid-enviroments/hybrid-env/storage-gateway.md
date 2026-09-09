@@ -47,7 +47,7 @@ Let on-premises applications use block storage (disk volumes) while the data is 
     - 16TB per volume
     - 512TB per Gateway
 
-- **Cached volumes**
+- **Cached volumes (NOT just for buckups, but for common data)**
   - The same as Stored volumes setup, but
     - **Primary storage is Amazon S3**
       - Store volume data in AWS, with a small portion of recently accessed data in the cache on-premises
