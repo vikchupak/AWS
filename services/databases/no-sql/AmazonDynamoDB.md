@@ -24,9 +24,19 @@
   - Manually set RCUs & WCUs
   - If CUs exceed -> throttling happens
 - On-demand
-  - Automatically scales up and down
+  - Automatically scales up and down. **No config as provisioned capacity needed**
 
----
+### Provisioned capacity auto scaling
+
+- Provisioned capacity auto scaling is **DISABLED by default**
+- You have to configure auto-scaling
+  - Define provisioned capacity range
+    - Minimum RCU/WCU
+    - Maximum RCU/WCU
+    - Target utilization
+  - DynamoDB can't scale beyond max capacity
+
+## Data model
 
 - It is **key-value** database
   - All value types:
