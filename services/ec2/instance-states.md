@@ -8,7 +8,7 @@
 | **pending** | Instance is launching; resources are being provisioned. | ❌ No |
 | **running** | Instance is active and fully operational. | ✅ Yes |
 | **stopping** | Stop request issued; Instance is being stopped. | ❌ No |
-| **stopping (hibernate)** | Hibernate request issued; instance is saving RAM state before stopped. | ✅ Yes |
+| **stopping (hibernate)** | Hibernate request issued; instance is saving RAM state before getting stopped. | ✅ Yes |
 | **stopped** | Instance is stopped; EBS volumes persist, no CPU usage. | ❌ No |
 | **shutting-down** | Terminate request issued; Instance is in the process of being terminated. | ❌ No |
 | **terminated** | Instance is permanently destroyed/deleted; cannot be restarted. | ❌ No |
