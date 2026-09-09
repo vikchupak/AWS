@@ -53,6 +53,15 @@
       - **Private VIF** provides access to AWS Private VPC resources
   - VPN encryption. To End-to-End encrypt DX, Public VIF + VGW/TGW public endpoints with IPsec (VPN) setup is used
 
+```txt
+On-prem → Direct Connect (physical/hosted connection) 
+       → Transit Virtual Interface (Transit VIF) (attached to the DX Gateway)
+       → Direct Connect Gateway (DX Gateway)
+       → Transit Gateway (TGW) 
+       → VPC Attachments 
+       → VPC
+```
+
 ## Limitations combining VPC peering with DX or VPN
 
 <img width="436" height="218" alt="image" src="https://github.com/user-attachments/assets/a5139134-4dc2-45d3-b53f-8892d9f37f9e" />
