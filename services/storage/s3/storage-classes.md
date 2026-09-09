@@ -78,7 +78,7 @@ Archive classes
   - But
     - **No "Milliseconds" first-byte latency**
       - Retrieval time
-        - Expedited retrieval (1-5 min)
+        - Expedited (прискорене) retrieval (1-5 min)
           - Supports **Provisioned capacity**
             - Each unit of capacity provides that at least three **expedited retrievals** can be performed every five minutes and provides up to 150 MB/s of retrieval throughput
         - Standard retrieval (3-5 hours)
