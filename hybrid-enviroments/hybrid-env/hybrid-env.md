@@ -54,12 +54,13 @@
   - VPN encryption. To End-to-End encrypt DX, Public VIF + VGW/TGW public endpoints with IPsec (VPN) setup is used
 
 ```txt
-On-prem → Direct Connect (physical/hosted connection) 
-       → Transit Virtual Interface (Transit VIF) (attached to the DX Gateway)
-       → Direct Connect Gateway (DX Gateway)
-       → Transit Gateway (TGW) 
-       → VPC Attachments 
-       → VPC
+On-prem 
+  → Direct Connect Connection  (physical dedicated or hosted link)
+  → Transit VIF                (virtual interface created ON that connection, terminates at DX Gateway)
+  → DX Gateway                 (global resource, bridges VIF to TGW)
+  → Transit Gateway            (regional hub router)
+  → VPC Attachments            (per-account VPC links to TGW)
+  → VPC
 ```
 
 ## Limitations combining VPC peering with DX or VPN
@@ -105,12 +106,13 @@ To connect a Transit Gateway between AWS regions, you use inter-region peering b
 ### DX connection
 
 ```txt
-On-prem → Direct Connect (physical/hosted connection) 
-       → Transit Virtual Interface (Transit VIF) (attached to the DX Gateway)
-       → Direct Connect Gateway (DX Gateway)
-       → Transit Gateway (TGW) 
-       → VPC Attachments 
-       → VPC
+On-prem 
+  → Direct Connect Connection  (physical dedicated or hosted link)
+  → Transit VIF                (virtual interface created ON that connection, terminates at DX Gateway)
+  → DX Gateway                 (global resource, bridges VIF to TGW)
+  → Transit Gateway            (regional hub router)
+  → VPC Attachments            (per-account VPC links to TGW)
+  → VPC
 ```
 
 - A Transit VIF is a Direct Connect virtual interface that connects your on-prem network to a Direct Connect Gateway (DX Gateway), which is then associated with a TGW
