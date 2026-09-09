@@ -13,7 +13,7 @@
 | **shutting-down** | Terminate request issued; Instance is in the process of being terminated. | ❌ No |
 | **terminated** | Instance is permanently destroyed/deleted; cannot be restarted. | ❌ No |
 
-### From running, what states can be triggered?
+### From `running`, what states can be triggered?
 
 | **Action** | **State transition** | **Notes** |
 | --- | --- | --- |
