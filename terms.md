@@ -29,3 +29,90 @@ See [11:55](https://learn.cantrill.io/courses/1820301/lectures/41301618)
 - **High availability**: Refers to systems that are durable and likely to operate continuously without failure for a long time
   - HA is about keeping a system operational, about fast or automatic recovery of issues. It is not preventing user disruption. Maximizing uptime.
 - **Disaster Recovery** is about bringing system back to work properly when the system completely crashed.
+
+### Failover strategies
+
+- **Active-Active Failover**
+- **Active-Passive Failover**
+
+#### Active-Active
+
+In **Active-Active**, multiple Regions are serving traffic **simultaneously**.
+
+```text
+                    Route 53
+                       │
+             ┌─────────┴─────────┐
+             ▼                   ▼
+        Region A              Region B
+        ACTIVE                ACTIVE
+           │                     │
+        Resources             Resources
+           ▲                     ▲
+           │                     │
+        Serving               Serving
+        traffic               traffic
+```
+
+Route 53 performs health checks:
+
+```text
+                    Route 53
+                   /         \
+             HEALTHY       UNHEALTHY
+                │               X
+                ▼
+           Return Region A   Remove Region B
+           in DNS response   from response
+```
+
+If Region B goes down, Route 53 detects that its endpoint is unhealthy and **stops returning it in DNS responses**. Region A continues serving users.
+
+If both are healthy, **both can receive traffic**.
+
+#### Active-Passive
+
+With **Active-Passive**, one Region is the primary and the other is essentially a **standby**.
+
+```text
+                    Route 53
+                       │
+                       ▼
+                  Region A
+                   ACTIVE
+                     │
+                  Traffic
+                     
+                  Region B
+                  PASSIVE
+                  (standby)
+```
+
+If Region A fails:
+
+```text
+Region A ❌
+    │
+    ▼
+Route 53 detects failure
+    │
+    ▼
+Region B
+ACTIVE
+    │
+    ▼
+Traffic
+```
+
+So Active-Passive is primarily about **failover**, not using all resources continuously.
+
+### Side-by-side
+
+| | **Active-Active** | **Active-Passive** |
+|---|---|---|
+| Normal state | Both Regions serve traffic | One serves traffic |
+| Standby Region | ❌ No | ✅ Yes |
+| Utilizes both Regions | ✅ | ❌ |
+| Failure handling | Remove unhealthy Region | Switch to standby |
+| Availability | **Highest** | High |
+| Typical use | Global applications | DR / backup Region |
