@@ -77,12 +77,12 @@ Archive classes
   - Like S3 Standard
   - But
     - **No "Milliseconds" first-byte latency**
-      - Access time
-        - Expedited (1-5 min)
+      - Retrieval time
+        - Expedited retrieval (1-5 min)
           - Supports **Provisioned capacity**
             - Each unit of capacity provides that at least three **expedited retrievals** can be performed every five minutes and provides up to 150 MB/s of retrieval throughput
-        - Standard (3-5 hours)
-        - Bulk (5-12 hours)
+        - Standard retrieval (3-5 hours)
+        - Bulk retrieval (5-12 hours)
     - Objects can't be public
     - **Longer Min duration charge of 90 days**
     - Min size/capacity charge of 40 KB per object
@@ -91,9 +91,9 @@ Archive classes
   - But
     - **Longer Min duration charge of 180 days**
     - **No "Milliseconds" first-byte latency**
-      - Access time
-        - Standard (12 hours)
-        - Bulk (up to 48 hours)
+      - Retrieval time
+        - Standard retrieval (12 hours)
+        - Bulk retrieval (up to 48 hours)
        
     <img width="654" height="263" alt="image" src="https://github.com/user-attachments/assets/58d0c476-e6ef-4fe5-97b2-e032834aa648" />
 
