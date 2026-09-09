@@ -19,6 +19,8 @@
     - File-level storage protocol
     - Used by **File Gateway**
 
+<img width="1900" height="887" alt="image" src="https://github.com/user-attachments/assets/ba988c68-3b09-4763-9ea6-79b34b510797" />
+
 ### Deploy options
 
 <img width="447" height="256" alt="image" src="https://github.com/user-attachments/assets/2fc6cfac-1234-4a04-a6a0-f9fb18366936" />
