@@ -45,7 +45,7 @@ c6g  .  2xlarge
 - Storage optimized
   - Optimized **local store**
   - I3 / I3en
-    - Optimized For High random IOPS, high throughput
+    - Optimized For High random **IOPS**, high throughput
     - Storage Type Local NVMe SSD
     - Best Used For NoSQL databases (Cassandra, MongoDB), transactional databases
   - D3 / D3en
