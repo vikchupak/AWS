@@ -142,7 +142,7 @@ On-prem → Customer Gateway → Internet(encrypted data) → AWS Site-to-Site V
 
 # Increase the Site-to-Site VPN throughput between on-prem and AWS VPCs
 
-- Site-to-Site VPN connection on-prem - TGW is limited to 1.25 Gbps.
+- Site-to-Site VPN connection between on-prem and TGW is limited to 1.25 Gbps.
 
 ```txt
 On-premises ──── VPN Tunnel ────► Transit Gateway --─► VPCs
