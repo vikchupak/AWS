@@ -19,7 +19,7 @@
     - File-level storage protocol
     - Used by **File Gateway**
 
-<img width="1900" height="887" alt="image" src="https://github.com/user-attachments/assets/ba988c68-3b09-4763-9ea6-79b34b510797" />
+<img width="1600" height="932" alt="image" src="https://github.com/user-attachments/assets/b1b7c23f-a2e8-4b7a-a029-c8ecbab4c0ca" />
 
 ### Deploy options
 
