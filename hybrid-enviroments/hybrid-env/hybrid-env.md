@@ -97,7 +97,7 @@ On-prem
 
 ### Connec transit gateway between regions
 
-To connect a Transit Gateway between AWS regions, you use inter-region peering between two Transit Gateways. It’s not automatic—you explicitly create and accept a peering attachment.
+To connect a Transit Gateway between AWS regions, you use **inter-region peering(NOT transitive)** between two Transit Gateways. It’s not automatic—you explicitly create and accept a peering attachment.
 
 <img width="685" height="551" alt="image" src="https://github.com/user-attachments/assets/50b38bc1-c361-4d68-94ad-d4d41d449d1a" />
 
