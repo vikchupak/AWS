@@ -3,19 +3,6 @@
 - [EFS](https://github.com/vikchupak/AWS/blob/main/services/storage/efs/efs.md)
 - [FSx](https://github.com/vikchupak/AWS/blob/main/hybrid-enviroments/hybridEnviroments.md#amazon-fsx)
 
-When choosing between **Amazon EFS** and **Amazon FSx**, the decision hinges entirely on the **operating system** and the **native protocol** your applications rely on.
-
-While EFS is a native Linux-first file system, Amazon FSx is a family of specialized file systems designed to bring industry-standard storage engines (like Windows SMB, NetApp ONTAP, Lustre, and OpenZFS) directly into AWS.
-
----
-
-### The Core Difference
-
-* **Amazon EFS:** The go-to choice for **Linux-native workloads**. It uses the Standard NFSv4 protocol and integrates out of the box with Linux instances and AWS container services.
-* **Amazon FSx:** A suite of four distinct file systems built to support workloads that require specific file system behavior, extreme performance, or Windows compatibility.
-
----
-
 ### The Amazon FSx Lineup
 
 Because FSx isn't just one service, you select the specific flavor that matches your architecture:
@@ -25,7 +12,14 @@ Because FSx isn't just one service, you select the specific flavor that matches 
 3. **FSx for Lustre:** A high-performance, parallel file system optimized for sub-millisecond latencies and massive throughput (hundreds of GB/s). It is built specifically for **High-Performance Computing (HPC)**, machine learning training, and financial modeling.
 4. **FSx for OpenZFS:** Powered by the open-source OpenZFS file system, it provides high-throughput, low-latency storage designed for applications migrating from ZFS or Unix-based servers.
 
----
+### The Difference
+
+When choosing between **Amazon EFS** and **Amazon FSx**, the decision hinges entirely on the **operating system** and the **native protocol** your applications rely on.
+
+While EFS is a native Linux-first file system, Amazon FSx is a family of specialized file systems designed to bring industry-standard storage engines (like Windows SMB, NetApp ONTAP, Lustre, and OpenZFS) directly into AWS.
+
+- **Amazon EFS:** The go-to choice for **Linux-native workloads**. It uses the Standard NFSv4 protocol and integrates out of the box with Linux instances and AWS container services.
+- **Amazon FSx:** A suite of four distinct file systems built to support workloads that require specific file system behavior, extreme performance, or Windows compatibility.
 
 ### Feature-by-Feature Comparison
 
