@@ -148,7 +148,7 @@ On-prem → Customer Gateway → Internet(encrypted data) → AWS Site-to-Site V
 On-premises ──── VPN Tunnel ────► Transit Gateway --─► VPCs
 ```
 
-To increase the throughput, enable **equal-cost multi-path (ECMP)** on TGW and attach additional VPN tunnels.
+To increase the throughput, enable **Equal-cost multi-path (ECMP)** on TGW and attach additional VPN tunnels.
 
 ```txt
                          ┌── VPN Tunnel 1 ──┐
