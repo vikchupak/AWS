@@ -27,10 +27,12 @@
 
 ---
 
-- Visibility Timeout
+- **Visibility Timeout**
   - Time the message is "hidden" from the other consumers while being processed by a consumer
   - Default is 30 seconds
   - Consumer has to delete message from queue explicitly
+- **Retention period**
+  - How long Amazon SQS keeps a message in the queue before automatically deleting it, regardless of whether a consumer has processed it
 - ASG can scale based on Queue Length
 
 <img width="1275" height="721" alt="image" src="https://github.com/user-attachments/assets/af823a18-f6d7-4aa0-932c-20888ef9fff1" />
