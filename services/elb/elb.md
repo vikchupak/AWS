@@ -57,7 +57,7 @@ aws elbv2 describe-load-balancers
 ## ALB Weighted Target Groups
 
 - ALB support **Weighted Target Groups** routing. With this feature, you will be able to do weighted routing of the traffic forwarded by a rule to multiple target groups
-- NLB doesn't support Weighted Target Groups
+- **NLB doesn't support Weighted Target Groups**
 
 # Gateway LB (GWLB)
 
