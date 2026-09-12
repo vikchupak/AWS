@@ -120,7 +120,7 @@ Stage 2: The S3 Upload (Asynchronous)
 
 Is not a single solution but itself also a family of solutions bringing cloud and local storage closer for more native file systems.
 
-### Protocols
+## Protocols
 
 | **Gateway Type** | **Protocol** | **Storage Type** | **Backend** |
 | --- | --- | --- | --- |
