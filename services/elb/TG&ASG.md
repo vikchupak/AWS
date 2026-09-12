@@ -77,7 +77,7 @@
 
 # Instance Warm-Up Time
 
-- Instance warm-up time is the number of seconds you specify that tells Auto Scaling how long it should wait for a newly launched EC2 instance to be ready before it starts counting that instance's metrics toward the Auto Scaling group's aggregate metrics.
+- Instance warm-up time is the number of seconds you specify that tells **ASG** how long it should wait for a newly launched EC2 instance to be ready before it starts counting that instance's metrics toward the Auto Scaling group's aggregate metrics.
 - Without warm-up time, an instance might still be booting, but its metrics already included to autoscaling group which can cause incorrect scaling.
 - Default: 300 seconds (5 minutes)
 
