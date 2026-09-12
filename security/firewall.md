@@ -7,7 +7,7 @@
 
 - [AWS Network Firewall](https://aws.amazon.com/network-firewall/)
   - Protects your VPC network traffic (Layer 3–4)
-  - Sits inside your VPC, typically in a dedicated firewall subnet
+  - Sits inside your VPC, typically in a dedicated **firewall subnet**
     - You create a firewall endpoint in specific subnets (usually dedicated “firewall subnets”)
     - Then you route traffic through those endpoints using route tables
     - Internet → VPC → (routed via route table to) Firewall (endpoint) → resources
