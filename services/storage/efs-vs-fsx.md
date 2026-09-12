@@ -1,7 +1,7 @@
 # EFS vs FSx
 
 - [EFS](https://github.com/vikchupak/AWS/blob/main/services/storage/efs/efs.md)
-- [FSx](https://github.com/vikchupak/AWS/blob/main/hybrid-enviroments/hybridEnviroments.md#amazon-fsx)
+- [FSx](https://github.com/vikchupak/AWS/blob/main/hybrid-enviroments/hybrid-env/amazon-fsx.md)
 
 ### The Amazon FSx Lineup
 
