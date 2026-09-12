@@ -139,3 +139,20 @@ On-prem → Customer Gateway → Internet(encrypted data) → AWS Site-to-Site V
     - Connects Transit Gateways
       - Across regions
       - Across accounts
+
+# Increase the Site-to-Site VPN throughput between on-prem and AWS VPCs
+
+- Site-to-Site VPN connection on-prem - TGW is limited to 1.25 Gbps.
+
+```txt
+On-premises ──── Tunnel ────► Transit Gateway --─► VPCs
+```
+
+To increase the throughput, enable **equal-cost multi-path (ECMP)** on TGW and add more tunnels
+
+```txt
+                         ┌── Tunnel 1 ──┐
+                         ├── Tunnel 2 ──┤
+On-premises ─────────────┼── Tunnel 3 ──┼──► Transit Gateway --─► VPCs
+                         └── Tunnel 4 ──┘
+```
