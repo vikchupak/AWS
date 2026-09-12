@@ -12,7 +12,7 @@ Because FSx isn't just one service, you select the specific flavor that matches 
 3. **FSx for Lustre:** A high-performance, parallel file system optimized for sub-millisecond latencies and massive throughput (hundreds of GB/s). It is built specifically for **High-Performance Computing (HPC)**, machine learning training, and financial modeling.
 4. **FSx for OpenZFS:** Powered by the open-source OpenZFS file system, it provides high-throughput, low-latency storage designed for applications migrating from ZFS or Unix-based servers.
 
-### The Difference
+### The EFS vs FSx Difference
 
 When choosing between **Amazon EFS** and **Amazon FSx**, the decision hinges entirely on the **operating system** and the **native protocol** your applications rely on.
 
