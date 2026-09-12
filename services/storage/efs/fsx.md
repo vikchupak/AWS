@@ -26,7 +26,7 @@
 
 ### Amazon FSx for Lustre
 
-**About Lustre in general**
+##### About Lustre in general
   - Developed by Cluster File Systems, Inc. (CFS)
   - Designed for High Performance Computing (HPC)
   - ONLY for Linux
@@ -34,7 +34,7 @@
 
 ---
 
-**Amazon FSx for Lustre**
+##### Amazon FSx for Lustre
 - [Doc](https://aws.amazon.com/fsx/lustre/)
 - Fully managed shared storage built on the world’s most popular high-performance file system
 - Managed **native** Lustre FS
