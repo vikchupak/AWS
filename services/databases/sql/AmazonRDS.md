@@ -40,6 +40,10 @@
     - The canonical name record (CNAME) is switched from the primary to standby instance
     - Standby is promoted/switched from passive(standby) to active(primary) mode (in about 60-120 sec). So there is about 2 min downtime
   - Synchronous replication
+  - Increase database availability in the case of system upgrades like OS patching or DB Instance scaling
+    - Changes are first applied to standby, while the primary works as usual
+    - Then the updated standby is promoted to primary
+    - The old primary gets updated
 - **[Amazon RDS Multi-AZ DB Cluster deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)**
   - Uses 1 primary + 2 replicas only
   - **Supported engines**
