@@ -127,3 +127,5 @@ Every DR strategy has a **failover process** — the difference is **how much wo
 | **Pilot Light**      | Medium — provision compute, then switch traffic      | Data is ready; compute must be launched      |
 | **Warm Standby**     | Low — scale up existing compute, then switch traffic | A scaled-down stack is already running       |
 | **Active/Active**    | Minimal — just re-route traffic                      | The full stack is already running everywhere |
+
+Pilot Light - the name comes from a real-world analogy — a gas heater's pilot light: a tiny flame that is always burning, consuming minimal gas, but ready to instantly ignite the full burner when needed. In DR terms, it means keeping the absolute minimum infrastructure always running in the recovery environment, just enough to "ignite" the full system when disaster strikes.
