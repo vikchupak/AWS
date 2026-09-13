@@ -2,7 +2,7 @@
 
 ### Performance modes
 
-- General Purpose mode
+- General Purpose mode (Default)
 - Max I/O mode
 
 You choose a file system’s performance mode when you create it, and it cannot be changed. The two performance modes have no additional costs, so your Amazon EFS file system is billed and metered the same, regardless of your performance mode.
