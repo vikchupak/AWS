@@ -117,7 +117,7 @@
       - It scales read capacity only. It does NOT scale the writer instance
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
-  - **NUANCE:** Aurora supports Cross-Region Replication
+  - **NUANCE:** Aurora supports **Cross-Region Replication**
     - Available for Aurora MySQL only (not Aurora PostgreSQL)
     - Uses MySQL binlog replication to replay changes in the secondary region
     - Each cross-region replica is itself a full Aurora cluster that has:
