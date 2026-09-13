@@ -116,3 +116,14 @@ So Active-Passive is primarily about **failover**, not using all resources conti
 | Failure handling | Remove unhealthy Region | Switch to standby |
 | Availability | **Highest** | High |
 | Typical use | Global applications | DR / backup Region |
+
+## The 4 DR Strategies All Involve Failover
+
+Every DR strategy has a **failover process** — the difference is **how much work failover requires**:
+
+| Strategy             | Failover Complexity                                  | Why                                          |
+| -------------------- | ---------------------------------------------------- | -------------------------------------------- |
+| **Backup & Restore** | Very high — restore everything from scratch          | Nothing pre-built at the DR site             |
+| **Pilot Light**      | Medium — provision compute, then switch traffic      | Data is ready; compute must be launched      |
+| **Warm Standby**     | Low — scale up existing compute, then switch traffic | A scaled-down stack is already running       |
+| **Active/Active**    | Minimal — just re-route traffic                      | The full stack is already running everywhere |
