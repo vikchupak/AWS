@@ -1,5 +1,7 @@
 ## Modes
 
+<img width="2864" height="2270" alt="image" src="https://github.com/user-attachments/assets/0327aacd-408a-4366-810a-313f5b810388" />
+
 ### Performance modes
 
 - **General Purpose mode (Default)**
