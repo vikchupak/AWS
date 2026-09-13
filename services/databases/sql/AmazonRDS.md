@@ -105,7 +105,6 @@
   - **Engines**
     - **Custom AWS-built PostgreSQL-compatible** [(Amazon Aurora PostgreSQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraPostgreSQL.html)
     - **Custom AWS-built MySQL-compatible** [(Amazon Aurora MySQL)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html)
-  - Operates within **a single AWS Region**, **(Standard/Regional)**
   - Uses (all cluster type use these)
     - Cluster endpoint - points to primary instance
     - Reader endpoint - points to replicas
@@ -115,6 +114,7 @@
       - Disabled by default
       - Scales based on metrics like CPU utilization or connections
       - It scales read capacity only. It does NOT scale the writer instance
+  - Operates within **a single AWS Region**, **(Standard/Regional)**
   - Uses shared cluster volume
   - Feels like synchronous replication, but the mechanism is different
   - **NUANCE:** Aurora MySQL supports **Cross-Region** Replication
