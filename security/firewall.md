@@ -2,6 +2,8 @@
 
 - [SG(EC2)-Subnet](https://github.com/vikchupak/AWS/blob/main/network/network-definitions.md#firewall)
 - [GWLB](https://github.com/vikchupak/AWS/blob/main/services/elb/elb.md#gateway-lb-gwlb)
+- AWS Shield
+  - Protects AWS resources from DDoS attacks
 
 ### AWS Network Firewall
 
