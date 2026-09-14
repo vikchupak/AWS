@@ -5,6 +5,8 @@
 
 ### AWS Network Firewall
 
+**Protects network traffic within your VPC** (Layer 3–4)
+
 - [AWS Network Firewall](https://aws.amazon.com/network-firewall/)
   - **Protects network traffic within your VPC** (Layer 3–4)
   - Sits inside your VPC, typically in a dedicated **firewall subnet**
@@ -30,8 +32,9 @@ You can use Network Firewall to monitor and protect your Amazon VPC traffic in a
 - Perform deep packet inspection on traffic entering or leaving your VPC.
 - Use stateful protocol detection to filter protocols like HTTPS, independent of the port used.
 
-# AWS Web Application Firewall
+# AWS Web Application Firewall (WAF)
 
+- **Protects web applications from HTTP/HTTPS attacks**
 - [AWS Web Application Firewall (AWS WAF)](https://aws.amazon.com/waf/)
   <img width="1265" height="714" alt="image" src="https://github.com/user-attachments/assets/c7622976-a94b-4f65-8112-f766f61d7624" />
   - Protects web applications (Layer 7)
