@@ -1,3 +1,7 @@
+# Monitoring
+
+- [Read](https://github.com/vikchupak/AWS/blob/main/services/monitoring/amp.md)
+
 # EKS Monitoring & Observability (logging) — Comparison
 
 | Solution                                                              | Main purpose                               | Metrics |     Application logs | Dashboard             | Operational overhead | Best fit                                            |
