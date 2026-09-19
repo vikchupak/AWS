@@ -75,6 +75,8 @@ Create a workspace on AWS Manage Service for Prometheus to collect container met
                     (view dashboards via browser)
 ```
 
+<img width="887" height="471" alt="image" src="https://github.com/user-attachments/assets/35ef1f15-353c-406e-8ce3-a98c2c9d92ba" />
+
 # Fully managed vs serverless
 
 Amazon Managed Grafana (AMG) is described by AWS as a "fully managed" service, which means:
