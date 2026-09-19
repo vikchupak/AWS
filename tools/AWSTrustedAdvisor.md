@@ -16,4 +16,4 @@
     - You can also manually refresh the checks to get updated results
 - **AWS Trusted Advisor is mainly a **rules/checks-based** recommendation service, not an AI service**
 
-**IMPORTANT**: AWS Trusted Advisor's **cost optimization** checks for **underutilized** resources doesn’t provide recommendations for resources that are overutilized. Use Trusted Advisor's PERFORMANCE category — not Cost Optimization — to identify overutilized resources.
+**IMPORTANT**: AWS Trusted Advisor's **cost optimization** checks for **underutilized** resources doesn’t provide recommendations for resources that are overutilized. Use Trusted Advisor's PERFORMANCE category to identify overutilized resources instead.
