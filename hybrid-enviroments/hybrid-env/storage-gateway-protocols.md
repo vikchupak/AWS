@@ -1,4 +1,4 @@
-## Protocols
+## Storage Gateway Protocols
 
 | **Gateway Type**     | **Protocol** | **Storage Type** | **Backend**                        | **OS**      |
 | -------------------- | ------------ | ---------------- | ---------------------------------- | ------------------- |
@@ -8,3 +8,5 @@
 | **Tape Gateway**     | iSCSI (VTL)  | Virtual Tape     | S3 + Glacier                       | **Linux / Windows** |
 
 **NFS/SMB are file-storage protocols, while iSCSI is a block-storage protocol**
+
+- [FS protocols](https://github.com/vikchupak/AWS/blob/main/services/storage/efs/fs-protocols.md)
