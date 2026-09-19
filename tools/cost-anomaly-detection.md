@@ -1,6 +1,6 @@
 # AWS Cost Anomaly Detection
 
-- **Part of Billing and cost management**
+- **Part of Billing and Cost Management**
 
 AWS Cost Anomaly Detection is an AWS Cost Management feature. This feature uses **machine learning** models to detect and alert on anomalous spend patterns in your deployed AWS services.
 
