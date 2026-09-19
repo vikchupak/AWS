@@ -8,8 +8,8 @@
 
 AWS CloudTrail and CloudTrail Lake are related, but they are not the same thing.
 
-> **CloudTrail = records AWS activity**
-> **CloudTrail Lake = stores, processes, and analyzes that activity**
+> - **CloudTrail = records AWS activity**
+> - **CloudTrail Lake = stores, processes, and analyzes that activity**
 
 ### CloudTrail Lake
 
