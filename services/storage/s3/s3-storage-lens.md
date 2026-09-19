@@ -2,7 +2,6 @@
 
 * **Amazon S3 Storage Lens** → provides **visibility and analytics** across S3 storage.
 * Shows metrics such as:
-
   * Storage usage
   * Object counts
   * Versioning status
