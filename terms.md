@@ -21,8 +21,11 @@
 
 See [11:55](https://learn.cantrill.io/courses/1820301/lectures/41301618)
 
-### Durability vs Availability
+### Redundancy vs Durability vs Availability
 
+- **Redundancy** → "Do I have multiple copies/components?"
+  - Data or infrastructure is duplicated so that the failure of one component doesn't necessarily cause data loss or service failure
+  - Example: storing data across multiple AZs provides redundancy.
 - **Durability** → "Will my data still exist?"
   - Data is redundantly stored, often across multiple facilities/AZs
   - Example: S3 Standard = 99.999999999% durability
