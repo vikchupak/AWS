@@ -45,6 +45,7 @@
     - Highly optimized for performance
     - No Resilience, HA or Replication
     - Use for Short term usage
+    - Designed for temporary storage and are not intended for long-term persistence
   - Persistent
     - Self-healing and HA (in one AZ)
     - Use for Long term usage
