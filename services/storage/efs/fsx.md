@@ -45,10 +45,11 @@
     - Highly optimized for performance
     - No Resilience, HA or Replication
     - Use for Short term usage
-    - Designed for temporary storage and are not intended for long-term persistence
+    - **Designed for temporary storage and are NOT intended for long-term persistence**
   - Persistent
     - Self-healing and HA (in one AZ)
     - Use for Long term usage
+    - **Designed for longer-term storage and are intended for long-term persistence**
 - Architecture
   - Uses S3 Bucket as a repository
   - Data is lazy loaded to the Luster when needed
