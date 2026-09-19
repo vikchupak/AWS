@@ -1,6 +1,11 @@
 # AWS Trusted Advisor
 
 - AWS Trusted Advisor is an AWS service that analyzes your AWS environment and recommends improvements
+- AWS Trusted Advisor is available/enabled by default for AWS accounts
+  - But the number of checks and features available depends on your AWS Support plan:
+      - Basic / Developer: limited set of core checks
+      - Business / Enterprise: full set of Trusted Advisor checks and additional features
+  - Trusted Advisor continuously checks your AWS environment and provides recommendations for areas like cost optimization, security, fault tolerance, performance, and service limits.
 - Think of it as an AWS best-practices advisor that looks at your account
 
 | Category                 | What it looks for                                    |
