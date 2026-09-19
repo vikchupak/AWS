@@ -15,7 +15,11 @@ AWS CloudTrail and CloudTrail Lake are related, but they are not the same thing.
 
 **CloudTrail Lake** is an **analytics capability built around CloudTrail events**.
 
+AWS CloudTrail Lake lets you run SQL-based queries on your event logs in AWS CloudTrail. It provides a robust and efficient way to directly analyze CloudTrail logs. **CloudTrail Lake converts existing events in row-based JSON format to Apache ORC format**. ORC is a columnar storage format that is optimized for fast retrieval of data. Events are aggregated into event data stores, which are immutable collections of events based on criteria that you select by applying advanced event selectors.
+
 Instead of simply delivering logs to S3, CloudTrail Lake provides a managed environment where you can **store and query events using SQL**.
+
+<img width="1401" height="699" alt="image" src="https://github.com/user-attachments/assets/939ee985-8ea3-4415-a0b4-2e9234383b60" />
 
 Conceptually:
 
