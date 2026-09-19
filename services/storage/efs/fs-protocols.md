@@ -1,4 +1,4 @@
-# Protocols
+# FS Protocols
 
 | **AWS Service**                 | **Protocol**  | **Typical Use**                                                           | **OS**      |
 | ------------------------------- | ------------- | ------------------------------------------------------------------------- | ------------------- |
@@ -9,4 +9,5 @@
 | **FSx for Lustre**              | **Lustre**    | Linux/HPC/ML/high-performance workloads                                   | **Linux**           |
 
 
-- [Read](https://github.com/vikchupak/AWS/blob/main/services/storage/efs-vs-fsx.md)
+- [efs vs fsx](https://github.com/vikchupak/AWS/blob/main/services/storage/efs-vs-fsx.md)
+- [Storage gateway protocols](https://github.com/vikchupak/AWS/blob/main/hybrid-enviroments/hybrid-env/storage-gateway-protocols.md)
