@@ -21,6 +21,15 @@
 
 See [11:55](https://learn.cantrill.io/courses/1820301/lectures/41301618)
 
+### Durability vs Availability
+
+- **Durability** → "Will my data still exist?"
+  - Data is redundantly stored, often across multiple facilities/AZs
+  - Example: S3 Standard = 99.999999999% durability
+- **Availability** → "Can I access my data when I need it?"
+  - Data remains accessible even if part of the infrastructure fails.
+  - Example: redundant infrastructure across Availability Zones helps maintain availability.
+
 ### Fault Tolerance (FT) vs High Availability (HA) vs Disaster Recovery (DR)
 
 - **Fault tolerance**: Property that enables a system to continue operating properly in the event of the failure of one or more components
