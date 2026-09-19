@@ -1,5 +1,12 @@
 # Data Transfer Costs
 
+Data transferred between the following is free
+- Amazon EC2
+- Amazon RDS
+- Amazon Redshift
+- Amazon ElastiCache instances
+- Elastic Network Interfaces
+
 | **Scope** | **Cost** | **Notes** |
 |---|---:|---|
 | **Same AZ** | ✅ **FREE** | Almost always free |
