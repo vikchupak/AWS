@@ -67,7 +67,7 @@ Before RECs were introduced, every "Cache Miss" at a local edge went straight to
 
 - Distribution → Configuration
 - Origins → Content sources
-- Cache Behaviors → Path-based routing + rules
+- CloudFront (Cache) Behaviors → Path-based routing + rules
 - Edge Locations → Closest delivery points
 - Regional Edge Cache → Regional shared cache layer
 
@@ -90,11 +90,11 @@ Before RECs were introduced, every "Cache Miss" at a local edge went straight to
 │  └──────────────────────────────────────────────┘  │
 │                                                    │
 │  ┌──────────────────────────────────────────────┐  │
-│  │ Cache Behaviors (routing + rules)            │  │
+│  │CloudFront (Cache) Behaviors (routing + rules)│  │
 │  │                                              │  │
-│  │  * (default)  ─────────────▶ S3 Bucket      │  │
-│  │  /api/*       ─────────────▶ ALB / API      │  │
-│  │  /images/*    ─────────────▶ S3 Bucket      │  │
+│  │  * (default)  ─────────────▶ S3 Bucket       │  │
+│  │  /api/*       ─────────────▶ ALB / API       │  │
+│  │  /images/*    ─────────────▶ S3 Bucket       │  │
 │  │                                              │  │
 │  │  (TTL, headers, cookies, methods, HTTPS…)    │  │
 │  └──────────────────────────────────────────────┘  │
