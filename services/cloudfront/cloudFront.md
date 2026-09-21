@@ -65,9 +65,9 @@ Before RECs were introduced, every "Cache Miss" at a local edge went straight to
 
 ## Flow
 
-- Distribution → Configuration
+- (CloudFront) Distribution → Configuration
 - Origins → Content sources
-- CloudFront Behaviors = Cache Behaviors → Path-based routing + rules -> defines how CF handles requests matching that path including caching
+- (CloudFront) Behaviors = Cache Behaviors → Path-based routing + rules -> defines how CF handles requests matching that path including caching
 - Edge Locations → Closest delivery points
 - Regional Edge Cache → Regional shared cache layer
 
