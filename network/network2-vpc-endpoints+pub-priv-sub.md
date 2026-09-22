@@ -9,6 +9,7 @@
     - Currently, Gateway Endpoints support only two services:
       - Amazon S3 (public service). Name **S3 gateway endpoint**
       - Amazon DynamoDB (public service). Name **DynamoDB gateway endpoint**
+    - **Gateway endpoints are associated with route tables**
   - **Free**
 
 Example:
