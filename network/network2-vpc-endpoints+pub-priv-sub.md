@@ -10,6 +10,12 @@
       - Amazon S3 (public service). Name **S3 gateway endpoint**
       - Amazon DynamoDB (public service). Name **DynamoDB gateway endpoint**
     - **Gateway endpoints are associated with route tables**
+      ```txt
+      Destination              Target
+      10.0.0.0/16              local
+      DynamoDB prefix list     vpce-xxxxxxxx
+      0.0.0.0/0                NAT Gateway
+      ```
   - **Free**
 
 Example:
