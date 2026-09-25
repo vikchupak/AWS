@@ -2,11 +2,11 @@
 Internet
    │
    ▼
-Internet Gateway
+Internet Gateway  (IGW Ingress Routing → Firewall Endpoint)
    │
    ▼
 ┌──────────────────────────────┐
-│ Firewall subnet              │
+│ Firewall subnet [PRIVATE]    │
 │                              │
 │ Network Firewall Endpoint    │  ← Inspect FIRST
 └──────────────┬───────────────┘
@@ -20,14 +20,14 @@ Internet Gateway
                │
                ▼
 ┌──────────────────────────────┐
-│ Private app subnet           │
+│ Private app subnet [PRIVATE] │
 │                              │
 │ EC2 Auto Scaling Group       │
 └──────────────┬───────────────┘
                │
                ▼
 ┌──────────────────────────────┐
-│ Private DB subnet            │
+│ Private DB subnet  [PRIVATE] │
 │                              │
 │ Aurora                       │
 └──────────────────────────────┘
