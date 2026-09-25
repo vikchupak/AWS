@@ -65,3 +65,15 @@ A subnet **cannot directly communicate with the internet**.
 
 💡 **Tip:**
 The **route table** (IGW vs NAT) defines whether a subnet is public or private.
+
+## Route tables
+
+- Each subnet must be associated with **one and only one** route table.
+- One route table → can serve many subnets
+- Subnets cannot have more than one route table
+- You can change subnet → route table association anytime
+- All subnets are assotiated to main route table by default
+- Route tables are always created inside a VPC
+- Each route table belongs to one and only one VPC
+  - Route tables cannot span multiple VPCs. Each table exists entirely within a single VPC
+- A VPC can have multiple route tables, but each subnet in that VPC must be associated with exactly one route table
