@@ -88,3 +88,18 @@ The **route table** (IGW vs NAT) defines whether a subnet is public or private.
 | Public subnet      | **Public route table**  | `0.0.0.0/0 → IGW`         |
 | Private app subnet | **Private route table** | `0.0.0.0/0 → NAT Gateway` |
 | Private DB subnet  | **Private route table** | No Internet route         |
+
+## Route table inbound and outbound traffic
+
+- Route tables have no explicit inbound/outbound sections
+- Routes determine where packets go based on destination
+
+```txt
+Destination     Target
+10.0.0.0/16  → local
+0.0.0.0/0    → IGW
+```
+
+- 10.0.0.0/16 - VPC range
+
+Meaning: Traffic destined for any IP inside the VPC's 10.0.0.0/16 range stays inside the VPC
