@@ -24,7 +24,7 @@
 
 The diagram below shows an AWS Network firewall deployed in a single availability zone and traffic flow for a workload in a public subnet.
 
-<img width="1024" height="808" alt="image" src="https://github.com/user-attachments/assets/117f136a-5d04-4367-801e-b57078cbc570" />
+<img width="1024" height="808" alt="image" src="https://github.com/user-attachments/assets/eee7c77a-886a-45a9-9aca-6da803ee9e24" />
 
 <img width="2244" height="1060" alt="image" src="https://github.com/user-attachments/assets/ea45e4b1-8789-4bbd-87b2-126807065525" />
 
