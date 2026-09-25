@@ -77,3 +77,14 @@ The **route table** (IGW vs NAT) defines whether a subnet is public or private.
 - Each route table belongs to one and only one VPC
   - Route tables cannot span multiple VPCs. Each table exists entirely within a single VPC
 - A VPC can have multiple route tables, but each subnet in that VPC must be associated with exactly one route table
+
+## Public and private route tables
+
+- A route table is commonly called public if it has a route to an Internet Gateway
+- A route table is commonly called private if it does not have a direct route to an IGW
+
+| Subnet             | Common description      | Default route             |
+| ------------------ | ----------------------- | ------------------------- |
+| Public subnet      | **Public route table**  | `0.0.0.0/0 → IGW`         |
+| Private app subnet | **Private route table** | `0.0.0.0/0 → NAT Gateway` |
+| Private DB subnet  | **Private route table** | No Internet route         |
