@@ -18,9 +18,9 @@
     - Works at Layer 3
     - Secures all IP traffic (TCP, UDP, ICMP, anything)
   - Speed limit is 1.25 Gbps
-  - Virtual Private Gateway (VGW)
+  - **Virtual Private Gateway (VGW)**
     - Logical resource in AWS used as target in one or more route tables
-  - Customer Gateway (CGW). Represents both
+  - **Customer Gateway (CGW)**. Represents both
     - Logical configuration within AWS (which represents a physical on-promises router)
     - Physical on-promises router (which AWS VPN connects to)
   - VPN connection
