@@ -77,13 +77,13 @@
   - Asynchronous replication
   - MANUAL FALOVER
   - Exists for both - Classic RDS and Aurora
-  - Possible 3
-    - Classic RDS - RR
+  - **Possible 3**
+    - **Classic RDS - RR**
       - 1 primary + async replicas
       - No Standby
-    - Multi-AZ RDS + Read Replicas
+    - **Multi-AZ RDS + Read Replicas**
       - 1 primary + **1 Standby** + async replicas
-    - Multi-AZ Cluster RDS + Read Replicas
+    - **Multi-AZ Cluster RDS + Read Replicas**
 - **[Amazon RDS Custom](https://aws.amazon.com/rds/custom/)**
   - Designed for workloads that need **full OS-level and database-level customization**
     - So it is NOT fully managed by AWS database
