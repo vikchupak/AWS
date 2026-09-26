@@ -10,6 +10,8 @@
  
 <img width="1700" height="912" alt="image" src="https://github.com/user-attachments/assets/25f5fab2-0bbc-470b-a6f5-253caf38963c" />
 
+<img width="685" height="386" alt="image" src="https://github.com/user-attachments/assets/c483e36a-2500-4c25-9124-a52979717bab" />
+
 - AWS site-2-site VPN
   - Connect a VPC with on-promises network **over PUBLIC internet**
   - **Uses IPsec protocol for encryption (not HTTPS)**
