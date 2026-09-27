@@ -110,7 +110,7 @@ Move large amount of data IN and OUT of AWS **online**
   - Use NFS or SMB protocol to connect to on-prem storage
   - On-prem DataSync Agent connects to DataSync Endpoint in AWS
   - Connection. Storage (on-prem) -> NFS or SMB protocol -> DataSync Agent (on-prem) -> TLS -> DataSync Endpoint (AWS) -> EFS, FSx, or S3 (AWS)
--  You can configure DataSync to make an initial copy of your entire dataset and **schedule subsequent incremental transfers of changing data toward Amazon S3**
+- You can configure DataSync to make an initial copy of your entire dataset and **schedule subsequent incremental transfers of changing data toward Amazon S3**
   - **AWS DataSync does NOT support continuous, near real-time sync**
   - **Minimum Schedule interval is 1 hour**
 -  AWS DataSync is primarily used to migrate existing data to Amazon S3
