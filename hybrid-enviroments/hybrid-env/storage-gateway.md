@@ -86,6 +86,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
     - NFS (Linux/Unix)
     - SMB (Windows)
 - On-premises servers mount shares exposed by the Storage Gateway VM using standard NFS or SMB protocols
+- Mounts as a local NFS/SMB share and **asynchronously streams file uploads to S3 in near real-time** as local applications write to it
 - Storage Gateway (VM)
   - Stores all files as objects in S3
     - **Primary storage is Amazon S3**
@@ -96,7 +97,6 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - Files in S3 are visible in AWS
 - Bucket share = Link `AWS bucket <-> On-prem file share`
 - Connection. On-prem server -> NFS/SMB protocol -> Storage Gateway VM (with shares) -> AWS Storage Gateway Endpoint -> Amazon S3
-- Mounts as a local NFS/SMB share and **asynchronously streams file uploads to S3 in near real-time** as local applications write to it
 
 ---
 
