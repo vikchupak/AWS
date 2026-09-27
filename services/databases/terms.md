@@ -1,0 +1,6 @@
+# Recovery Point Objective (RPO) and Recovery Time Objective (RTO)
+
+- Recovery Point Objective (RPO) -> Data Loss Tolerance
+  - How much data (in time) you can afford to lose in a crash
+- Recovery Time Objective (RTO) -> Downtime Tolerance
+  - How long it takes to restore service and get the database back online after a failure
