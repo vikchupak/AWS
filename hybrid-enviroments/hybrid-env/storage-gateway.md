@@ -96,6 +96,7 @@ Let on-premises applications use file storage while the files are stored in Amaz
 - Files in S3 are visible in AWS
 - Bucket share = Link `AWS bucket <-> On-prem file share`
 - Connection. On-prem server -> NFS/SMB protocol -> Storage Gateway VM (with shares) -> AWS Storage Gateway Endpoint -> Amazon S3
+- Mounts as a local NFS/SMB share and **asynchronously streams file uploads to S3 in near real-time** as local applications write to it
 
 ---
 
