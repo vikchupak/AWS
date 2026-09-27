@@ -9,5 +9,6 @@
 
 - Point-in-Time Recovery (PITR)
   - Restoring the database state back to a specific timestamp
+  - Recovery Point Objective (RPO) is the overarching business metric, while Point-in-Time Recovery (PITR) is a specific technical mechanism used to achieve an RPO goal
 - Failover / Restoration Speed
   - Time required to detect failure and make the DB available again
