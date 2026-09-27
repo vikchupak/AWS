@@ -1,4 +1,4 @@
-# Recovery Point Objective (RPO) and Recovery Time Objective (RTO)
+# RPO and RTO
 
 - Recovery Point Objective (RPO) -> Data Loss Tolerance
   - How much data (in time) you can afford to lose in a crash
