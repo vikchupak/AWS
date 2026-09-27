@@ -164,7 +164,7 @@ The partition key portion of a table's primary key determines the logical partit
 - Enable on table
 - Select attribute where to store delete timestamp
   - This attribute is scanned. The item is set to **EXPIRED** once match. Later another scan deletes expired items.
-- Post-Deletion Notification
+- Post-Deletion Notification setup (if needed)
   - Enable DynamoDB Streams: Turn on DynamoDB Streams on the table, selecting NEW_AND_OLD_IMAGES or OLD_IMAGE
   - Attach AWS Lambda: Set up a Lambda function triggered by the DynamoDB Stream
   - Filter for TTL Deletions: When TTL deletes an item, it generates a REMOVE stream event. You filter the event to process only TTL service deletions (ignoring manual app deletes)
