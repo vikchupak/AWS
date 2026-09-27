@@ -1,4 +1,4 @@
-# Cassandra
+# Apache Cassandra
 
 - https://www.youtube.com/watch?v=TD3-INhm60Q (key concepts)
 
