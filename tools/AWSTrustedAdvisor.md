@@ -4,8 +4,8 @@
 - Think of it as an AWS best-practices advisor that looks at your account
 - AWS Trusted Advisor is available/enabled by default for AWS accounts
   - The number of checks and features available depends on your AWS Support plan:
-      - Basic / Developer: limited set of core checks
-      - Business / Enterprise: full set of Trusted Advisor checks and additional features
+      - **Basic / Developer: limited set of core checks**
+      - **Business / Enterprise: full set of Trusted Advisor checks and additional features**
 - Trusted Advisor **periodically** checks your AWS environment and provides recommendations for cost optimization, performance, security, fault tolerance, service limits, and operational excellence.
   - So you generally don't need to manually start a scan every time
   - You can also manually refresh the checks to get updated results
