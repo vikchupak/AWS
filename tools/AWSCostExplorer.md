@@ -1,6 +1,6 @@
 # AWS Cost Explorer
 
-- Part of Billing and Cost Management
+- **Part of Billing and Cost Management**
 
 AWS Cost Explorer Rightsizing is A feature within AWS Cost Explorer that analyzes your EC2 usage and recommends how to reduce costs by identifying idle and over-provisioned (underutilized) instances.
 
